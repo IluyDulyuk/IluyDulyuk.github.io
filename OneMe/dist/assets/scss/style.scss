@@ -588,7 +588,7 @@ p.text {
                 left: 0;
             }
             @media screen and (max-width: 769px) {
-                position: sticky;
+                position: static;
             }
         }
         .block-5 {
