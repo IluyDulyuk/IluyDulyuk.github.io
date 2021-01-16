@@ -878,6 +878,27 @@ p.text {
         justify-content: space-between;
         padding-left: 112px;
         padding-right: 167px;
+        @media screen and (max-width: 1418px) {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        @media screen and (max-width: 1204px) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @media screen and (max-width: 1153px) {
+            flex-wrap: wrap;
+            width: 548px;
+            margin: 0 auto;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        @media screen and (max-width: 568px) {
+            width: 90%;
+        }
+        @media screen and (max-width: 494px) {
+            justify-content: center;
+        }
         .lk-title {
             font-size: 20px;
             font-weight: 500;
@@ -959,6 +980,9 @@ p.text {
         .password-block {
             width: 184px;
             form {
+                @media screen and (max-width: 494px) {
+                    margin-bottom: 62px;
+                }
                 input {
                     background: transparent;
                     font-size: 14px;
@@ -976,11 +1000,17 @@ p.text {
         }
         .orders-block {
             width: 634px;
+            @media screen and (max-width: 720px) {
+                display: none;
+            }
             .name-block {
                 display: flex;
                 margin-bottom: 5px;
                 padding-right: 33px;
                 justify-content: space-between;
+                @media screen and (max-width: 720px) {
+                    padding-right: 0;
+                }
                 p {
                     font-size: 18px;
                     font-weight: 500;
@@ -1017,10 +1047,56 @@ p.text {
                 margin-top: 30px;
                 margin-left: 10px;
                 cursor: pointer;
+                @media screen and (max-width: 1153px) {
+                    margin-bottom: 189px;
+                }
                 &:hover {
                     text-decoration: underline;
                 }
             }
+        }
+    }
+}
+.order-block-mobile {
+    width: 259px;
+    margin: 0 auto;
+    display: none;
+    @media screen and (max-width: 720px) {
+        display: block;
+    }
+    .order-item-mobile {
+        border-bottom: 1px #D3D1CB solid;
+        padding-bottom: 16px;
+        padding-top: 23px;
+        .order-title-mobile {
+            font-size: 18px;
+            display: flex;
+            &:after {
+                content: url('../img/footer-arrow.svg');
+                margin-left: 26px;
+            }
+        }
+        .order-time {
+            font-size: 14px;
+            margin-bottom: 22px;
+        }
+        .order-price {
+            font-size: 18px;
+        }
+        .order-pay {
+            font-size: 18px;
+            margin-bottom: 18px;
+        }
+        .order-status {
+            font-size: 18px;
+        }
+        .block-order-info {
+            display: none;
+        }
+    }
+    .order-item-mobile.active  {
+        .block-order-info {
+            display: block;
         }
     }
 }

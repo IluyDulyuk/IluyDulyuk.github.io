@@ -1609,6 +1609,7 @@ __webpack_require__.r(__webpack_exports__);
 var footerMenu = function footerMenu() {
   var el = document.querySelectorAll('.block');
   var btnDostavka = document.querySelectorAll('.block-mobile-dostavka');
+  var btnOrder = document.querySelectorAll('.order-item-mobile');
   el.forEach(function (item) {
     item.addEventListener('click', function () {
       if (item.classList.contains('active')) {
@@ -1619,6 +1620,15 @@ var footerMenu = function footerMenu() {
     });
   });
   btnDostavka.forEach(function (item) {
+    item.addEventListener('click', function () {
+      if (item.classList.contains('active')) {
+        item.classList.remove('active');
+      } else {
+        item.classList.add('active');
+      }
+    });
+  });
+  btnOrder.forEach(function (item) {
     item.addEventListener('click', function () {
       if (item.classList.contains('active')) {
         item.classList.remove('active');
