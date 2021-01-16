@@ -1373,6 +1373,16 @@ p.text {
         justify-content: space-between;
         padding-left: 70px;
         padding-right: 133px;
+        @media screen and (max-width: 1170px) {
+            display: block;
+            margin: 0 auto;
+            padding-left: 0px;
+            padding-right: 0px;
+            width: 608px;
+            @media screen and (max-width: 609px) {
+                width: 100%;
+            }
+        }
         .select-btn {
             width: 15px;
             height: 15px;
@@ -1388,6 +1398,11 @@ p.text {
                 display: flex;
                 align-items: center;
                 margin-bottom: 34px;
+                @media screen and (max-width: 740px) {
+                    width: 300px;
+                    margin: 0 auto;
+                    margin-bottom: 31px;
+                }
                 .select-btn {
                     margin-right: 10px;
                 }
@@ -1398,6 +1413,62 @@ p.text {
                 height: 195px;
                 position: relative;
                 margin-bottom: 51px;
+                .name {
+                    @media screen and (max-width: 740px) {
+                        display: none;
+                    }
+                }
+                @media screen and (max-width: 740px) {
+                    width: 252px;
+                    height: 201px;
+                    margin: 0 auto;
+                    margin-bottom: 61px;
+                }
+                .name-mobile {
+                    position: absolute;
+                    left: 35px;
+                    bottom: -20px;
+                    display: none;
+                    @media screen and (max-width: 740px) {
+                        display: block;
+                    }
+                }
+                .tovar-item-mobile-block {
+                    display: none;
+                    @media screen and (max-width: 740px) {
+                        display: block;
+                    }
+                    .price-mobile {
+                        font-size: 16px;
+                        font-weight: 600;
+                        margin-bottom: 53px;
+                        display: flex;
+                    }
+                    .count-tovar-mobile {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 43px;
+                        .min-btn {
+                            cursor: pointer;
+                        }
+                        .plus-btn {
+                            cursor: pointer;
+                        }
+                        span {
+                            margin-left: 10px;
+                            margin-right: 10px;
+                        }
+                    }
+                    .name-size-color-mobile {
+                        font-size: 16px;
+                        padding-left: 15px;
+                    }
+                    .delite-tovar-mobile {
+                        position: absolute;
+                        top: 0;
+                        right: 42px;
+                    }
+                }
                 &:last-child {
                     margin-bottom: 0;
                 }
@@ -1410,6 +1481,9 @@ p.text {
                     padding-top: 18px;
                     font-size: 16px;
                     margin-right: 37px;
+                    @media screen and (max-width: 740px) {
+                        display: none;
+                    }
                     .name {
                         margin-bottom: 27px;
                     }
@@ -1422,6 +1496,9 @@ p.text {
                     align-items: center;
                     font-size: 16px;
                     margin-right: 96px;
+                    @media screen and (max-width: 740px) {
+                        display: none;
+                    }
                     .min-btn {
                         cursor: pointer;
                     }
@@ -1438,12 +1515,18 @@ p.text {
                     font-weight: 600;
                     display: flex;
                     align-items: center;
+                    @media screen and (max-width: 740px) {
+                        display: none;
+                    }
                 }
                 .delite-tovar {
                     cursor: pointer;
                     position: absolute;
                     top: 0;
                     right: 0;
+                    @media screen and (max-width: 740px) {
+                        display: none;
+                    }
                 }
                 .select-btn {
                     position: absolute;
@@ -1454,6 +1537,13 @@ p.text {
         }
         .block-dostavka {
             width: 613px;
+            @media screen and (max-width: 634px) {
+                width: 90%;
+                margin: 0 auto;
+            }
+            @media screen and (max-width: 1170px) {
+                margin-top: 168px;
+            }
             .dostavka-title {
                 font-size: 24px;
                 font-weight: 600;
@@ -1466,8 +1556,15 @@ p.text {
                 font-weight: 400;
                 color: #666666;
                 margin-bottom: 54px;
+                @media screen and (max-width: 634px) {
+                    display: block;
+                }
                 li {
                     cursor: pointer;
+                    @media screen and (max-width: 634px) {
+                        margin-bottom: 32px;
+                        margin-left: 20px;
+                    }
                 }
                 li.active {
                     color: #363636;
@@ -1491,6 +1588,9 @@ p.text {
                         padding-left: 7px;
                         margin-bottom: 25px;
                         background: transparent;
+                        @media screen and (max-width: 607px) {
+                            width: 80%;
+                        }
                         &:last-child {
                             margin-bottom: 118px;
                         }
@@ -1510,7 +1610,22 @@ p.text {
         padding-right: 87px;
         display: flex;
         justify-content: space-between;
+        overflow: hidden;
+        @media screen and (max-width: 1170px) {
+            display: block;
+            margin: 0 auto;
+            padding-left: 0px;
+            padding-right: 0px;
+            width: 608px;
+        }
+        @media screen and (max-width: 609px) {
+            width: 100%;
+        }
         .block-pay {
+            @media screen and (max-width: 634px) {
+                width: 90%;
+                margin: 0 auto;
+            }
             .pay-title {
                 font-size: 24px;
                 font-weight: 600;
@@ -1522,10 +1637,25 @@ p.text {
                 border: 1px solid #000;
                 border-radius: 5px;
                 margin-bottom: 258px;
+                @media screen and (max-width: 768px) {
+                    width: 500px;
+                    margin: 0 auto;
+                    margin-bottom: 104px;
+                }
+                @media screen and (max-width: 634px) {
+                    width: 90%;
+                }
                 ul {
                     padding-top: 46px;
                     padding-left: 90px;
                     font-size: 24px;
+                    @media screen and (max-width: 768px) {
+                        padding-left: 40px;
+                    }
+                    @media screen and (max-width: 508px) {
+                        font-size: 18px;
+                        padding-left: 20px;
+                    }
                     li {
                         display: flex;
                         align-items: center;
@@ -1540,6 +1670,9 @@ p.text {
                             border-radius: 50%;
                             margin-right: 33px;
                             cursor: pointer;
+                            @media screen and (max-width: 580px) {
+                                margin-right: 10px;
+                            }
                         }
                         .select-btn-sircle.active {
                             background-color: #FFA800;
@@ -1550,12 +1683,23 @@ p.text {
         }
         .block-info {
             padding-top: 90px;
+            @media screen and (max-width: 1170px) {
+                padding-top: 0;
+                padding-bottom: 222px;
+                margin-left: 70px;
+            }
             table {
                 width: 605px;
                 font-size: 24px;
                 font-weight: 400;
                 height: 243px;
                 margin-bottom: 37px;
+                @media screen and (max-width: 607px) {
+                    width: 90%;
+                }
+                @media screen and (max-width: 352px) {
+                    font-size: 18px;
+                }
                 .itogo-title {
                     font-weight: 600;
                     text-transform: uppercase;
@@ -1571,6 +1715,9 @@ p.text {
                 border-radius: 5px;
                 cursor: pointer;
                 margin-left: 140px;
+                @media screen and (max-width: 480px) {
+                    margin: 0 auto;
+                }
             }
         }
     }
