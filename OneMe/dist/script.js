@@ -1590,10 +1590,10 @@ module.exports = g;
 
 /***/ }),
 
-/***/ "./src/js/components/footerMenu.js":
-/*!*****************************************!*\
-  !*** ./src/js/components/footerMenu.js ***!
-  \*****************************************/
+/***/ "./src/js/components/footerDostavkaMenu.js":
+/*!*************************************************!*\
+  !*** ./src/js/components/footerDostavkaMenu.js ***!
+  \*************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1608,7 +1608,17 @@ __webpack_require__.r(__webpack_exports__);
 
 var footerMenu = function footerMenu() {
   var el = document.querySelectorAll('.block');
+  var btnDostavka = document.querySelectorAll('.block-mobile-dostavka');
   el.forEach(function (item) {
+    item.addEventListener('click', function () {
+      if (item.classList.contains('active')) {
+        item.classList.remove('active');
+      } else {
+        item.classList.add('active');
+      }
+    });
+  });
+  btnDostavka.forEach(function (item) {
     item.addEventListener('click', function () {
       if (item.classList.contains('active')) {
         item.classList.remove('active');
@@ -1821,7 +1831,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_venobox__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/venobox */ "./src/js/components/venobox.js");
 /* harmony import */ var _components_widthSize__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/widthSize */ "./src/js/components/widthSize.js");
 /* harmony import */ var _components_selectBtn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/selectBtn */ "./src/js/components/selectBtn.js");
-/* harmony import */ var _components_footerMenu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/footerMenu */ "./src/js/components/footerMenu.js");
+/* harmony import */ var _components_footerDostavkaMenu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/footerDostavkaMenu */ "./src/js/components/footerDostavkaMenu.js");
 /* harmony import */ var _components_mobileMenu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/mobileMenu */ "./src/js/components/mobileMenu.js");
 
 
@@ -1834,7 +1844,7 @@ window.addEventListener('DOMContentLoaded', function () {
   Object(_components_slider__WEBPACK_IMPORTED_MODULE_0__["default"])();
   Object(_components_widthSize__WEBPACK_IMPORTED_MODULE_2__["default"])();
   Object(_components_selectBtn__WEBPACK_IMPORTED_MODULE_3__["default"])();
-  Object(_components_footerMenu__WEBPACK_IMPORTED_MODULE_4__["default"])();
+  Object(_components_footerDostavkaMenu__WEBPACK_IMPORTED_MODULE_4__["default"])();
   Object(_components_mobileMenu__WEBPACK_IMPORTED_MODULE_5__["default"])();
 });
 

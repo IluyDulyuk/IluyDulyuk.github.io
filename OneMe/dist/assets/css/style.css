@@ -642,12 +642,21 @@ p.text {
           font-weight: 400; }
 
 .dostavka .wrapper {
+  display: block;
   width: 915px;
   height: 308px;
   border: 1px solid #000;
   border-radius: 5px;
   margin-left: 100px;
   margin-bottom: 40px; }
+  @media screen and (max-width: 1030px) {
+    .dostavka .wrapper {
+      width: 699px;
+      margin: 0 auto;
+      margin-bottom: 108px; } }
+  @media screen and (max-width: 700px) {
+    .dostavka .wrapper {
+      display: none; } }
   .dostavka .wrapper .dostavka-title {
     font-size: 14px;
     font-weight: 600; }
@@ -660,11 +669,21 @@ p.text {
     padding-left: 68px;
     padding-right: 110px;
     justify-content: space-between; }
+    @media screen and (max-width: 1030px) {
+      .dostavka .wrapper .block-top {
+        padding-left: 49px;
+        padding-right: 25px; } }
     .dostavka .wrapper .block-top .sposob p {
       padding-top: 36px; }
+    @media screen and (max-width: 1030px) {
+      .dostavka .wrapper .block-top .cost {
+        padding-left: 30px; } }
     .dostavka .wrapper .block-top .cost p {
       padding-top: 89px;
       padding-left: 50px; }
+      @media screen and (max-width: 1030px) {
+        .dostavka .wrapper .block-top .cost p {
+          padding-left: 70px; } }
   .dostavka .wrapper .block-bottom {
     padding-top: 40px;
     padding-left: 68px; }
@@ -674,8 +693,41 @@ p.text {
         padding-top: 20px; }
       .dostavka .wrapper .block-bottom .values .block-price {
         padding-left: 123px; }
+        @media screen and (max-width: 1030px) {
+          .dostavka .wrapper .block-bottom .values .block-price {
+            padding-left: 100px; } }
         .dostavka .wrapper .block-bottom .values .block-price li {
           padding-top: 20px; }
+
+.dostavka .mobile-wrapper {
+  display: none;
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin-bottom: 114px; }
+  @media screen and (max-width: 700px) {
+    .dostavka .mobile-wrapper {
+      display: block; } }
+  .dostavka .mobile-wrapper .mobile-wrapper-title {
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    padding-left: 31px;
+    margin-bottom: 17px; }
+    .dostavka .mobile-wrapper .mobile-wrapper-title::after {
+      content: url("../img/footer-arrow.svg");
+      margin-left: 10px; }
+  .dostavka .mobile-wrapper .block-mobile-dostavka {
+    border-bottom: 1px #C7C1C1 solid;
+    padding-top: 32px;
+    padding-bottom: 10px; }
+    .dostavka .mobile-wrapper .block-mobile-dostavka table {
+      display: none; }
+      .dostavka .mobile-wrapper .block-mobile-dostavka table td {
+        padding-left: 31px; }
+  .dostavka .mobile-wrapper .block-mobile-dostavka.active table {
+    display: block; }
 
 .pay {
   padding-bottom: 285px; }
