@@ -522,7 +522,7 @@ p.text {
         left: 0; } }
     @media screen and (max-width: 769px) {
       .footer .wrapper .block-4 {
-        position: static; } }
+        position: relative; } }
     .footer .wrapper .block-5 h3 {
       padding-bottom: 16px; }
     @media screen and (max-width: 1186px) {
