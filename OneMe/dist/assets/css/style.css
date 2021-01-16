@@ -624,7 +624,9 @@ p.text {
       text-decoration: line-through; }
     .catalog .container .product-item .block-size {
       padding-left: 8px;
-      padding-top: 7px; }
+      padding-top: 7px;
+      width: 195px;
+      overflow: hidden; }
       .catalog .container .product-item .block-size span {
         font-size: 14px;
         font-weight: 400;
@@ -632,6 +634,8 @@ p.text {
       .catalog .container .product-item .block-size ul {
         display: flex;
         padding-top: 3px; }
+        .catalog .container .product-item .block-size ul:first-child {
+          width: 195px; }
         .catalog .container .product-item .block-size ul li {
           margin-right: 12px;
           font-size: 14px;
