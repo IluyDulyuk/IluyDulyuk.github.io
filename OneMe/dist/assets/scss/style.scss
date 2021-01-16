@@ -663,9 +663,30 @@ p.text {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        @media screen and (max-width: 1358px) {
+            width: 767px;
+            justify-content: center;
+        }
+        @media screen and (max-width: 769px) {
+            width: 100%;
+            justify-content: center;
+        }
+        @media screen and (max-width: 580px) {
+            width: 195px;
+        }
+        a {
+            color: #363636;
+        }
         .product-item {
             padding-bottom: 64px;
             margin-right: 88px;
+            width: 195px;
+            @media screen and (max-width: 1358px) {
+                margin-right: 50px;
+            }
+            @media screen and (max-width: 580px) {
+                margin-right: 0;
+            }
             &:last-child {
                 padding-bottom: 176px;
             }
