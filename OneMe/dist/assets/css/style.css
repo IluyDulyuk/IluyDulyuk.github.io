@@ -63,6 +63,9 @@ body {
   position: relative;
   padding-left: 112px;
   padding-bottom: 36px; }
+  @media screen and (max-width: 398px) {
+    .title {
+      padding-left: 40px; } }
   .title::before {
     content: '';
     background-color: #FFA800;
@@ -90,7 +93,7 @@ p.text {
   @media screen and (max-width: 456px) {
     p.text {
       width: 263px;
-      margin-left: 70px; } }
+      margin-left: 40px; } }
 
 .header {
   padding-top: 50px;
@@ -537,6 +540,9 @@ p.text {
   padding-top: 7px;
   padding-left: 113px;
   margin-bottom: 29px; }
+  @media screen and (max-width: 762px) {
+    .before-links {
+      display: none; } }
   .before-links a {
     color: #727171;
     font-size: 14px;
@@ -545,6 +551,23 @@ p.text {
       text-decoration: underline; }
   .before-links a.active {
     color: #363636; }
+
+.before-links-mobile {
+  display: none; }
+  @media screen and (max-width: 762px) {
+    .before-links-mobile {
+      display: flex;
+      margin-bottom: 43px;
+      margin-left: 51px;
+      display: flex; }
+      .before-links-mobile::before {
+        content: url("../img/back-arow.svg");
+        position: relative;
+        right: 5px; }
+      .before-links-mobile a {
+        color: #000000;
+        font-size: 18px;
+        font-weight: 500; } }
 
 .catalog .container {
   width: 1357px;
@@ -766,6 +789,9 @@ p.text {
 
 .tovar .content {
   display: flex; }
+  @media screen and (max-width: 1236px) {
+    .tovar .content {
+      display: block; } }
   .tovar .content .block-view {
     display: flex;
     padding-bottom: 58px; }
@@ -782,10 +808,17 @@ p.text {
         height: auto; }
   .tovar .content .block-price-size {
     padding-left: 51px; }
+    @media screen and (max-width: 1236px) {
+      .tovar .content .block-price-size {
+        padding-left: 75px;
+        display: inline-block; } }
     .tovar .content .block-price-size .tovar-price {
       font-size: 24px;
       font-weight: 500;
       padding-bottom: 15px; }
+      @media screen and (max-width: 1236px) {
+        .tovar .content .block-price-size .tovar-price {
+          padding-bottom: 34px; } }
     .tovar .content .block-price-size .block-tovar-size p {
       color: #8F8F8F;
       font-size: 16px;
@@ -869,6 +902,9 @@ p.text {
           background-color: #F1F1F1; }
   .tovar .content .block-info {
     padding-left: 74px; }
+    @media screen and (max-width: 1298px) {
+      .tovar .content .block-info {
+        padding-left: 44px; } }
     .tovar .content .block-info .info-title {
       font-size: 14px;
       font-weight: 500; }
