@@ -1686,10 +1686,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var select = function select() {
   var btns = document.querySelectorAll('.select-btn');
-  var parrent = document.querySelector('.pay-select-form > ul');
+  var parrentOne = document.querySelector('.pay-select-form > ul');
+  var parrentTwo = document.querySelector('.sdek-list');
   var btnsSircle = document.querySelectorAll('.select-btn-sircle');
 
-  if (!parrent || !btns || !btnsSircle) {
+  if (!parrentOne || !parrentTwo || !btns || !btnsSircle) {
     return;
   }
 
@@ -1709,7 +1710,15 @@ var select = function select() {
     });
   }
 
-  parrent.addEventListener('click', function (e) {
+  parrentOne.addEventListener('click', function (e) {
+    removeActive();
+    btnsSircle.forEach(function (item) {
+      if (item == e.target) {
+        item.classList.add('active');
+      }
+    });
+  });
+  parrentTwo.addEventListener('click', function (e) {
     removeActive();
     btnsSircle.forEach(function (item) {
       if (item == e.target) {
@@ -1737,6 +1746,9 @@ var slider = function slider() {
     arrows: false,
     dots: true,
     autoplay: true
+  });
+  $('.block-tovar-photo-mobile').slick({
+    arrows: false
   });
   $('.new-clothes-slider').slick({
     infinite: true,
