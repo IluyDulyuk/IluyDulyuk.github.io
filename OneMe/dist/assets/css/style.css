@@ -735,6 +735,10 @@ p.text {
 
 .lk .title {
   padding-bottom: 51px; }
+  @media screen and (max-width: 760px) {
+    .lk .title {
+      text-align: center;
+      margin-left: -25px; } }
 
 .lk .content {
   display: flex;
