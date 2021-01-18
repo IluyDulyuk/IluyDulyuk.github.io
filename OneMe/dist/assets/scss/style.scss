@@ -207,17 +207,51 @@ p.text {
         @media screen and (max-width: 760px) {
             position: absolute;
             top: 85px;
-            left: 32%;
+            left: 29%;
+        }
+        @media screen and (max-width: 706px) {
+            left: 27%;
+        }
+        @media screen and (max-width: 690px) {
+            left: 26.5%;
+        }
+        @media screen and (max-width: 666px) {
+            left: 25.5%;
+        }
+        @media screen and (max-width: 634px) {
+            left: 24.5%;
+        }
+        @media screen and (max-width: 604px) {
+            left: 23.5%;
+        }
+        @media screen and (max-width: 560px) {
+            left: 21.5%;
+        }
+        @media screen and (max-width: 522px) {
+            left: 19%;
+        }
+        @media screen and (max-width: 472px) {
+            left: 16%;
         }
         @media screen and (max-width: 438px) {
             position: absolute;
             top: 85px;
-            left: 20%;
+            left: 14%;
+        }
+        @media screen and (max-width: 390px) {
+            position: absolute;
+            top: 85px;
+            left: 12%;
         }
         @media screen and (max-width: 354px) {
             position: absolute;
             top: 85px;
-            left: 15%;
+            left: 9%;
+        }
+        @media screen and (max-width: 328px) {
+            position: absolute;
+            top: 85px;
+            left: 5%;
         }
         .mobile-link {
             display: none;
@@ -962,7 +996,7 @@ p.text {
         }
         .block-btn {
             padding-top: 35px;
-            padding-bottom: 100px;
+            padding-bottom: 30px;
             display: flex;
             justify-content: space-between;
             button {
@@ -979,6 +1013,9 @@ p.text {
         }
         .password-block {
             width: 184px;
+            @media screen and (max-width: 494px) {
+                width: 262px;
+            }
             form {
                 @media screen and (max-width: 494px) {
                     margin-bottom: 62px;

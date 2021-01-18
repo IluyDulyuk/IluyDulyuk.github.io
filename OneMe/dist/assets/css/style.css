@@ -207,17 +207,51 @@ p.text {
       .header .header-second-menu {
         position: absolute;
         top: 85px;
-        left: 32%; } }
+        left: 29%; } }
+    @media screen and (max-width: 706px) {
+      .header .header-second-menu {
+        left: 27%; } }
+    @media screen and (max-width: 690px) {
+      .header .header-second-menu {
+        left: 26.5%; } }
+    @media screen and (max-width: 666px) {
+      .header .header-second-menu {
+        left: 25.5%; } }
+    @media screen and (max-width: 634px) {
+      .header .header-second-menu {
+        left: 24.5%; } }
+    @media screen and (max-width: 604px) {
+      .header .header-second-menu {
+        left: 23.5%; } }
+    @media screen and (max-width: 560px) {
+      .header .header-second-menu {
+        left: 21.5%; } }
+    @media screen and (max-width: 522px) {
+      .header .header-second-menu {
+        left: 19%; } }
+    @media screen and (max-width: 472px) {
+      .header .header-second-menu {
+        left: 16%; } }
     @media screen and (max-width: 438px) {
       .header .header-second-menu {
         position: absolute;
         top: 85px;
-        left: 20%; } }
+        left: 14%; } }
+    @media screen and (max-width: 390px) {
+      .header .header-second-menu {
+        position: absolute;
+        top: 85px;
+        left: 12%; } }
     @media screen and (max-width: 354px) {
       .header .header-second-menu {
         position: absolute;
         top: 85px;
-        left: 15%; } }
+        left: 9%; } }
+    @media screen and (max-width: 328px) {
+      .header .header-second-menu {
+        position: absolute;
+        top: 85px;
+        left: 5%; } }
     .header .header-second-menu .mobile-link {
       display: none; }
       @media screen and (max-width: 760px) {
@@ -818,7 +852,7 @@ p.text {
         padding-bottom: 1px; }
   .lk .content .block-btn {
     padding-top: 35px;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
     display: flex;
     justify-content: space-between; }
     .lk .content .block-btn button {
@@ -832,6 +866,9 @@ p.text {
         transition: all 0.5s ease; }
   .lk .content .password-block {
     width: 184px; }
+    @media screen and (max-width: 494px) {
+      .lk .content .password-block {
+        width: 262px; } }
     @media screen and (max-width: 494px) {
       .lk .content .password-block form {
         margin-bottom: 62px; } }
