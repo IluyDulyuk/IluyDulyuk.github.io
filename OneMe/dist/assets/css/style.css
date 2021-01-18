@@ -867,7 +867,9 @@ p.text {
     width: 184px; }
     @media screen and (max-width: 494px) {
       .lk .content .password-block {
-        width: 262px; } }
+        width: 262px; }
+        .lk .content .password-block .lk-title {
+          padding-left: 2px; } }
     @media screen and (max-width: 494px) {
       .lk .content .password-block form {
         margin-bottom: 62px; } }

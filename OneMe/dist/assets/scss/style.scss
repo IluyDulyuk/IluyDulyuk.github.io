@@ -1014,6 +1014,9 @@ p.text {
             width: 184px;
             @media screen and (max-width: 494px) {
                 width: 262px;
+                .lk-title {
+                    padding-left: 2px;
+                }
             }
             form {
                 @media screen and (max-width: 494px) {
