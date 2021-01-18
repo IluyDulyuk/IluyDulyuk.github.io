@@ -27,7 +27,7 @@
         <div class="header-second-menu">
             <a href="#" class="mobile-link"><img src="./assets/img/inst-vector.svg" alt="inst"></a>
             <div class="header-tel"><a href="#"><img src="./assets/img/tel-vector.svg" alt="tel"></a></div>
-            <div class="header-account"><a href="#"><img src="./assets/img/account-vector.svg" alt="account"></a></div>
+            <div class="header-account"><a href="./lk.html"><img src="./assets/img/account-vector.svg" alt="account"></a></div>
             <div class="header-cart">
                 <a href="./cart.html"><img src="./assets/img/cart-vector.svg" alt="cart"></a>
                 <div class="cart-count active">2</div>
@@ -55,6 +55,65 @@
         <h3 class="title">Возврат и обмен</h3>
         <p class="text">С другой стороны реализация намеченных плановых заданий позволяет выполнять важные задания по разработке форм развития. Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям.</p>
     </section>
+    <div class="reviews-modal">
+        <div class="modal-box">
+            <div class="modal-title">Новый отзыв</div>
+            <form action="#" class="form">
+                <textarea name="reviews"></textarea>
+                <button class="submit-reviews" type="submit">Отправить</button>
+                <button class="close-modal">Отмена</button>
+            </form>
+        </div>
+    </div>
+    <div class="error-modal">
+        <div class="modal-box">
+            <div class="modal-text">Оставлять отзывы могут только авторизиованные пользователи</div>
+            <button class="btn-signin">Регистрация</button>
+            <button class="btn-login">Войти</button>
+        </div>
+    </div>
+    <div class="login-modal">
+        <div class="modal-box">
+            <div class="block-title">
+                <h5>Зарегистрироваться </h5>
+                <h5>Войти</h5>
+            </div>
+            <form action="#" class="form">
+                <input type="text" name="emailOrNumber" placeholder="Адрес e-mail / номер телефона">
+                <input type="password" name="password" placeholder="Пароль:">
+                <button class="btn-login">Войти</button>
+            </form>
+            <div class="forget-password">Забыли пароль?</div>
+        </div>
+    </div>
+    <div class="signin-modal">
+        <div class="modal-box">
+            <div class="block-title">
+                <h5>Зарегистрироваться</h5>
+                <h5>Войти</h5>
+            </div>
+            <form action="#" class="form">
+                <input type="text" name="emailOrNumber" placeholder="Адрес e-mail / номер телефона">
+                <input type="password" name="password" placeholder="Пароль:">
+                <button class="btn-signin">Зарегистрироваться</button>
+            </form>
+            <div class="forget-password">Забыли пароль?</div>
+        </div>
+    </div>
+    <div class="forget-modal">
+        <div class="signin-modal active">
+            <div class="modal-box">
+                <div class="block-title">
+                    <h5>Смените свой пароль</h5>
+                </div>
+                <p>Введите в поле адрес электронной почты. Мы отправим вам сообщение по электронной почте с инструкциями по созданию нового пароля.</p>
+                <form action="#" class="form">
+                    <input type="text" name="emailOrNumber" placeholder="Адрес e-mail / номер телефона">
+                    <button class="btn-forget">Восстановить пароль</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="wrapper">

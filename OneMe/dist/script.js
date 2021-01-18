@@ -1590,6 +1590,117 @@ module.exports = g;
 
 /***/ }),
 
+/***/ "./src/js/components/checkPassword.js":
+/*!********************************************!*\
+  !*** ./src/js/components/checkPassword.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.for-each.js */ "./node_modules/core-js/modules/es.array.for-each.js");
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+var checkPassword = function checkPassword() {
+  var inputs = document.querySelectorAll('.password-block-input > input'),
+      checkPasswordBtn = document.querySelectorAll('.check-password'),
+      checkPasswordActiveBtn = document.querySelectorAll('.check-password-active');
+
+  if (!inputs || !checkPasswordActiveBtn || !checkPasswordBtn) {
+    return;
+  }
+
+  checkPasswordActiveBtn.forEach(function (item) {
+    if (item.getAttribute('data-button') == 2) {
+      item.addEventListener('click', function () {
+        if (item.classList.contains('active')) {
+          item.classList.remove('active');
+          checkPasswordBtn.forEach(function (item) {
+            if (item.getAttribute('data-button') == 1) {
+              item.classList.add('active');
+              inputs.forEach(function (item) {
+                if (item.getAttribute('data-input') == 1) {
+                  item.removeAttribute('type');
+                  item.setAttribute('type', 'text');
+                }
+              });
+            }
+          });
+        }
+      });
+    }
+  });
+  checkPasswordBtn.forEach(function (item) {
+    if (item.getAttribute('data-button') == 1) {
+      item.addEventListener('click', function () {
+        if (item.classList.contains('active')) {
+          item.classList.remove('active');
+          checkPasswordActiveBtn.forEach(function (item) {
+            if (item.getAttribute('data-button') == 2) {
+              item.classList.add('active');
+              inputs.forEach(function (item) {
+                if (item.getAttribute('data-input') == 1) {
+                  item.removeAttribute('type');
+                  item.setAttribute('type', 'password');
+                }
+              });
+            }
+          });
+        }
+      });
+    }
+  });
+  checkPasswordActiveBtn.forEach(function (item) {
+    if (item.getAttribute('data-button') == 4) {
+      item.addEventListener('click', function () {
+        if (item.classList.contains('active')) {
+          item.classList.remove('active');
+          checkPasswordBtn.forEach(function (item) {
+            if (item.getAttribute('data-button') == 3) {
+              item.classList.add('active');
+              inputs.forEach(function (item) {
+                if (item.getAttribute('data-input') == 2) {
+                  item.removeAttribute('type');
+                  item.setAttribute('type', 'text');
+                }
+              });
+            }
+          });
+        }
+      });
+    }
+  });
+  checkPasswordBtn.forEach(function (item) {
+    if (item.getAttribute('data-button') == 3) {
+      item.addEventListener('click', function () {
+        if (item.classList.contains('active')) {
+          item.classList.remove('active');
+          checkPasswordActiveBtn.forEach(function (item) {
+            if (item.getAttribute('data-button') == 4) {
+              item.classList.add('active');
+              inputs.forEach(function (item) {
+                if (item.getAttribute('data-input') == 2) {
+                  item.removeAttribute('type');
+                  item.setAttribute('type', 'password');
+                }
+              });
+            }
+          });
+        }
+      });
+    }
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (checkPassword);
+
+/***/ }),
+
 /***/ "./src/js/components/footerDostavkaMenu.js":
 /*!*************************************************!*\
   !*** ./src/js/components/footerDostavkaMenu.js ***!
@@ -1855,6 +1966,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_selectBtn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/selectBtn */ "./src/js/components/selectBtn.js");
 /* harmony import */ var _components_footerDostavkaMenu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/footerDostavkaMenu */ "./src/js/components/footerDostavkaMenu.js");
 /* harmony import */ var _components_mobileMenu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/mobileMenu */ "./src/js/components/mobileMenu.js");
+/* harmony import */ var _components_checkPassword__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/checkPassword */ "./src/js/components/checkPassword.js");
+
 
 
 
@@ -1868,6 +1981,7 @@ window.addEventListener('DOMContentLoaded', function () {
   Object(_components_selectBtn__WEBPACK_IMPORTED_MODULE_3__["default"])();
   Object(_components_footerDostavkaMenu__WEBPACK_IMPORTED_MODULE_4__["default"])();
   Object(_components_mobileMenu__WEBPACK_IMPORTED_MODULE_5__["default"])();
+  Object(_components_checkPassword__WEBPACK_IMPORTED_MODULE_6__["default"])();
 });
 
 /***/ })

@@ -818,7 +818,7 @@ p.text {
         padding-bottom: 1px; }
   .lk .content .block-btn {
     padding-top: 35px;
-    padding-bottom: 165px;
+    padding-bottom: 100px;
     display: flex;
     justify-content: space-between; }
     .lk .content .block-btn button {
@@ -843,9 +843,27 @@ p.text {
       height: 20px;
       padding-left: 2px;
       border-bottom: 1px solid #D3D1CB;
-      margin-bottom: 23px; }
+      margin-bottom: 23px;
+      position: relative; }
       .lk .content .password-block form input::placeholder {
         color: #444; }
+    .lk .content .password-block form .password-block-input {
+      position: relative; }
+      .lk .content .password-block form .password-block-input .check-password {
+        display: none; }
+      .lk .content .password-block form .password-block-input .check-password.active {
+        display: block; }
+      .lk .content .password-block form .password-block-input .check-password-active {
+        display: none; }
+      .lk .content .password-block form .password-block-input .check-password-active.active {
+        display: block; }
+    .lk .content .password-block form img {
+      width: 15px;
+      height: auto;
+      position: absolute;
+      top: 2px;
+      right: 5px;
+      cursor: pointer; }
   .lk .content .orders-block {
     width: 634px; }
     @media screen and (max-width: 720px) {
@@ -883,6 +901,7 @@ p.text {
       background: transparent;
       margin-top: 30px;
       margin-left: 10px;
+      margin-bottom: 165px;
       cursor: pointer; }
       @media screen and (max-width: 1153px) {
         .lk .content .orders-block .our-order-btn {
