@@ -205,53 +205,15 @@ p.text {
             right: 44px;
         }
         @media screen and (max-width: 760px) {
-            position: absolute;
+            display: flex;
+            width: 270px;
+            justify-content: space-between;
             top: 85px;
-            left: 29%;
+            left: 50%;
+            margin-left: -160px;
         }
-        @media screen and (max-width: 706px) {
-            left: 27%;
-        }
-        @media screen and (max-width: 690px) {
-            left: 26.5%;
-        }
-        @media screen and (max-width: 666px) {
-            left: 25.5%;
-        }
-        @media screen and (max-width: 634px) {
-            left: 24.5%;
-        }
-        @media screen and (max-width: 604px) {
-            left: 23.5%;
-        }
-        @media screen and (max-width: 560px) {
-            left: 21.5%;
-        }
-        @media screen and (max-width: 522px) {
-            left: 19%;
-        }
-        @media screen and (max-width: 472px) {
-            left: 16%;
-        }
-        @media screen and (max-width: 438px) {
-            position: absolute;
-            top: 85px;
-            left: 14%;
-        }
-        @media screen and (max-width: 390px) {
-            position: absolute;
-            top: 85px;
-            left: 12%;
-        }
-        @media screen and (max-width: 354px) {
-            position: absolute;
-            top: 85px;
-            left: 9%;
-        }
-        @media screen and (max-width: 328px) {
-            position: absolute;
-            top: 85px;
-            left: 5%;
+        @media screen and (max-width: 420px) {
+            margin-left: -147px;
         }
         .mobile-link {
             display: none;
