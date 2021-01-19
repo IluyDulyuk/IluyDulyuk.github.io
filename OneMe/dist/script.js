@@ -1879,7 +1879,7 @@ var slider = function slider() {
         slidesToShow: 2
       }
     }, {
-      breakpoint: 891,
+      breakpoint: 871,
       settings: "unslick"
     }]
   });

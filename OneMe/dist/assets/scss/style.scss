@@ -100,6 +100,7 @@ p.text {
     padding-bottom: 50px;
     @media screen and (max-width: 1281px) {
         display: block;
+        
     }
     @media screen and (max-width: 760px) {
         padding-top: 36px;
@@ -111,7 +112,11 @@ p.text {
     }
     .header-logo_link {
         display: flex;
+        @media screen and (max-width: 1281px) {
+            display: none;
+        }
         @media screen and (max-width: 760px) {
+            display: flex;
             justify-content: center;
         }
         .mobile-link {
@@ -173,8 +178,11 @@ p.text {
     .header-menu-list {
         display: flex;
         @media screen and (max-width: 1281px) {
-            justify-content: center;
-            padding-top: 40px;
+            justify-content: space-between;
+            padding-top: 70px;
+            width: 90%;
+            margin: 0 auto;
+            margin-left: 120px;
         }
         @media screen and (max-width: 866px) {
             font-size: 17px;
@@ -184,6 +192,9 @@ p.text {
         }
         .header-menu-item {
             margin-right: 26px;
+            @media screen and (max-width: 1281px) {
+                margin-right: 0;
+            }
             &:last-child {
                 margin-right: 0;
             }
@@ -207,17 +218,72 @@ p.text {
             }
         }
     }
+    .header-second-menu-mobile {
+        display: none;
+        .vk-link {
+            margin-left: 29px;
+        }
+        .inst-link {
+            margin-left: 29px;
+        }
+        .header-tel {
+            margin-left: 29px;
+        }
+        .header-account {
+            margin-left: 29px;
+        }
+        .header-account {
+            margin-left: 29px;
+        }
+        .header-cart {
+            position: relative;
+            margin-left: 29px;
+            .cart-count {
+                display: none;
+            }
+            .cart-count.active {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: #FFA800;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                font-weight: 600;
+                font-size: 17px;
+                top: 20px;
+                left: 20px;
+            }
+        }
+        @media screen and (max-width: 1281px) {
+            position: absolute;
+            top: 47px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding-right: 46px;
+            padding-left: 46px;
+        }
+        @media screen and (max-width: 760px) {
+            display: none;
+        }
+        .wrapper {
+            display: flex;
+        }
+    }
     .header-second-menu {
         display: flex;
         align-items: center;
         @media screen and (max-width: 1281px) {
+            display: none;
             position: absolute;
             top: 51px;
             right: 44px;
         }
         @media screen and (max-width: 760px) {
             display: flex;
-            width: 270px;
+            width: 295px;
             justify-content: space-between;
             top: 85px;
             left: 50%;
@@ -564,6 +630,11 @@ p.text {
             }
         }
         .block-1 {
+            .footer-logo {
+                @media screen and (max-width: 769px) {
+                    
+                }
+            }
             a {
                 color: #363636;
                 font-size: 14px;
