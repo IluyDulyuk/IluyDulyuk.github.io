@@ -123,7 +123,7 @@ p.text {
             display: none;
             @media screen and (max-width: 760px) {
                 display: block;
-                margin-right: 49px;
+                margin-right: 57px;
             }
         }
         .logo {
@@ -283,14 +283,14 @@ p.text {
         }
         @media screen and (max-width: 760px) {
             display: flex;
-            width: 295px;
+            width: 305px;
             justify-content: space-between;
             top: 85px;
             left: 50%;
-            margin-left: -160px;
+            margin-left: -165px;
         }
         @media screen and (max-width: 420px) {
-            margin-left: -147px;
+            margin-left: -150px;
         }
         .mobile-link {
             display: none;
@@ -2036,6 +2036,9 @@ p.text {
                 }
                 @media screen and (max-width: 607px) {
                     width: 90%;
+                }
+                @media screen and (max-width: 420px) {
+                    font-size: 20px;
                 }
                 @media screen and (max-width: 352px) {
                     font-size: 18px;

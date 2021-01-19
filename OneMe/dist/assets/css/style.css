@@ -138,7 +138,7 @@ p.text {
       @media screen and (max-width: 760px) {
         .header .header-logo_link .mobile-link {
           display: block;
-          margin-right: 49px; } }
+          margin-right: 57px; } }
     .header .header-logo_link .logo {
       display: block;
       margin-right: 27.5px; }
@@ -271,14 +271,14 @@ p.text {
     @media screen and (max-width: 760px) {
       .header .header-second-menu {
         display: flex;
-        width: 295px;
+        width: 305px;
         justify-content: space-between;
         top: 85px;
         left: 50%;
-        margin-left: -160px; } }
+        margin-left: -165px; } }
     @media screen and (max-width: 420px) {
       .header .header-second-menu {
-        margin-left: -147px; } }
+        margin-left: -150px; } }
     .header .header-second-menu .mobile-link {
       display: none; }
       @media screen and (max-width: 760px) {
@@ -1682,6 +1682,9 @@ p.text {
       @media screen and (max-width: 607px) {
         .cart .block-pay-info .block-info table {
           width: 90%; } }
+      @media screen and (max-width: 420px) {
+        .cart .block-pay-info .block-info table {
+          font-size: 20px; } }
       @media screen and (max-width: 352px) {
         .cart .block-pay-info .block-info table {
           font-size: 18px; } }
