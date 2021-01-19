@@ -61,7 +61,7 @@ body {
   display: block;
   position: fixed;
   right: 30px;
-  bottom: 50px;
+  bottom: 70px;
   z-index: 10000; }
   @media screen and (max-width: 622px) {
     .whatsapp-icon {
@@ -465,7 +465,7 @@ p.text {
     @media screen and (max-width: 769px) {
       .footer .wrapper {
         display: block;
-        padding-left: 38px;
+        padding-left: 20px;
         width: 80%; } }
     .footer .wrapper .footer-title {
       font-weight: 600;
@@ -692,10 +692,13 @@ p.text {
       padding-left: 50px; }
       @media screen and (max-width: 1030px) {
         .dostavka .wrapper .block-top .cost p {
-          padding-left: 70px; } }
+          padding-left: 38px; } }
   .dostavka .wrapper .block-bottom {
     padding-top: 40px;
     padding-left: 68px; }
+    @media screen and (max-width: 1030px) {
+      .dostavka .wrapper .block-bottom {
+        padding-left: 50px; } }
     .dostavka .wrapper .block-bottom .values {
       display: flex; }
       .dostavka .wrapper .block-bottom .values .block-values li {
@@ -704,7 +707,7 @@ p.text {
         padding-left: 123px; }
         @media screen and (max-width: 1030px) {
           .dostavka .wrapper .block-bottom .values .block-price {
-            padding-left: 100px; } }
+            padding-left: 70px; } }
         .dostavka .wrapper .block-bottom .values .block-price li {
           padding-top: 20px; }
 
@@ -1494,8 +1497,7 @@ p.text {
         cursor: pointer; }
         @media screen and (max-width: 634px) {
           .cart .block-tovar-dostavka .block-dostavka .sposob-list li {
-            margin-bottom: 32px;
-            margin-left: 20px; } }
+            margin-bottom: 32px; } }
       .cart .block-tovar-dostavka .block-dostavka .sposob-list li.active {
         color: #363636;
         font-weight: 600;
@@ -1526,8 +1528,11 @@ p.text {
       .cart .block-tovar-dostavka .block-dostavka .form-block p {
         text-align: left;
         font-size: 18px;
-        padding-left: 54px;
+        padding-left: 62px;
         line-height: 21.94px; }
+        @media screen and (max-width: 607px) {
+          .cart .block-tovar-dostavka .block-dostavka .form-block p {
+            padding-left: 33px; } }
 
 .cart .block-pay-info {
   padding-left: 101px;

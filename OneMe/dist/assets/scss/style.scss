@@ -43,7 +43,7 @@ body {
     display: block;
     position: fixed;
     right: 30px;
-    bottom: 50px;
+    bottom: 70px;
     z-index: 10000;
     @media screen and (max-width: 622px) {
         left: 29px;
@@ -512,7 +512,7 @@ p.text {
         }
         @media screen and (max-width: 769px) {
             display: block;
-            padding-left: 38px;
+            padding-left: 20px;
             width: 80%;
         }
         .footer-title {
@@ -802,7 +802,7 @@ p.text {
                     padding-top: 89px;
                     padding-left: 50px;
                     @media screen and (max-width: 1030px) {
-                        padding-left: 70px;
+                        padding-left: 38px;
                     }
                 }
             }
@@ -810,6 +810,9 @@ p.text {
         .block-bottom {
             padding-top: 40px;
             padding-left: 68px;
+            @media screen and (max-width: 1030px) {
+                padding-left: 50px;
+            }
             .values {
                 display: flex;
                 .block-values {
@@ -820,7 +823,7 @@ p.text {
                 .block-price {
                     padding-left: 123px;
                     @media screen and (max-width: 1030px) {
-                        padding-left: 100px;
+                        padding-left: 70px;
                     }
                     li {
                         padding-top: 20px;
@@ -1810,7 +1813,6 @@ p.text {
                     cursor: pointer;
                     @media screen and (max-width: 634px) {
                         margin-bottom: 32px;
-                        margin-left: 20px;
                     }
                 }
                 li.active {
@@ -1848,8 +1850,11 @@ p.text {
                 p {
                     text-align: left;
                     font-size: 18px;
-                    padding-left: 54px;
+                    padding-left: 62px;
                     line-height: 21.94px;
+                    @media screen and (max-width: 607px) {
+                        padding-left: 33px;
+                    }
                 }
             }
         }
