@@ -251,7 +251,7 @@ p.text {
         top: 47px;
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        width: 85%;
         padding-right: 46px;
         padding-left: 46px; } }
     @media screen and (max-width: 760px) {
