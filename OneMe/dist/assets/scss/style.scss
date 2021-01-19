@@ -571,7 +571,10 @@ p.text {
                 display: flex;
                 align-items: center;
                 padding-top: 15.96px;
-                margin-bottom: 12px;
+                &:nth-child(3) {
+                    padding-top: 3px;
+                    margin-bottom: 12px;
+                }
                 &::before {
                     content: url('../img/footer-phone-icon.svg');
                     margin-right: 7.38px;
@@ -580,6 +583,9 @@ p.text {
             .footer-tel {
                 position: relative;
                 left: -2px;
+                &:first-child {
+                    
+                }
             }
             .footer-car {
                 font-size: 14px;

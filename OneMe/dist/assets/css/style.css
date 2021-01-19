@@ -505,8 +505,10 @@ p.text {
       font-weight: 400;
       display: flex;
       align-items: center;
-      padding-top: 15.96px;
-      margin-bottom: 12px; }
+      padding-top: 15.96px; }
+      .footer .wrapper .block-1 a:nth-child(3) {
+        padding-top: 3px;
+        margin-bottom: 12px; }
       .footer .wrapper .block-1 a::before {
         content: url("../img/footer-phone-icon.svg");
         margin-right: 7.38px; }
