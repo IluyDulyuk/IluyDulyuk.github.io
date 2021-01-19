@@ -57,6 +57,16 @@ body {
   font-weight: 400;
   background-color: #FEFCF5; }
 
+.whatsapp-icon {
+  display: block;
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  z-index: 10000; }
+  @media screen and (max-width: 622px) {
+    .whatsapp-icon {
+      left: 29px; } }
+
 .title {
   font-size: 30px;
   font-weight: 600;
@@ -500,6 +510,9 @@ p.text {
       .footer .wrapper .block-1 a::before {
         content: url("../img/footer-phone-icon.svg");
         margin-right: 7.38px; }
+    .footer .wrapper .block-1 .footer-tel {
+      position: relative;
+      left: -2px; }
     .footer .wrapper .block-1 .footer-car {
       font-size: 14px;
       font-weight: 400;
@@ -1485,7 +1498,9 @@ p.text {
             margin-left: 20px; } }
       .cart .block-tovar-dostavka .block-dostavka .sposob-list li.active {
         color: #363636;
-        font-weight: 600; }
+        font-weight: 600;
+        position: relative;
+        left: 1px; }
     .cart .block-tovar-dostavka .block-dostavka .form-block {
       width: 100%;
       height: 402px;
@@ -1530,6 +1545,11 @@ p.text {
   @media screen and (max-width: 609px) {
     .cart .block-pay-info {
       width: 100%; } }
+  .cart .block-pay-info .block-pay {
+    margin-right: 30px; }
+  @media screen and (max-width: 1170px) {
+    .cart .block-pay-info .block-pay {
+      width: 90%; } }
   @media screen and (max-width: 634px) {
     .cart .block-pay-info .block-pay {
       width: 90%;
@@ -1594,6 +1614,9 @@ p.text {
       font-weight: 400;
       height: 243px;
       margin-bottom: 37px; }
+      @media screen and (max-width: 1285px) {
+        .cart .block-pay-info .block-info table {
+          width: 400px; } }
       @media screen and (max-width: 607px) {
         .cart .block-pay-info .block-info table {
           width: 90%; } }
@@ -1604,6 +1627,10 @@ p.text {
         font-weight: 600;
         text-transform: uppercase;
         padding-bottom: 44px; }
+      .cart .block-pay-info .block-info table .itogo-value {
+        padding-bottom: 44px; }
+      .cart .block-pay-info .block-info table .value {
+        font-weight: 600; }
     .cart .block-pay-info .block-info .ofrmit-btn {
       font-size: 24px;
       font-weight: 600;

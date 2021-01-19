@@ -39,6 +39,17 @@ body {
     background-color: #FEFCF5;
 }
 
+.whatsapp-icon {
+    display: block;
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    z-index: 10000;
+    @media screen and (max-width: 622px) {
+        left: 29px;
+    }
+}
+
 .title {
     font-size: 30px;
     font-weight: 600;
@@ -565,6 +576,10 @@ p.text {
                     content: url('../img/footer-phone-icon.svg');
                     margin-right: 7.38px;
                 }
+            }
+            .footer-tel {
+                position: relative;
+                left: -2px;
             }
             .footer-car {
                 font-size: 14px;
@@ -1801,6 +1816,8 @@ p.text {
                 li.active {
                     color: #363636;
                     font-weight: 600;
+                    position: relative;
+                    left: 1px;
                 }
             }
             .form-block {
@@ -1854,6 +1871,12 @@ p.text {
             width: 100%;
         }
         .block-pay {
+            margin-right: 30px;
+        }
+        .block-pay {
+            @media screen and (max-width: 1170px) {
+                width: 90%;
+            }
             @media screen and (max-width: 634px) {
                 width: 90%;
                 margin: 0 auto;
@@ -1926,6 +1949,9 @@ p.text {
                 font-weight: 400;
                 height: 243px;
                 margin-bottom: 37px;
+                @media screen and (max-width: 1285px) {
+                    width: 400px;
+                }
                 @media screen and (max-width: 607px) {
                     width: 90%;
                 }
@@ -1936,6 +1962,12 @@ p.text {
                     font-weight: 600;
                     text-transform: uppercase;
                     padding-bottom: 44px;
+                }
+                .itogo-value {
+                    padding-bottom: 44px;
+                }
+                .value {
+                    font-weight: 600;
                 }
             }
             .ofrmit-btn {
