@@ -1625,6 +1625,9 @@ p.text {
     border: 1px solid #000;
     border-radius: 5px;
     margin-bottom: 258px; }
+    @media screen and (max-width: 1170px) {
+      .cart .block-pay-info .block-pay .pay-select-form {
+        width: 100%; } }
     @media screen and (max-width: 768px) {
       .cart .block-pay-info .block-pay .pay-select-form {
         width: 500px;

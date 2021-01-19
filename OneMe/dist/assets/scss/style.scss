@@ -1973,6 +1973,9 @@ p.text {
                 border: 1px solid #000;
                 border-radius: 5px;
                 margin-bottom: 258px;
+                @media screen and (max-width: 1170px) {
+                    width: 100%;
+                }
                 @media screen and (max-width: 768px) {
                     width: 500px;
                     margin: 0 auto;
