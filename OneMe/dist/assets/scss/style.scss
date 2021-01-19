@@ -261,9 +261,8 @@ p.text {
             top: 47px;
             display: flex;
             justify-content: space-between;
-            width: 85%;
-            padding-right: 46px;
-            padding-left: 46px;
+            width: 75%;
+            left: 165px;
         }
         @media screen and (max-width: 760px) {
             display: none;
