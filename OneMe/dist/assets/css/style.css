@@ -967,7 +967,8 @@ p.text {
         padding-left: 50px; }
       @media screen and (max-width: 1153px) {
         .lk .content .orders-block .name-block {
-          padding-right: 0px; } }
+          padding-right: 0px;
+          padding-right: 13px; } }
       @media screen and (max-width: 1153px) {
         .lk .content .orders-block .name-block .name-block-cost {
           padding-left: 50px; } }
@@ -997,7 +998,7 @@ p.text {
       font-size: 18px;
       background: transparent;
       margin-top: 30px;
-      margin-left: 10px;
+      margin-left: 0px;
       margin-bottom: 165px;
       cursor: pointer; }
       @media screen and (max-width: 1153px) {
@@ -1555,7 +1556,7 @@ p.text {
         margin: 0 auto; } }
     @media screen and (max-width: 1170px) {
       .cart .block-tovar-dostavka .block-dostavka {
-        margin-top: 168px; } }
+        margin-top: 90px; } }
     .cart .block-tovar-dostavka .block-dostavka .dostavka-title {
       font-size: 24px;
       font-weight: 600;
@@ -1586,7 +1587,7 @@ p.text {
       border: 1px solid #000;
       border-radius: 5px;
       text-align: center;
-      margin-bottom: 201px; }
+      margin-bottom: 100px; }
       .cart .block-tovar-dostavka .block-dostavka .form-block form {
         padding-top: 51px; }
         .cart .block-tovar-dostavka .block-dostavka .form-block form input {
@@ -1629,19 +1630,23 @@ p.text {
       width: 100%; } }
   .cart .block-pay-info .block-pay {
     margin-right: 30px; }
+  @media screen and (max-width: 627px) {
+    .cart .block-pay-info .block-pay .pay-title {
+      padding-left: 30px; } }
   @media screen and (max-width: 1170px) {
     .cart .block-pay-info .block-pay {
-      width: 90%; } }
+      width: 99%;
+      margin: 0 auto; } }
   @media screen and (max-width: 634px) {
     .cart .block-pay-info .block-pay {
-      width: 90%;
+      width: 100%;
       margin: 0 auto; } }
   .cart .block-pay-info .block-pay .pay-title {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 37px; }
   .cart .block-pay-info .block-pay .pay-select-form {
-    width: 671px;
+    width: 100%;
     height: 266px;
     border: 1px solid #000;
     border-radius: 5px;
@@ -1651,7 +1656,7 @@ p.text {
         width: 100%; } }
     @media screen and (max-width: 768px) {
       .cart .block-pay-info .block-pay .pay-select-form {
-        width: 500px;
+        width: 100%;
         margin: 0 auto;
         margin-bottom: 104px; } }
     @media screen and (max-width: 634px) {
