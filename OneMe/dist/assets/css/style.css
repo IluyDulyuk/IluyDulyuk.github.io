@@ -131,17 +131,23 @@ p.text {
         display: none; } }
     @media screen and (max-width: 760px) {
       .header .header-logo_link {
+        width: 304px;
         display: flex;
-        justify-content: center; } }
+        justify-content: center;
+        margin: 0 auto; } }
     .header .header-logo_link .mobile-link {
       display: none; }
       @media screen and (max-width: 760px) {
         .header .header-logo_link .mobile-link {
           display: block;
-          margin-right: 57px; } }
+          margin-right: 57px;
+          margin-right: 70px; } }
     .header .header-logo_link .logo {
       display: block;
       margin-right: 27.5px; }
+      @media screen and (max-width: 760px) {
+        .header .header-logo_link .logo {
+          margin-right: 15px; } }
     .header .header-logo_link .vk-link {
       display: block;
       margin-right: 21.12px; }
@@ -222,7 +228,7 @@ p.text {
     .header .header-second-menu-mobile .inst-link {
       margin-left: 29px; }
     .header .header-second-menu-mobile .header-tel {
-      margin-left: 29px; }
+      margin-left: 32px; }
     .header .header-second-menu-mobile .header-account {
       margin-left: 29px; }
     .header .header-second-menu-mobile .header-account {
@@ -482,7 +488,7 @@ p.text {
           padding-top: 22px;
           padding-left: 16px; }
         .new-clothes .container .new-clothes-slider .new-clothes-item .new-price {
-          font-weight: 400;
+          font-weight: 600;
           font-size: 18px;
           padding-top: 11px;
           padding-left: 16px; }
@@ -566,6 +572,8 @@ p.text {
       .footer .wrapper .block-1 a::before {
         content: url("../img/footer-phone-icon.svg");
         margin-right: 7.38px; }
+      .footer .wrapper .block-1 a:first-child:before {
+        display: none; }
     .footer .wrapper .block-1 .footer-tel {
       position: relative;
       left: -2px; }
@@ -718,7 +726,8 @@ p.text {
     .dostavka .wrapper {
       width: 699px;
       margin: 0 auto;
-      margin-bottom: 108px; } }
+      margin-bottom: 108px;
+      height: 340px; } }
   @media screen and (max-width: 700px) {
     .dostavka .wrapper {
       display: none; } }
@@ -763,8 +772,12 @@ p.text {
         padding-left: 123px; }
         @media screen and (max-width: 1030px) {
           .dostavka .wrapper .block-bottom .values .block-price {
-            padding-left: 70px; } }
+            padding-left: 120px; } }
         .dostavka .wrapper .block-bottom .values .block-price li {
+          padding-top: 20px; }
+      .dostavka .wrapper .block-bottom .values .block-price-2 {
+        padding-left: 100px; }
+        .dostavka .wrapper .block-bottom .values .block-price-2 li {
           padding-top: 20px; }
 
 .dostavka .mobile-wrapper {
@@ -810,7 +823,7 @@ p.text {
   @media screen and (max-width: 760px) {
     .lk .title {
       text-align: center;
-      margin-left: -25px; } }
+      margin-left: -40px; } }
 
 .lk .content {
   display: flex;
@@ -889,7 +902,7 @@ p.text {
         padding-bottom: 1px; }
   .lk .content .block-btn {
     padding-top: 35px;
-    padding-bottom: 30px;
+    padding-bottom: 90px;
     display: flex;
     justify-content: space-between; }
     .lk .content .block-btn button {
@@ -948,8 +961,16 @@ p.text {
     .lk .content .orders-block .name-block {
       display: flex;
       margin-bottom: 5px;
-      padding-right: 33px;
-      justify-content: space-between; }
+      justify-content: space-between;
+      padding-right: 25px; }
+      .lk .content .orders-block .name-block .name-block-cost {
+        padding-left: 50px; }
+      @media screen and (max-width: 1153px) {
+        .lk .content .orders-block .name-block {
+          padding-right: 0px; } }
+      @media screen and (max-width: 1153px) {
+        .lk .content .orders-block .name-block .name-block-cost {
+          padding-left: 50px; } }
       @media screen and (max-width: 720px) {
         .lk .content .orders-block .name-block {
           padding-right: 0; } }
