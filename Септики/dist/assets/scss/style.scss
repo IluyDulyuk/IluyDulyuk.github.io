@@ -872,7 +872,7 @@ $roboto: 'Roboto', sans-serif;
             width: 600px;
         }
         @media screen and (max-width: 888px) {
-            width: 260px;
+            width: 230px;
         }
         img {
             width: 512px;
@@ -883,6 +883,9 @@ $roboto: 'Roboto', sans-serif;
             }
             @media screen and (max-width: 1200px) {
                 width: 400px;
+            }
+            @media screen and (max-width: 888px) {
+                width: 200px;
             }
         }
         .arrow {

@@ -794,7 +794,7 @@ body {
         width: 600px; } }
     @media screen and (max-width: 888px) {
       .our-work .work-slider {
-        width: 260px; } }
+        width: 230px; } }
     .our-work .work-slider img {
       width: 512px;
       margin-right: 25.5px;
@@ -805,6 +805,9 @@ body {
       @media screen and (max-width: 1200px) {
         .our-work .work-slider img {
           width: 400px; } }
+      @media screen and (max-width: 888px) {
+        .our-work .work-slider img {
+          width: 200px; } }
     .our-work .work-slider .arrow {
       width: 55px;
       position: absolute;
