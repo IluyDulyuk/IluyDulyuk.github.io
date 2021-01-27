@@ -72,12 +72,19 @@ $roboto: 'Roboto', sans-serif;
         padding-right: 78px;
         justify-content: space-between;
     }
+    @media screen and (max-width: 614px) {
+        padding-right: 20px;
+    }
     .header-logo {
         padding-top: 5px;
         padding-left: 78px;
         display: flex;
         align-items: center;
         margin-right: 98px;
+        @media screen and (max-width: 614px) {
+            margin-right: 15px;
+            padding-left: 15px;
+        }
         p {
             padding-left: 26px;
             font-weight: 700;
@@ -99,6 +106,9 @@ $roboto: 'Roboto', sans-serif;
         line-height: 24px;
         @media screen and (max-width: 614px) {
             font-size: 15px;
+        }
+        @media screen and (max-width: 393px) {
+            font-size: 13px;
         }
     }
     .header-phone {
@@ -927,22 +937,13 @@ $roboto: 'Roboto', sans-serif;
             position: absolute;
             top: 45%;
             cursor: pointer;
-            @media screen and (max-width: 888px) {
-                display: none;
-            }
         }
         .arrow.prev {
             left: -90px;
             z-index: 100;
-            @media screen and (max-width: 888px) {
-                display: none;
-            }
         }
         .arrow.next {
             right: -90px;
-            @media screen and (max-width: 888px) {
-                display: none;
-            }
         }
         .reviews-item {
             width: 501px;

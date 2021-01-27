@@ -86,12 +86,19 @@ body {
     .header {
       padding-right: 78px;
       justify-content: space-between; } }
+  @media screen and (max-width: 614px) {
+    .header {
+      padding-right: 20px; } }
   .header .header-logo {
     padding-top: 5px;
     padding-left: 78px;
     display: flex;
     align-items: center;
     margin-right: 98px; }
+    @media screen and (max-width: 614px) {
+      .header .header-logo {
+        margin-right: 15px;
+        padding-left: 15px; } }
     .header .header-logo p {
       padding-left: 26px;
       font-weight: 700;
@@ -112,6 +119,9 @@ body {
     @media screen and (max-width: 614px) {
       .header .header-text {
         font-size: 15px; } }
+    @media screen and (max-width: 393px) {
+      .header .header-text {
+        font-size: 13px; } }
   .header .header-phone {
     position: absolute;
     top: 48px;
@@ -840,20 +850,11 @@ body {
       position: absolute;
       top: 45%;
       cursor: pointer; }
-      @media screen and (max-width: 888px) {
-        .reviews .reviews-slider .arrow {
-          display: none; } }
     .reviews .reviews-slider .arrow.prev {
       left: -90px;
       z-index: 100; }
-      @media screen and (max-width: 888px) {
-        .reviews .reviews-slider .arrow.prev {
-          display: none; } }
     .reviews .reviews-slider .arrow.next {
       right: -90px; }
-      @media screen and (max-width: 888px) {
-        .reviews .reviews-slider .arrow.next {
-          display: none; } }
     .reviews .reviews-slider .reviews-item {
       width: 501px;
       height: 353px;

@@ -1533,6 +1533,26 @@ $({ target: 'Array', proto: true, forced: [].forEach != forEach }, {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/modules/es.object.define-property.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/core-js/modules/es.object.define-property.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $ = __webpack_require__(/*! ../internals/export */ "./node_modules/core-js/internals/export.js");
+var DESCRIPTORS = __webpack_require__(/*! ../internals/descriptors */ "./node_modules/core-js/internals/descriptors.js");
+var objectDefinePropertyModile = __webpack_require__(/*! ../internals/object-define-property */ "./node_modules/core-js/internals/object-define-property.js");
+
+// `Object.defineProperty` method
+// https://tc39.es/ecma262/#sec-object.defineproperty
+$({ target: 'Object', stat: true, forced: !DESCRIPTORS, sham: !DESCRIPTORS }, {
+  defineProperty: objectDefinePropertyModile.f
+});
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/modules/web.dom-collections.for-each.js":
 /*!**********************************************************************!*\
   !*** ./node_modules/core-js/modules/web.dom-collections.for-each.js ***!
@@ -1601,10 +1621,15 @@ module.exports = g;
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.for-each.js */ "./node_modules/core-js/modules/es.array.for-each.js");
 /* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
-/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__);
 
 
+
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var slider = function slider() {
   $('.work-slider').slick({
@@ -1616,7 +1641,13 @@ var slider = function slider() {
       settings: {
         slidesToShow: 1
       }
-    }]
+    }] // responsive: [{
+    //     breakpoint: 397,
+    //     settings: {
+    //         arrows: false
+    //     }
+    // }],
+
   }); // $('.reviews-slider').slick({
   //     variableWidth: true,
   //     centerMode: true,
@@ -1632,19 +1663,21 @@ var slider = function slider() {
   }
 
   if (reviewsSlides.length >= 4) {
-    $('.reviews-slider').slick({
+    var _$$slick;
+
+    $('.reviews-slider').slick((_$$slick = {
       responsive: [{
         breakpoint: 1200,
         settings: {
           slidesToShow: 1
         }
-      }],
-      variableWidth: true,
-      centerMode: true,
-      slidesToShow: 3,
-      prevArrow: '<img class="arrow prev reviews-arrow" src="./assets/img/work/prev-arrow.svg" alt=""></img>',
-      nextArrow: '<img class="arrow next reviews-arrow" src="./assets/img/work/next-arrow.svg" alt=""></img>'
-    });
+      }]
+    }, _defineProperty(_$$slick, "responsive", [{
+      breakpoint: 888,
+      settings: {
+        arrows: false
+      }
+    }]), _defineProperty(_$$slick, "variableWidth", true), _defineProperty(_$$slick, "centerMode", true), _defineProperty(_$$slick, "slidesToShow", 3), _defineProperty(_$$slick, "prevArrow", '<img class="arrow prev reviews-arrow" src="./assets/img/work/prev-arrow.svg" alt=""></img>'), _defineProperty(_$$slick, "nextArrow", '<img class="arrow next reviews-arrow" src="./assets/img/work/next-arrow.svg" alt=""></img>'), _$$slick));
     document.querySelector('.reviews-slider').style.display = "";
   }
 
