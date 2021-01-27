@@ -1,0 +1,15 @@
+<svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<circle cx="27.5" cy="27.5" r="27.5" fill="#EEEEEE"/>
+<circle cx="27.5" cy="27.5" r="27.5" fill="url(#paint0_linear)"/>
+<rect x="16" y="16" width="24" height="24" fill="url(#pattern0)" fill-opacity="0.8"/>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0" transform="scale(0.0416667)"/>
+</pattern>
+<linearGradient id="paint0_linear" x1="27.5" y1="0" x2="27.5" y2="55" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+<image id="image0" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAi0lEQVRIie3UMQoCMRCF4Q9PYWOjnaVg5wXEe3uHbdxCKxvxBGOjTdiw6GYKYR+8JkzmJ5PkMevfdcEhExB4Yp8JCDywywQE7thmAgI3bGrFp3dBuelb91gNAa4Nmn/cYTl23Kk+w6I2rwaKciF9RMdGkOol/6KhZ7pu1bwEpH601KhIDbv0uJ41XS/qT4BOE+jRHgAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>
