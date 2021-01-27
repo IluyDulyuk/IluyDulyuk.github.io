@@ -43,9 +43,7 @@ body {
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 27px;
-    @media screen and (max-width: 888px) {
-        padding-left: 20px;
-    }
+
 }
 
 .checkbox {
@@ -62,29 +60,21 @@ body {
 $roboto: 'Roboto', sans-serif;
 
 .header {
+    width: 1920px;
     position: relative;
     height: 156px;
     background-color: #5FB91E;
     display: flex;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 100;
-    @media screen and (max-width: 1079px) {
-        padding-right: 78px;
-        justify-content: space-between;
-    }
-    @media screen and (max-width: 614px) {
-        padding-right: 20px;
-    }
+
     .header-logo {
         padding-top: 5px;
         padding-left: 78px;
         display: flex;
         align-items: center;
         margin-right: 98px;
-        @media screen and (max-width: 614px) {
-            margin-right: 15px;
-            padding-left: 15px;
-        }
+
         p {
             padding-left: 26px;
             font-weight: 700;
@@ -94,9 +84,7 @@ $roboto: 'Roboto', sans-serif;
             -webkit-text-stroke-width: 2px;
             text-transform: uppercase;
             text-shadow: 5px 8px 20px rgba(255, 255, 255, 0.5);
-            @media screen and (max-width: 1079px) {
-                display: none;
-            }
+
         }
     }
     .header-text {
@@ -104,12 +92,7 @@ $roboto: 'Roboto', sans-serif;
         color: #fff;
         font-size: 20px;
         line-height: 24px;
-        @media screen and (max-width: 614px) {
-            font-size: 15px;
-        }
-        @media screen and (max-width: 393px) {
-            font-size: 13px;
-        }
+
     }
     .header-phone {
         position: absolute;
@@ -125,10 +108,7 @@ $roboto: 'Roboto', sans-serif;
         justify-content: center;
         font-weight: 700;
         font-size: 22px;
-        @media screen and (max-width: 1891px) {
-            right: 50px;
-            top: 200px;
-        }
+
         &:before {
             content: url('../img/header/phone.svg');
             margin-right: 14px;
@@ -140,46 +120,24 @@ $roboto: 'Roboto', sans-serif;
     background: url('../img/offer/bg.jpg') left top no-repeat;
     margin-top: -156px;
     height: 1080px;
+    width: 1920px;
     position: relative;
-    @media screen and (max-width: 1089px) {
-        background: #fff;
-        height: 600px;
-        margin-top: 40px;
-    }
-    @media screen and (max-width: 532px) {
-        height: 650px;
-    }
-    @media screen and (max-width: 428px) {
-        height: 700px;
-    }
-    @media screen and (max-width: 382px) {
-        height: 770px;
-    }
+
     .block-about {
         position: absolute;
         bottom: 117px;
         left: 65px;
         width: 600px;
         height: 366px;
-        @media screen and (max-width: 888px) {
-            width: 100%;
-            position: relative;
-            margin-top: 250px;
-            left: 0;
-        }
+
         .about-item {
             display: flex;
             margin-bottom: 74px;
-            @media screen and (max-width: 888px) {
-                display: block;
-                text-align: center;
-            }
+
             .img {
                 width: 100px;
                 height: 100px;
-                @media screen and (max-width: 888px) {
-                    margin: 0 auto;
-                }
+
             }
             .about-item-text {
                 padding-left: 33px;
@@ -193,10 +151,7 @@ $roboto: 'Roboto', sans-serif;
                     font-weight: 400;
                     width: 456px;
                     line-height: 24px;
-                    @media screen and (max-width: 888px) {
-                        width: 90%;
-                        margin: 0 auto;
-                    }
+
                 }
             }
         }
@@ -210,33 +165,13 @@ $roboto: 'Roboto', sans-serif;
     margin-right: 32px;
     padding-bottom: 73px;
     border-radius: 20px;
-    @media screen and (max-width: 1891px) {
-        display: block;
-        padding-top: 40px;
-    }
-    @media screen and (max-width: 428px) {
-        margin-right: 10px;
-        margin-left: 10px;
-    }
-    @media screen and (max-width: 350px) {
-        margin-right: 5px;
-        margin-left: 5px;
-    }
+
     .block-test-text {
         width: 608px;
         margin-left: 29px;
         margin-top: 60px;
         margin-right: 66px;
-        @media screen and (max-width: 1891px) {
-            width: 1100px;
-            margin: 0 auto;
-        }
-        @media screen and (max-width: 1200px) {
-            width: 768px;
-        }
-        @media screen and (max-width: 888px) {
-            width: 310px;
-        }
+
         .test-text-about {
             width: 519px;
             font-weight: 500;
@@ -247,18 +182,7 @@ $roboto: 'Roboto', sans-serif;
             background-color: #fff;
             border-radius: 26px;
             margin-bottom: 134px;
-            @media screen and (max-width: 1891px) {
-                width: 90%;
-                padding-left: 30px;
-                margin: 0 auto;
-                margin-bottom: 60px;
-            }
-            @media screen and (max-width: 1200px) {
-                width: 600px;
-            }
-            @media screen and (max-width: 888px) {
-                width: 230px;
-            }
+
         }
         .text-1 {
             font-size: 30px;
@@ -266,9 +190,7 @@ $roboto: 'Roboto', sans-serif;
             padding-bottom: 116px;
             line-height: 37px;
             position: relative;
-            @media screen and (max-width: 1891px) {
-                display: none;
-            }
+
             &::after {
                 content: url('../img/test/arrow.svg');
                 position: absolute;
@@ -278,24 +200,7 @@ $roboto: 'Roboto', sans-serif;
         }
         .text-1.laptop {
             display: none;
-            @media screen and (max-width: 1891px) {
-                display: block;
-                text-align: center;
-                &::after {
-                    content: url('../img/test/arrow.svg');
-                    position: absolute;
-                    right:  120px;
-                    top: 0px;
-                    display: block;
-                    transform: rotate(50deg);
-                    @media screen and (max-width: 1891px) {
-                        right: -30px;
-                    }
-                    @media screen and (max-width: 918px) {
-                        display: none;
-                    }
-                }
-            }
+
         }
         .text-2 {
             display: flex;
@@ -303,19 +208,10 @@ $roboto: 'Roboto', sans-serif;
             border-radius: 15px;
             margin-bottom: 54px;
             box-shadow: 0px 4px 20px #328E00;
-            @media screen and (max-width: 1200px) {
-                width: 700px;
-                margin: 0 auto;
-                margin-bottom: 30px;
-            }
-            @media screen and (max-width: 888px) {
-                width: 290px;
-            }
+
             .img {
                 padding-top: 10px;
-                @media screen and (max-width: 888px) {
-                    display: none;
-                }
+
             }
             p {
                 padding-top: 47px;
@@ -323,12 +219,7 @@ $roboto: 'Roboto', sans-serif;
                 color: #fff;
                 font-weight: 700;
                 font-size: 15px;
-                @media screen and (max-width: 888px) {
-                    width: 200px;
-                    margin: 0 auto;
-                    margin-bottom: 30px;
-                    text-align: center;
-                }
+
                 span {
                     font-size: 25px;
                 }
@@ -340,10 +231,7 @@ $roboto: 'Roboto', sans-serif;
             font-size: 40px;
             padding-left: 88px;
             margin-bottom: 47px;
-            @media screen and (max-width: 1891px) {
-                text-align: center;
-                padding-left: 0px;
-            }
+
         }
         .test-text-about-list {
             .test-text-about-list-item {
@@ -367,45 +255,20 @@ $roboto: 'Roboto', sans-serif;
         border-radius: 20px;
         margin-top: 44px;
         box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
-        @media screen and (max-width: 1891px) {
-            margin: 0 auto;
-        }
-        @media screen and (max-width: 1200px) {
-            width: 768px;
-            height: auto;
-            padding-bottom: 60px;
-        }
-        @media screen and (max-width: 888px) {
-            width: 300px;
-        }
+
         .count-plumbing-point {
             padding-top: 45px;
             padding-left: 56px;
-            @media screen and (max-width: 888px) {
-                padding-left: 0;
-            }
+
             .count-plumbing-point-list {
                 display: flex;
-                @media screen and (max-width: 1200px) {
-                    width: 600px;
-                    margin: 0 auto;
-                    flex-wrap: wrap;
-                }
-                @media screen and (max-width: 888px) {
-                    width: 290px;
-                    justify-content: center;
-                }
+
                 .count-plumbing-point-list-item {
                     font-weight: 500;
                     font-size: 20px;
                     color: #5F5F5F;
                     margin-right: 50px;
-                    @media screen and (max-width: 1200px) {
-                        margin-top: 20px;
-                    }
-                    @media screen and (max-width: 888px) {
-                        margin-right: 0;
-                    }
+
                     &:last-child {
                         margin-right: 0;
                     }
@@ -440,9 +303,7 @@ $roboto: 'Roboto', sans-serif;
             padding-left: 56px;
             padding-top: 30px;
             padding-bottom: 25px;
-            @media screen and (max-width: 888px) {
-                padding-left: 0;
-            }
+
             .count-piople-list-wrapper {
                 display: inline-block;
             }
@@ -452,27 +313,13 @@ $roboto: 'Roboto', sans-serif;
                 color: #5F5F5F;
                 border: 1px solid #5F5F5F;
                 border-radius: 5px;
-                @media screen and (max-width: 1200px) {
-                    width: 600px;
-                    margin: 0 auto;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-                }
-                @media screen and (max-width: 888px) {
-                    width: 100%;
-                    border: none;
-                    flex-direction: column;
-                }
+
+
                 .count-people-list-item {
                     padding: 9px 50px;
                     cursor: pointer;
                     border-right: 1px solid #5F5F5F;
-                    @media screen and (max-width: 1200px) {
-                        border-right: none;
-                    }
-                    @media screen and (max-width: 888px) {
-                        padding-left: 80px;
-                    }
+
                     &:last-child {
                         border-right: none;
                     }
@@ -485,33 +332,17 @@ $roboto: 'Roboto', sans-serif;
         .level-groundwater {
             padding-left: 56px;
             padding-bottom: 30px;
-            @media screen and (max-width: 888px) {
-                padding-left: 0;
-            }
+
             .level-groundwater-list {
                 display: flex;
                 margin-bottom: 30px;
-                @media screen and (max-width: 1200px) {
-                    width: 600px;
-                    flex-wrap: wrap;
-                    margin: 0 auto;
-                }
-                @media screen and (max-width: 888px) {
-                    width: 290px;
-                    
-                }
+
                 .level-groundwater-list-item {
                     font-size: 22px;
                     color: #5F5F5F;
                     display: flex;
                     margin-right: 59px;
-                    @media screen and (max-width: 1200px) {
-                        padding-top: 20px;
-                        align-items: center;
-                    }
-                    @media screen and (max-width: 888px) {
-                        margin: 0 auto;
-                    }
+
                     .level-groundwater-checkbox {
                         width: 25px;
                         height: 25px;
@@ -534,28 +365,17 @@ $roboto: 'Roboto', sans-serif;
         .use-yaer-round {
             padding-left: 56px;
             padding-bottom: 30px;
-            @media screen and (max-width: 888px) {
-                padding-left: 0;
-            }
+
             .use-year-round-list {
                 display: flex;
                 flex-wrap: wrap;
                 width: 785px;
-                @media screen and (max-width: 1200px) {
-                    width: 600px;
-                    margin: 0 auto;
-                }
-                @media screen and (max-width: 888px) {
-                    width: 290px;
-                }
+
                 .use-year-round-list-item {
                     display: flex;
                     margin-right: 32px;
                     margin-top: 21px;
-                    @media screen and (max-width: 888px) {
-                       margin: 0 auto;
-                       margin-top: 20px;
-                    }
+
                     .use-year-round-checkbox {
                         width: 25px;
                         height: 25px;
@@ -568,9 +388,7 @@ $roboto: 'Roboto', sans-serif;
                         font-size: 22px;
                         color: #5F5F5F;
                         line-height: 24px;
-                        @media screen and (max-width: 1200px) {
-                            width: 203px;
-                        }
+
                     }
                     .use-year-round-checkbox.active {
                         background-color: #328E00;
@@ -581,81 +399,46 @@ $roboto: 'Roboto', sans-serif;
         .drains {
             padding-left: 56px;
             padding-bottom: 30px;
-            @media screen and (max-width: 888px) {
-                padding-left: 0px;
-            }
+
             .drains-list {
                 display: flex;
-                @media screen and (max-width: 1200px) {
-                    width: 600px;
-                    margin: 0 auto;
-                    flex-wrap: wrap;
-                }
-                @media screen and (max-width: 888px) {
-                    width: 290px;
-                    flex-direction: column;
-                    align-items: center;
-                }
+
+
                 .drains-list-item {
                     cursor: pointer;
                     margin-right: 50px;
-                    @media screen and (max-width: 1200px) {
-                        padding-top: 20px;
-                    }
-                    @media screen and (max-width: 888px) {
-                        margin-right: 0;
-                    }
+
                 }
             }
         }
         .resault {
             padding-left: 56px;
             padding-bottom: 30px;
-            @media screen and (max-width: 888px) {
-                padding-left: 0px;
-            }
+
             .resault-list {
                 display: flex;
                 width: 920px;
                 flex-wrap: wrap;
-                @media screen and (max-width: 1200px) {
-                    width: 600px;
-                    margin: 0 auto;
-                }
-                @media screen and (max-width: 888px) {
-                    width: 290px;
-                }
+
                 .resault-list-item {
                     margin-right: 50px;
                     display: flex;
                     align-items: center;
                     font-size: 22px;
-                    @media screen and (max-width: 1200px) {
-                        &:nth-child(2) {
-                            padding-top: 21px;
-                        }
-                    }
-                    @media screen and (max-width: 888px) {
-                        margin-right: 0;
-                        padding-left: 20px;
-                    }
+
                     &:nth-child(3) {
                         padding-top: 21px;
                     }
                     &:nth-child(4) {
                         padding-top: 21px;
                         p {
-                            @media screen and (max-width: 888px) {
-                                width: 200px;
-                            }
+ 
                         }
                     }
                     color: #5F5F5F;
                     .item-p {
                         width: 286px;
-                        @media screen and (max-width: 888px) {
-                            width: 250px;
-                        }
+
                     }
                 }
             }
@@ -663,12 +446,8 @@ $roboto: 'Roboto', sans-serif;
         .place {
             padding-left: 56px;
             display: flex;
-            @media screen and (max-width: 1200px) {
-                display: block;
-            }
-            @media screen and (max-width: 888px) {
-                padding-left: 0px;
-            }
+
+
             .place-left {
                 textarea {
                     width: 423px;
@@ -679,21 +458,12 @@ $roboto: 'Roboto', sans-serif;
                     padding-top: 15px;
                     padding-left: 17px;
                     font-size: 20px;
-                    @media screen and (max-width: 1200px) {
-                        margin-bottom: 30px;
-                    }
-                    @media screen and (max-width: 888px) {
-                        width: 200px;
-                        margin-left: 20px;
-                        font-size: 16px;
-                    }
+
                     &::placeholder {
                         font-size: 22px;
                         color: #AAA;
                         font-weight: 600;
-                        @media screen and (max-width: 888px) {
-                            font-size: 18px;
-                        }
+
                     }
                 }
             }
@@ -703,13 +473,7 @@ $roboto: 'Roboto', sans-serif;
                 background-color: #AAA;
                 margin-left: 60px;
                 margin-bottom: 48px;
-                @media screen and (max-width: 1200px) {
-                    margin: 0 auto;
-                    margin-bottom: 30px;
-                }
-                @media screen and (max-width: 888px) {
-                    width: 240px;
-                }
+
             }
         }
         .submit {
@@ -721,11 +485,7 @@ $roboto: 'Roboto', sans-serif;
                 padding-left: 17px;
                 margin-left: 56px;
                 margin-right: 83px;
-                @media screen and (max-width: 888px) {
-                    width: 200px;
-                    margin-left: 20px;
-                    font-size: 16px;
-                }
+
                 &::placeholder {
                     font-size: 15px;
                     color: #B9B9B9;
@@ -742,12 +502,7 @@ $roboto: 'Roboto', sans-serif;
                 font-size: 18px;
                 font-weight: 700;
                 cursor: pointer;
-                @media screen and (max-width: 888px) {
-                    width: 200px;
-                    font-size: 16px;
-                    margin-top: 20px;
-                    margin-left: 20px;
-                }
+
             }
         }
     }
@@ -763,36 +518,13 @@ $roboto: 'Roboto', sans-serif;
     margin-top: 45px;
     flex-direction: column;
     align-items: center;
-    @media screen and (max-width: 1891px) {
-        width: 1100px;
-        height: 250px;
-        flex-wrap: wrap;
-    }
-    @media screen and (max-width: 1200px) {
-        width: 768px;
-        height: auto;
-        padding-bottom: 40px;
-        display: block;
-    }
-    @media screen and (max-width: 888px) {
-        width: 290px;
-    }
+
     .call-title {
         font-weight: 700;
         font-size: 40px;
         padding-top: 54px;
         margin-bottom: 40px;
-        @media screen and (max-width: 1891px) {
-            font-size: 30px;
-            text-align: center;
-        }
-        @media screen and (max-width: 1200px) {
-            font-size: 20px;
-            padding-top: 25px;
-        }
-        @media screen and (max-width: 888px) {
-            font-size: 16px;
-        }
+
     }
     .form {
         input {
@@ -808,23 +540,7 @@ $roboto: 'Roboto', sans-serif;
                 font-size: 25px;
                 font-weight: 700;
             }
-            @media screen and (max-width: 1891px) {
-                width: 300px;
-                height: 50px;
-                font-size: 16px;
-                margin-right: 20px;
-                &::placeholder {
-                    font-size: 20px;
-                }
-            }
-            @media screen and (max-width: 1200px) {
-                display: block;
-                margin: 0 auto;
-                margin-bottom: 20px;
-            }
-            @media screen and (max-width: 888px) {
-                width: 200px;
-            }
+
         }
         button {
             width: 536px;
@@ -835,19 +551,7 @@ $roboto: 'Roboto', sans-serif;
             font-size: 25px;
             font-weight: 800;
             cursor: pointer;
-            @media screen and (max-width: 1891px) {
-                width: 300px;
-                height: 50px;
-                font-size: 20px;
-            }
-            @media screen and (max-width: 1200px) {
-                display: block;
-                margin: 0 auto;
-            }
-            @media screen and (max-width: 888px) {
-                width: 200px;
-                font-size: 15px;
-            }
+
         }
     }
 }
@@ -865,37 +569,19 @@ $roboto: 'Roboto', sans-serif;
         position: relative;
         width: 1636px;
         margin: 0 auto;
-        @media screen and (max-width: 1891px) {
-            width: 900px;
-        }
-        @media screen and (max-width: 1200px) {
-            width: 600px;
-        }
-        @media screen and (max-width: 888px) {
-            width: 230px;
-        }
+
         img {
             width: 512px;
             margin-right: 25.5px;
             margin-left: 25.5px;
-            @media screen and (max-width: 1891px) {
-                width: 250px;
-            }
-            @media screen and (max-width: 1200px) {
-                width: 400px;
-            }
-            @media screen and (max-width: 888px) {
-                width: 200px;
-            }
+
         }
         .arrow {
             width: 55px;
             position: absolute;
             top: 50%;
             cursor: pointer;
-            @media screen and (max-width: 1891px) {
-                top: 40%;
-            }
+
         }
         .arrow.prev {
             left: -90px;
@@ -923,18 +609,10 @@ $roboto: 'Roboto', sans-serif;
         padding-bottom: 74px;
     }
     .reviews-slider {
-        max-width: 1560px;
+        max-width:  1560px;
         position: relative;
         margin: 0 auto;
-        @media screen and (max-width: 1891px) {
-            width: 900px;
-        }
-        @media screen and (max-width: 1200px) {
-            width: 600px;
-        }
-        @media screen and (max-width: 888px) {
-            width: 100%;
-        }
+
         .arrow {
             width: 55px;
             position: absolute;
@@ -958,10 +636,7 @@ $roboto: 'Roboto', sans-serif;
             margin-bottom: 15px;
             margin-top: 15px;
             position: relative;
-            @media screen and (max-width: 627px) {
-                width: 300px;
-                height: 500px;
-            }
+
             .block-name-link {
                 display: flex;
                 margin-bottom: 28px;
@@ -1000,9 +675,7 @@ $roboto: 'Roboto', sans-serif;
                     position: absolute;
                     top: 18px;
                     right: 38px;
-                    @media screen and (max-width: 627px) {
-                        top: 100px;
-                    }
+
                 }
             }
             .reviews-text {
@@ -1012,9 +685,7 @@ $roboto: 'Roboto', sans-serif;
                 font-size: 20px;
                 font-weight: 400;
                 font-family: $roboto;
-                @media screen and (max-width: 627px) {
-                    width: 200px;
-                }
+
             }
         }
         .reviews-item.slick-center {
@@ -1049,37 +720,19 @@ $roboto: 'Roboto', sans-serif;
         justify-content: space-between;
         align-items: flex-end;
         margin: 0 auto;
-        @media screen and (max-width: 1891px) {
-            width: 1100px;
-            display: block;
-        }
-        @media screen and (max-width: 1200px) {
-            width: 768px;
-        }
-        @media screen and (max-width: 888px) {
-            width: 90%;
-        }
+
         p {
             width: 1047px;
             line-height: 24px;
             font-weight: 400;
             font-size: 20px;
             font-family: $roboto;
-            @media screen and (max-width: 1891px) {
-                width: 100%;
-                text-align: center;
-            }
+
         }
         img {
             display: block;
             margin-top: -60px;
-            @media screen and (max-width: 1891px) {
-                padding-top: 30px;
-                margin: 0 auto;
-            }
-            @media screen and (max-width: 888px) {
-                width: 80%;
-            }
+
         }
     }
 }
@@ -1087,31 +740,17 @@ $roboto: 'Roboto', sans-serif;
 .form-q {
     padding-bottom: 85px;
     padding-left: 68px;
-    @media screen and (max-width: 1028px) {
-        padding-bottom: 185px;
-    }
-    @media screen and (max-width: 953px) {
-        padding-left: 0;
-    }
+
     .form-q-title {
         font-weight: 700;
         font-size: 35px;
         padding-bottom: 24px;
-        @media screen and (max-width: 953px) {
-            padding-left: 30px;
-        }
+
     }
     form {
         width: 806px;
         display: flex;
         flex-direction: column;
-        @media screen and (max-width: 953px) {
-            width: 768px;
-            margin: 0 auto;
-        }
-        @media screen and (max-width: 888px) {
-            width: 90%;
-        }
         input {
             width: 90%;
             background-color: #F3F3F3;
@@ -1153,9 +792,7 @@ $roboto: 'Roboto', sans-serif;
             font-size: 25px;
             font-weight: 800;
             cursor: pointer;
-            @media screen and (max-width: 627px) {
-                width: 300px;
-            }
+
         }
     }
 }
@@ -1167,10 +804,7 @@ $roboto: 'Roboto', sans-serif;
     padding-left: 78px;
     padding-right: 189px;
     padding-bottom: 51px;
-    @media screen and (max-width: 1399px) {
-        display: block;
-        align-items: center;
-    }
+
     .footer-logo {
         padding-top: 51px;
         display: flex;
@@ -1183,9 +817,6 @@ $roboto: 'Roboto', sans-serif;
             -webkit-text-fill-color: #fff;
             -webkit-text-stroke-width: 2px;
             text-shadow: 5px 8px 20px rgba(255, 255, 255, 0.5);
-            @media screen and (max-width: 507px) {
-                display: none;
-            }
         }
     }
     .text-1 {
@@ -1195,9 +826,6 @@ $roboto: 'Roboto', sans-serif;
         font-size: 20px;
         padding-top: 77px;
         line-height: 24px;
-        @media screen and (max-width: 1399px) {
-            margin-left: 0px;
-        }
     }
     .text-2 {
         padding-top: 77px;
@@ -1208,9 +836,6 @@ $roboto: 'Roboto', sans-serif;
         line-height: 24px;
         font-family: $roboto;
         margin-left: 35px;
-        @media screen and (max-width: 1399px) {
-            margin-left: 0px;
-        }
     }
     .footer-tel {
         font-weight: 700;
@@ -1226,10 +851,7 @@ $roboto: 'Roboto', sans-serif;
         position: absolute;
         top: 65px;
         right: 189px;
-        @media screen and (max-width: 1891px) {
-            top: -120px;
-            right: 50px;
-        }
+
         &:before {
             content: url('../img/header/phone.svg');
             margin-right: 14px;

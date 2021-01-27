@@ -61,9 +61,6 @@ body {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 27px; }
-  @media screen and (max-width: 888px) {
-    .test-title {
-      padding-left: 20px; } }
 
 .checkbox {
   width: 25px;
@@ -76,29 +73,19 @@ body {
   background-color: #328E00; }
 
 .header {
+  width: 1920px;
   position: relative;
   height: 156px;
   background-color: #5FB91E;
   display: flex;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   z-index: 100; }
-  @media screen and (max-width: 1079px) {
-    .header {
-      padding-right: 78px;
-      justify-content: space-between; } }
-  @media screen and (max-width: 614px) {
-    .header {
-      padding-right: 20px; } }
   .header .header-logo {
     padding-top: 5px;
     padding-left: 78px;
     display: flex;
     align-items: center;
     margin-right: 98px; }
-    @media screen and (max-width: 614px) {
-      .header .header-logo {
-        margin-right: 15px;
-        padding-left: 15px; } }
     .header .header-logo p {
       padding-left: 26px;
       font-weight: 700;
@@ -108,20 +95,11 @@ body {
       -webkit-text-stroke-width: 2px;
       text-transform: uppercase;
       text-shadow: 5px 8px 20px rgba(255, 255, 255, 0.5); }
-      @media screen and (max-width: 1079px) {
-        .header .header-logo p {
-          display: none; } }
   .header .header-text {
     padding-top: 54px;
     color: #fff;
     font-size: 20px;
     line-height: 24px; }
-    @media screen and (max-width: 614px) {
-      .header .header-text {
-        font-size: 15px; } }
-    @media screen and (max-width: 393px) {
-      .header .header-text {
-        font-size: 13px; } }
   .header .header-phone {
     position: absolute;
     top: 48px;
@@ -136,10 +114,6 @@ body {
     justify-content: center;
     font-weight: 700;
     font-size: 22px; }
-    @media screen and (max-width: 1891px) {
-      .header .header-phone {
-        right: 50px;
-        top: 200px; } }
     .header .header-phone:before {
       content: url("../img/header/phone.svg");
       margin-right: 14px; }
@@ -148,46 +122,20 @@ body {
   background: url("../img/offer/bg.jpg") left top no-repeat;
   margin-top: -156px;
   height: 1080px;
+  width: 1920px;
   position: relative; }
-  @media screen and (max-width: 1089px) {
-    .offer {
-      background: #fff;
-      height: 600px;
-      margin-top: 40px; } }
-  @media screen and (max-width: 532px) {
-    .offer {
-      height: 650px; } }
-  @media screen and (max-width: 428px) {
-    .offer {
-      height: 700px; } }
-  @media screen and (max-width: 382px) {
-    .offer {
-      height: 770px; } }
   .offer .block-about {
     position: absolute;
     bottom: 117px;
     left: 65px;
     width: 600px;
     height: 366px; }
-    @media screen and (max-width: 888px) {
-      .offer .block-about {
-        width: 100%;
-        position: relative;
-        margin-top: 250px;
-        left: 0; } }
     .offer .block-about .about-item {
       display: flex;
       margin-bottom: 74px; }
-      @media screen and (max-width: 888px) {
-        .offer .block-about .about-item {
-          display: block;
-          text-align: center; } }
       .offer .block-about .about-item .img {
         width: 100px;
         height: 100px; }
-        @media screen and (max-width: 888px) {
-          .offer .block-about .about-item .img {
-            margin: 0 auto; } }
       .offer .block-about .about-item .about-item-text {
         padding-left: 33px; }
         .offer .block-about .about-item .about-item-text .about-item-title {
@@ -199,10 +147,6 @@ body {
           font-weight: 400;
           width: 456px;
           line-height: 24px; }
-          @media screen and (max-width: 888px) {
-            .offer .block-about .about-item .about-item-text .about-item-paragraph {
-              width: 90%;
-              margin: 0 auto; } }
 
 .test {
   display: flex;
@@ -211,33 +155,11 @@ body {
   margin-right: 32px;
   padding-bottom: 73px;
   border-radius: 20px; }
-  @media screen and (max-width: 1891px) {
-    .test {
-      display: block;
-      padding-top: 40px; } }
-  @media screen and (max-width: 428px) {
-    .test {
-      margin-right: 10px;
-      margin-left: 10px; } }
-  @media screen and (max-width: 350px) {
-    .test {
-      margin-right: 5px;
-      margin-left: 5px; } }
   .test .block-test-text {
     width: 608px;
     margin-left: 29px;
     margin-top: 60px;
     margin-right: 66px; }
-    @media screen and (max-width: 1891px) {
-      .test .block-test-text {
-        width: 1100px;
-        margin: 0 auto; } }
-    @media screen and (max-width: 1200px) {
-      .test .block-test-text {
-        width: 768px; } }
-    @media screen and (max-width: 888px) {
-      .test .block-test-text {
-        width: 310px; } }
     .test .block-test-text .test-text-about {
       width: 519px;
       font-weight: 500;
@@ -248,27 +170,12 @@ body {
       background-color: #fff;
       border-radius: 26px;
       margin-bottom: 134px; }
-      @media screen and (max-width: 1891px) {
-        .test .block-test-text .test-text-about {
-          width: 90%;
-          padding-left: 30px;
-          margin: 0 auto;
-          margin-bottom: 60px; } }
-      @media screen and (max-width: 1200px) {
-        .test .block-test-text .test-text-about {
-          width: 600px; } }
-      @media screen and (max-width: 888px) {
-        .test .block-test-text .test-text-about {
-          width: 230px; } }
     .test .block-test-text .text-1 {
       font-size: 30px;
       padding-left: 31px;
       padding-bottom: 116px;
       line-height: 37px;
       position: relative; }
-      @media screen and (max-width: 1891px) {
-        .test .block-test-text .text-1 {
-          display: none; } }
       .test .block-test-text .text-1::after {
         content: url("../img/test/arrow.svg");
         position: absolute;
@@ -276,54 +183,20 @@ body {
         top: -116px; }
     .test .block-test-text .text-1.laptop {
       display: none; }
-      @media screen and (max-width: 1891px) {
-        .test .block-test-text .text-1.laptop {
-          display: block;
-          text-align: center; }
-          .test .block-test-text .text-1.laptop::after {
-            content: url("../img/test/arrow.svg");
-            position: absolute;
-            right: 120px;
-            top: 0px;
-            display: block;
-            transform: rotate(50deg); } }
-    @media screen and (max-width: 1891px) and (max-width: 1891px) {
-      .test .block-test-text .text-1.laptop::after {
-        right: -30px; } }
-    @media screen and (max-width: 1891px) and (max-width: 918px) {
-      .test .block-test-text .text-1.laptop::after {
-        display: none; } }
     .test .block-test-text .text-2 {
       display: flex;
       background-color: #328E00;
       border-radius: 15px;
       margin-bottom: 54px;
       box-shadow: 0px 4px 20px #328E00; }
-      @media screen and (max-width: 1200px) {
-        .test .block-test-text .text-2 {
-          width: 700px;
-          margin: 0 auto;
-          margin-bottom: 30px; } }
-      @media screen and (max-width: 888px) {
-        .test .block-test-text .text-2 {
-          width: 290px; } }
       .test .block-test-text .text-2 .img {
         padding-top: 10px; }
-        @media screen and (max-width: 888px) {
-          .test .block-test-text .text-2 .img {
-            display: none; } }
       .test .block-test-text .text-2 p {
         padding-top: 47px;
         line-height: 24px;
         color: #fff;
         font-weight: 700;
         font-size: 15px; }
-        @media screen and (max-width: 888px) {
-          .test .block-test-text .text-2 p {
-            width: 200px;
-            margin: 0 auto;
-            margin-bottom: 30px;
-            text-align: center; } }
         .test .block-test-text .text-2 p span {
           font-size: 25px; }
     .test .block-test-text .test-text-title {
@@ -332,10 +205,6 @@ body {
       font-size: 40px;
       padding-left: 88px;
       margin-bottom: 47px; }
-      @media screen and (max-width: 1891px) {
-        .test .block-test-text .test-text-title {
-          text-align: center;
-          padding-left: 0px; } }
     .test .block-test-text .test-text-about-list .test-text-about-list-item {
       display: flex;
       align-items: center;
@@ -352,45 +221,16 @@ body {
     border-radius: 20px;
     margin-top: 44px;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25); }
-    @media screen and (max-width: 1891px) {
-      .test .block-test {
-        margin: 0 auto; } }
-    @media screen and (max-width: 1200px) {
-      .test .block-test {
-        width: 768px;
-        height: auto;
-        padding-bottom: 60px; } }
-    @media screen and (max-width: 888px) {
-      .test .block-test {
-        width: 300px; } }
     .test .block-test .count-plumbing-point {
       padding-top: 45px;
       padding-left: 56px; }
-      @media screen and (max-width: 888px) {
-        .test .block-test .count-plumbing-point {
-          padding-left: 0; } }
       .test .block-test .count-plumbing-point .count-plumbing-point-list {
         display: flex; }
-        @media screen and (max-width: 1200px) {
-          .test .block-test .count-plumbing-point .count-plumbing-point-list {
-            width: 600px;
-            margin: 0 auto;
-            flex-wrap: wrap; } }
-        @media screen and (max-width: 888px) {
-          .test .block-test .count-plumbing-point .count-plumbing-point-list {
-            width: 290px;
-            justify-content: center; } }
         .test .block-test .count-plumbing-point .count-plumbing-point-list .count-plumbing-point-list-item {
           font-weight: 500;
           font-size: 20px;
           color: #5F5F5F;
           margin-right: 50px; }
-          @media screen and (max-width: 1200px) {
-            .test .block-test .count-plumbing-point .count-plumbing-point-list .count-plumbing-point-list-item {
-              margin-top: 20px; } }
-          @media screen and (max-width: 888px) {
-            .test .block-test .count-plumbing-point .count-plumbing-point-list .count-plumbing-point-list-item {
-              margin-right: 0; } }
           .test .block-test .count-plumbing-point .count-plumbing-point-list .count-plumbing-point-list-item:last-child {
             margin-right: 0; }
           .test .block-test .count-plumbing-point .count-plumbing-point-list .count-plumbing-point-list-item img {
@@ -416,9 +256,6 @@ body {
       padding-left: 56px;
       padding-top: 30px;
       padding-bottom: 25px; }
-      @media screen and (max-width: 888px) {
-        .test .block-test .count-people {
-          padding-left: 0; } }
       .test .block-test .count-people .count-piople-list-wrapper {
         display: inline-block; }
       .test .block-test .count-people .count-people-list {
@@ -427,27 +264,10 @@ body {
         color: #5F5F5F;
         border: 1px solid #5F5F5F;
         border-radius: 5px; }
-        @media screen and (max-width: 1200px) {
-          .test .block-test .count-people .count-people-list {
-            width: 600px;
-            margin: 0 auto;
-            flex-wrap: wrap;
-            justify-content: space-between; } }
-        @media screen and (max-width: 888px) {
-          .test .block-test .count-people .count-people-list {
-            width: 100%;
-            border: none;
-            flex-direction: column; } }
         .test .block-test .count-people .count-people-list .count-people-list-item {
           padding: 9px 50px;
           cursor: pointer;
           border-right: 1px solid #5F5F5F; }
-          @media screen and (max-width: 1200px) {
-            .test .block-test .count-people .count-people-list .count-people-list-item {
-              border-right: none; } }
-          @media screen and (max-width: 888px) {
-            .test .block-test .count-people .count-people-list .count-people-list-item {
-              padding-left: 80px; } }
           .test .block-test .count-people .count-people-list .count-people-list-item:last-child {
             border-right: none; }
         .test .block-test .count-people .count-people-list .count-people-list-item.active {
@@ -455,32 +275,14 @@ body {
     .test .block-test .level-groundwater {
       padding-left: 56px;
       padding-bottom: 30px; }
-      @media screen and (max-width: 888px) {
-        .test .block-test .level-groundwater {
-          padding-left: 0; } }
       .test .block-test .level-groundwater .level-groundwater-list {
         display: flex;
         margin-bottom: 30px; }
-        @media screen and (max-width: 1200px) {
-          .test .block-test .level-groundwater .level-groundwater-list {
-            width: 600px;
-            flex-wrap: wrap;
-            margin: 0 auto; } }
-        @media screen and (max-width: 888px) {
-          .test .block-test .level-groundwater .level-groundwater-list {
-            width: 290px; } }
         .test .block-test .level-groundwater .level-groundwater-list .level-groundwater-list-item {
           font-size: 22px;
           color: #5F5F5F;
           display: flex;
           margin-right: 59px; }
-          @media screen and (max-width: 1200px) {
-            .test .block-test .level-groundwater .level-groundwater-list .level-groundwater-list-item {
-              padding-top: 20px;
-              align-items: center; } }
-          @media screen and (max-width: 888px) {
-            .test .block-test .level-groundwater .level-groundwater-list .level-groundwater-list-item {
-              margin: 0 auto; } }
           .test .block-test .level-groundwater .level-groundwater-list .level-groundwater-list-item .level-groundwater-checkbox {
             width: 25px;
             height: 25px;
@@ -496,28 +298,14 @@ body {
     .test .block-test .use-yaer-round {
       padding-left: 56px;
       padding-bottom: 30px; }
-      @media screen and (max-width: 888px) {
-        .test .block-test .use-yaer-round {
-          padding-left: 0; } }
       .test .block-test .use-yaer-round .use-year-round-list {
         display: flex;
         flex-wrap: wrap;
         width: 785px; }
-        @media screen and (max-width: 1200px) {
-          .test .block-test .use-yaer-round .use-year-round-list {
-            width: 600px;
-            margin: 0 auto; } }
-        @media screen and (max-width: 888px) {
-          .test .block-test .use-yaer-round .use-year-round-list {
-            width: 290px; } }
         .test .block-test .use-yaer-round .use-year-round-list .use-year-round-list-item {
           display: flex;
           margin-right: 32px;
           margin-top: 21px; }
-          @media screen and (max-width: 888px) {
-            .test .block-test .use-yaer-round .use-year-round-list .use-year-round-list-item {
-              margin: 0 auto;
-              margin-top: 20px; } }
           .test .block-test .use-yaer-round .use-year-round-list .use-year-round-list-item .use-year-round-checkbox {
             width: 25px;
             height: 25px;
@@ -529,89 +317,38 @@ body {
             font-size: 22px;
             color: #5F5F5F;
             line-height: 24px; }
-            @media screen and (max-width: 1200px) {
-              .test .block-test .use-yaer-round .use-year-round-list .use-year-round-list-item p {
-                width: 203px; } }
           .test .block-test .use-yaer-round .use-year-round-list .use-year-round-list-item .use-year-round-checkbox.active {
             background-color: #328E00; }
     .test .block-test .drains {
       padding-left: 56px;
       padding-bottom: 30px; }
-      @media screen and (max-width: 888px) {
-        .test .block-test .drains {
-          padding-left: 0px; } }
       .test .block-test .drains .drains-list {
         display: flex; }
-        @media screen and (max-width: 1200px) {
-          .test .block-test .drains .drains-list {
-            width: 600px;
-            margin: 0 auto;
-            flex-wrap: wrap; } }
-        @media screen and (max-width: 888px) {
-          .test .block-test .drains .drains-list {
-            width: 290px;
-            flex-direction: column;
-            align-items: center; } }
         .test .block-test .drains .drains-list .drains-list-item {
           cursor: pointer;
           margin-right: 50px; }
-          @media screen and (max-width: 1200px) {
-            .test .block-test .drains .drains-list .drains-list-item {
-              padding-top: 20px; } }
-          @media screen and (max-width: 888px) {
-            .test .block-test .drains .drains-list .drains-list-item {
-              margin-right: 0; } }
     .test .block-test .resault {
       padding-left: 56px;
       padding-bottom: 30px; }
-      @media screen and (max-width: 888px) {
-        .test .block-test .resault {
-          padding-left: 0px; } }
       .test .block-test .resault .resault-list {
         display: flex;
         width: 920px;
         flex-wrap: wrap; }
-        @media screen and (max-width: 1200px) {
-          .test .block-test .resault .resault-list {
-            width: 600px;
-            margin: 0 auto; } }
-        @media screen and (max-width: 888px) {
-          .test .block-test .resault .resault-list {
-            width: 290px; } }
         .test .block-test .resault .resault-list .resault-list-item {
           margin-right: 50px;
           display: flex;
           align-items: center;
           font-size: 22px;
           color: #5F5F5F; }
-          @media screen and (max-width: 1200px) {
-            .test .block-test .resault .resault-list .resault-list-item:nth-child(2) {
-              padding-top: 21px; } }
-          @media screen and (max-width: 888px) {
-            .test .block-test .resault .resault-list .resault-list-item {
-              margin-right: 0;
-              padding-left: 20px; } }
           .test .block-test .resault .resault-list .resault-list-item:nth-child(3) {
             padding-top: 21px; }
           .test .block-test .resault .resault-list .resault-list-item:nth-child(4) {
             padding-top: 21px; }
-            @media screen and (max-width: 888px) {
-              .test .block-test .resault .resault-list .resault-list-item:nth-child(4) p {
-                width: 200px; } }
           .test .block-test .resault .resault-list .resault-list-item .item-p {
             width: 286px; }
-            @media screen and (max-width: 888px) {
-              .test .block-test .resault .resault-list .resault-list-item .item-p {
-                width: 250px; } }
     .test .block-test .place {
       padding-left: 56px;
       display: flex; }
-      @media screen and (max-width: 1200px) {
-        .test .block-test .place {
-          display: block; } }
-      @media screen and (max-width: 888px) {
-        .test .block-test .place {
-          padding-left: 0px; } }
       .test .block-test .place .place-left textarea {
         width: 423px;
         height: 104px;
@@ -621,34 +358,16 @@ body {
         padding-top: 15px;
         padding-left: 17px;
         font-size: 20px; }
-        @media screen and (max-width: 1200px) {
-          .test .block-test .place .place-left textarea {
-            margin-bottom: 30px; } }
-        @media screen and (max-width: 888px) {
-          .test .block-test .place .place-left textarea {
-            width: 200px;
-            margin-left: 20px;
-            font-size: 16px; } }
         .test .block-test .place .place-left textarea::placeholder {
           font-size: 22px;
           color: #AAA;
           font-weight: 600; }
-          @media screen and (max-width: 888px) {
-            .test .block-test .place .place-left textarea::placeholder {
-              font-size: 18px; } }
       .test .block-test .place .place-map {
         width: 433px;
         height: 208px;
         background-color: #AAA;
         margin-left: 60px;
         margin-bottom: 48px; }
-        @media screen and (max-width: 1200px) {
-          .test .block-test .place .place-map {
-            margin: 0 auto;
-            margin-bottom: 30px; } }
-        @media screen and (max-width: 888px) {
-          .test .block-test .place .place-map {
-            width: 240px; } }
     .test .block-test .submit input {
       width: 297px;
       height: 50px;
@@ -657,11 +376,6 @@ body {
       padding-left: 17px;
       margin-left: 56px;
       margin-right: 83px; }
-      @media screen and (max-width: 888px) {
-        .test .block-test .submit input {
-          width: 200px;
-          margin-left: 20px;
-          font-size: 16px; } }
       .test .block-test .submit input::placeholder {
         font-size: 15px;
         color: #B9B9B9;
@@ -676,12 +390,6 @@ body {
       font-size: 18px;
       font-weight: 700;
       cursor: pointer; }
-      @media screen and (max-width: 888px) {
-        .test .block-test .submit button {
-          width: 200px;
-          font-size: 16px;
-          margin-top: 20px;
-          margin-left: 20px; } }
 
 .form-call {
   width: 1783px;
@@ -693,36 +401,11 @@ body {
   margin-top: 45px;
   flex-direction: column;
   align-items: center; }
-  @media screen and (max-width: 1891px) {
-    .form-call {
-      width: 1100px;
-      height: 250px;
-      flex-wrap: wrap; } }
-  @media screen and (max-width: 1200px) {
-    .form-call {
-      width: 768px;
-      height: auto;
-      padding-bottom: 40px;
-      display: block; } }
-  @media screen and (max-width: 888px) {
-    .form-call {
-      width: 290px; } }
   .form-call .call-title {
     font-weight: 700;
     font-size: 40px;
     padding-top: 54px;
     margin-bottom: 40px; }
-    @media screen and (max-width: 1891px) {
-      .form-call .call-title {
-        font-size: 30px;
-        text-align: center; } }
-    @media screen and (max-width: 1200px) {
-      .form-call .call-title {
-        font-size: 20px;
-        padding-top: 25px; } }
-    @media screen and (max-width: 888px) {
-      .form-call .call-title {
-        font-size: 16px; } }
   .form-call .form input {
     width: 536px;
     height: 70px;
@@ -735,22 +418,6 @@ body {
       color: #848484;
       font-size: 25px;
       font-weight: 700; }
-    @media screen and (max-width: 1891px) {
-      .form-call .form input {
-        width: 300px;
-        height: 50px;
-        font-size: 16px;
-        margin-right: 20px; }
-        .form-call .form input::placeholder {
-          font-size: 20px; } }
-    @media screen and (max-width: 1200px) {
-      .form-call .form input {
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 20px; } }
-    @media screen and (max-width: 888px) {
-      .form-call .form input {
-        width: 200px; } }
   .form-call .form button {
     width: 536px;
     height: 70px;
@@ -760,19 +427,6 @@ body {
     font-size: 25px;
     font-weight: 800;
     cursor: pointer; }
-    @media screen and (max-width: 1891px) {
-      .form-call .form button {
-        width: 300px;
-        height: 50px;
-        font-size: 20px; } }
-    @media screen and (max-width: 1200px) {
-      .form-call .form button {
-        display: block;
-        margin: 0 auto; } }
-    @media screen and (max-width: 888px) {
-      .form-call .form button {
-        width: 200px;
-        font-size: 15px; } }
 
 .our-work {
   padding-top: 81px;
@@ -786,36 +440,15 @@ body {
     position: relative;
     width: 1636px;
     margin: 0 auto; }
-    @media screen and (max-width: 1891px) {
-      .our-work .work-slider {
-        width: 900px; } }
-    @media screen and (max-width: 1200px) {
-      .our-work .work-slider {
-        width: 600px; } }
-    @media screen and (max-width: 888px) {
-      .our-work .work-slider {
-        width: 230px; } }
     .our-work .work-slider img {
       width: 512px;
       margin-right: 25.5px;
       margin-left: 25.5px; }
-      @media screen and (max-width: 1891px) {
-        .our-work .work-slider img {
-          width: 250px; } }
-      @media screen and (max-width: 1200px) {
-        .our-work .work-slider img {
-          width: 400px; } }
-      @media screen and (max-width: 888px) {
-        .our-work .work-slider img {
-          width: 200px; } }
     .our-work .work-slider .arrow {
       width: 55px;
       position: absolute;
       top: 50%;
       cursor: pointer; }
-      @media screen and (max-width: 1891px) {
-        .our-work .work-slider .arrow {
-          top: 40%; } }
     .our-work .work-slider .arrow.prev {
       left: -90px;
       z-index: 100; }
@@ -839,15 +472,6 @@ body {
     max-width: 1560px;
     position: relative;
     margin: 0 auto; }
-    @media screen and (max-width: 1891px) {
-      .reviews .reviews-slider {
-        width: 900px; } }
-    @media screen and (max-width: 1200px) {
-      .reviews .reviews-slider {
-        width: 600px; } }
-    @media screen and (max-width: 888px) {
-      .reviews .reviews-slider {
-        width: 100%; } }
     .reviews .reviews-slider .arrow {
       width: 55px;
       position: absolute;
@@ -868,10 +492,6 @@ body {
       margin-bottom: 15px;
       margin-top: 15px;
       position: relative; }
-      @media screen and (max-width: 627px) {
-        .reviews .reviews-slider .reviews-item {
-          width: 300px;
-          height: 500px; } }
       .reviews .reviews-slider .reviews-item .block-name-link {
         display: flex;
         margin-bottom: 28px; }
@@ -904,9 +524,6 @@ body {
           position: absolute;
           top: 18px;
           right: 38px; }
-          @media screen and (max-width: 627px) {
-            .reviews .reviews-slider .reviews-item .block-name-link .block-link {
-              top: 100px; } }
       .reviews .reviews-slider .reviews-item .reviews-text {
         margin-left: 51px;
         width: 404px;
@@ -914,9 +531,6 @@ body {
         font-size: 20px;
         font-weight: 400;
         font-family: "Roboto", sans-serif; }
-        @media screen and (max-width: 627px) {
-          .reviews .reviews-slider .reviews-item .reviews-text {
-            width: 200px; } }
     .reviews .reviews-slider .reviews-item.slick-center {
       box-shadow: 0px 3px 15px 10px rgba(0, 0, 0, 0.2); }
   .reviews .block-count {
@@ -943,64 +557,27 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     margin: 0 auto; }
-    @media screen and (max-width: 1891px) {
-      .about-us .wrapper {
-        width: 1100px;
-        display: block; } }
-    @media screen and (max-width: 1200px) {
-      .about-us .wrapper {
-        width: 768px; } }
-    @media screen and (max-width: 888px) {
-      .about-us .wrapper {
-        width: 90%; } }
     .about-us .wrapper p {
       width: 1047px;
       line-height: 24px;
       font-weight: 400;
       font-size: 20px;
       font-family: "Roboto", sans-serif; }
-      @media screen and (max-width: 1891px) {
-        .about-us .wrapper p {
-          width: 100%;
-          text-align: center; } }
     .about-us .wrapper img {
       display: block;
       margin-top: -60px; }
-      @media screen and (max-width: 1891px) {
-        .about-us .wrapper img {
-          padding-top: 30px;
-          margin: 0 auto; } }
-      @media screen and (max-width: 888px) {
-        .about-us .wrapper img {
-          width: 80%; } }
 
 .form-q {
   padding-bottom: 85px;
   padding-left: 68px; }
-  @media screen and (max-width: 1028px) {
-    .form-q {
-      padding-bottom: 185px; } }
-  @media screen and (max-width: 953px) {
-    .form-q {
-      padding-left: 0; } }
   .form-q .form-q-title {
     font-weight: 700;
     font-size: 35px;
     padding-bottom: 24px; }
-    @media screen and (max-width: 953px) {
-      .form-q .form-q-title {
-        padding-left: 30px; } }
   .form-q form {
     width: 806px;
     display: flex;
     flex-direction: column; }
-    @media screen and (max-width: 953px) {
-      .form-q form {
-        width: 768px;
-        margin: 0 auto; } }
-    @media screen and (max-width: 888px) {
-      .form-q form {
-        width: 90%; } }
     .form-q form input {
       width: 90%;
       background-color: #F3F3F3;
@@ -1038,9 +615,6 @@ body {
       font-size: 25px;
       font-weight: 800;
       cursor: pointer; }
-      @media screen and (max-width: 627px) {
-        .form-q form button {
-          width: 300px; } }
 
 .footer {
   position: relative;
@@ -1049,10 +623,6 @@ body {
   padding-left: 78px;
   padding-right: 189px;
   padding-bottom: 51px; }
-  @media screen and (max-width: 1399px) {
-    .footer {
-      display: block;
-      align-items: center; } }
   .footer .footer-logo {
     padding-top: 51px;
     display: flex;
@@ -1065,9 +635,6 @@ body {
       -webkit-text-fill-color: #fff;
       -webkit-text-stroke-width: 2px;
       text-shadow: 5px 8px 20px rgba(255, 255, 255, 0.5); }
-      @media screen and (max-width: 507px) {
-        .footer .footer-logo p {
-          display: none; } }
   .footer .text-1 {
     margin-left: 275px;
     color: #fff;
@@ -1075,9 +642,6 @@ body {
     font-size: 20px;
     padding-top: 77px;
     line-height: 24px; }
-    @media screen and (max-width: 1399px) {
-      .footer .text-1 {
-        margin-left: 0px; } }
   .footer .text-2 {
     padding-top: 77px;
     color: #fff;
@@ -1087,9 +651,6 @@ body {
     line-height: 24px;
     font-family: "Roboto", sans-serif;
     margin-left: 35px; }
-    @media screen and (max-width: 1399px) {
-      .footer .text-2 {
-        margin-left: 0px; } }
   .footer .footer-tel {
     font-weight: 700;
     font-size: 22px;
@@ -1104,10 +665,6 @@ body {
     position: absolute;
     top: 65px;
     right: 189px; }
-    @media screen and (max-width: 1891px) {
-      .footer .footer-tel {
-        top: -120px;
-        right: 50px; } }
     .footer .footer-tel:before {
       content: url("../img/header/phone.svg");
       margin-right: 14px; }
