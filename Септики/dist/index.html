@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=1920"/>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Узнай цену септика</title>
@@ -12,7 +11,12 @@
     <header class="header">
         <div class="header-logo">
             <img src="./assets/img/header/logo.svg" alt="logo">
-            <p>узнай цену септика</p>
+            <div class="header-logo-text">
+                <p>узнай цену септика</p>
+                <div class="mobile-text">
+                    Продажа и установка систем <br> канализаций под ключ
+                </div>
+            </div>
         </div>
         <p class="header-text">
             Продажа и установка систем <br>
@@ -21,6 +25,8 @@
         <a href="tel:+74953635989" class="header-phone">8 (495) 363-59-89</a>
     </header>
     <section class="offer">
+        <img src="./assets/img/offer/bg-el.jpg" alt="bg-offer-el" class="offer-img">
+        <h1 class="offer-title">Подберите септик и узнайтe <br> <span>точную стоимость за <br> 1 минуту</span></h1>
         <div class="block-about">
             <div class="about-item">
                 <div class="img">
@@ -145,15 +151,15 @@
                 <h2 class="test-title">3. Какой уровень грунтовых вод на вашем участке?</h2>
                 <div class="level-groundwater-list">
                     <div class="level-groundwater-list-item">
-                        <div class="level-groundwater-checkbox checkbox" data-count-piople="-1.5"></div>
+                        <div class="level-groundwater-checkbox checkbox" data-groundwater="-1.5"></div>
                         <p>Низкий. Ниже 1,5 метра</p>
                     </div>
                     <div class="level-groundwater-list-item">
-                        <div class="level-groundwater-checkbox checkbox" data-count-piople="+1.5"></div>
+                        <div class="level-groundwater-checkbox checkbox" data-groundwater="+1.5"></div>
                         <p>Высокий. Выше 1,5 метра</p>
                     </div>
                     <div class="level-groundwater-list-item">
-                        <div class="level-groundwater-checkbox checkbox" data-count-piople="--"></div>
+                        <div class="level-groundwater-checkbox checkbox" data-groundwater="--"></div>
                         <p>Не знаю</p>
                     </div>
                 </div>
@@ -183,19 +189,24 @@
                 <h2 class="test-title">5. Куда будем отводить переработанные стоки?</h2>
                 <div class="drains-list">
                     <div class="drains-list-item" data-drains-value="priming">
-                        <img src="./assets/img/test/icons-5.svg" alt="icons-5">
+                        <img src="./assets/img/test/icons-5.svg" class="no-active" alt="icons-5">
+                        <img src="./assets/img/test/icons-5active.svg" class="active" alt="icons-5active ">
                     </div>
-                    <div class="drains-list-item active" data-drains-value="well">
-                        <img src="./assets/img/test/icons-6.svg" alt="icons-6">
+                    <div class="drains-list-item" data-drains-value="well">
+                        <img src="./assets/img/test/icons-6.svg" class="no-active" alt="icons-6">
+                        <img src="./assets/img/test/icons-6active.svg" class="active" alt="icons-6active ">
                     </div>
                     <div class="drains-list-item" data-drains-value="ditch">
-                        <img src="./assets/img/test/icons-7.svg" alt="icons-7">
+                        <img src="./assets/img/test/icons-7.svg" class="no-active" alt="icons-7">
+                        <img src="./assets/img/test/icons-7active.svg" class="active" alt="icons-7active ">
                     </div>
                     <div class="drains-list-item" data-drains-value="ravine">
-                        <img src="./assets/img/test/icons-8.svg" alt="icons-8">
+                        <img src="./assets/img/test/icons-8.svg" class="no-active" alt="icons-8">
+                        <img src="./assets/img/test/icons-8active.svg" class="active" alt="icons-8active ">
                     </div>
                     <div class="drains-list-item" data-drains-value="dont-now">
-                        <img src="./assets/img/test/icons-9.svg" alt="icons-9">
+                        <img src="./assets/img/test/icons-9.svg" class="no-active" alt="icons-9">
+                        <img src="./assets/img/test/icons-9active.svg" class="active" alt="icons-9active ">
                     </div>
                 </div>
             </div>
@@ -230,6 +241,9 @@
             <div class="submit">
                 <input type="tel" placeholder="Введите телефон" id="test-tel" name="test-tel">
                 <button type="submit">Получить каталог</button>
+            </div>
+            <div class="resault-submit-test">
+                <span>Cпасибо, скоро мы с вами свяжимся</span>
             </div>
         </div>
     </section>
@@ -380,11 +394,19 @@
     <footer class="footer">
         <div class="footer-logo">
             <img src="./assets/img/header/logo.svg" alt="logo">
-            <p>Септинжиринг</p>
+            <div class="footer-logo-text">
+                <p>Септинжиринг</p>
+                <div class="mobile-text">Продажа и установка систем <br> канализаций под ключ</div>
+            </div>
         </div>
         <div class="text-1">Продажа и установка систем <br> канализаций под ключ</div>
         <div class="text-2">© 2021 sitename.ru Все права защищены</div>
-        <a href="tel:+74953635989" class="footer-tel">8 (495) 363-59-89</a>
+        <div class="footer-tel">
+            <a href="tel:+74953635989" class="footer-tel">8 (495) 363-59-89</a>
+            <p>© 2020
+                sitename.ru <br>
+             Все права защищены</p>
+        </div>
     </footer>
 
 
