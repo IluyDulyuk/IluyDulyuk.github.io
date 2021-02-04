@@ -101,9 +101,7 @@ $roboto: 'Roboto', sans-serif;
             padding-left: 26px;
             font-weight: 700;
             font-size: 35px;
-            color: #006B9C;
-            -webkit-text-fill-color: #fff;
-            -webkit-text-stroke-width: 2px;
+            color:#fff;
             text-transform: uppercase;
             text-shadow: 5px 8px 20px rgba(255, 255, 255, 0.5);
             @media screen and (max-width: 1886px) {
@@ -114,6 +112,11 @@ $roboto: 'Roboto', sans-serif;
                 padding-left: 10px;
             }
 
+        }
+        p.active {
+            color: #006B9C;
+            -webkit-text-fill-color: #fff;
+            -webkit-text-stroke-width: 2px;
         }
         .mobile-text {
             font-weight: 600;

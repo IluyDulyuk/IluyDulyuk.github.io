@@ -110,9 +110,7 @@ body {
       padding-left: 26px;
       font-weight: 700;
       font-size: 35px;
-      color: #006B9C;
-      -webkit-text-fill-color: #fff;
-      -webkit-text-stroke-width: 2px;
+      color: #fff;
       text-transform: uppercase;
       text-shadow: 5px 8px 20px rgba(255, 255, 255, 0.5); }
       @media screen and (max-width: 1886px) {
@@ -122,6 +120,10 @@ body {
         .header .header-logo p {
           font-size: 18px;
           padding-left: 10px; } }
+    .header .header-logo p.active {
+      color: #006B9C;
+      -webkit-text-fill-color: #fff;
+      -webkit-text-stroke-width: 2px; }
     .header .header-logo .mobile-text {
       font-weight: 600;
       font-size: 18px;
