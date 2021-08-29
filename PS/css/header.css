@@ -1,0 +1,178 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 7;
+}
+
+.header__wrapper {
+  margin: 0 auto;
+  max-width: 1920px;
+  height: 114px;
+  padding: 0 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header__item2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer {
+  width: 100%;
+}
+
+.logo__wrapper {
+  width: 117px;
+  height: 26px;
+}
+
+.logo__wrapper__img {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.menu__wrapper {
+  margin: 0 45px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__elem {
+text-transform: uppercase;
+    line-height: 30px;
+    color: white;
+    margin-right: 48px;
+        transition: 0.1s;
+}
+
+.menu__elem:hover {
+cursor: pointer;
+    border-bottom: 3px solid #eeeeee;
+    padding-bottom: 5px;
+}
+
+
+.menu__item {
+  margin: 0 10px;
+}
+
+.account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.account__wrapper {
+  /*width: 145px;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account__item1 {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background: url(../img/account/user.svg);
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  margin-right: 30px;
+}
+
+.account__item1:hover, .account__elem1:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.account__item1:active, .account__elem1:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.account__item2 {
+  /*width: 79px;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account__elem {
+  text-transform: uppercase;
+    line-height: 30px;
+    color: white;
+    padding-left: 10px;
+    margin-right: -5px;
+}
+
+.account__elem1 {
+  position: relative;
+    cursor: pointer;
+    width: 21.97px;
+    height: 30px;
+    background: url(../img/account/basket.svg);
+}
+
+.account__kol {
+  position: absolute;
+  right: -1px;
+  bottom: -4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 11px;
+  height: 11px;
+  font-size: 11px;
+  line-height: 17px;
+  color: white;
+  background-image: url(../img/account/Ellipse17.svg);
+  background-size: 11px;
+  background-position: center;
+  background-repeat: no-repeat;
+}

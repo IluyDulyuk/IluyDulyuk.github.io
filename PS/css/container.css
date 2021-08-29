@@ -1,0 +1,876 @@
+.container {
+  width: 100%;
+}
+
+.close {
+  text-align: right;
+    margin-top: -33px;
+    margin-bottom: 30px;
+    width: auto;
+    cursor: pointer;
+    height: auto;
+    font-size: 16px;
+    background: none;
+}
+
+.close:hover {
+  color: #163dc9;
+    transition: 0.1s;
+    transform: none;
+}
+
+.close:active {
+  color: #163dc9;
+    transition: 0.1s;
+    transform: none;
+}
+
+
+.container__wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1920px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container__line1 {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background-image: url(../img/container/playstation-5.png), url(../img/container/naprawa-serwis-play-station-5.svg), url(../img/container/Group10.svg);
+  background-size: 533px, 256px 469px, 1007px 1048px;
+  background-position: left 216px top 56px, right 0px top -59px,
+ left -57px top -300px;
+  background-repeat: no-repeat;
+}
+
+.container__line2 {
+  width: 100%;
+  height: 593px;
+  background-color: #262335;
+}
+
+.container__line3 {
+  position: relative;
+  width: 100%;
+  height: 753px;
+  background-color: #f3f3f3;
+  background-image: url(../img/container/Ellipse9.svg), url(../img/container/Group12.svg);
+  background-size: 82px 82px, 217px 216px;
+  background-position: right 87px bottom 77px, right 187px top 47px;
+  background-repeat: no-repeat;
+}
+
+.container__line4 {
+  position: relative;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 773px;
+  background-image: url(../img/container/dualsense-ps5-controller-colours-guide.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container__line5 {
+  position: relative;
+  width: 100%;
+  height: 601px;
+  background-color: #f3f3f3;
+  background-image: url(../img/container/Group15.svg);
+  background-position: right 0 top 20px;
+  background-repeat: no-repeat;
+}
+
+.container__line6 {
+  width: 100%;
+  height: 601px;
+  background-color: #262335;
+}
+
+.container__line7 {
+  position: relative;
+  width: 100%;
+  height: 601px;
+  background-color: #f3f3f3;
+}
+
+.container__line8 {
+  position: relative;
+  width: 100%;
+  height: 601px;
+  background-color: #262335;
+}
+
+.container__line9 {
+  position: relative;
+  width: 100%;
+  height: 601px;
+  background-color: #f3f3f3;
+}
+
+.container__line10 {
+  width: 100%;
+  height: 476px;
+  background-color: #262335;
+}
+
+.offer {
+  position: absolute;
+  right: calc(50% - 470px);
+  top: 232px;
+  padding-left: 58px;
+}
+
+.offer__el1 {
+  max-width: 320px;
+  font-size: 14px;
+  line-height: 22px;
+  /*letter-spacing: 0.045em;*/
+}
+
+.offer__el2 {
+  margin-bottom: 23px;
+  max-width: 457px;
+  font-size: 22px;
+  line-height: 34px;
+ /* letter-spacing: 0.045em;*/
+}
+
+.offer__h1 {
+  font-family: 'Bebas Neue', cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 86px;
+  text-transform: uppercase;
+}
+
+.offer__btn {
+  cursor: pointer;
+  width: 220px;
+  height: 61px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(273.85deg, #163dc9 5.96%, #5579fc 98.86%);
+  color: white;
+}
+
+.offer__btn:hover {
+
+}
+
+.offer__btn:active {
+
+}
+
+.img-Group9 {
+  position: absolute;
+  width: 434px;
+  height: 434px;
+  right: 0;
+  bottom: -166px;
+  background-image: url(../img/container/Group9.svg);
+  background-size: 434px 434px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 100px;
+  color: white;
+}
+
+.section2__header {
+  margin-top: 90px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+}
+
+.section2__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.section2__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 33px;
+}
+
+.section2__img {
+  width: 140px;
+  height: 100px;
+  margin: 48px auto 19px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section2__img1 {
+  background-image: url(../img/container/Group_el1.svg);
+}
+
+.section2__img2 {
+  background-image: url(../img/container/Group_el2.svg);
+}
+
+.section2__img3 {
+  background-image: url(../img/container/Group_el3.svg);
+}
+
+.section2__heading {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.045em;
+}
+
+.section2__text {
+  margin-top: 37px;
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: 0.045em;
+}
+
+.ps5 {
+  position: relative;
+  padding: 73px 25px 0 25px;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/container/playstation_5_dualsense1.png);
+  background-size: 513px;
+  background-position: right 30% top 73px;
+  background-repeat: no-repeat;
+}
+
+.ps5__price {
+  position: relative;
+}
+
+.ps5__price-item {
+  position: absolute;
+  top: 77px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 36px;
+  line-height: 56px;
+  letter-spacing: 0.045em;
+  color: #0f3bd9;
+}
+
+.ps5__elem1 {
+  margin-left: 265px;
+  position: relative;
+  z-index: 1;
+  width: 514px;
+  height: 100%;
+}
+
+.ps5__elem2 {
+  position: absolute;
+  right: 30%;
+  top: 361px;
+  width: 146px;
+  height: 146px;
+  background-image: url(../img/container/Ellipse6.svg);
+  background-size: 146px 146px;
+  background-repeat: no-repeat;
+}
+
+.ps5__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.ps5__nav-el {
+  cursor: pointer;
+  margin-top: 15px;
+  padding: 12px 15px;
+  width: 220px;
+  height: 61px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  border: 1px solid #0f3bd9;
+  color: #0f3bd9;
+}
+
+.ps5__nav-left {
+  border-radius: 30px 0px 0px 30px;
+}
+
+.ps5__nav-right {
+  border-radius: 0px 30px 30px 0px;
+}
+
+.ps5__nav-active {
+  background: white;
+}
+
+.ps5__h2 {
+  margin-top: 112px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.ps5__h3 {
+  margin: 3px 0 17px 0;
+  width: 401px;
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: 0.045em;
+}
+
+.ps5__text-active {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 1s;
+  transition: 1s;
+  display: none;
+}
+
+.img-Group11 {
+  position: absolute;
+  width: 342px;
+  height: 492px;
+  left: 0;
+  bottom: -300px;
+  background: url(../img/container/Group11.svg) no-repeat;
+}
+
+.section4 {
+  width: 596px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  background-color: rgba(196, 196, 196, 0.6);
+  color: white;
+}
+
+.section4__p1 {
+  margin: 3px 20px;
+  font-size: 55px;
+  line-height: 66px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.section4__p2 {
+  margin: 18px 50px 27px 50px;
+  font-size: 17px;
+  line-height: 28px;
+}
+
+.section5 {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section5__price {
+  position: absolute;
+  z-index: 0;
+  left: 480px;
+  top: 65px;
+  width: 227px;
+  height: 227px;
+  background-image: url(../img/container/Ellipse15.svg);
+  background-size: 227px 227px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section5__price-item {
+  position: absolute;
+  top: 35px;
+  right: 12px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 36px;
+  line-height: 56px;
+  letter-spacing: 0.045em;
+  color: white;
+}
+
+.section5__img {
+  position: absolute;
+  width: 137px;
+  height: 207px;
+  left: 0;
+  bottom: -60px;
+  background-image: url(../img/container/Group16.svg);
+  background-size: 137px 207px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section5__item1 {
+  width: 513px;
+  height: 343px;
+  margin-left: 152px;
+  background-image: url(../img/container/dualsense_big.png);
+  background-size: 513px 343px;
+  background-position: left 0 bottom 0;
+  background-repeat: no-repeat;
+}
+
+.section5__item2 {
+  width: 700px;
+  margin-right: 157px;
+  border-left: 3px solid rgba(73, 113, 255, 0.5);
+}
+
+.section5__item2-elem1 {
+  margin-left: 30px;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 43px;
+}
+
+.section5__item2-elem2 {
+  margin: 3px 0 17px 30px;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+}
+
+.section5__btn {
+  cursor: pointer;
+  width: 184px;
+  height: 61px;
+  margin-left: 30px;
+  border: 2px solid #0f3bd9;
+  border-radius: 30px;
+  color: #0f3bd9;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.section5__btn:hover {
+  border: 2px solid #1b2b3b;
+  color: #1b2b3b;
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 100, 100, 0.7);
+          box-shadow: 0px 0px 7px 1px rgba(0, 100, 100, 0.7);
+}
+
+.section5__btn:active {
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 100, 100, 0.7) inset;
+          box-shadow: 0px 0px 7px 1px rgba(0, 100, 100, 0.7) inset;
+}
+
+.section6 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section6__item1 {
+  z-index: 1;
+  width: 568px;
+  margin-left: 220px;
+  border-left: 3px solid rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+.section6__item2 {
+  position: relative;
+  z-index: 1;
+  width: 513px;
+  height: 343px;
+  margin-right: 200px;
+  background-image: url(../img/container/dualsense_011-big.png);
+  background-size: 513px 343px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section6__img {
+  position: absolute;
+  z-index: 0;
+  right: 405px;
+  top: 118px;
+  width: 227px;
+  height: 227px;
+  background-image: url(../img/container/Ellipse15.svg);
+  background-size: 227px 227px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section6__price {
+  position: absolute;
+  left: 35px;
+  top: 25px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 36px;
+  line-height: 56px;
+  letter-spacing: 0.045em;
+  color: white;
+}
+
+.section6__item1-elem1 {
+  margin-left: 30px;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 43px;
+}
+
+.section6__item1-elem2 {
+  margin: 13px 0 17px 30px;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0.025em;
+}
+
+.section6__btn {
+  cursor: pointer;
+  margin-left: 30px;
+  width: 184px;
+  height: 61px;
+  background-color: #262335;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 30px;
+}
+
+.section6__btn:hover {
+  background-color: #c7d3ff;
+  color: #1b2b3b;
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 100, 100, 0.7);
+          box-shadow: 0px 0px 7px 1px rgba(0, 100, 100, 0.7);
+}
+
+.section6__btn:active {
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 100, 100, 0.7) inset;
+          box-shadow: 0px 0px 7px 1px rgba(0, 100, 100, 0.7) inset;
+}
+
+.section7 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/container/Group6.svg);
+  background-position: left 0 bottom 0px;
+  background-repeat: no-repeat;
+}
+
+.section7__item1 {
+  position: relative;
+  z-index: 1;
+  width: 513px;
+  height: 343px;
+  margin-left: 212px;
+  background-image: url(../img/container/zaryad_big.png);
+  background-size: 513px 343px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section7__item2 {
+  z-index: 2;
+  width: 647px;
+  margin-right: 210px;
+  border-left: 3px solid rgba(73, 113, 255, 0.5);
+}
+
+.section7__img {
+  position: absolute;
+  z-index: 1;
+  width: 170px;
+  height: 380px;
+  right: 0px;
+  bottom: -160px;
+  background-image: url(../img/container/Group51.svg);
+  background-size: 380px 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section7__price {
+  position: absolute;
+  z-index: 0;
+  left: 240px;
+  top: 112px;
+  width: 227px;
+  height: 227px;
+  background-image: url(../img/container/Ellipse15.svg);
+  background-size: 227px 227px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section7__price-item {
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 36px;
+  line-height: 56px;
+  letter-spacing: 0.045em;
+  color: white;
+}
+
+.section8 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/container/Group17.svg);
+  background-position: right 200px bottom 33px;
+  background-repeat: no-repeat;
+}
+
+.section8__item1 {
+  position: relative;
+  z-index: 1;
+  width: 513px;
+  height: 343px;
+  margin-left: 122px;
+  background-image: url(../img/container/hd_big.png);
+  background-size: 513px 343px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section8__item2 {
+  z-index: 1;
+  width: 614px;
+  margin-right: 243px;
+  border-left: 3px solid rgba(255, 255, 255, 0.5);
+  color: white;
+}
+
+.section8__price {
+  position: absolute;
+  z-index: 0;
+  left: 442px;
+  top: 118px;
+  width: 227px;
+  height: 227px;
+  background-image: url(../img/container/Ellipse15.svg);
+  background-size: 227px 227px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section8__price-item {
+  position: absolute;
+  top: 25px;
+  right: 22px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 36px;
+  line-height: 56px;
+  letter-spacing: 0.045em;
+  color: white;
+}
+
+.section9 {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section9__item1 {
+  z-index: 2;
+  width: 765px;
+  margin-left: 237px;
+  border-left: 3px solid rgba(73, 113, 255, 0.5);
+}
+
+.section9__item2 {
+  position: relative;
+    z-index: 1;
+    width: 400px;
+    height: 400px;
+    margin-left: 122px;
+    background-image: url(../img/container/pulse_big.png);
+    background-size: 409px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.section9__price {
+  position: absolute;
+  z-index: 0;
+  right: 200px;
+  top: 107px;
+  width: 227px;
+  height: 227px;
+  background-image: url(../img/container/Ellipse15.svg);
+  background-size: 227px 227px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section9__price-item {
+  position: absolute;
+  top: 40px;
+  right: 90px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 36px;
+  line-height: 56px;
+  letter-spacing: 0.045em;
+  color: white;
+}
+
+.section9__img {
+  position: absolute;
+  z-index: 1;
+  width: 271px;
+  height: 461px;
+  left: 0;
+  top: -89px;
+  background-image: url(../img/container/Group_5.svg);
+  background-size: 271px 461px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.delivery {
+  padding: 0 275px;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.delivery__header {
+  margin: 0 0 42px 0;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+}
+
+.delivery__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.delivery__item {
+  width: 420px;
+  margin: 0 10px;
+  padding-left: 23px;
+  border-left: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.delivery__item-p1 {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.045em;
+}
+
+.delivery__item-p2 {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 23px;
+  letter-spacing: 0.045em;
+}

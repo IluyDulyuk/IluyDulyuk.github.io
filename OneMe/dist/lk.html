@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <title>OneMe</title>
+</head>
+<body>
+    <a href="https://wa.me/+79637823893" class="whatsapp-icon"><img src="./assets/img/whatsapp-icon.svg" alt="whatsapp"></a>
+    <header class="header">
+        <div class="header-logo_link">
+            <a href="#" class="mobile-link"><img src="./assets/img/vk-vector.svg" alt="vk"></a>
+            <a class="logo" href="./index.html"><img src="./assets/img/logo.svg" alt="logo"></a>
+            <a href="#" class="vk-link"><img src="./assets/img/vk-vector.svg" alt="vk"></a>
+            <a href="#" class="inst-link"><img src="./assets/img/inst-vector.svg" alt="inst"></a>
+            <span class="header-menu-gum"></span>
+        </div>
+        <ul class="header-menu-list">
+            <li class="header-menu-item"><a href="./index.html">Главная</a></li>
+            <li class="header-menu-item"><a href="./about.html">О магазине</a></li>
+            <li class="header-menu-item"><a href="./catalog.html">Каталог</a></li>
+            <li class="header-menu-item"><a href="./dostavka.html">Доставка и оплата</a></li>
+            <li class="header-menu-item"><a href="./vozvrat.html">Возврат</a></li>
+            <li class="header-menu-item"><a href="./pravila.html">Контакты</a></li>
+        </ul>
+        <div class="header-second-menu">
+                <a href="#" class="mobile-link"><img src="./assets/img/inst-vector.svg" alt="inst"></a>
+            <div class="header-tel"><a href="#"><img src="./assets/img/tel-vector.svg" alt="tel"></a></div>
+            <div class="header-account"><a href="./lk.html"><img src="./assets/img/account-vector.svg" alt="account"></a></div>
+            <div class="header-cart">
+                <a href="./cart.html"><img src="./assets/img/cart-vector.svg" alt="cart"></a>
+                <div class="cart-count active">2</div>
+            </div>
+        </div>
+        <div class="header-second-menu-mobile">
+            <a class="logo" href="./index.html"><img src="./assets/img/logo.svg" alt="logo"></a>
+            <div class="wrapper">
+                <a href="#" class="vk-link"><img src="./assets/img/vk-vector.svg" alt="vk"></a>
+                <a href="#" class="inst-link"><img src="./assets/img/inst-vector.svg" alt="inst"></a>
+                <div class="header-tel"><a href="#"><img src="./assets/img/tel-vector.svg" alt="tel"></a></div>
+                <div class="header-account"><a href="./lk.html"><img src="./assets/img/account-vector.svg" alt="account"></a></div>
+                <div class="header-cart">
+                    <a href="./cart.html"><img src="./assets/img/cart-vector.svg" alt="cart"></a>
+                    <div class="cart-count active">2</div>
+                </div>
+            </div>
+        </div>
+        <ul class="mobile-menu">
+            <div class="mobile-menu-close"><img src="./assets/img/mobile-menu-close.svg" alt="close"></div>
+            <li class="mobile-menu-item"><a href="./index.html">Главная</a></li>
+            <li class="mobile-menu-item"><a href="./about.html">О магазине</a></li>
+            <li class="mobile-menu-item"><a href="./catalog.html">Каталог</a></li>
+            <li class="mobile-menu-item"><a href="./dostavka.html">Доставка и оплата</a></li>
+            <li class="mobile-menu-item"><a href="./vozvrat.html">Возврат</a></li>
+            <li class="mobile-menu-item"><a href="./pravila.html">Контакты</a></li>
+        </ul>
+    </header>
+    <div class="before-links-mobile">
+        <a href="#">Назад</a>
+    </div>
+
+    <section class="lk">
+        <div class="title">Личный кабинет</div>
+        <div class="content">
+            <div class="personal-data-block">
+                <h4 class="lk-title">Персональные данные:</h4>
+                <form action="#" class="personal-form">
+                    <div class="input-block">
+                        <input type="text" placeholder="Ваша фамилия" name="surname" value="Иванов">
+                    </div>
+                    <div class="input-block">
+                        <input type="text" placeholder="Ваше имя" name=name" value="Иван">
+                        <div class="input-after">*</div>
+                    </div>
+                    <div class="input-block">
+                        <input type="text" placeholder="Ваше e-mail" name=email" value="ivanov@mail.ru">
+                    </div>
+                    <div class="input-block">
+                        <input type="tel" placeholder="Ваш номер телефона" name=tel" value="8(901)867-46-87">
+                        <div class="input-after">*</div>
+                    </div>
+                </form>
+                <!-- <div class="photo-block">
+                    <div class="photo"><img src="./assets/img/avatar.svg" alt="avatar"></div>
+                    <a href="#" class="add-photo">Загрузить фото</a>
+                </div> -->
+                <div class="block-btn">
+                    <button class="change">Редактировать</button>
+                    <button class="exit">Выйти</button>
+                </div>
+            </div>
+            <div class="password-block">
+                <h4 class="lk-title">Пароль:</h4>
+                <form action="#" class="password-form">
+                    <div class="password-block-input">
+                        <input type="password" placeholder="Текущий пароль" data-input="1" name="lastpassword">
+                        <img src="./assets/img/check-password.png" data-button="1" alt="checkpassword" class="check-password">
+                        <img src="./assets/img/check-password-active.png" data-button="2" alt="checkpasswordactive" class="check-password-active active">
+                    </div>
+                    <div class="password-block-input">
+                        <input type="password" placeholder="Новый пароль" data-input="2" name="newpassword">
+                        <img src="./assets/img/check-password.png" data-button="3" alt="checkpassword" class="check-password">
+                        <img src="./assets/img/check-password-active.png" data-button="4" alt="checkpasswordactive" class="check-password-active active">
+                    </div>
+                </form>
+            </div>
+            <div class="orders-block">
+                <h4 class="lk-title">История заказов:</h4>
+                <div class="name-block">
+                    <p>Заказ</p>
+                    <p class="name-block-cost">Стоимость</p>
+                    <p>Статус</p>
+                </div>
+                <div class="order-item">
+                    <div class="block-data-title">
+                        <h5 class="order-title">Худи с капюшоном</h5>
+                        <div class="data">от <span class="order-data">03.12.2020</span></div>
+                    </div>
+                    <div class="block-price">
+                        <div class="order-price">₽<span id="order-price">2.800</span></div>
+                        <div class="var-pay">наличный расчет</div>
+                    </div>
+                    <div class="block-status">
+                        <p class="order-status">Принят</p>
+                        <p class="status-data">03.12.2020</p>
+                    </div>
+                </div>
+                <div class="order-item">
+                    <div class="block-data-title">
+                        <h5 class="order-title">Худи с капюшоном</h5>
+                        <div class="data">от <span class="order-data">03.12.2020</span></div>
+                    </div>
+                    <div class="block-price">
+                        <div class="order-price">₽<span id="order-price">2.800</span></div>
+                        <div class="var-pay">наличный расчет</div>
+                    </div>
+                    <div class="block-status">
+                        <p class="order-status">Принят</p>
+                        <p class="status-data">03.12.2020</p>
+                    </div>
+                </div>
+                <div class="order-item">
+                    <div class="block-data-title">
+                        <h5 class="order-title">Худи с капюшоном</h5>
+                        <div class="data">от <span class="order-data">03.12.2020</span></div>
+                    </div>
+                    <div class="block-price">
+                        <div class="order-price">₽<span id="order-price">2.800</span></div>
+                        <div class="var-pay">наличный расчет</div>
+                    </div>
+                    <div class="block-status">
+                        <p class="order-status">Принят</p>
+                        <p class="status-data">03.12.2020</p>
+                    </div>
+                </div>
+                <button class="our-order-btn" href="#">Все заказы</button>
+            </div>
+            <div class="order-block-mobile">
+                <h5 class="lk-title">История заказов:</h5>
+                <div class="order-item-mobile">
+                    <div class="order-title-mobile">Худи с капюшоном</div>
+                    <div class="order-time">от 03.12.2020</div>
+                    <div class="block-order-info">
+                        <div class="order-price">₽<span>2.800</span></div>
+                        <div class="order-pay">наличный расчет</div>
+                        <div class="order-status">Принят</div>
+                        <div class="order-data-status">03.12.2020</div>
+                    </div>
+                </div>
+                <div class="order-item-mobile">
+                    <div class="order-title-mobile">Худи с капюшоном</div>
+                    <div class="order-time">от 03.12.2020</div>
+                    <div class="block-order-info">
+                        <div class="order-price">₽<span>2.800</span></div>
+                        <div class="order-pay">наличный расчет</div>
+                        <div class="order-status">Принят</div>
+                        <div class="order-data-status">03.12.2020</div>
+                    </div>
+                </div>
+                <div class="order-item-mobile">
+                    <div class="order-title-mobile">Худи с капюшоном</div>
+                    <div class="order-time">от 03.12.2020</div>
+                    <div class="block-order-info">
+                        <div class="order-price">₽<span>2.800</span></div>
+                        <div class="order-pay">наличный расчет</div>
+                        <div class="order-status">Принят</div>
+                        <div class="order-data-status">03.12.2020</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="reviews-modal">
+        <div class="modal-box">
+            <div class="modal-title">Новый отзыв</div>
+            <form action="#" class="form">
+                <textarea name="reviews"></textarea>
+                <button class="submit-reviews" type="submit">Отправить</button>
+                <button class="close-modal">Отмена</button>
+            </form>
+        </div>
+    </div>
+    <div class="error-modal">
+        <div class="modal-box">
+            <div class="modal-text">Оставлять отзывы могут только авторизиованные пользователи</div>
+            <button class="btn-signin">Регистрация</button>
+            <button class="btn-login">Войти</button>
+        </div>
+    </div>
+    <div class="login-modal">
+        <div class="modal-box">
+            <div class="block-title">
+                <h5>Зарегистрироваться </h5>
+                <h5>Войти</h5>
+            </div>
+            <form action="#" class="form">
+                <input type="text" name="emailOrNumber" placeholder="Адрес e-mail / номер телефона">
+                <input type="password" name="password" placeholder="Пароль:">
+                <button class="btn-login">Войти</button>
+            </form>
+            <div class="forget-password">Забыли пароль?</div>
+        </div>
+    </div>
+    <div class="signin-modal">
+        <div class="modal-box">
+            <div class="block-title">
+                <h5>Зарегистрироваться</h5>
+                <h5>Войти</h5>
+            </div>
+            <form action="#" class="form">
+                <input type="text" name="emailOrNumber" placeholder="Адрес e-mail / номер телефона">
+                <input type="password" name="password" placeholder="Пароль:">
+                <button class="btn-signin">Зарегистрироваться</button>
+            </form>
+            <div class="forget-password">Забыли пароль?</div>
+        </div>
+    </div>
+    <div class="forget-modal">
+        <div class="signin-modal active">
+            <div class="modal-box">
+                <div class="block-title">
+                    <h5>Смените свой пароль</h5>
+                </div>
+                <p>Введите в поле адрес электронной почты. Мы отправим вам сообщение по электронной почте с инструкциями по созданию нового пароля.</p>
+                <form action="#" class="form">
+                    <input type="text" name="emailOrNumber" placeholder="Адрес e-mail / номер телефона">
+                    <button class="btn-forget">Восстановить пароль</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="block-1">
+                <a href="./index.html" class="footer-logo"><img src="./assets/img/footer-logo.svg" alt="footer-logo"></a>
+                <a href="tel:+74957450363" class="footer-tel">+7(495)745-03-63</a>
+                <a href="tel:+79637823893" class="footer-tel">+7(963)782-38-93</a>
+                <div class="footer-car">Доставка по всей России</div>
+            </div>
+            <div class="block-2 block">
+                <h3 class="footer-title">Покупателям:</h3>
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="#">Личный кабинет</a></li>
+                    <li class="footer-item"><a href="#">Доставка и оплата </a></li>
+                    <li class="footer-item"><a href="#">Возврат</a></li>
+                </ul>
+            </div>
+            <div class="block-3 block">
+                <h3 class="footer-title">Компания:</h3>
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="#">О магазине</a></li>
+                    <li class="footer-item"><a href="#">Каталог</a></li>
+                    <li class="footer-item"><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="block-4 block">
+                <h3 class="footer-title">Мы в социальных сетях:</h3>
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="#">Вконтакте</a></li>
+                    <li class="footer-item"><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="block-5">
+                <h3 class="footer-title">Способы оплаты:</h3>
+                <img src="./assets/img/payment.svg" alt="pay">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
