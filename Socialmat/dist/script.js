@@ -1759,12 +1759,67 @@ window.addEventListener('DOMContentLoaded', function () {
     variableWidth: true,
     nextArrow: $('.arrow-next'),
     prevArrow: $('.arrow-prev'),
-    dots: true
+    dots: true,
+    responsive: [{
+      breakpoint: 507,
+      settings: {
+        nextArrow: $('.arrow-next-m'),
+        prevArrow: $('.arrow-prev-m')
+      }
+    }]
   }); // Обновление года 
 
   var year = document.querySelector('.year').querySelector('span');
   var nowYear = new Date().getFullYear();
-  year.innerHTML = "".concat(nowYear);
+  year.innerHTML = "".concat(nowYear); // Flags 
+
+  var firstFlag = document.querySelector('.first-flag'),
+      flagsList = document.querySelector('.flags-list');
+  firstFlag.addEventListener('click', function () {
+    flagsList.classList.toggle('active');
+  }); // Header-m
+
+  var gum = document.querySelector('.gum');
+  gum.addEventListener('click', function () {
+    gum.classList.toggle('active');
+  }); // AOS
+
+  AOS.init({
+    offset: 500,
+    // offset (in px) from the original trigger point
+    delay: 0,
+    // values from 0 to 3000, with step 50ms
+    duration: 1000,
+    // values from 0 to 3000, with step 50ms
+    easing: 'ease',
+    // default easing for AOS animations
+    once: true
+  }); // Mobile menu
+
+  var mobileMenuItems = document.querySelectorAll('.menu-list-m li');
+  mobileMenuItems.forEach(function (item) {
+    item.addEventListener('click', function () {
+      item.classList.toggle('active');
+    });
+  });
+  var menuWrapper = document.querySelector('.header-m'),
+      authBlock = document.querySelector('.auth-block'),
+      logoutBlock = document.querySelector('.logout');
+
+  if (menuWrapper.classList.contains('no-auth')) {
+    authBlock.classList.add('active');
+  } else {
+    logoutBlock.classList.add('active');
+  }
+
+  var bottomMenuBlock = menuWrapper.querySelector('.m-menu-bottom');
+  gum.addEventListener('click', function () {
+    if (gum.classList.contains('active')) {
+      bottomMenuBlock.classList.add('active');
+    } else {
+      bottomMenuBlock.classList.remove('active');
+    }
+  });
 });
 
 /***/ })

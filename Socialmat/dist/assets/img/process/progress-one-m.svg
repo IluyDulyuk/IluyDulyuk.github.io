@@ -1,0 +1,30 @@
+<svg width="174" height="127" viewBox="0 0 174 127" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d)">
+<rect x="20" y="16" width="133.006" height="86.0625" rx="12" fill="#FBFCFE"/>
+</g>
+<path d="M20 28C20 21.3726 25.3726 16 32 16H141.006C147.633 16 153.006 21.3726 153.006 28V28.8864H20V28Z" fill="#DFE6EC"/>
+<ellipse cx="27.3636" cy="22.2131" rx="1.38068" ry="1.6108" fill="#94A2AB"/>
+<circle cx="32.6562" cy="22.2131" r="1.6108" fill="#94A2AB"/>
+<circle cx="37.7187" cy="22.2131" r="1.6108" fill="#94A2AB"/>
+<rect x="25.9829" y="32.5682" width="12.8864" height="2.76136" rx="1" fill="#C4C4C4"/>
+<rect x="63.7217" y="64.3239" width="45.1023" height="5.0625" rx="2" fill="#94A2AB"/>
+<rect x="134.136" y="32.5682" width="13.3466" height="2.76136" rx="1" fill="#C4C4C4"/>
+<rect x="74.7671" y="73.5284" width="23.9318" height="3.22159" rx="1.6108" fill="#DFE6EC"/>
+<rect x="109.744" y="32.5682" width="12.4261" height="2.76136" rx="1" fill="#C4C4C4"/>
+<path d="M124.932 33.5682C124.932 33.0159 125.379 32.5682 125.932 32.5682H130.835C131.387 32.5682 131.835 33.0159 131.835 33.5682V34.3295C131.835 34.8818 131.387 35.3295 130.835 35.3295H125.932C125.379 35.3295 124.932 34.8818 124.932 34.3295V33.5682Z" fill="#C4C4C4"/>
+<path d="M80.6552 50.5411C81.4188 49.2941 81.8006 48.6706 82.3609 48.6706C82.9211 48.6706 83.3029 49.2941 84.0665 50.5411L87.4716 56.1019C88.297 57.4498 88.7097 58.1238 88.4233 58.6351C88.1369 59.1463 87.3466 59.1463 85.766 59.1463H78.9558C77.3752 59.1463 76.5848 59.1463 76.2984 58.6351C76.012 58.1238 76.4247 57.4498 77.2501 56.1019L80.6552 50.5411Z" fill="#94A2AB"/>
+<path d="M91.1524 50.2407C91.5339 49.5572 92.5173 49.5572 92.8988 50.2407L96.9747 57.5439C97.3468 58.2105 96.8649 59.0312 96.1015 59.0312H87.9496C87.1863 59.0312 86.7044 58.2105 87.0764 57.5439L91.1524 50.2407Z" fill="#94A2AB"/>
+<ellipse cx="91.7955" cy="46.6051" rx="1.38068" ry="1.15057" fill="#94A2AB"/>
+<path d="M67.8638 86.6449C67.8638 83.976 70.0273 81.8125 72.6962 81.8125H100.77C103.439 81.8125 105.602 83.976 105.602 86.6449C105.602 89.3137 103.439 91.4773 100.77 91.4773H72.6962C70.0273 91.4773 67.8638 89.3137 67.8638 86.6449Z" fill="#F53838"/>
+<defs>
+<filter id="filter0_d" x="0" y="0" width="173.006" height="126.062" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="10"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>
