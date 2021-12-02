@@ -1,0 +1,153 @@
+.index {
+    display: flex;
+    position: relative;
+    @media screen and (max-width: 768px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @media screen and (max-width: 355px) {
+        padding-left: 0px;
+    }
+    &__girl {
+        margin-left: 30px;
+        @media screen and (max-width: 768px) {
+            margin-left: 0;
+        }
+    }
+    &__title {
+        font-family: $caveat;
+        font-size: 60px;
+        color: #AE1E1E;
+        padding-bottom: 5px;
+        @media screen and (max-width: 902px) {
+            font-size: 50px;
+        }
+        @media screen and (max-width: 829px) {
+            font-size: 40px;
+        }
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+    &__subtitle {
+        font-size: 20px;
+        opacity: 0.5;
+        padding-bottom: 35px;
+        @media screen and (max-width: 902px) {
+            font-size: 16px;
+        }
+        @media screen and (max-width: 829px) {
+            font-size: 14px;
+        }
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        @media screen and (max-width: 768px) {
+            justify-content: center;
+        }
+    }
+    &__girl-item {
+        margin-right: 22px;
+    }
+    &__more {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 55px;
+        &_btn {
+            width: 510px;
+            height: 80px;
+            font-size: 22px;
+            margin-top: 51px;
+            @media screen and (max-width: 720px) {
+                width: 279px;
+                height: 40px;
+                font-size: 18px;
+                margin-top: 35px;
+            }
+        }
+        &_pages {
+            display: flex;
+            justify-content: center;
+            margin-top: 35px;
+            @media screen and (max-width: 720px) {
+                display: none;
+            }
+            &-m {
+                display: none;
+                @media screen and (max-width: 720px) {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 13px;
+                    ul {
+                        display: flex;
+                        justify-content: center;
+                        li {
+                            width: 39px;
+                            height: 39px;
+                            margin-left: 10px;
+                            margin-right: 10px;
+                            &:first-child {
+                                margin-left: 10px;
+                            }
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                            button {
+                                width: 39px;
+                                height: 39px;
+                            }
+                        }
+                        li.active {
+                            button {
+                                background: linear-gradient(180deg, #CD4141 0%, #A71414 100%);
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+            &-item {
+                margin-left: 10px;
+                margin-right: 10px;
+                &:first-child {
+                    margin-left: 0px;
+                }
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+            ul {
+                display: flex;
+                li {
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    &:first-child {
+                        margin-left: 0px;
+                    }
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+                }
+                li.active {
+                    button {
+                        background: linear-gradient(180deg, #CD4141 0%, #A71414 100%);
+                        color: #fff;
+                    }
+                }
+            } 
+        }
+        &_btn-big {
+            width: 174px;
+            height: 55px;
+        }
+        &_btn-min {
+            width: 55px;
+            height: 55px;
+        }
+    }
+}
