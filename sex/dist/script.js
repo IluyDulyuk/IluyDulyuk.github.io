@@ -86,14 +86,45 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/js/components/slider.js":
+/*!*************************************!*\
+  !*** ./src/js/components/slider.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var slider = function slider() {
+  $('.girl__slider_wrapper').slick({
+    variableWidth: true,
+    centerMode: true,
+    prevArrow: $('.girl__slider-arrow_prev'),
+    nextArrow: $('.girl__slider-arrow_next'),
+    dots: true
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (slider);
+
+/***/ }),
+
 /***/ "./src/js/main.js":
 /*!************************!*\
   !*** ./src/js/main.js ***!
   \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/slider */ "./src/js/components/slider.js");
 
+window.addEventListener('DOMContentLoaded', function () {
+  'use strict';
+
+  Object(_components_slider__WEBPACK_IMPORTED_MODULE_0__["default"])();
+});
 
 /***/ })
 
