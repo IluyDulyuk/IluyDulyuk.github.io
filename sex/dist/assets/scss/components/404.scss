@@ -1,0 +1,113 @@
+.index__404 {
+    padding-left: 30px;
+    padding-right: 30px;
+    @media screen and (max-width: 768px) {
+        padding-left: 0px;
+        padding-right: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 35px;
+    }
+    @media screen and (max-width: 355px) {
+        padding-left: 20px;
+    }
+    &_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media screen and (max-width: 841px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            display: block;
+            width: 45%;
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
+    }
+    &_text {
+        color: #AE1E1E;
+    }
+    &_title {
+        font-size: 60px;
+        padding-bottom: 19px;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+        @media screen and (max-width: 1720px) {
+            font-size: 40px;
+        }
+        @media screen and (max-width: 1284px) {
+            font-size: 25px;
+            padding-bottom: 10px;
+        }
+        @media screen and (max-width: 975px) {
+            font-size: 20px;
+        }
+        &_m {
+            display: none;
+            @media screen and (max-width: 768px) {
+                display: block;
+                font-size: 35px;
+                padding-bottom: 16px;
+                color: #AE1E1E;
+            }
+            @media screen and (max-width: 466px) {
+                font-size: 20px;
+            }
+        }
+    }
+    &_subtitle {
+        font-size: 35px;
+        @media screen and (max-width: 1720px) {
+            font-size: 20px;
+        }
+        @media screen and (max-width: 975px) {
+            font-size: 13px;
+        }
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+    &_m {
+        display: none;
+        @media screen and (max-width: 768px) {
+            display: block;
+            width: 95%;
+            p {
+                font-size: 16px;
+                padding-top: 5px;
+                padding-bottom: 9px;
+            }
+            &_input {
+                position: relative;
+                &::before {
+                    content: url('../img/header/header__search-btn-m.svg');
+                    position: absolute;
+                    top: 10px;
+                    right: 30px;
+                    cursor: pointer;
+                }
+                &::after {
+                    content: url('../img/header/header__search-icon-m.svg');
+                    position: absolute;
+                    top: 10px;
+                    right: 66px;
+                    cursor: pointer;
+                }
+                input {
+                    width: 100%;
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    background: #EBEBEB;
+                    padding-left: 13px;
+                    font-size: 16px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
