@@ -106,7 +106,8 @@ a {
   border-radius: 10px;
   border: 1px solid #E5E5E5;
   font-size: 20px;
-  cursor: pointer; }
+  cursor: pointer;
+  color: #303030; }
 
 .custom-scroll::-webkit-scrollbar {
   width: 9px;
@@ -766,24 +767,24 @@ a {
               height: 13px; } }
       .girl__slider_wrapper .slick-dots li.slick-active button {
         background: #888888; }
-    .girl__slider-arrow_prev {
+    .girl__slider_arrow_prev {
       position: absolute;
       top: 170px;
       left: 12px;
       z-index: 10;
       cursor: pointer; }
       @media screen and (max-width: 1024px) {
-        .girl__slider-arrow_prev {
-          display: none; } }
-    .girl__slider-arrow_next {
+        .girl__slider_arrow_prev {
+          display: none !important; } }
+    .girl__slider_arrow_next {
       position: absolute;
       top: 170px;
       right: 35px;
       z-index: 10;
       cursor: pointer; }
       @media screen and (max-width: 1024px) {
-        .girl__slider-arrow_next {
-          display: none; } }
+        .girl__slider_arrow_next {
+          display: none !important; } }
     .girl__slider_item {
       margin-left: 15px;
       margin-right: 15px; }
@@ -830,6 +831,11 @@ a {
         @media screen and (max-width: 407px) {
           .girl__info_left_top {
             justify-content: space-between; } }
+        @media screen and (max-width: 1142px) {
+          .girl__info_left_top {
+            border-bottom: 1px solid #888;
+            padding-bottom: 17px;
+            margin-bottom: 21px; } }
         .girl__info_left_top .line {
           width: 397px;
           height: 1px;
@@ -845,6 +851,10 @@ a {
         @media screen and (max-width: 407px) {
           .girl__info_left_bottom {
             justify-content: space-between; } }
+        @media screen and (max-width: 1142px) {
+          .girl__info_left_bottom {
+            border-bottom: 1px solid #888;
+            padding-bottom: 18px; } }
         .girl__info_left_bottom .girl__list_bold {
           margin-right: 18px; }
         .girl__info_left_bottom .girl__list_reg li {
@@ -870,7 +880,7 @@ a {
           @media screen and (max-width: 407px) {
             .girl__info_left_bottom .girl__list_reg li:last-child {
               position: relative;
-              margin-left: -120px; } }
+              margin-left: -80px; } }
     .girl__info_right {
       padding-top: 15px;
       width: 1235px; }

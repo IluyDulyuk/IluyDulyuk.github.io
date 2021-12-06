@@ -101,7 +101,14 @@ var slider = function slider() {
     centerMode: true,
     prevArrow: $('.girl__slider-arrow_prev'),
     nextArrow: $('.girl__slider-arrow_next'),
-    dots: true
+    dots: true,
+    responsive: [{
+      breakpoint: 1024,
+      settings: {
+        prevArrow: null,
+        nextArrow: null
+      }
+    }]
   });
 };
 
@@ -121,8 +128,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_slider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/slider */ "./src/js/components/slider.js");
 
 window.addEventListener('DOMContentLoaded', function () {
-  'use strict';
-
   Object(_components_slider__WEBPACK_IMPORTED_MODULE_0__["default"])();
 });
 
