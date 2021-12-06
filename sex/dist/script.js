@@ -99,8 +99,8 @@ var slider = function slider() {
   $('.girl__slider_wrapper').slick({
     variableWidth: true,
     centerMode: true,
-    prevArrow: $('.girl__slider-arrow_prev'),
-    nextArrow: $('.girl__slider-arrow_next'),
+    prevArrow: $('.girl__slider_arrow_prev'),
+    nextArrow: $('.girl__slider_arrow_next'),
     dots: true,
     responsive: [{
       breakpoint: 1024,
