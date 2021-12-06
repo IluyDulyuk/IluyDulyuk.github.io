@@ -55,6 +55,9 @@ body {
   font-weight: 400;
   color: #303030; }
 
+a {
+  color: #303030; }
+
 .list-item li {
   font-size: 20px;
   display: flex;
