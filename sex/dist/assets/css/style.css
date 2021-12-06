@@ -1256,7 +1256,7 @@ a {
       .more_pages-item:first-child {
         margin-left: 0px; }
       .more_pages-item:last-child {
-        margin-right: 0px; }
+        margin-left: 0; }
     .more_pages ul {
       display: flex; }
       .more_pages ul li {
@@ -1265,7 +1265,7 @@ a {
         .more_pages ul li:first-child {
           margin-left: 0px; }
         .more_pages ul li:last-child {
-          margin-right: 0px; }
+          margin-left: 0px; }
         .more_pages ul li a {
           color: #303030; }
       .more_pages ul li.active button {
