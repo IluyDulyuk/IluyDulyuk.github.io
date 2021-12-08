@@ -1,6 +1,7 @@
 .girl {
     padding-left: 33px;
     padding-right: 33px;
+    overflow-x: hidden;
     @media screen and (max-width: 1024px) {
         padding-left: 20px;
         padding-right: 20px;
@@ -495,6 +496,15 @@
                 height: 165px;
             }
         }
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+        &-m {
+            display: none;
+            @media screen and (max-width: 768px) {
+                display: block;
+            }
+        }
     }
     &__more {
         &_title {
@@ -507,14 +517,16 @@
         }
         &_wrapper {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             flex-wrap: wrap;
-            @media screen and (max-width: 830px) {
-                display: block;
-                text-align: center;
-            }
+            // @media screen and (max-width: 830px) {
+            //     display: block;
+            //     text-align: center;
+            // }
         }
         .cart {
+            margin-left: 10px;
+            margin-right: 10px;
             @media screen and (max-width: 830px) {
                 margin: 0 auto;
                 margin-bottom: 30px;

@@ -1,17 +1,19 @@
+.index__container {
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
 .index {
     display: flex;
     position: relative;
-    @media screen and (max-width: 768px) {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    @media screen and (max-width: 355px) {
-        padding-left: 0px;
+    @media screen and (max-width: 991px) {
+        padding-left: 10px;
+        padding-right: 10px;
     }
     &__girl {
         margin-left: 30px;
-        @media screen and (max-width: 768px) {
-            margin-left: 0;
+        @media screen and (max-width: 991px) {
+            margin-left: 0px;
         }
     }
     &__title {
@@ -25,7 +27,7 @@
         @media screen and (max-width: 829px) {
             font-size: 40px;
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 991px) {
             display: none;
         }
     }
@@ -39,18 +41,22 @@
         @media screen and (max-width: 829px) {
             font-size: 14px;
         }
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 991px) {
             display: none;
         }
     }
     &__wrapper {
         display: flex;
         flex-wrap: wrap;
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 991px) {
             justify-content: center;
         }
     }
     &__girl-item {
         margin-right: 22px;
+        @media screen and (max-width: 991px) {
+                margin-left: 10px;
+                margin-right: 10px;
+        }
     }
 }

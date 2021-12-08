@@ -1,5 +1,5 @@
 .cart {
-    width: 365px;
+    width: 295px;
     height: auto;
     margin-bottom: 40px;
     text-align: center;
@@ -11,23 +11,21 @@
             margin-bottom: 0px;
         }
     }
-    @media screen and (max-width: 409px) {
-        width: 320px;
-        margin: 0 auto; 
-        margin-bottom: 40px;
-    }
-    @media screen and (max-width: 355px) {
-        width: 90%;
+    @media screen and (max-width: 500px) {
+        width: 100%;
     }
     &__image {
-        width: 365px;
-        height: 383px;
+        width: 295px;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 10px;
-        @media screen and (max-width: 409px) {
-            width: 320px;
+        @media screen and (max-width: 500px) {
+            width: 100%;
+            display: block;
+        }
+        img {
+            width: 100%;
         }
     }
     &__info {
