@@ -9,6 +9,10 @@
         left: 0;
         z-index: 10;
         display: none;
+        width: 100%;
+        background: #fff;
+        height: 550px;
+        overflow-y: scroll;
     }
     @media screen and (max-width: 355px) {
         min-width: 100%;
@@ -49,6 +53,9 @@
                     font-size: 16px;
                     border-top-left-radius: 10px;
                     border-top-right-radius: 10px;
+                    @media screen and (max-width: 991px) {
+                        width: calc(100% - 40px);
+                    }
                 }
                 img {
                     position: absolute;
@@ -72,8 +79,9 @@
         padding-left: 41px;
         padding-right: 8px;
         padding-top: 60px;
-        @media screen and (max-width: 653px) {
-            padding-top: 10px;
+        @media screen and (max-width: 991px) {
+            padding-left: 8px;
+            padding-top: 0;
         }
     }
     &__item {
@@ -118,11 +126,11 @@
             right: -339px;
             z-index: 100;
             overflow-y: scroll;
-            @media screen and (max-width: 653px) {
+            @media screen and (max-width: 991px) {
                 right: 0;
                 top: 0;
             }
-            @media screen and (max-width: 355px) {
+            @media screen and (max-width: 991px) {
                 width: 100%;
             }
             &_top {
@@ -153,11 +161,11 @@
                     content: url('../img/menu/menu__hide-search.svg');
                     position: absolute;
                     top: 6px;
-                    right: 31px;
+                    right: 40px;
                     cursor: pointer;
                 }
                 input {
-                    width: 271px;
+                    width: calc(100% - 40px);
                     height: 40px;
                     padding-left: 12px;
                     font-size: 16px;

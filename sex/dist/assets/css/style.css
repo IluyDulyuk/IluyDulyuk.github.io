@@ -117,12 +117,16 @@ a {
   background: rgba(48, 48, 48, 0.5); }
 
 .header {
-  width: 100%;
+  width: 1380px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
   margin-top: 14px;
   padding-bottom: 51px; }
+  @media screen and (max-width: 1380px) {
+    .header {
+      width: 100%; } }
   @media screen and (max-width: 991px) {
     .header {
       padding-bottom: 24px; } }
@@ -131,6 +135,8 @@ a {
     @media screen and (max-width: 991px) {
       .header__logo {
         margin-left: 20px; } }
+    .header__logo img {
+      width: 120px; }
     .header__logo .mobile {
       display: none; }
       @media screen and (max-width: 991px) {
@@ -176,7 +182,7 @@ a {
           top: 8px;
           right: 10px; } }
     .header__input input {
-      width: 720px;
+      width: 500px;
       padding-left: 32px;
       font-size: 23px;
       background-color: #EDEDED;
@@ -353,7 +359,11 @@ a {
         display: none; } }
   .index__wrapper {
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    @media screen and (max-width: 1302px) {
+      .index__wrapper {
+        justify-content: flex-start; } }
     @media screen and (max-width: 991px) {
       .index__wrapper {
         justify-content: center; } }
@@ -375,7 +385,11 @@ a {
       top: 0;
       left: 0;
       z-index: 10;
-      display: none; } }
+      display: none;
+      width: 100%;
+      background: #fff;
+      height: 550px;
+      overflow-y: scroll; } }
   @media screen and (max-width: 355px) {
     .menu {
       min-width: 100%; } }
@@ -415,7 +429,11 @@ a {
             padding-left: 13px;
             font-size: 16px;
             border-top-left-radius: 10px;
-            border-top-right-radius: 10px; }
+            border-top-right-radius: 10px; } }
+    @media screen and (max-width: 991px) and (max-width: 991px) {
+      .menu__top_input input {
+        width: calc(100% - 40px); } }
+      @media screen and (max-width: 991px) {
           .menu__top_input img {
             position: absolute;
             top: 10px;
@@ -433,9 +451,10 @@ a {
     padding-left: 41px;
     padding-right: 8px;
     padding-top: 60px; }
-    @media screen and (max-width: 653px) {
+    @media screen and (max-width: 991px) {
       .menu__bottom {
-        padding-top: 10px; } }
+        padding-left: 8px;
+        padding-top: 0; } }
   .menu__item {
     width: 100%;
     height: 35px;
@@ -471,11 +490,11 @@ a {
     right: -339px;
     z-index: 100;
     overflow-y: scroll; }
-    @media screen and (max-width: 653px) {
+    @media screen and (max-width: 991px) {
       .menu__item.active .menu__hide {
         right: 0;
         top: 0; } }
-    @media screen and (max-width: 355px) {
+    @media screen and (max-width: 991px) {
       .menu__item.active .menu__hide {
         width: 100%; } }
     .menu__item.active .menu__hide_top {
@@ -502,10 +521,10 @@ a {
         content: url("../img/menu/menu__hide-search.svg");
         position: absolute;
         top: 6px;
-        right: 31px;
+        right: 40px;
         cursor: pointer; }
       .menu__item.active .menu__hide_search input {
-        width: 271px;
+        width: calc(100% - 40px);
         height: 40px;
         padding-left: 12px;
         font-size: 16px;
@@ -646,9 +665,12 @@ a {
     margin-bottom: 10px; }
 
 .girl {
-  padding-left: 33px;
-  padding-right: 33px;
-  overflow-x: hidden; }
+  width: 1380px;
+  margin: 0 auto; }
+  @media screen and (max-width: 1420px) {
+    .girl {
+      width: auto;
+      overflow-x: hidden; } }
   @media screen and (max-width: 1024px) {
     .girl {
       padding-left: 20px;
@@ -658,7 +680,10 @@ a {
   .girl header .header__logo {
     margin-left: 0px; }
   .girl header .header__gum {
-    margin-right: 0px; }
+    margin-right: 10px; }
+  @media screen and (max-width: 991px) {
+    .girl header .header__right {
+      padding-right: 0; } }
   .girl__menu {
     display: none; }
   .girl__menu.active {
@@ -902,33 +927,27 @@ a {
       padding-bottom: 27px; }
     .girl__info_services {
       display: flex;
-      padding-bottom: 36px; }
-      @media screen and (max-width: 1521px) {
-        .girl__info_services {
-          flex-wrap: wrap; } }
+      padding-bottom: 36px;
+      flex-wrap: wrap; }
       .girl__info_services-title {
         font-size: 18px;
         margin-bottom: 11px;
         text-decoration: underline; }
-      @media screen and (max-width: 1521px) {
-        .girl__info_services-list {
-          margin-bottom: 30px; } }
-      .girl__info_services-list li {
-        font-size: 18px;
-        margin-bottom: 7px;
-        display: flex; }
-        .girl__info_services-list li:last-child {
-          margin-bottom: 0px; }
-        .girl__info_services-list li::before {
-          content: url("../img/girl/mark.svg");
-          margin-right: 12px; }
+      .girl__info_services-list {
+        margin-bottom: 30px; }
+        .girl__info_services-list li {
+          font-size: 18px;
+          margin-bottom: 7px;
+          display: flex; }
+          .girl__info_services-list li:last-child {
+            margin-bottom: 0px; }
+          .girl__info_services-list li::before {
+            content: url("../img/girl/mark.svg");
+            margin-right: 12px; }
       .girl__info_services-item {
         margin-right: 76px; }
     .girl__info_comments {
-      display: flex; }
-      @media screen and (max-width: 1743px) {
-        .girl__info_comments {
-          display: block; } }
+      display: block; }
       .girl__info_comments_left p {
         width: 645px;
         height: 124px;
@@ -1288,11 +1307,16 @@ a {
     width: 55px;
     height: 55px; }
 
+.header__gum.search {
+  display: none; }
+
 .search {
   padding-left: 36px;
   padding-right: 36px;
-  padding-bottom: 85px; }
-  @media screen and (max-width: 768px) {
+  padding-bottom: 85px;
+  overflow-x: hidden;
+  position: relative; }
+  @media screen and (max-width: 991px) {
     .search {
       padding-left: 20px;
       padding-right: 20px;

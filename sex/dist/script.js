@@ -2189,11 +2189,21 @@ var menu = function menu() {
     });
   });
   gum.addEventListener('click', function () {
+    if (document.body.style.overflow == '') {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
     menuMobile.classList.toggle('active');
     gum.classList.toggle('active');
   });
-  document.addEventListener('click', function (e) {
-    console.log(e.target);
+  menuItems.forEach(function (item) {
+    document.addEventListener('click', function (e) {
+      if (item.querySelectorAll(".".concat(e.target.getAttribute('class'))).length == 0 && item.querySelectorAll(".".concat(e.target.getAttribute('class'))).length == 0) {
+        item.classList.remove('active');
+      }
+    });
   });
 };
 

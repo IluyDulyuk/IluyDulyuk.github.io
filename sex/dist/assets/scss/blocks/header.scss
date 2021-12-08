@@ -1,10 +1,14 @@
 .header {
-    width: 100%;
+    width: 1380px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
     margin-top: 14px;
     padding-bottom: 51px;
+    @media screen and (max-width: 1380px) {
+        width: 100%;
+    }
     @media screen and (max-width: 991px) {
         padding-bottom: 24px;
     }
@@ -12,6 +16,9 @@
         margin-left: 36px;
         @media screen and (max-width: 991px) {
            margin-left: 20px;
+        }
+        img {
+            width: 120px;
         }
         .mobile {
             display: none;
@@ -72,7 +79,7 @@
             }
         }
         input {
-            width: 720px;
+            width: 500px;
             padding-left: 32px;
             font-size: 23px;
             background-color: #EDEDED;
