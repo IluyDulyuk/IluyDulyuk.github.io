@@ -2305,7 +2305,9 @@ window.addEventListener('DOMContentLoaded', function () {
     var length = localStorage.length;
     var arr = Object.keys(localStorage);
     arr.forEach(function (item) {
-      new Task(localStorage.getItem(item), item).render();
+      if (+item == item) {
+        new Task(localStorage.getItem(item), item).render();
+      }
     });
   };
 
@@ -2331,6 +2333,7 @@ window.addEventListener('DOMContentLoaded', function () {
       var task = input.value,
           id = Math.random();
       localStorage.setItem(id, task);
+      console.log('add');
       addBlock.classList.remove('active');
       addOpenBtn.style.display = 'block';
       setTimeout(function () {
