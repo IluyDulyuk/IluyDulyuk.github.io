@@ -1,0 +1,203 @@
+.header {
+    padding-top: 12px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #EDEEF2;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__global {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 48px;
+
+        @media screen and (max-width: 768px) {
+            margin-right: 0;
+        }
+    }
+
+    &__search {
+        position: relative;
+        height: auto;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+
+        &::after {
+            content: url('../img/search.svg');
+            position: absolute;
+            top: 10px;
+            right: 12px;
+        }
+
+        &-input {
+            width: 200px;
+            padding: 10px 12px;
+            background: #EDEEF2;
+            border-radius: 12px;
+            color: $black;
+            transition: all 0.3s ease;
+
+            @media screen and (max-width: 1153px) {
+                width: 160px;
+            }
+
+            &:focus {
+                width: 400px;
+                transition: all 0.3s ease;
+
+                @media screen and (max-width: 1153px) {
+                    width: 160px;
+                }
+            }
+        }
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+
+        &-item {
+            a {
+                color: $black;
+                font-size: 14px;
+                font-weight: 700;
+                margin-right: 20px;
+
+                &:last-child {
+                    margin-right: 24px;
+                }
+            }
+        }
+
+        &-item.extra {
+            padding-left: 20px;
+            height: 32px;
+            position: relative;
+            display: flex;
+            align-items: center;
+
+            &:before {
+                content: '';
+                width: 1px;
+                height: 100%;
+                background-color: #EDEEF2;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+
+    &__bag {
+        width: 48px;
+        height: 48px;
+        background: #F3F4FF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 16px;
+        position: relative;
+        margin-right: 15px;
+
+        &-count {
+            width: 20px;
+            height: 20px;
+            background: $blue;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: -5px;
+            right: -5px;
+
+            span {
+                font-size: 10px;
+                font-weight: 700;
+                color: #fff;
+            }
+        }
+    }
+
+    &__profile {
+        width: 45px;
+        height: 45px;
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border: 2px solid #EDEEF2;
+        padding: 1px;
+
+        @media screen and (max-width: 768px) {
+            margin-right: 18px;
+        }
+
+        img {
+            width: 45px;
+            height: 45px;
+            display: block;
+        }
+    }
+
+    &__line.mobile {
+        display: none;
+
+        @media screen and (max-width: 768px) {
+            display: block;
+            width: 1px;
+            height: 32px;
+            background: #EDEEF2;
+            margin-right: 18px;
+        }
+    }
+
+    &__gum {
+        display: none;
+
+        @media screen and (max-width: 768px) {
+            display: block;
+
+            .header__gum-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 44px;
+                height: 44px;
+                border-radius: 16px;
+                background: #EDEEF2;
+                flex-direction: column;
+
+                span {
+                    width: 12px;
+                    height: 2px;
+                    border-radius: 2px;
+                    background: #83859C;
+                    margin-bottom: 2px;
+                    
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

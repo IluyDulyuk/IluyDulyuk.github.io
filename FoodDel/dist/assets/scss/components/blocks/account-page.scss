@@ -1,0 +1,238 @@
+.account-page {
+    padding: 24px 0px;
+
+    .account {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        &-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: $black;
+            margin-bottom: 16px;
+        }
+
+        &__sidebar {
+
+            &-tabs-item {
+                display: flex;
+                align-items: center;
+                width: calc(350px - 32px);
+                height: calc(70px - 32px);
+                padding: 16px;
+                border: 1px solid #EDEEF2;
+                border-radius: 16px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                margin-bottom: 12px;
+
+                // &:hover {
+                //     border: 1px solid $blue;
+                //     background: #F8F9FF;
+                //     transition: all 0.3s ease;
+
+                //     .image {
+                //         background: $blue;
+                //         transition: all 0.3s ease;
+                //     }
+                // }
+
+                .image {
+                    width: 40px;
+                    height: 40px;
+                    background-color: #EDEEF2;
+                    border-radius: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 12px;
+                    transition: all 0.3s ease;
+                }
+
+                .text {
+
+                    h6 {
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: $black;
+                        line-height: 20px;
+                        margin-bottom: 2px;
+                    }
+
+                    span {
+                        font-size: 13px;
+                        font-weight: 400;
+                        line-height: 18px;
+                        color: #545563;
+                    }
+                }
+            }
+
+            &-tabs-item.active {
+                border: 2px solid $blue;
+                background: #F8F9FF;
+
+                .image {
+                    background: $blue;
+                }
+            }
+        }
+
+        &__content {
+
+            &-wrapper {
+                width: calc(730px - 32px);
+                padding: 24px 16px 20px 16px;
+                border: 1px solid #EDEEF2;
+                border-top-left-radius: 16px;
+                border-top-right-radius: 16px;
+            }
+
+            &-block {
+
+                &-title {
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: $black;
+                    margin-bottom: 16px;
+                }
+
+                &-subtitle {
+                    font-size: 12px;
+                    font-weight: 600;
+                    color: #545563;
+                    margin-bottom: 8px;
+                }
+            }
+
+            &-buttons {
+                width: calc(730px - 32px);
+                padding: 24px 16px 20px 16px;
+                border: 1px solid #EDEEF2;
+                border-top: none;
+                border-bottom-left-radius: 16px;
+                border-bottom-right-radius: 16px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                &-logout {
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: #FF5C60;
+                    width: 88px;
+                    height: 44px;
+                    border-radius: 8px;
+                    border: 1px solid #FF5C60;
+                    background: transparent;
+                    cursor: pointer;
+                }
+
+                &-changes {
+                    display: flex;
+                    align-items: center;
+                }
+
+                &-discard {
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: #83859C;
+                    border: 1px solid #83859C;
+                    width: 143px;
+                    height: 44px;
+                    border-radius: 8px;
+                    background: transparent;
+                    cursor: pointer;
+                    margin-right: 16px;
+                }
+
+                &-save {
+                    width: 124px;
+                    height: 44px;
+                }
+            }
+        }
+
+        &__avatar {
+            padding-bottom: 16px;
+
+            &-wrapper {
+                display: flex;
+                align-items: center;
+            }
+
+            &-image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 88px;
+                height: 88px;
+                border-radius: 12px;
+                overflow: hidden;
+                margin-right: 24px;
+            }
+
+            &-change {
+                font-size: 14px;
+                font-weight: 700;
+                color: $blue;
+                width: 88px;
+                height: 44px;
+                border-radius: 8px;
+                border: 1px solid $blue;
+                background: transparent;
+                cursor: pointer;
+                margin-right: 12px;
+            }
+
+            &-remove {
+                font-size: 14px;
+                font-weight: 700;
+                color: #83859C;
+                width: 88px;
+                height: 44px;
+                border-radius: 8px;
+                background: transparent;
+                cursor: pointer;
+                margin-right: 12px;
+            }
+        }
+
+        &__inputs {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 36px;
+
+            &-item {
+                margin-bottom: 32px;
+                input {
+                    width: calc(341px - 24px);
+                    height: calc(44px - 24px);
+                    padding: 12px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: $black;
+                    border: 1px solid #C7C8D2;
+                    border-radius: 8px;
+                }
+            }
+        }
+
+        &__email-notifications {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+
+            &-checkbox {
+                width: 50%;
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+}

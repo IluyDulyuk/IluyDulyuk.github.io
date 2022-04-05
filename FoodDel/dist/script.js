@@ -86,14 +86,84 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/js/components/form.js":
+/*!***********************************!*\
+  !*** ./src/js/components/form.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var form = function form() {
+  // Forms
+  var loginForm = document.querySelector('.auth__form'); // Fetch
+
+  loginForm.addEventListener('submit', function (e) {
+    e.preventDefault(); // const email = loginForm.querySelector('#email').value,
+    //       password = loginForm.querySelector('#password').value,
+    //       keep = loginForm.querySelector('.auth__keep').value;
+    // let data = {
+    //     email,
+    //     password,
+    //     keep
+    // };
+    // fetch('./assets/server/server.php', data);
+
+    var checkInputs = function checkInputs(input) {
+      if (input.value == 0) {
+        input.style.border = '1px solid red';
+      }
+    };
+
+    checkInputs(document.querySelector('#email'));
+    checkInputs(document.querySelector('#password'));
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (form);
+
+/***/ }),
+
+/***/ "./src/js/components/slick.js":
+/*!************************************!*\
+  !*** ./src/js/components/slick.js ***!
+  \************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var slickSlider = function slickSlider() {
+  $('.login__slider').slick({
+    arrows: false,
+    dots: true,
+    fade: true,
+    autoplay: true
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (slickSlider);
+
+/***/ }),
+
 /***/ "./src/js/main.js":
 /*!************************!*\
   !*** ./src/js/main.js ***!
   \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_slick__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/slick */ "./src/js/components/slick.js");
+/* harmony import */ var _components_form__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/form */ "./src/js/components/form.js");
 
 
+window.addEventListener('DOMContentLoaded', function () {
+  Object(_components_slick__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  Object(_components_form__WEBPACK_IMPORTED_MODULE_1__["default"])();
+});
 
 /***/ })
 

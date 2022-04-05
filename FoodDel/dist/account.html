@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Food Delivery | Account</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header__global">
+                <div class="header__logo">
+                    <a href="#"><img src="./assets/img/logo.svg" alt="logo"></a>
+                </div>
+                <div class="header__search">
+                    <input placeholder="Search" type="text" class="header__search-input">
+                </div>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a href="#">Restaurants</a></li>
+                    <li class="header__menu-item"><a href="#">Deals</a></li>
+                    <li class="header__menu-item extra"><a href="#">My orders</a></li>
+                </ul>
+                <a href="#" class="header__bag">
+                    <img src="./assets/img/bag.svg" alt="bag">
+                    <div class="header__bag-count"><span id="header__bag-count">4</span></div>
+                </a>
+                <a href="#" class="header__profile">
+                    <img src="./assets/img/profile.png" alt="profile">
+                </a>
+            </nav>
+        </div>
+    </header>
+    <main class="account-page">
+        <div class="container">
+            <div class="account">
+                <div class="account__sidebar">
+                    <h6 class="account__sidebar-title account-title">Settings</h6>
+                    <ul class="account__sidebar-tabs-list">
+                        <li class="account__sidebar-tabs-item active">
+                            <div class="image">
+                                <img src="./assets/img/user.svg" alt="user">
+                            </div>
+                            <div class="text">
+                                <h6>Account</h6>
+                                <span>Personal information</span>
+                            </div>
+                        </li>
+                        <li class="account__sidebar-tabs-item">
+                            <div class="image">
+                                <img src="./assets/img/map-pin.svg" alt="map-pin">
+                            </div>
+                            <div class="text">
+                                <h6>Address</h6>
+                                <span>Shippings addresses</span>
+                            </div>
+                        </li>
+                        <li class="account__sidebar-tabs-item">
+                            <div class="image">
+                                <img src="./assets/img/credit-card.svg" alt="credit-card">
+                            </div>
+                            <div class="text">
+                                <h6>Payment method</h6>
+                                <span>Connected credit cards</span>
+                            </div>
+                        </li>
+                        <li class="account__sidebar-tabs-item">
+                            <div class="image">
+                                <img src="./assets/img/sec.svg" alt=sec">
+                            </div>
+                            <div class="text">
+                                <h6>Security</h6>
+                                <span>Password, 2FA</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="account__content">
+                    <h6 class="account__content-title account-title">Account</h6>
+                    <div class="account__content-wrapper">
+                        <div class="account__content-block">
+                            <h5 class="account__content-block-title">Personal information</h5>
+                            <div class="account__avatar">
+                                <h6 class="account__content-block-subtitle">Avatar</h6>
+                                <div class="account__avatar-wrapper">
+                                    <div class="account__avatar-image">
+                                        <img src="./assets/img/avatar.png" alt="avatar">
+                                    </div>
+                                    <button class="account__avatar-change">Change</button>
+                                    <button class="account__avatar-remove">Remove</button>
+                                </div>
+                            </div>
+                            <div class="account__inputs">
+                                <div class="account__inputs-item">
+                                    <h6 class="account__content-block-subtitle">Avatar</h6>
+                                    <input type="text" name="first-name" value="Jane">
+                                </div>
+                                <div class="account__inputs-item">
+                                    <h6 class="account__content-block-subtitle">Last name</h6>
+                                    <input type="text" name="last-name" value="Robertson">
+                                </div>
+                                <div class="account__inputs-item">
+                                    <h6 class="account__content-block-subtitle">Email</h6>
+                                    <input type="email" value="jane.robertson@example.com">
+                                </div>
+                                <div class="account__inputs-item">
+                                    <h6 class="account__content-block-subtitle">Phone number</h6>
+                                    <input type="phone" name="phone" value="(217) 555-0113">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="account__content-block">
+                            <h5 class="account__content-block-title">Email notifications</h5>
+                            <div class="account__email-notifications">
+                                <div class="account__email-notifications-checkbox main-checkbox">
+                                    <input type="checkbox" class="custom-checkbox auth__keep" id="new-deals" name="keep">
+                                    <label for="new-deals">New deals</label>
+                                </div>
+                                <div class="account__email-notifications-checkbox main-checkbox">
+                                    <input type="checkbox" class="custom-checkbox auth__keep" id="Password-changes" name="keep">
+                                    <label for="Password-changes">Password changes</label>
+                                </div>
+                                <div class="account__email-notifications-checkbox main-checkbox">
+                                    <input type="checkbox" class="custom-checkbox auth__keep" id="New-restaurants" name="keep">
+                                    <label for="New-restaurants">New restaurants</label>
+                                </div>
+                                <div class="account__email-notifications-checkbox main-checkbox">
+                                    <input type="checkbox" class="custom-checkbox auth__keep" id="Special-offers" name="keep">
+                                    <label for="Special-offers">Special offers</label>
+                                </div>
+                                <div class="account__email-notifications-checkbox main-checkbox">
+                                    <input type="checkbox" class="custom-checkbox auth__keep" id="Order-statuses" name="keep">
+                                    <label for="Order-statuses">Order statuses</label>
+                                </div>
+                                <div class="account__email-notifications-checkbox main-checkbox">
+                                    <input type="checkbox" class="custom-checkbox auth__keep" id="Newsletter" name="keep">
+                                    <label for="Newsletter">Newsletter</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="account__content-buttons">
+                        <button class="account__content-buttons-logout">Log out</button>
+                        <div class="account__content-buttons-changes">
+                            <button class="account__content-buttons-discard">Discard changes</button>
+                            <button class="account__content-buttons-save blue-btn">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

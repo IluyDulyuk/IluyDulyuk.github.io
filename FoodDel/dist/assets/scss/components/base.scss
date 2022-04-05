@@ -1,6 +1,14 @@
 .container {
     width: 1110px;
     margin: 0 auto;
+
+    @media screen and (max-width: 1153px) {
+        width: 738px;
+    }
+    @media screen and (max-width: 768px) {
+        width: calc(100% - 30px);
+        padding: 0px 15px;
+    }
 }
 
 .main-checkbox {
