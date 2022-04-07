@@ -545,6 +545,9 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between; }
+    @media screen and (max-width: 768px) {
+      .account-page .account {
+        display: block; } }
     .account-page .account-title {
       font-size: 20px;
       font-weight: 600;
@@ -561,6 +564,12 @@ body {
       cursor: pointer;
       transition: all 0.3s ease;
       margin-bottom: 12px; }
+      @media screen and (max-width: 1153px) {
+        .account-page .account__sidebar-tabs-item {
+          width: calc(250px - 32px); } }
+      @media screen and (max-width: 768px) {
+        .account-page .account__sidebar-tabs-item {
+          width: calc(100% - 32px); } }
       .account-page .account__sidebar-tabs-item .image {
         width: 40px;
         height: 40px;
@@ -593,6 +602,16 @@ body {
       border: 1px solid #EDEEF2;
       border-top-left-radius: 16px;
       border-top-right-radius: 16px; }
+      @media screen and (max-width: 1153px) {
+        .account-page .account__content-wrapper {
+          width: calc(460px - 32px); } }
+      @media screen and (max-width: 768px) {
+        .account-page .account__content-wrapper {
+          width: calc(100% - 32px); } }
+      @media screen and (max-width: 452px) {
+        .account-page .account__content-wrapper {
+          border-bottom: none;
+          padding-bottom: 0px; } }
     .account-page .account__content-block-title {
       font-size: 18px;
       font-weight: 700;
@@ -613,6 +632,16 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center; }
+      @media screen and (max-width: 1153px) {
+        .account-page .account__content-buttons {
+          width: calc(460px - 32px); } }
+      @media screen and (max-width: 768px) {
+        .account-page .account__content-buttons {
+          width: calc(100% - 32px); } }
+      @media screen and (max-width: 452px) {
+        .account-page .account__content-buttons {
+          display: block;
+          padding-top: 0; } }
       .account-page .account__content-buttons-logout {
         font-size: 14px;
         font-weight: 700;
@@ -623,9 +652,18 @@ body {
         border: 1px solid #FF5C60;
         background: transparent;
         cursor: pointer; }
+        @media screen and (max-width: 452px) {
+          .account-page .account__content-buttons-logout {
+            width: 100%;
+            margin-bottom: 20px; } }
       .account-page .account__content-buttons-changes {
         display: flex;
         align-items: center; }
+        @media screen and (max-width: 452px) {
+          .account-page .account__content-buttons-changes {
+            justify-content: space-between;
+            padding-top: 20px;
+            border-top: 1px solid #EDEEF2; } }
       .account-page .account__content-buttons-discard {
         font-size: 14px;
         font-weight: 700;
@@ -637,9 +675,15 @@ body {
         background: transparent;
         cursor: pointer;
         margin-right: 16px; }
+        @media screen and (max-width: 452px) {
+          .account-page .account__content-buttons-discard {
+            width: 50%; } }
       .account-page .account__content-buttons-save {
         width: 124px;
         height: 44px; }
+        @media screen and (max-width: 452px) {
+          .account-page .account__content-buttons-save {
+            width: 50%; } }
     .account-page .account__avatar {
       padding-bottom: 16px; }
       .account-page .account__avatar-wrapper {
@@ -682,6 +726,9 @@ body {
       align-items: center;
       flex-wrap: wrap;
       margin-bottom: 36px; }
+      @media screen and (max-width: 759px) {
+        .account-page .account__inputs {
+          display: block; } }
       .account-page .account__inputs-item {
         margin-bottom: 32px; }
         .account-page .account__inputs-item input {
@@ -693,14 +740,23 @@ body {
           color: #2B2B43;
           border: 1px solid #C7C8D2;
           border-radius: 8px; }
+          @media screen and (max-width: 759px) {
+            .account-page .account__inputs-item input {
+              width: calc(100% - 24px); } }
     .account-page .account__email-notifications {
       display: flex;
       align-items: center;
       flex-wrap: wrap;
       margin-bottom: 12px; }
+      @media screen and (max-width: 380px) {
+        .account-page .account__email-notifications {
+          display: block; } }
       .account-page .account__email-notifications-checkbox {
         width: 50%;
         margin-bottom: 24px; }
+        @media screen and (max-width: 380px) {
+          .account-page .account__email-notifications-checkbox {
+            width: 100%; } }
 
 .header {
   padding-top: 12px;
