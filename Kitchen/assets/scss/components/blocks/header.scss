@@ -1,0 +1,124 @@
+.header {
+    padding-top: 50px;
+    background: url('../img/offer-bg.jpg') center top / cover no-repeat;
+    min-height: 755px;
+
+    @media screen and (max-height: 755px) {
+        min-height: calc(100vh - 50px);
+    }
+
+    &-nav {
+        height: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    &-menu {
+        display: flex;
+        position: relative;
+
+        li {
+            font-size: 10px;
+            text-transform: uppercase;
+            padding: 0 15px;
+            letter-spacing: 0.5px;
+            color: #fff;
+            cursor: pointer;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+
+            span {
+                height: 7px;
+                font-size: 18px;
+                padding-left: 5px;
+            }
+
+            a {
+                letter-spacing: 0.5px;
+                color: #fff; 
+                font-weight: 700;
+            }
+
+            &:first-child {
+                padding-left: 0;
+            }
+
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+
+    &-acordion {
+        position: absolute;
+        padding: 18px 20px;
+        background: #fff;
+        top: 40px;
+        transform: translateX(-25%);
+        z-index: 1;
+        max-width: 110px;
+        min-width: 110px;
+        display: none;
+
+        &:before {
+            content: "";
+            width: 18px;
+            height: 18px;
+            background: #fff;
+            position: absolute;
+            transform: rotate(45deg);
+            top: -8px;
+            left: 44%;
+        }
+
+        li {
+            padding: 0;
+            text-transform: none;
+            margin-bottom: 15px;
+            position: static;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            a {
+                color: #000;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    &-acordion.active {
+        display: block;
+    }
+
+    &-logo {
+        position: relative;
+        left: -30px;
+        top: -15px;
+
+        img {
+            display: block;
+            width: 427px;
+            height: auto;
+        }
+    }
+
+    &-subtitle {   
+        color: #fff;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 20px;
+        position: relative;
+        top: -40px;
+    }
+
+    &-btn {
+        width: 160px;
+        height: 55px;
+        color: #fff;
+        border-color: #fff;
+    }
+}

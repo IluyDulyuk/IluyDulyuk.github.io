@@ -1,0 +1,49 @@
+.collection {
+    padding: 60px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .left-block {
+            width: 587px;
+            color: #000;
+
+            span {
+                display: block;
+                padding-top: 80px;
+                padding-bottom: 80px;
+                font-size: 10px;
+                font-weight: 700;
+            }
+
+            .title {
+                font-size: 41px;
+                line-height: 50px;
+                margin-bottom: 60px;
+            }
+
+            .opacity {
+                font-size: 21px;
+                font-weight: 300;
+                opacity: 0.5;
+                line-height: 30px;
+            }
+
+            .black {
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 25px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+            }
+
+            a {
+                width: 200px;
+                height: 55px;
+                color: #000;
+                font-weight: 700;
+            }
+        }
+    }
+}

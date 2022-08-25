@@ -1,0 +1,12 @@
+.all-items {
+    
+    &-wrapper {
+        padding: 60px 0;
+        background: #fff;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}

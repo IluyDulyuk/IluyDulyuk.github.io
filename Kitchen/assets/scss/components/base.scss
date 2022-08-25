@@ -1,0 +1,46 @@
+body {
+    font-family: Gerbera, sans-serif;
+}
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.btn-transparent {
+    color: #000000;
+    font-size: 14px;
+    font-family: 'Gerbera',Arial,sans-serif;
+    border: 1px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title {
+    color: #000;
+    font-size: 14px;
+    padding: 60px 0px 45px;
+
+    .bold {
+        font-weight: 500;
+    }
+
+    a {
+        color: #000;
+    }
+}
+
+.porduct-wrapper-no-title {
+    padding: 120px 0px;
+    
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .product {
+        min-width: 360px;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,43 @@
+.about-image-left {
+    height: 700px;
+    background: #EBEAE2;
+    display: flex;
+    
+    img {
+        min-width: 50%;
+        object-fit: cover;
+    }
+
+    .text-block {
+        padding: 160px 100px;
+        color: #000;
+        height: auto;
+        margin: auto 0;
+        span {
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        .title {
+            padding-top: 40px;
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 300px;
+            padding-top: 30px;
+            line-height: 25px;
+            padding-bottom: 60px;
+        }
+
+        a {
+            width: 138px;
+            height: 45px;
+            color: #000;
+            font-weight: 500;
+        }
+    }
+}   
