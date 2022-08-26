@@ -146,8 +146,10 @@
         li.acordion {
 
             &:hover {
-                .header-acordion {
-                    display: block;
+                @media screen and (min-width: 981px) {
+                    .header-acordion {
+                        display: block !important;
+                    }
                 }
             }
 
@@ -159,18 +161,13 @@
                 padding-right: 15px;
 
                 &:after {
-                    content: '🢓';
+                    content: url('../img/arrow.png');
                     position: absolute;
-                    top: 8px;
+                    width: 5px;
+                    height: auto;
+                    top: 0px;
                     right: 0;
                 }
-            }
-        }
-
-        li.acordion.active {
-            
-            .header-acordion {
-                display: block;
             }
         }
     }
@@ -212,7 +209,7 @@
         z-index: 1;
         max-width: 110px;
         min-width: 110px;
-        display: none;
+        display: none !important;
 
         @media screen and (max-width: 981px) {
             position: static;
@@ -289,7 +286,7 @@
         display: block;
 
         @media screen and (max-width: 981px) {
-            display: flex;
+            display: flex !important;
         }
     }
 

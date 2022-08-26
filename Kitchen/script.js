@@ -5775,8 +5775,8 @@ var slider = function slider() {
   $('.slider').slick({
     arrows: false,
     autoplay: true
-  });
-  lightGallery(document.querySelector('.slider')); // $('.slider').owlCarousel();
+  }); // lightGallery(document.querySelector('.slider'));
+  // $('.slider').owlCarousel();
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (slider);

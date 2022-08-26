@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-family: Gerbera, sans-serif; }
 
@@ -233,8 +232,9 @@ h1, h2, h3, h4, h5, h6 {
       @media screen and (max-width: 981px) {
         .header-menu li.m {
           display: flex; } }
-    .header-menu li.acordion:hover .header-acordion {
-      display: block; }
+    @media screen and (min-width: 981px) {
+      .header-menu li.acordion:hover .header-acordion {
+        display: block !important; } }
     @media screen and (max-width: 981px) {
       .header-menu li.acordion {
         display: flex;
@@ -243,12 +243,12 @@ h1, h2, h3, h4, h5, h6 {
         position: relative;
         padding-right: 15px; }
         .header-menu li.acordion:after {
-          content: '🢓';
+          content: url("../img/arrow.png");
           position: absolute;
-          top: 8px;
+          width: 5px;
+          height: auto;
+          top: 0px;
           right: 0; } }
-    .header-menu li.acordion.active .header-acordion {
-      display: block; }
   .header-links {
     display: none; }
     @media screen and (max-width: 981px) {
@@ -277,7 +277,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
     max-width: 110px;
     min-width: 110px;
-    display: none; }
+    display: none !important; }
     @media screen and (max-width: 981px) {
       .header-acordion {
         position: static;
@@ -337,7 +337,7 @@ h1, h2, h3, h4, h5, h6 {
     display: block; }
     @media screen and (max-width: 981px) {
       .header-acordion.active {
-        display: flex; } }
+        display: flex !important; } }
   .header-logo {
     position: relative;
     left: -30px;
