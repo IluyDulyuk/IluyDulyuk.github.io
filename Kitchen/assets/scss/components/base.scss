@@ -5,6 +5,18 @@ body {
 .container {
     width: 1160px;
     margin: 0 auto;
+
+    @media screen and (max-width: 1200px) {
+        width: 960px;
+    }
+
+    @media screen and (max-width: 970px) {
+        width: 600px;
+    }
+
+    @media screen and (max-width: 640px) {
+        width:  calc(100% - 40px);
+    }
 }
 
 .btn-transparent {
@@ -39,8 +51,8 @@ body {
         flex-wrap: wrap;
     }
 
-    .product {
-        min-width: 360px;
-        margin-bottom: 30px;
-    }
+    // .product {
+    //     min-width: 360px;
+    //     margin-bottom: 30px;
+    // }
 }

@@ -11,6 +11,10 @@
         height: 60px;
         display: flex;
         align-items: center;
+
+        @media screen and (max-width: 981px) {
+            display: none;
+        }
     }
 
     &-menu {
@@ -99,10 +103,22 @@
         left: -30px;
         top: -15px;
 
+        @media screen and (max-width: 970px) {
+            left: -20px;
+        }
+
         img {
             display: block;
             width: 427px;
             height: auto;
+
+            @media screen and (max-width: 970px) {
+                width: 312px;
+            }
+
+            @media screen and (max-width: 380px) {
+                width: 100%;
+            }
         }
     }
 
@@ -113,6 +129,16 @@
         line-height: 20px;
         position: relative;
         top: -40px;
+
+        @media screen and (max-width: 970px) {
+            font-size: 16px;
+            width: 350px;
+            top: -20px;
+        }
+
+        @media screen and (max-width: 380px) {
+            width: 100%;
+        }
     }
 
     &-btn {
@@ -120,5 +146,9 @@
         height: 55px;
         color: #fff;
         border-color: #fff;
+
+        @media screen and (max-width: 970px) {
+            margin-top: 20px;
+        }
     }
 }

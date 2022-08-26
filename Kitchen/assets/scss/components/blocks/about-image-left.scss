@@ -2,10 +2,24 @@
     height: 700px;
     background: #EBEAE2;
     display: flex;
+
+    @media screen and (max-width: 1200px) {
+        height: 60vh;
+        min-height: 585px;
+    }
+
+    @media screen and (max-width: 981px) {
+        display: block;
+        height: auto;
+    }
     
     img {
         min-width: 50%;
         object-fit: cover;
+
+        @media screen and (max-width: 981px) {
+            width: 100%;
+        }
     }
 
     .text-block {
@@ -13,24 +27,68 @@
         color: #000;
         height: auto;
         margin: auto 0;
+
+
+
+        @media screen and (max-width: 1200px) {
+            padding: 0px 50px;
+        }
+
+        @media screen and (max-width: 981px) {
+            padding: 40px 0;
+            width: calc(100% - 40px);
+            margin: 0 auto;
+        }
+
         span {
             font-size: 14px;
             font-weight: 500;
             text-transform: uppercase;
+
+            @media screen and (max-width: 981px) {
+                font-size: 10px;
+                display: block;
+                padding-bottom: 40px;
+            }
         }
 
         .title {
             padding-top: 40px;
             font-size: 24px;
             line-height: 30px;
+
+            @media screen and (max-width: 981px) {
+                font-size: 18px;
+                width: 317px;
+                padding: 0;
+                line-height: 29px;
+            }
+
+            @media screen and (max-width: 970px) {
+                font-weight: 700;
+            }
+
+            @media screen and (max-width: 380px) {
+                width: 100%;
+            }
         }
 
         p {
             font-size: 16px;
-            font-weight: 300px;
+            font-weight: 300;
             padding-top: 30px;
             line-height: 25px;
             padding-bottom: 60px;
+
+            @media screen and (max-width: 981px) {
+                font-size: 14px;
+                width: 540px;
+                padding: 0;
+            }
+
+            @media screen and (max-width: 640px) {
+                width: 100%;
+            }
         }
 
         a {
@@ -38,6 +96,25 @@
             height: 45px;
             color: #000;
             font-weight: 500;
+            @media screen and (max-width: 981px) {
+                margin: 0 auto;
+            }
+
+            @media screen and (max-width: 970px) {
+                margin: 0;
+            }
+        }
+
+        .text-center {
+            @media screen and (max-width: 981px) {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 20px;
+            }
+
+            @media screen and (max-width: 970px) {
+                display: block;
+            }
         }
     }
 }   

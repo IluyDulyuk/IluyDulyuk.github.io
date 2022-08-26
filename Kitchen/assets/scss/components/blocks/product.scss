@@ -4,9 +4,34 @@
     align-items: center;
     width: 260px;
 
+    @media screen and (max-width: 1200px) {
+        width: 220px;
+    }
+
+    @media screen and (max-width: 970px) {
+        width: 300px;
+    }
+
+    @media screen and (max-width: 640px) {
+        width: 45%;
+        text-align: center;
+    }
+
     img {
         display: block;
         width: 260px;
+
+        @media screen and (max-width: 1200px) {
+            width: 220px;
+        }
+
+        @media screen and (max-width: 970px) {
+            width: 280px;
+        }
+
+        @media screen and (max-width: 640px) {
+            width: 90%;
+        }
     }
 
     &-name {
@@ -14,12 +39,20 @@
         font-size: 16px;
         color: #000;
         font-weight: 300;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 14px;
+        }
     }
 
     &-price {
         font-size: 16px;
         font-weight: 500;
         color: #000;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 14px;
+        }
     }
 }
 
@@ -28,7 +61,29 @@
     margin-right: 20px;
     margin-bottom: 20px;
 
+    @media screen and (max-width: 1200px) {
+        width: 300px;
+    }
+
+    @media screen and (max-width: 970px) {
+        width: 280px;
+    }
+
+    @media screen and (max-width: 640px) {
+        width: 45%;
+        text-align: center;
+    }
+
     img {
         width: 360px;
+
+        @media screen and (max-width: 1200px) {
+            width: 250px;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 640px) {
+            width: 90%;
+        }
     }
 }
