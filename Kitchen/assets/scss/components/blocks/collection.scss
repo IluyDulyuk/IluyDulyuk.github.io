@@ -9,9 +9,17 @@
         padding-bottom: 60px;
     }
 
+    @media screen and (max-width: 640px) {
+        padding-bottom: 0px;
+    }
+
     .container {
         display: flex;
         justify-content: space-between;
+
+        @media screen and (max-width: 640px) {
+           display: block;
+        }
 
         @media screen and (max-width: 970px) {
             width: calc(100% - 40px);
@@ -20,6 +28,8 @@
         .left-block {
             width: 587px;
             color: #000;
+            position: relative;
+            z-index: 2;
 
             @media screen and (max-width: 1200px) {
                 padding-top: 50px;
@@ -41,6 +51,12 @@
                     padding-top: 0;
                     padding-bottom: 40px;
                 }
+
+                @media screen and (max-width: 640px) {
+                    width: 300px;
+                    margin: 0 auto;
+                    display: block;
+                }
             }
 
             .title {
@@ -55,7 +71,10 @@
 
                 @media screen and (max-width: 640px) {
                     font-size: 18px;
-                    line-height: 25px;
+                    line-height: 23px;
+                    margin: 0 auto;
+                    width: 300px;
+                    padding-bottom: 15px;
                 }
             }
 
@@ -71,7 +90,10 @@
 
                 @media screen and (max-width: 640px) {
                     font-size: 14px;
-                    line-height: 25px;
+                    line-height: 20px;
+                    margin: 0 auto;
+                    width: 300px;
+                    padding-bottom: 15px;
                 }
             }
 
@@ -86,6 +108,14 @@
                     font-size: 14px;
                     padding: 10px 0;
                 }
+
+                @media screen and (max-width: 640px) {
+                    font-size: 10px;
+                    line-height: 15px;
+                    margin: 0 auto;
+                    width: 300px;
+                    padding-bottom: 20px;
+                }
             }
 
             a {
@@ -96,6 +126,13 @@
 
                 @media screen and (max-width: 1200px) {
                     height: 45px;
+                }
+
+                @media screen and (max-width: 970px) {
+                    margin-left: calc((100% - 300px) / 2);
+                    width: 137px;
+                    height: 37px;
+                    font-size: 10px;
                 }
             }
         }
@@ -108,7 +145,10 @@
             }
 
             @media screen and (max-width: 640px) {
-                display: none;
+                width: 100%;
+                margin: 0 auto;
+                position: relative;
+                top: -40px;
             }
         }
     }
