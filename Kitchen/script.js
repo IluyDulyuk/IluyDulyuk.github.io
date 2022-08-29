@@ -5734,22 +5734,41 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var menu = function menu() {
-  var menuLinks = document.querySelectorAll('.acordion');
+  var menuLinks = document.querySelectorAll('.acordion'),
+      menuBg = document.querySelector('.menu-bg'); // menuLinks.forEach(item => {
+  //     item.addEventListener('click', (e) => {
+  //        item.querySelectorAll('a').forEach(link => {
+  //             console.log(link);
+  //             if(e.target != link) {
+  //                 item.querySelector('.header-acordion').classList.toggle('active');
+  //             }
+  //        })
+  //     //    item.querySelector('.header-acordion').classList.toggle('active');
+  //        console.log(e.target)
+  //     })
+  // })
+
   menuLinks.forEach(function (item) {
     item.addEventListener('click', function (e) {
-      item.querySelector('.header-acordion').classList.toggle('active');
+      menuLinks.forEach(function (el) {
+        el.querySelector('.header-acordion').classList.remove('active');
+      });
+      item.querySelector('.header-acordion').classList.add('active');
     });
   });
+  console.log(menuLinks);
   var gum = document.querySelector('.header-gum'),
       close = document.querySelector('.close'),
       nav = document.querySelector('.header-nav');
   gum.addEventListener('click', function () {
     nav.classList.remove('no-active');
     document.body.style.overflow = 'hidden';
+    menuBg.classList.add('active');
   });
   close.addEventListener('click', function () {
     nav.classList.add('no-active');
     document.body.style.overflow = '';
+    menuBg.classList.remove('active');
   });
 };
 
@@ -5782,14 +5801,13 @@ __webpack_require__.r(__webpack_exports__);
 
 var slider = function slider() {
   $('.slider').slick({
-    arrows: false,
-    autoplay: true,
-    dots: true
+    // arrows: false,
+    dots: true,
+    infinite: false
   });
   $('.right-block.collection').slick({
     arrows: false,
-    autoplay: true // dots: true,
-
+    infinite: false
   }); // lightbox
 
   var slickTracks = document.querySelectorAll('.slick-track'),
@@ -5800,7 +5818,20 @@ var slider = function slider() {
   });
   slides.forEach(function (item) {
     var path = item.querySelector('img').getAttribute('src');
-    item.setAttribute('href', path);
+    item.setAttribute('href', path); // item.addEventListener('click', () => {
+    //     const lgPrev = document.querySelector('.lg-prev'),
+    //           lgPNext = document.querySelector('.lg-next'),
+    //           lgCurrent = document.querySelector('.lg-counter-current'),
+    //           lgAll = document.querySelector('.lg-counter-all');
+    //     if(lgPrev !== null) {
+    //         lgPrev.addEventListener('click', () => {
+    //             if(lgCurrent.innerHTML == lgAll.innerHTML) {
+    //                 lgPrev.style.display = 'none';
+    //                 console.log('prev')
+    //             }
+    //         })
+    //     }
+    // })
   });
   slidesCollection.forEach(function (item) {
     var path = item.querySelector('img').getAttribute('src');

@@ -30,7 +30,7 @@
     &-nav.no-active {
 
         @media screen and (max-width: 981px) {
-            right: -300px;
+            transform: translateX(300px);
         }
     }
 
@@ -38,6 +38,8 @@
         height: 60px;
         display: flex;
         align-items: center;
+        transform: translateX(0px);
+        transition: 0.5s;
 
         @media screen and (max-width: 981px) {
             display: block;

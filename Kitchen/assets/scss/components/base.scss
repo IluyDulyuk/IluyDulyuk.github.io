@@ -60,3 +60,49 @@ body {
 .lg-sub-html {
     font-size: 0 !important;
 }
+
+.slick-arrow {
+    position: absolute;
+    top: calc(50% - 15px);
+    font-size: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 50%;
+
+    &:before {
+        content: url('../img/arrow.svg');
+        width: 7px;
+        height: 12px;
+    }
+}
+
+.slick-prev {
+    z-index: 2;
+    left: 20px;
+    transform: rotate(180deg);
+}
+
+.slick-next {
+    right: 20px;
+}
+
+.menu-bg.active {
+    display: block;
+    position: fixed;
+    width: 100vh;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+.menu-bg {
+    display: none;
+}
