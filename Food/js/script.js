@@ -11,7 +11,7 @@
         
 window.addEventListener('DOMContentLoaded', () => {
 
-    const dedline = '2020-11-29';
+    const dedline = '2023-01-01';
     
 
     calc();
