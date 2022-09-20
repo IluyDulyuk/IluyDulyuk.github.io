@@ -1,0 +1,128 @@
+body {
+    font-family: $root;
+    background: $c_bg;
+    font-weight: 500;
+    font-size: 16px;
+    color: $c_w;
+}
+
+.container {
+    width: 1450px;
+    margin: 0 auto;
+
+    @media screen and (max-width: calc(1450px + 40px)) {
+        width: calc(100% - 40px);
+    }
+
+    @media screen and (max-width: 813px) {
+        width: 100%;
+    }
+}
+
+.container.into {
+    width: 1134px;
+    margin: 0 auto;
+
+    @media screen and (max-width: calc(1450px + 40px)) {
+        width: calc(413px + (1134 - 413) * ((100vw - 728px) / (1410 - 728)));
+    }
+
+    @media screen and (max-width: 813px) {
+        width: calc(100% - 30px);
+    }
+
+    // @media screen and (max-width: 1540px) {
+    //     width:  884px;
+    // }
+
+    // @media screen and (max-width: 1280px) {
+    //     width: 624px;
+    // }
+
+    // @media screen and (max-width: 838px) {
+    //     width: 100%;
+    // }
+}
+
+.btn {
+    padding: 16px 40px;
+    transition: 0.3s;
+    position: relative;
+    z-index: 2;
+
+    a {
+        font-size: 16px;
+        font-weight: 700;
+        color: $c_w;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        transition: 0.3s;
+
+        @media screen and (max-width: calc(1450px + 40px)) {
+            font-size: calc(14px + (16 - 14) * ((100vw - 290px) / (1410 - 290)));
+        }
+    }
+}
+
+.btn-red {
+    background: $c_r;
+
+    &:hover {
+        background: $c_w;
+        transition: 0.5s;
+
+        a {
+            color: #000;
+            transition: 0.5s;
+        }
+    }
+}
+
+.btn-white {
+    background: $c_w;
+
+    a {
+        color: #000;
+    }
+
+    &:hover {
+        background: $c_r;
+        transition: 0.5s;
+
+        a {
+            color: $c_w;
+            transition: 0.5s;
+        }
+    }
+
+    @media screen and (max-width: 411px) {
+        padding: 16px 17px;
+    }
+}
+
+.btn-transparent {
+    background: transparent;
+    border: 1px solid $c_w;
+
+    a {
+        color: $c_w;
+    }
+
+    &:hover {
+        background: $c_w;
+        transition: 0.5s;
+
+        a {
+            color: #000;
+            transition: 0.5s;
+        }
+    }
+
+    @media screen and (max-width: 411px) {
+        padding: 16px 19px;
+    }
+}

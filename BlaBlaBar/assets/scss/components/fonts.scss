@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+	font-family: 'PTRootUI';
+	font-display: swap;
+	src: url("./fonts/PT-Root-UI-Medium/PT-Root-UI_Medium.woff");
+	src: local("O"), url("../fonts/PT-Root-UI-Medium/PT-Root-UI_Medium.woff") format("woff"), 
+			url("../fonts/PT-Root-UI-Medium/PT-Root-UI_Medium.ttf") format("truetype"), 
+			url("../fonts/PT-Root-UI-Medium/PT-Root-UI_Medium.svg") format("svg");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Bebas Neue Bold";
+	src: url("../fonts/Bebas-Neue-Bold/bebas-neue-bold.eot"); /* IE9 Compat Modes */
+	src: url("../fonts/Bebas-Neue-Bold/bebas-neue-bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("../fonts/Bebas-Neue-Bold/bebas-neue-bold.otf") format("opentype"), /* Open Type Font */
+		url("../fonts/Bebas-Neue-Bold/bebas-neue-bold.svg") format("svg"), /* Legacy iOS */
+		url("../fonts/Bebas-Neue-Bold/bebas-neue-bold.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("../fonts/Bebas-Neue-Bold/bebas-neue-bold.woff") format("woff"), /* Modern Browsers */
+		url("../fonts/Bebas-Neue-Bold/bebas-neue-bold.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PTRootUI';
+	font-display: swap;
+	src: url("../fonts/PT-Root-UI-Bold/PT-Root-UI_Bold.woff");
+	src: local("O"), url("../fonts/PT-Root-UI-Bold/PT-Root-UI_Bold.woff") format("woff"), 
+			url("../fonts/PT-Root-UI-Bold/PT-Root-UI_Bold.ttf") format("truetype"), 
+			url("../fonts/PT-Root-UI-Bold/PT-Root-UI_Bold.svg") format("svg");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PTRootUI';
+	font-display: swap;
+	src: url("../fonts/PT-Root-UI-Regular/PT-Root-UI_Regular.woff");
+	src: local("O"), url("../fonts/PT-Root-UI-Regular/PT-Root-UI_Regular.woff") format("woff"), 
+			url("../fonts/PT-Root-UI-Regular/PT-Root-UI_Regular.ttf") format("truetype"), 
+			url("../fonts/PT-Root-UI-Regular/PT-Root-UI_Regular.svg") format("svg");
+	font-weight: 400;
+	font-style: normal;
+}
+
+$bebas: 'Bebas Neue Bold', sans-serif;
+$root: 'PTRootUI', sans-serif;
