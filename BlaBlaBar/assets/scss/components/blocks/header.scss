@@ -1,5 +1,5 @@
 .header {
-    z-index: 2;
+    z-index: 5;
 
     &__nav {
         position: fixed;
@@ -134,7 +134,7 @@
 }
 
 .header__show {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;

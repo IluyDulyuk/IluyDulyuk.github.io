@@ -101,9 +101,11 @@ var menu = function menu() {
       close = document.querySelector('.close');
   gum.addEventListener('click', function () {
     menu.classList.add('_active');
+    document.body.style.overflow = 'hidden';
   });
   close.addEventListener('click', function () {
     menu.classList.remove('_active');
+    document.body.style.overflow = '';
   });
 };
 
