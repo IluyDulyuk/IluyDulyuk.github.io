@@ -161,6 +161,7 @@
                 height: 10px;
                 border-radius: 50%;
                 margin-right: 10px;
+                transition: 0.6s;
             }
         }
 
@@ -190,7 +191,7 @@
             transition: 0.3s;
             position: relative;
 
-            &:after {
+            span {
                 content: '';
                 width: 100%;
                 height: 100%;
@@ -213,11 +214,12 @@
                 margin-right: 30px;
             }
 
-            &._active {
+
+            &.active {
                 background: #6369B4;
                 transition: 0.4s;
 
-                &:after {
+                span {
                     width: 22px;
                     height: 22px;
                     border: 1px solid #6369B4;
@@ -429,6 +431,7 @@
         position: absolute;
         bottom: 30px;
         width: 100%;
+        z-index: 4;
 
         @media screen and (max-width: 813px) {
             display: none;

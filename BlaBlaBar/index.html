@@ -30,19 +30,19 @@
         <nav class="header__nav">
             <div class="header__menu">
                 <div class="header__left">
-                    <div class="header__link"><a href="#">АФИША</a></div>
-                    <div class="header__link"><a href="#">БАРНЫЕ КОНЦЕПЦИИ</a></div>
-                    <div class="header__link"><a href="#">КАРАОКЕ</a></div>
-                    <div class="header__link"><a href="#">КАРТА ЛОЯЛЬНОСТИ</a></div>
+                    <div class="header__link" data-link="1"><a href="#">АФИША</a></div>
+                    <div class="header__link" data-link="2"><a href="#">БАРНЫЕ КОНЦЕПЦИИ</a></div>
+                    <div class="header__link" data-link="3"><a href="#">КАРАОКЕ</a></div>
+                    <div class="header__link" data-link="4"><a href="#">КАРТА ЛОЯЛЬНОСТИ</a></div>
                 </div>
                 <div class="header__center">
-                    <div class="header__link"><a href="#"><img src="./assets/img/icons/logo.svg" alt="logo"></a></div>
+                    <div class="header__link"><a href="#" data-link="5"><img src="./assets/img/icons/logo.svg" alt="logo"></a></div>
                 </div>
                 <div class="header__right">
-                    <div class="header__link"><a href="#">O BLABLABAR</a></div>
-                    <div class="header__link"><a href="#">ГАЛЕРЕЯ</a></div>
-                    <div class="header__link"><a href="#">КОНТАКТЫ</a></div>
-                    <div class="header__link _underline"><a href="#">ЗАБРОНИРОВАТЬ</a></div>
+                    <div class="header__link" data-link="6"><a href="#">O BLABLABAR</a></div>
+                    <div class="header__link" data-link="7"><a href="#">ГАЛЕРЕЯ</a></div>
+                    <div class="header__link" data-link="8"><a href="#">КОНТАКТЫ</a></div>
+                    <div class="header__link _underline" data-link="9"><a href="#">ЗАБРОНИРОВАТЬ</a></div>
                 </div>
             </div>
         </nav>
@@ -52,7 +52,7 @@
             <div class="header__gum"><img src="./assets/img/icons/header__gum.svg" alt="header__gum"></div>
         </nav>
    </header>
-   <section class="offer">
+   <section class="offer active" data-block="1" data-name="Главная" data-color="#6369B4">
         <div class="offer__bg"></div>
         <div class="container">
             <div class="offer__content">
@@ -106,17 +106,12 @@
                     <h4>Главная</h4>
                 </div>
                 <div class="page-dots__wrapper">
-                    <div class="page-dots__arrow"><img src="./assets/img/icons/prev.svg" alt="prev"></div>
+                    <div class="page-dots__arrow to-top"><img src="./assets/img/icons/prev.svg" alt="prev"></div>
                     <ul class="page-dots__list">
-                        <li class="page-dots__item _active"></li>
-                        <li class="page-dots__item"></li>
-                        <li class="page-dots__item"></li>
-                        <li class="page-dots__item"></li>
-                        <li class="page-dots__item"></li>
-                        <li class="page-dots__item"></li>
+                        
                     </ul>
-                    <div class="page-dots__arrow"><img src="./assets/img/icons/next.svg" alt="next"></div>
-                </div>
+                    <div class="page-dots__arrow to-bottom"><img src="./assets/img/icons/next.svg" alt="next"></div>
+                </div>  
             </div>
             <div class="scroll-trigger">
                 <div class="scroll-trigger__arrow">
@@ -126,7 +121,7 @@
             </div>
         </div>
    </section>
-   <section class="poster _active">
+   <section class="poster" data-block="2" data-name="Афиша" data-color="#F9B40F">
        <div class="container into">
             <h2 class="poster__title">БЛИЖАЙШИЕ СОБЫТИЯ</h2>
             <div class="poster__list">

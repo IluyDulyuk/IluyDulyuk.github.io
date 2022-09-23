@@ -3,15 +3,24 @@
     padding: 68px 0px 118px;
     background: url('../img/poster/poster__bg.png') center bottom no-repeat;
     background-size: cover;
+    transition: 1.2s;
 
     @media screen and (max-width: 1202px) {
+        padding: 68px 0px 118px;
+    }
+
+    @media screen and (max-width: 803px) {
         overflow: hidden;
     }
 
-    &._active {
+    &.active {
         // height: calc(100vh - (100vh / 6) - 118px);
         // max-height: calc(100vh - (100vh / 6) - 118px);
         padding: calc(100vh / 6) 0px 118px;
+
+        .poster__list {
+            transform: translateY(0px);
+        }
     }
 
     &__title {
@@ -32,6 +41,8 @@
         width: 100%;
         border-top: 1px solid $c_w;
         position: relative;
+        transform: translateY(120px);
+        transition: 1.2s;
     }
 
     &__neon {

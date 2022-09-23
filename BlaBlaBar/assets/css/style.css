@@ -407,7 +407,8 @@ body {
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        margin-right: 10px; }
+        margin-right: 10px;
+        transition: 0.6s; }
     .offer .page-dots__wrapper {
       display: flex;
       align-items: center;
@@ -427,7 +428,7 @@ body {
       margin-right: 15px;
       transition: 0.3s;
       position: relative; }
-      .offer .page-dots__item:after {
+      .offer .page-dots__item span {
         content: '';
         width: 100%;
         height: 100%;
@@ -442,10 +443,10 @@ body {
         margin-left: 30px; }
       .offer .page-dots__item:last-child {
         margin-right: 30px; }
-      .offer .page-dots__item._active {
+      .offer .page-dots__item.active {
         background: #6369B4;
         transition: 0.4s; }
-        .offer .page-dots__item._active:after {
+        .offer .page-dots__item.active span {
           width: 22px;
           height: 22px;
           border: 1px solid #6369B4;
@@ -564,7 +565,8 @@ body {
     align-items: center;
     position: absolute;
     bottom: 30px;
-    width: 100%; }
+    width: 100%;
+    z-index: 4; }
     @media screen and (max-width: 813px) {
       .offer .scroll-trigger {
         display: none; } }
@@ -613,12 +615,18 @@ body {
 .poster {
   padding: 68px 0px 118px;
   background: url("../img/poster/poster__bg.png") center bottom no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  transition: 1.2s; }
   @media screen and (max-width: 1202px) {
     .poster {
+      padding: 68px 0px 118px; } }
+  @media screen and (max-width: 803px) {
+    .poster {
       overflow: hidden; } }
-  .poster._active {
+  .poster.active {
     padding: calc(100vh / 6) 0px 118px; }
+    .poster.active .poster__list {
+      transform: translateY(0px); }
   .poster__title {
     font-size: 72px;
     line-height: 72px;
@@ -633,7 +641,9 @@ body {
   .poster__list {
     width: 100%;
     border-top: 1px solid #FFFFFF;
-    position: relative; }
+    position: relative;
+    transform: translateY(120px);
+    transition: 1.2s; }
   .poster__neon .neon__item {
     position: absolute;
     display: flex;
