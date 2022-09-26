@@ -3,7 +3,8 @@
     padding: 68px 0px 118px;
     background: url('../img/poster/poster__bg.png') center bottom no-repeat;
     background-size: cover;
-    transition: 1.2s;
+    transition: 0.5s;
+    background-color: $c_bg;
 
     @media screen and (max-width: 1202px) {
         padding: 68px 0px 118px;
@@ -39,10 +40,15 @@
 
     &__list {
         width: 100%;
-        border-top: 1px solid $c_w;
         position: relative;
+        border-top: 1px solid $c_w;
         transform: translateY(120px);
-        transition: 1.2s;
+        transition: 1s;
+        // max-height: 60vh;
+        // overflow-y: scroll;
+        // &::-webkit-scrollbar {
+        //     display: none;
+        // }
     }
 
     &__neon {
@@ -173,6 +179,10 @@
         align-items: center;
         justify-content: space-between;
         cursor: pointer;
+
+        // &:nth-child(1) {
+        //     border-top: 1px solid $c_w;
+        // }
 
         @media screen and (max-width: 1202px) {
             display: block;

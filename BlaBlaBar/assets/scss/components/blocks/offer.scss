@@ -1,9 +1,15 @@
 .offer {
-    background: url('../img/offer/offer__bg.png') center top no-repeat;
-    background-size: cover;
+    background: url('../img/offer/bg1.png') center center / cover no-repeat;
     width: 100%;
     min-height: 400px;
     height: 100vh;
+    position: relative;
+    // background-color: $c_bg;
+
+    @media screen and (max-width: 813px) {
+        // background: url('../img/offer/bg1.png') 65% -100px/ 200% auto no-repeat;
+        // background-color: $c_bg;
+    }
 
     &__bg {
         position: absolute;
@@ -127,104 +133,6 @@
                             }
                         }
                     }
-                }
-            }
-        }
-    }
-
-    .page-dots {
-        position: fixed;
-        right: calc(((100vw - 1450px) / 2));
-        font-size: 20px;
-        transform: rotate(90deg);
-        display: flex;
-        align-items: center;
-        top: 50%;
-
-        @media screen and (max-width: calc(1450px + 40px)) {
-            right: calc(((100vw - (100% - 40px)) / 2));
-        }
-
-        @media screen and (max-width: 813px) {
-            display: none;
-        }
-
-        &__name {
-            display: flex;
-            align-items: center;
-            margin-right: 100px;
-            margin-top: -95%;
-
-            span {
-                background: #6369B4;
-                width: 10px;
-                height: 10px;
-                border-radius: 50%;
-                margin-right: 10px;
-                transition: 0.6s;
-            }
-        }
-
-        &__wrapper {
-            display: flex;
-            align-items: center;
-            margin-top: -95%;
-        }
-
-        &__arrow {
-            transform: rotate(-90deg);
-            cursor: pointer;
-        }
-
-        &__list {
-            display: flex;
-            align-items: center;
-        }
-
-        &__item {
-            width: 12px;
-            height: 12px;
-            background: $c_w;
-            border-radius: 50%;
-            cursor: pointer;
-            margin-right: 15px;
-            transition: 0.3s;
-            position: relative;
-
-            span {
-                content: '';
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0%;
-                left: 0%;
-                border-radius: 50%;
-                transition: 0.4s;
-            }
-
-            &:hover {
-                opacity: 0.5;
-            }
-
-            &:first-child {
-                margin-left: 30px;
-            }
-
-            &:last-child {
-                margin-right: 30px;
-            }
-
-
-            &.active {
-                background: #6369B4;
-                transition: 0.4s;
-
-                span {
-                    width: 22px;
-                    height: 22px;
-                    border: 1px solid #6369B4;
-                    top: -50%;
-                    left: -50%;
                 }
             }
         }
@@ -502,5 +410,104 @@
 
     100% {
         transform: translateY(0px);
+    }
+}
+
+.page-dots {
+    position: fixed;
+    right: calc(((100vw - 1450px) / 2));
+    font-size: 20px;
+    transform: rotate(90deg);
+    display: flex;
+    align-items: center;
+    top: 50%;
+    z-index: 5;
+
+    @media screen and (max-width: calc(1450px + 40px)) {
+        right: calc(((100vw - (100% - 40px)) / 2));
+    }
+
+    @media screen and (max-width: 813px) {
+        display: none;
+    }
+
+    &__name {
+        display: flex;
+        align-items: center;
+        margin-right: 100px;
+        margin-top: -95%;
+
+        span {
+            background: #6369B4;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 10px;
+            transition: 0.6s;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        margin-top: -95%;
+    }
+
+    &__arrow {
+        transform: rotate(-90deg);
+        cursor: pointer;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        width: 12px;
+        height: 12px;
+        background: $c_w;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-right: 15px;
+        transition: 0.3s;
+        position: relative;
+
+        span {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            border-radius: 50%;
+            transition: 0.4s;
+        }
+
+        &:hover {
+            opacity: 0.5;
+        }
+
+        &:first-child {
+            margin-left: 30px;
+        }
+
+        &:last-child {
+            margin-right: 30px;
+        }
+
+
+        &.active {
+            background: #6369B4;
+            transition: 0.4s;
+
+            span {
+                width: 22px;
+                height: 22px;
+                border: 1px solid #6369B4;
+                top: -50%;
+                left: -50%;
+            }
+        }
     }
 }

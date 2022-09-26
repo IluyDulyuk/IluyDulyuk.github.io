@@ -3161,18 +3161,42 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var scroll = function scroll() {
+  // const swiper = new Swiper('.swiper-container');
   var media = window.matchMedia('(min-width: 813px)');
 
   if (media.matches) {
+    // Проверка направления скрола
+    var wheel = function wheel(event) {
+      var delta = 0;
+      if (!event) event = window.event; // Событие IE.
+      // Установим кроссбраузерную delta
+
+      if (event.wheelDelta) {
+        // IE, Opera, safari, chrome - кратность дельта равна 120
+        delta = event.wheelDelta / 120;
+      } else if (event.detail) {
+        // Mozilla, кратность дельта равна 3
+        delta = -event.detail / 3;
+      }
+
+      if (delta) {
+        // если дельта больше 0, то колесо крутят вверх, иначе вниз
+        var dir = delta > 0 ? 'Up' : 'Down';
+        return dir;
+      }
+    }; // Скролл при скроле
+
+
     var pagesDotsWrapper = document.querySelector('.page-dots__wrapper'),
         prevArrow = pagesDotsWrapper.querySelector('.page-dots__arrow.to-top'),
         nextArrow = pagesDotsWrapper.querySelector('.page-dots__arrow.to-bottom'),
         pageDotsName = document.querySelector('.page-dots__name > h4'),
         pageDotsList = pagesDotsWrapper.querySelector('.page-dots__list'),
-        scrollTriggerArrow = document.querySelector('.scroll-trigger'),
+        scrollTriggerArrow = document.querySelector('.scroll-trigger__image'),
         sections = document.querySelectorAll('section'),
+        mainSlider = document.querySelector('.main__slider'),
         headerLinks = document.querySelectorAll('.header__link');
-    sections.forEach(function (item, i) {
+    sections.forEach(function (section, i) {
       var li = document.createElement('li');
       li.classList.add('page-dots__item');
       li.setAttribute('id', "pageDot_".concat(i));
@@ -3184,129 +3208,95 @@ var scroll = function scroll() {
 
       pageDotsList.appendChild(li);
     });
-    var pageDotsItems = document.querySelectorAll('.page-dots__item');
+    var pageDotsItems = document.querySelectorAll('.page-dots__item'); // Функция скрола
 
-    var toggleActiveDot = function toggleActiveDot(activeBlock) {
-      var index = activeBlock.getAttribute('data-block');
-      pageDotsItems.forEach(function (item, i) {
-        item.classList.remove('active');
-
-        if (i == index - 1) {
-          item.classList.add('active');
+    var scrollTo = function scrollTo(sectionNum) {
+      mainSlider.style.transform = "translateY(".concat(-sectionNum * 100, "vh)");
+      sections.forEach(function (section, i) {
+        if (section.classList.contains('active')) {
+          section.classList.remove('active');
         }
       });
-    };
-
-    var scrollTo = function scrollTo(route) {
-      var index = 0;
-      sections.forEach(function (item) {
-        if (item.classList.contains('active')) {
-          index = item.getAttribute('data-block');
+      sections[sectionNum].classList.add('active');
+      pageDotsItems.forEach(function (dot, i) {
+        if (dot.classList.contains('active')) {
+          dot.classList.remove('active');
+          pageDotsItems[sectionNum].classList.add('active');
         }
 
-        item.classList.remove('active');
-      });
+        dot.style.backgroundColor = '';
 
-      if (route == 'bottom') {
-        sections[index].classList.add('active');
-      } else {
-        if (sections[index - 2]) {
-          sections[index - 2].classList.add('active');
-        } else {
-          sections[0].classList.add('active');
+        if (dot.classList.contains('active')) {
+          dot.style.backgroundColor = document.querySelector('section.active').getAttribute('data-color');
+          dot.setAttribute('data-color', document.querySelector('section.active').getAttribute('data-color'));
+          dot.querySelector('span').style.borderColor = document.querySelector('section.active').getAttribute('data-color');
         }
-      }
-
-      scroll_to_element__WEBPACK_IMPORTED_MODULE_3___default()(document.querySelector('section.active'), {
-        duration: 1200
       });
-      toggleActiveDot(document.querySelector('section.active'));
-      pageDotsName.textContent = document.querySelector('section.active').getAttribute('data-name');
       document.querySelector('.page-dots__name > span').style.backgroundColor = document.querySelector('section.active').getAttribute('data-color');
-      pageDotsItems.forEach(function (item) {
-        item.style.backgroundColor = '';
-
-        if (item.classList.contains('active')) {
-          item.style.backgroundColor = document.querySelector('section.active').getAttribute('data-color');
-          item.setAttribute('data-color', document.querySelector('section.active').getAttribute('data-color'));
-          item.querySelector('span').style.borderColor = document.querySelector('section.active').getAttribute('data-color');
-        }
-      });
-    };
-
-    var scrollToIndex = function scrollToIndex(section) {
-      sections.forEach(function (item) {
-        item.classList.remove('active');
-      });
-      section.classList.add('active');
-      scroll_to_element__WEBPACK_IMPORTED_MODULE_3___default()(section, {
-        duration: 1200
-      });
-      toggleActiveDot(document.querySelector('section.active'));
       pageDotsName.textContent = document.querySelector('section.active').getAttribute('data-name');
-      document.querySelector('.page-dots__name > span').style.backgroundColor = document.querySelector('section.active').getAttribute('data-color');
-      pageDotsItems.forEach(function (item) {
-        item.style.backgroundColor = '';
+    }; // Скролл по меню
 
-        if (item.classList.contains('active')) {
-          item.style.backgroundColor = document.querySelector('section.active').getAttribute('data-color');
-          item.setAttribute('data-color', document.querySelector('section.active').getAttribute('data-color'));
-          item.querySelector('span').style.borderColor = document.querySelector('section.active').getAttribute('data-color');
+
+    headerLinks.forEach(function (link, i) {
+      link.addEventListener('click', function () {
+        if (i <= 4 && i + 1 < sections.length) {
+          scrollTo(i + 1);
+        } else if (i + 1 == 5) {
+          scrollTo(0);
+        } else if (i + 1 > 5 && i + 1 <= 9 && i + 1 < sections.length) {
+          scrollTo(i + 1);
         }
       });
-    };
+    }); // Скролл по стрелке
 
-    nextArrow.addEventListener('click', function () {
-      if (sections[sections.length - 1].classList.contains('active')) {
-        return;
-      } else {
-        scrollTo('bottom');
-      }
+    scrollTriggerArrow.addEventListener('click', function () {
+      scrollTo(1);
     });
-    prevArrow.addEventListener('click', function () {
-      if (sections[0].classList.contains('active')) {
-        return;
-      } else {
-        scrollTo('top');
-      }
-    });
-    headerLinks.forEach(function (item) {
-      item.addEventListener('click', function () {
-        sections.forEach(function (el) {
-          if (el.getAttribute('data-block') - 1 == item.getAttribute('data-link')) {
-            scrollToIndex(el);
+    document.querySelector('.main').addEventListener('wheel', function (e) {
+      sections.forEach(function (section, i) {
+        if (section.classList.contains('active')) {
+          console.log(section);
+
+          if (wheel() == 'Down') {
+            scrollTo(1);
+          } else if (wheel() == 'Up') {
+            scrollTo(0);
           }
-        });
+        }
       });
-    });
-    pageDotsItems.forEach(function (item, i) {
-      item.addEventListener('click', function () {
-        scrollToIndex(sections[i]);
-      });
-    }); // headerLinks.forEach(item => {
-    //     if(item.getAttribute('data-link') === 5) {
-    //         console.log(item)
-    //         item.addEventListener('click', (e) => {
-    //             console.log('click')
-    //             e.preventDefault();
-    //             scrollToIndex(sections[0])
-    //         })
-    //     }
-    // })
-    // let once = false;
-    // if(!once) {
-    //     window.addEventListener('scroll', () => {
-    //         console.log('scroll')
-    //         once = true;
-    //         scrollToIndex(sections[1]);
-    //         return;
-    //     })
-    // }
+    }); // Скролл при пагинации
 
-    window.addEventListener('scroll', function () {
-      sections.forEach(function (item, i) {});
+    prevArrow.addEventListener('click', function () {
+      sections.forEach(function (section, i) {
+        if (i == 0) {
+          return;
+        } else {
+          scrollTo(i - 1);
+        }
+      });
     });
-  }
+    nextArrow.addEventListener('click', function () {
+      sections.forEach(function (section, i) {
+        if (i == sections.length - 1) {
+          return;
+        } else {
+          scrollTo(i + 1);
+        }
+      });
+    });
+    pageDotsItems.forEach(function (dot, i) {
+      dot.addEventListener('click', function () {
+        scrollTo(i);
+      });
+    });
+  } // window.addEventListener('scroll', () => {
+  //     console.log('scroll')   
+  //     console.log(document.documentElement.scrollTop, document.querySelector('.offer').clientHeight)
+  //     if(document.documentElement.scrollTop > document.querySelector('.offer').clientHeight) {
+  //         document.querySelector('..header__link._m').classList.add('active')
+  //     }
+  // })
+
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (scroll);
@@ -3324,9 +3314,11 @@ var scroll = function scroll() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/menu */ "./src/js/components/menu.js");
 /* harmony import */ var _components_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/scroll */ "./src/js/components/scroll.js");
+// import preloader from './components/preloader';
 
 
 window.addEventListener('DOMContentLoaded', function () {
+  // preloader();
   Object(_components_menu__WEBPACK_IMPORTED_MODULE_0__["default"])();
   Object(_components_scroll__WEBPACK_IMPORTED_MODULE_1__["default"])();
 });

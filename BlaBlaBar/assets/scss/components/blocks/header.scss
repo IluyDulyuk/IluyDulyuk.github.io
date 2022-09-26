@@ -30,6 +30,12 @@
             }
 
             .header__link._m {
+                opacity: 0;
+
+                &.active {
+                    opacity: 1;
+                }
+
                 a  {
                     position: relative;
 
