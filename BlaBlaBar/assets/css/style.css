@@ -88,7 +88,11 @@ body {
   background: #131313;
   font-weight: 500;
   font-size: 16px;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  overflow: hidden; }
+  @media screen and (max-width: 813px) {
+    body {
+      overflow: scroll; } }
 
 section {
   scroll-snap-align: start; }
@@ -273,7 +277,7 @@ section {
   width: 100%;
   height: 100%;
   background: #1F1F1F;
-  z-index: 4;
+  z-index: 100;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -841,84 +845,28 @@ section {
 
 .preloader {
   width: 100%;
-  height: 100vh;
-  background: #131313;
-  position: absolute;
+  height: 100%;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 100; }
-  .preloader svg {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(-90deg);
+  background: #131313;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  opacity: 1; }
+  .preloader img {
+    display: block;
     width: 400px;
     height: 400px; }
-  .preloader .percent {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-family: "Bebas Neue Bold", sans-serif;
-    font-size: 50px; }
-  .preloader .loader-path {
-    stroke-dasharray: 150,200;
-    stroke-dashoffset: -10;
-    -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
-    animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
-    stroke-linecap: round; }
-
-@-webkit-keyframes rotate {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
-@keyframes rotate {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-
-@-webkit-keyframes dash {
-  0% {
-    stroke-dasharray: 1,200;
-    stroke-dashoffset: 0; }
-  50% {
-    stroke-dasharray: 89,200;
-    stroke-dashoffset: -35; }
-  100% {
-    stroke-dasharray: 89,200;
-    stroke-dashoffset: -124; } }
-
-@keyframes dash {
-  0% {
-    stroke-dasharray: 1,200;
-    stroke-dashoffset: 0; }
-  50% {
-    stroke-dasharray: 89,200;
-    stroke-dashoffset: -35; }
-  100% {
-    stroke-dasharray: 89,200;
-    stroke-dashoffset: -124; } }
-
-@-webkit-keyframes color {
-  0% {
-    stroke: #FFFFFF; }
-  40% {
-    stroke: #FFFFFF; }
-  66% {
-    stroke: #FFFFFF; }
-  80%, 90% {
-    stroke: #FFFFFF; } }
-
-@keyframes color {
-  0% {
-    stroke: #FFFFFF; }
-  40% {
-    stroke: #FFFFFF; }
-  66% {
-    stroke: #FFFFFF; }
-  80%, 90% {
-    stroke: #FFFFFF; } }
+    @media screen and (max-width: 813px) {
+      .preloader img {
+        width: 250px;
+        height: 250px; } }
+  .preloader.hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease; }
 
 .video {
   position: absolute;

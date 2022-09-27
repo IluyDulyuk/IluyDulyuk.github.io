@@ -3314,8 +3314,12 @@ var scroll = function scroll() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/menu */ "./src/js/components/menu.js");
 /* harmony import */ var _components_scroll__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/scroll */ "./src/js/components/scroll.js");
-// import preloader from './components/preloader';
 
+
+
+window.onload = function () {
+  document.querySelector('.preloader').classList.add('hide');
+};
 
 window.addEventListener('DOMContentLoaded', function () {
   // preloader();
