@@ -11,7 +11,7 @@
     }
 
     @media screen and (max-width: 803px) {
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     &.active {
@@ -49,6 +49,10 @@
         // &::-webkit-scrollbar {
         //     display: none;
         // }
+
+        @media screen and (max-width: 813px) {
+            transform: translateY(0px);
+        }
     }
 
     &__neon {

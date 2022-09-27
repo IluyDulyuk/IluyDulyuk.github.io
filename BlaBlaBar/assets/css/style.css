@@ -94,9 +94,6 @@ body {
     body {
       overflow: scroll; } }
 
-section {
-  scroll-snap-align: start; }
-
 .zindex {
   z-index: 2; }
 
@@ -197,7 +194,7 @@ section {
         justify-content: space-between;
         align-items: center;
         width: calc(100% - 44px);
-        padding: 11px 22px 0px; }
+        padding: 11px 22px; }
         .header__nav._m .header__logo._m img {
           width: 52px; }
         .header__nav._m .header__link._m {
@@ -326,6 +323,9 @@ section {
   min-height: 400px;
   height: 100vh;
   position: relative; }
+  @media screen and (max-width: 813px) {
+    .offer {
+      background: url("../img/offer/back.png") center top/100% no-repeat; } }
   .offer__bg {
     position: absolute;
     width: 100%;
@@ -639,7 +639,7 @@ section {
       padding: 68px 0px 118px; } }
   @media screen and (max-width: 803px) {
     .poster {
-      overflow: hidden; } }
+      overflow-x: hidden; } }
   .poster.active {
     padding: calc(100vh / 6) 0px 118px; }
     .poster.active .poster__list {
@@ -661,6 +661,9 @@ section {
     border-top: 1px solid #FFFFFF;
     transform: translateY(120px);
     transition: 1s; }
+    @media screen and (max-width: 813px) {
+      .poster__list {
+        transform: translateY(0px); } }
   .poster__neon .neon__item {
     position: absolute;
     display: flex;
@@ -841,6 +844,8 @@ section {
     transition: 0.5s; }
   @media screen and (max-width: 813px) {
     .main {
+      width: auto;
+      height: auto;
       overflow: scroll; } }
 
 .preloader {
