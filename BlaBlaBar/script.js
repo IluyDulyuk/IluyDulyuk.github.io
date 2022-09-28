@@ -3404,10 +3404,11 @@ var scroll = function scroll() {
       sections.forEach(function (section, i) {
         if (section.classList.contains('active')) {
           if (wheel() == 'Down') {
+            // window.scrollTo(0, 0);
             scrollTo(1);
             document.querySelector('.header__nav._m').style.backgroundColor = '#131313';
             document.querySelector('.header__link._m').classList.add('active');
-          } else if (wheel() == 'Up') {
+          } else if (wheel() == 'Up' && document.documentElement.scrollTop == 0) {
             scrollTo(0);
             document.querySelector('.header__nav._m').style.backgroundColor = 'transparent';
             document.querySelector('.header__link._m').classList.remove('active');

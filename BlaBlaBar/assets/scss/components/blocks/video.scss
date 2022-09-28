@@ -11,4 +11,12 @@
         height: 100vh;
         object-fit: cover;
     }
+
+    @media screen and (max-width: 1100px) {
+        display: none;
+    }
+
+    @media screen and (max-width: 813px) {
+        display: block;
+    }
 }

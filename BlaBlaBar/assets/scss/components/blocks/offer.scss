@@ -6,6 +6,11 @@
     position: relative;
     // background-color: $c_bg;
 
+    @media screen and (max-width: 1100px) {
+        background: url('../img/offer/bg1100.png') center center / cover no-repeat;
+        // background-color: $c_bg;
+    }
+
     @media screen and (max-width: 813px) {
         background: url('../img/offer/back.png') center top / 100% no-repeat;
         // background-color: $c_bg;

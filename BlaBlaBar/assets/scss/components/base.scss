@@ -4,7 +4,11 @@ body {
     font-weight: 500;
     font-size: 16px;
     color: $c_w;
-    overflow: hidden;
+    // overflow: hidden;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 
     @media screen and (max-width: 813px) {
         overflow: scroll;
