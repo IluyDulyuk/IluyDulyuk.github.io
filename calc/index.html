@@ -23,7 +23,7 @@
                         </div>
                         <h3 class="type__title">Строим дом</h3>
                     </div>
-                    <div class="type__item">
+                    <div class="type__item" data-name="foundation">
                         <div class="type__image">
                             <svg xmlns="http://www.w3.org/2000/svg" width="84" height="75" viewBox="0 0 84 75">
                                 <defs>
@@ -59,7 +59,7 @@
                     </div>
                 </div>
             </div>
-            <div class="house" style="display: none;">
+            <div class="house" style="display: block;">
                 <div class="cacl__material" data-name="house">
                     <div class="calc__subtitle">Из какого материала?</div>
                     <div class="calc__list material">
@@ -475,6 +475,99 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="foundation" style="display: none;">
+                <div class="inputs">
+                    <div class="inputs__list">
+                        <div class="inputs__item select">
+                            <span class="">Тип фундамента</span>
+                            <div class="input">
+                                <select>
+                                    <option value="-------" selected>-------</option>
+                                    <option value="Плиточный">Плиточный</option>
+                                    <option value="Ленточный">Ленточный</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="inputs__item select">
+                            <span class="">Количество этажей</span>
+                            <div class="input">
+                                <select>
+                                    <option value="-------" selected>-------</option>
+                                    <option value="1">1</option>
+                                    <option value=">2">>2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calc__subtitle" style="margin-top: 30px;">Из какого материала стены?</div>
+                <div class="calc__list material">
+                    <div class="material__item active" data-name="house">
+                        <div class="material__image">
+                            <img src="https://fabrika-betonov.ru/images/thumbnails/150/150/detailed/2/polistirolbeton-60x30x40.png" alt="" title="">
+                        </div>
+                        <h3 class="material__title">ПОЛИСТИРОЛБЕТОН</h3>
+                    </div>
+                    <div class="material__item">
+                        <div class="material__image">
+                            <img src="https://fabrika-betonov.ru/images/thumbnails/150/150/detailed/2/kerra-block-52x40x20.png" alt="" title="">
+                        </div>
+                        <h3 class="material__title">Kerra block</h3>
+                    </div> 
+                    <div class="material__item">
+                        <div class="material__image">
+                            <img src="https://fabrika-betonov.ru/images/thumbnails/150/150/detailed/2/gazobeton-60x30x40.png" alt="" title="">
+                        </div>
+                        <h3 class="material__title">Газобетон</h3>
+                    </div> 
+                    <div class="material__item">
+                        <div class="material__image">
+                            <img src="https://fabrika-betonov.ru/images/thumbnails/150/150/detailed/2/peskoblok-40х20х20.png" alt="" title="">
+                        </div>
+                        <h3 class="material__title">Пескоблоки</h3>
+                    </div> 
+                    <div class="material__item">
+                        <div class="material__image">
+                            <img src="https://fabrika-betonov.ru/images/thumbnails/150/150/detailed/2/penobeton-60x30x40.png" alt="" title="">
+                        </div>
+                        <h3 class="material__title">Пенобетон</h3>
+                    </div>     
+                </div>
+                <p class="calc__text" data-name="house">
+                    <span>Здесь будет инструкция.</span>
+                </p>
+                <div class="inputs">
+                    <div class="inputs__list">
+                        <div class="inputs__item long">
+                            <span class="">Длина(м)</span>
+                            <div class="input">
+                                <input class="input__big" type="text" value="0">
+                                <input class="input__line" type="range" value="0" min="0" max="100">
+                            </div>
+                        </div>
+                        <div class="inputs__item long">
+                            <span class="">Ширина(м)</span>
+                            <div class="input">
+                                <input class="input__big" type="text" value="0.3">
+                                <input class="input__line" type="range" step="0.1" value="0.3" min="0.3" max="2">
+                            </div>
+                        </div>
+                        <div class="inputs__item long">
+                            <span class="">Высота(м)</span>
+                            <div class="input">
+                                <input class="input__big" type="text" value="0">
+                                <input class="input__line" type="range" step="0.1" value="0" min="0" max="3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="more__add">
+                    <button data-add="pere">ДОБАВИТЬ ЧАСТЬ</button>
+                </div>
+            </div>
+            <div class="fence">
+                
             </div>
             <button class="calc__btn">Расчет</button>
         </section>
