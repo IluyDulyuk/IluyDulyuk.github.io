@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <div class="container">
+        <section class="calc">
+            <h1 class="calc__title">Калькулятор</h1>
+            <div class="calc__type">
+                <div class="calc__subtitle">Что делаем?</div>
+                <div class="calc__list type">
+                    <div class="type__item active" data-name="house">
+                        <div class="type__image">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52" height="52" viewBox="0 0 52 52"><defs><path id="caxba" d="M4726.39 495.86h-43.06a4 4 0 0 1-4-3.99v-24.7c0-1.2.54-2.32 1.47-3.08l23.05-18.82a1.6 1.6 0 0 1 2-.01l13.36 10.67v-7.03a4 4 0 0 1 4-3.99h3.18a4 4 0 0 1 3.99 3.99v42.97a4 4 0 0 1-4 3.99zm-21.52-47.3l-22.05 18a.8.8 0 0 0-.3.62v24.7c0 .43.37.8.81.8h11.96v-16.72c0-2.2 1.79-3.98 3.98-3.98h11.17c2.2 0 3.99 1.78 3.99 3.98v16.71h11.96a.8.8 0 0 0 .8-.8V448.9a.8.8 0 0 0-.8-.8h-3.18a.8.8 0 0 0-.8.8v10.34a1.6 1.6 0 0 1-2.6 1.24zm6.37 27.4a.8.8 0 0 0-.8-.8h-11.17a.8.8 0 0 0-.8.8v16.71h12.77z"></path></defs><g><g transform="translate(-4679 -444)"><use fill="#d5242e" xlink:href="#caxba"></use></g></g></svg>
+                        </div>
+                        <h3 class="type__title">Строим дом</h3>
+                    </div>
+                    <div class="type__item">
+                        <div class="type__image">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="84" height="75" viewBox="0 0 84 75">
+                                <defs>
+                                  <style>
+                                    .cls-1 {
+                                      fill: #d5242e;
+                                      fill-rule: evenodd;
+                                    }
+                                  </style>
+                                </defs>
+                                <path class="cls-1" d="M84,50H83.994c0,0.008,0,.014,0,0.021a5.082,5.082,0,0,1-2.6,4.464L44.325,74.4a4.791,4.791,0,0,1-4.655,0L2.6,54.485A5.08,5.08,0,0,1,0,50.021C0,50.013,0,50.008,0,50H0V25.014C0,25,0,24.991,0,24.979a5.079,5.079,0,0,1,2.6-4.464L39.672,0.6a4.784,4.784,0,0,1,4.655,0L81.4,20.514A5.09,5.09,0,0,1,84,24.979c0,0.007,0,.013,0,0.021h0V50Zm-80.01.021a1.077,1.077,0,0,0,.537.966L40,70.043V49.514c-0.11-.051-0.222-0.1-0.33-0.156L4,30.2V50H3.972A0.1,0.1,0,0,1,3.99,50.021ZM79.468,24.015L42.4,4.1a0.826,0.826,0,0,0-.4-0.1,0.837,0.837,0,0,0-.4.1h0L4.527,24.013a1.078,1.078,0,0,0-.537.966c0,0.005,0,.015,0,0.021H4v0.11a1.025,1.025,0,0,0,.527.836L41.6,45.86a0.812,0.812,0,0,0,.8,0L79.466,25.946a1.042,1.042,0,0,0,.534-0.9V25h0c0-.005,0-0.015,0-0.021A1.073,1.073,0,0,0,79.468,24.015ZM80,50V30.192L44.325,49.359c-0.106.058-.216,0.1-0.325,0.153V70.039L79.466,50.988A1.076,1.076,0,0,0,80,50.021,0.1,0.1,0,0,1,80.023,50H80Z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="type__title">Заливаем фундамент</h3>
+                    </div>
+                    <div class="type__item">
+                        <div class="type__image">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="81" height="58" viewBox="0 0 81 58"><defs><path id="zd6ja" d="M5211.3 492.69h4.79v-51.06h-4.79zm7.98 1.6c0 .88-.71 1.59-1.6 1.59h-7.98a1.6 1.6 0 0 1-1.59-1.6v-1.59h1.6a1.6 1.6 0 0 1 0 3.19h-68.6a1.6 1.6 0 0 1-1.59-1.6v-54.24c0-.89.71-1.6 1.6-1.6h7.97c.89 0 1.6.71 1.6 1.6v1.59h57.42v-1.6c0-.88.71-1.59 1.6-1.59h7.97c.89 0 1.6.71 1.6 1.6zm-76.57-1.6h4.79v-51.06h-4.79zm21.54 0v-9.57h-13.56v9.57zm-7.98-12.76v-9.58h-5.58v9.58zm7.98-12.77v-9.57h-13.56v9.57zm-7.98-12.76v-9.58h-5.58v9.58zm17.55 25.53v-9.58h-14.36v9.58zm17.54 0v-9.58h-14.35v9.58zm16.75 0v-9.58h-13.56v9.58zm-34.29-25.53v-9.58h-14.36v9.58zm17.54 0v-9.58h-14.35v9.58zm16.75 0v-9.58h-13.56v9.58zm-26.32 12.76v-9.57h-14.35v9.57zm17.55 0v-9.57h-14.36v9.57zm8.77 0v-9.57h-5.58v9.57zm-26.32 25.53v-9.57h-14.35v9.57zm17.55 0v-9.57h-14.36v9.57zm3.19 0h5.58v-9.57h-5.58z"></path></defs><g><g transform="translate(-5139 -438)"><use fill="#d5242e" xlink:href="#zd6ja"></use></g></g></svg>
+                        </div>
+                        <h3 class="type__title">СТАВИМ ЗАБОР</h3>
+                    </div>
+                    <div class="type__item">
+                        <div class="type__image">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="52" viewBox="0 0 24 52"><defs><path id="l6b4a" d="M5417.07 495.88a11.12 11.12 0 0 1-11.17-11.05c0-2.86 1.16-5.62 3.2-7.69v-24.42c0-4.35 3.57-7.9 7.97-7.9s7.97 3.55 7.97 7.9v24.42a10.98 10.98 0 0 1 3.2 7.69c0 6.1-5.02 11.05-11.17 11.05zm0-47.9a4.77 4.77 0 0 0-4.79 4.74v25.1c0 .44-.2.86-.53 1.17a7.76 7.76 0 0 0-2.66 5.84c0 4.35 3.58 7.9 7.98 7.9s7.97-3.55 7.97-7.9c0-2.24-.95-4.31-2.66-5.84-.34-.3-.53-.73-.53-1.18v-25.1a4.77 4.77 0 0 0-4.78-4.73zm0 41.59a4.77 4.77 0 0 1-4.79-4.74 4.75 4.75 0 0 1 3.2-4.47v-21.5c0-.86.7-1.57 1.59-1.57.88 0 1.6.7 1.6 1.58v21.5c1.85.64 3.18 2.4 3.18 4.46a4.77 4.77 0 0 1-4.78 4.74zm0-6.32c-.88 0-1.6.7-1.6 1.58 0 .87.72 1.58 1.6 1.58.87 0 1.6-.7 1.6-1.58 0-.87-.73-1.58-1.6-1.58z"></path></defs><g><g transform="translate(-5405 -444)"><use fill="#d5242e" xlink:href="#l6b4a"></use></g></g></svg>
+                        </div>
+                        <h3 class="type__title">УТЕПЛЯЕМ ПОМЕЩЕНИЕ</h3>
+                    </div>
+                    <div class="type__item">
+                        <div class="type__image">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="61" height="60" viewBox="0 0 61 60"><defs><path id="9f8ja" d="M5678.3 488.44a7.44 7.44 0 1 1-14.87 0c0-1.97.9-3.87.88-4.52l-26.16.22-4.14 10.25a1.56 1.56 0 1 1-2.9-1.18l4-9.92-8.94-6.2h-6.56a1.57 1.57 0 0 1 0-3.14h7.54l9.17 6.36 3.76-9.3c.02-.06.06-.11.09-.16-.25-.27-.48-.52-.67-.76-1.39-1.76-1.34-1.74-2.83-3.86l-.09-.13a27.6 27.6 0 0 1-3.66-8.46l-.55-2.6a8.01 8.01 0 0 1 2.8-7.41l10.35-6.87a22.89 22.89 0 0 1 8.4-3.55l6.82-1.1c.3-.05.62-.07.95-.07 2.38 0 5.13 1.27 6.48 3.1l6.7 9.07a8.53 8.53 0 0 1 .73 8.01l-3.03 6.2a22.95 22.95 0 0 1-5.83 7.04l-5.96 3.6 7.64 8.35a7.4 7.4 0 0 1 9.89 7.03zm-41.26-38.3a4.95 4.95 0 0 0-1.6 4.25l.54 2.6a24.58 24.58 0 0 0 3.17 7.31l.1.14c1.44 2.08 1.34 1.98 2.7 3.7a23.19 23.19 0 0 0 5.7 4.66l2.37 1.3c.47.27 1.17.42 1.91.42 1.01 0 2-.27 2.6-.72l10.35-6.86c1.68-1.25 3.96-4 4.88-5.89l3.03-6.2c.62-1.28.4-3.63-.44-4.77l-6.7-9.07a5.58 5.58 0 0 0-3.96-1.84c-.16 0-.32.02-.45.04l-6.81 1.1a19.77 19.77 0 0 0-7.04 2.97zm2.38 30.87h24.43l-5.6-6.07-1.86 1.38a7.64 7.64 0 0 1-4.46 1.33 7.16 7.16 0 0 1-3.42-.8l-2.37-1.3c-1.1-.6-2.36-1.5-3.53-2.45zm35.76 7.43a4.31 4.31 0 1 0-8.63 0 4.31 4.31 0 0 0 8.63 0z"></path></defs><g><g transform="translate(-5618 -436)"><use fill="#d5242e" xlink:href="#9f8ja"></use></g></g></svg>
+                        </div>
+                        <h3 class="type__title">РАСЧЁТ ЖИДКИХ СМЕСЕЙ</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="house" style="display: none;">
+                <div class="cacl__material" data-name="house">
+                    <div class="calc__subtitle">Из какого материала?</div>
+                    <div class="calc__list material">
+                        <div class="material__item active" data-name="house">
+                            <div class="material__image">
+                                <img src="https://fabrika-betonov.ru/images/thumbnails/150/150/detailed/2/polistirolbeton-60x30x40.png" alt="" title="">
+                            </div>
+                            <h3 class="material__title">ПОЛИСТИРОЛБЕТОН</h3>
+                        </div>
+                        <div class="material__item">
+                            <div class="material__image">
+                                <img src="https://fabrika-betonov.ru/images/thumbnails/150/150/detailed/2/kerra-block-52x40x20.png" alt="" title="">
+                            </div>
+                            <h3 class="material__title">Kerra block</h3>
+                        </div> 
+                        <div class="material__item">
+                            <div class="material__image">
+                                <img src="https://fabrika-betonov.ru/images/thumbnails/150/150/detailed/2/gazobeton-60x30x40.png" alt="" title="">
+                            </div>
+                            <h3 class="material__title">Газобетон</h3>
+                        </div> 
+                        <div class="material__item">
+                            <div class="material__image">
+                                <img src="https://fabrika-betonov.ru/images/thumbnails/150/150/detailed/2/peskoblok-40х20х20.png" alt="" title="">
+                            </div>
+                            <h3 class="material__title">Пескоблоки</h3>
+                        </div> 
+                        <div class="material__item">
+                            <div class="material__image">
+                                <img src="https://fabrika-betonov.ru/images/thumbnails/150/150/detailed/2/penobeton-60x30x40.png" alt="" title="">
+                            </div>
+                            <h3 class="material__title">Пенобетон</h3>
+                        </div>     
+                    </div>
+                </div>
+                <p class="calc__text" data-name="house">
+                    <span>Чтобы упростить задачу расчета стоимости дома из различных материалов, мы создали простой и удобный калькулятор.</span>
+                    <span>Вы можете посчитать количество и стоимость блоков от компании "Фабрика Бетонов", с учетом запасов и возможного боя материала.</span>
+                    <span>Широкий функционал калькулятора позволяет рассчитывать дома сложной геометрии с учетом внутренних перегородок.</span>
+                </p>
+                <div class="cacl__parm" data-name="house">
+                    <div class="calc__subtitle">Параметры дома</div>
+                    <div class="inputs">
+                        <div class="inputs__list">
+                            <div class="inputs__item long">
+                                <span class="">Периметр(м)</span>
+                                <div class="input">
+                                    <input class="input__big" type="text" value="20">
+                                    <input class="input__line" type="range" value="0" min="20" max="150">
+                                </div>
+                            </div>
+                            <div class="inputs__item long">
+                                <span class="">Высота стен(м)</span>
+                                <div class="input">
+                                    <input class="input__big" type="text" value="2">
+                                    <input class="input__line" type="range" step="0.1" value="0" min="2" max="5">
+                                </div>
+                            </div>
+                            <div class="inputs__item select">
+                                <span class="">Количество этажей</span>
+                                <div class="input">
+                                    <select>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more" data-name="house">
+                        <div class="more__btn">Более точный расчет</div>
+    
+                        <div class="more__hide hide__title hide" style="display: none;">
+                            <div class="calc__subtitle">Первый этаж</div>
+                            <div class="inputs">
+                                <div class="inputs__list">
+                                    <div class="inputs__item select">
+                                        <span class="">Толщина стен</span>
+                                        <div class="input">
+                                            <select>
+                                                <option value="20" selected>20</option>
+                                                <option value="30">30</option>
+                                                <option value="40">40</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="inputs__item long">
+                                        <span class="">Высота стен(м)</span>
+                                        <div class="input">
+                                            <input class="input__big" type="text" value="2">
+                                            <input class="input__line" type="range" step="0.1" value="0" min="2" max="5">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="more__add">
+                                <button data-add="pere">Добавить перегородки</button>
+                                <div class="add__pere add__item">
+                                    <div class="inputs">
+                                        <div class="inputs__list">
+                                            <div class="inputs__item select">
+                                                <span class="">Предпочтительный размер блока</span>
+                                                <div class="input">
+                                                    <select>
+                                                        
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="inputs__item long">
+                                                <span class="">Длина перегородки(м)</span>
+                                                <div class="input">
+                                                    <input class="input__big" type="text" value="0">
+                                                    <input class="input__line" type="range" value="0" min="0" max="50">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button data-add="pro">Добавить проёмы</button>
+                                <div class="add__pere add__item">
+                                    <div class="inputs">
+                                        <div class="inputs__list">
+                                            <div class="inputs__item select">
+                                                <span class=""></span>
+                                                <div class="input">
+                                                    <select>
+                                                        <option value="Внешние" selected>Внешние</option>
+                                                        <option value="Внутренние">Внутренние</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="inputs__item long">
+                                                <span class="">Ширина проема(м)</span>
+                                                <div class="input">
+                                                    <input class="input__big" type="text" value="0">
+                                                    <input class="input__line" type="range" step="0.1" value="0" min="0" max="4">
+                                                </div>
+                                            </div>
+                                            <div class="inputs__item long">
+                                                <span class="">Высота проема(м)</span>
+                                                <div class="input">
+                                                    <input class="input__big" type="text" value="0">
+                                                    <input class="input__line" type="range" step="0.1" value="0" min="0" max="5">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="floor" data-floor="2">
+                                <div class="calc__subtitle">Второй этаж</div>
+                                <div class="inputs">
+                                    <div class="inputs__list">
+                                        <div class="inputs__item select">
+                                            <span class="">Мансардный?</span>
+                                            <div class="input">
+                                                <select>
+                                                    <option value="Да" selected>Да</option>
+                                                    <option value="Нет">Нет</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="inputs__item select">
+                                            <span class="">Толщина стен</span>
+                                            <div class="input">
+                                                <select>
+                                                    <option value="20" selected>20</option>
+                                                    <option value="30">30</option>
+                                                    <option value="40">40</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="inputs__item long">
+                                            <span class="">Высота стен(м)</span>
+                                            <div class="input">
+                                                <input class="input__big" type="text" value="2">
+                                                <input class="input__line" type="range" step="0.1" value="0" min="2" max="5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="more__add">
+                                    <button data-add="pere">Добавить перегородки</button>
+                                    <div class="add__pere add__item">
+                                        <div class="inputs">
+                                            <div class="inputs__list">
+                                                <div class="inputs__item select">
+                                                    <span class="">Предпочтительный размер блока</span>
+                                                    <div class="input">
+                                                        <select>
+                                                            
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="inputs__item long">
+                                                    <span class="">Длина перегородки(м)</span>
+                                                    <div class="input">
+                                                        <input class="input__big" type="text" value="0">
+                                                        <input class="input__line" type="range" value="0" min="0" max="50">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button data-add="pro">Добавить проёмы</button>
+                                    <div class="add__pere add__item">
+                                        <div class="inputs">
+                                            <div class="inputs__list">
+                                                <div class="inputs__item select">
+                                                    <span class=""></span>
+                                                    <div class="input">
+                                                        <select>
+                                                            <option value="Внешние" selected>Внешние</option>
+                                                            <option value="Внутренние">Внутренние</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="inputs__item long">
+                                                    <span class="">Ширина проема(м)</span>
+                                                    <div class="input">
+                                                        <input class="input__big" type="text" value="0">
+                                                        <input class="input__line" type="range" step="0.1" value="0" min="0" max="4">
+                                                    </div>
+                                                </div>
+                                                <div class="inputs__item long">
+                                                    <span class="">Высота проема(м)</span>
+                                                    <div class="input">
+                                                        <input class="input__big" type="text" value="0">
+                                                        <input class="input__line" type="range" step="0.1" value="0" min="0" max="5">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="floor" data-floor="3">
+                                <div class="calc__subtitle">Третий этаж</div>
+                                <div class="inputs">
+                                    <div class="inputs__list">
+                                        <div class="inputs__item select">
+                                            <span class="">Мансардный?</span>
+                                            <div class="input">
+                                                <select>
+                                                    <option value="Да" selected>Да</option>
+                                                    <option value="Нет">Нет</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="inputs__item select">
+                                            <span class="">Толщина стен</span>
+                                            <div class="input">
+                                                <select>
+                                                    <option value="20" selected>20</option>
+                                                    <option value="30">30</option>
+                                                    <option value="40">40</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="inputs__item long">
+                                            <span class="">Высота стен(м)</span>
+                                            <div class="input">
+                                                <input class="input__big" type="text" value="2">
+                                                <input class="input__line" type="range" step="0.1" value="0" min="2" max="5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="more__add">
+                                    <button data-add="pere">Добавить перегородки</button>
+                                    <div class="add__pere add__item">
+                                        <div class="inputs">
+                                            <div class="inputs__list">
+                                                <div class="inputs__item select">
+                                                    <span class="">Предпочтительный размер блока</span>
+                                                    <div class="input">
+                                                        <select>
+                                                            
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="inputs__item long">
+                                                    <span class="">Длина перегородки(м)</span>
+                                                    <div class="input">
+                                                        <input class="input__big" type="text" value="0">
+                                                        <input class="input__line" type="range" value="0" min="0" max="50">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button data-add="pro">Добавить проёмы</button>
+                                    <div class="add__pere add__item">
+                                        <div class="inputs">
+                                            <div class="inputs__list">
+                                                <div class="inputs__item select">
+                                                    <span class=""></span>
+                                                    <div class="input">
+                                                        <select>
+                                                            <option value="Внешние" selected>Внешние</option>
+                                                            <option value="Внутренние">Внутренние</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="inputs__item long">
+                                                    <span class="">Ширина проема(м)</span>
+                                                    <div class="input">
+                                                        <input class="input__big" type="text" value="0">
+                                                        <input class="input__line" type="range" step="0.1" value="0" min="0" max="4">
+                                                    </div>
+                                                </div>
+                                                <div class="inputs__item long">
+                                                    <span class="">Высота проема(м)</span>
+                                                    <div class="input">
+                                                        <input class="input__big" type="text" value="0">
+                                                        <input class="input__line" type="range" step="0.1" value="0" min="0" max="5">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="floor" data-floor="4">
+                                <div class="calc__subtitle">Четвертый этаж</div>
+                                <div class="inputs">
+                                    <div class="inputs__list">
+                                        <div class="inputs__item select">
+                                            <span class="">Мансардный?</span>
+                                            <div class="input">
+                                                <select>
+                                                    <option value="Да" selected>Да</option>
+                                                    <option value="Нет">Нет</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="inputs__item select">
+                                            <span class="">Толщина стен</span>
+                                            <div class="input">
+                                                <select>
+                                                    <option value="20" selected>20</option>
+                                                    <option value="30">30</option>
+                                                    <option value="40">40</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="inputs__item long">
+                                            <span class="">Высота стен(м)</span>
+                                            <div class="input">
+                                                <input class="input__big" type="text" value="2">
+                                                <input class="input__line" type="range" step="0.1" value="0" min="2" max="5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="more__add">
+                                    <button data-add="pere">Добавить перегородки</button>
+                                    <div class="add__pere add__item">
+                                        <div class="inputs">
+                                            <div class="inputs__list">
+                                                <div class="inputs__item select">
+                                                    <span class="">Предпочтительный размер блока</span>
+                                                    <div class="input">
+                                                        <select>
+                                                            
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="inputs__item long">
+                                                    <span class="">Длина перегородки(м)</span>
+                                                    <div class="input">
+                                                        <input class="input__big" type="text" value="0">
+                                                        <input class="input__line" type="range" value="0" min="0" max="50">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button data-add="pro">Добавить проёмы</button>
+                                    <div class="add__pere add__item">
+                                        <div class="inputs">
+                                            <div class="inputs__list">
+                                                <div class="inputs__item select">
+                                                    <span class=""></span>
+                                                    <div class="input">
+                                                        <select>
+                                                            <option value="Внешние" selected>Внешние</option>
+                                                            <option value="Внутренние">Внутренние</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="inputs__item long">
+                                                    <span class="">Ширина проема(м)</span>
+                                                    <div class="input">
+                                                        <input class="input__big" type="text" value="0">
+                                                        <input class="input__line" type="range" step="0.1" value="0" min="0" max="4">
+                                                    </div>
+                                                </div>
+                                                <div class="inputs__item long">
+                                                    <span class="">Высота проема(м)</span>
+                                                    <div class="input">
+                                                        <input class="input__big" type="text" value="0">
+                                                        <input class="input__line" type="range" step="0.1" value="0" min="0" max="5">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="calc__btn">Расчет</button>
+        </section>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
