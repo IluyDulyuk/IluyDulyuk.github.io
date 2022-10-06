@@ -100,6 +100,8 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 30px;
+    min-height: 44px;
+    text-align: center;
 }
 
 
@@ -123,6 +125,7 @@ body {
     display: flex;
     justify-content: start;
     align-items: start;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -319,3 +322,27 @@ body {
     width: 15px;
     height: 15px;
 }
+
+.mix__select {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.mix__select-name {
+    display: inline-block;
+    width: 150px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.mix__select select {
+    width: 280px !important;
+}
+
+.mix__select .select:before  {
+    right: 25px;
+    top: 40%;
+}
+
