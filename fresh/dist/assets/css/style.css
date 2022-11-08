@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&family=Rubik&display=swap");
+@font-face {
+  font-family: 'PTreg';
+  src: url("../fonts/PT-Mono/PT-Mono_Regular.woff2") format("woff2"), url("../fonts/PT-Mono/PT-Mono_Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'PTbold';
+  src: url("../fonts/PT-Mono/PT-Mono_Bold.woff2") format("woff2"), url("../fonts/PT-Mono/PT-Mono_Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+*, *:befor, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjast: 100%;
+  -moz-text-size-adjast: 100%;
+  -webkit-text-size-adjast: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::ms-clear {
+  display: none; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 400; }
+
+body {
+  font-family: "Rubik", sans-serif; }
+
+.container {
+  width: 1160px;
+  margin: 0 auto; }
+
+.header {
+  padding: 100px 0px;
+  background: #06131B;
+  position: fixed;
+  min-width: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease;
+  z-index: 1000; }
+  .header.scroll {
+    padding: 20px 0px; }
+  .header .container {
+    display: flex;
+    align-items: center; }
+  .header__nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+  .header .menu {
+    display: flex;
+    align-items: center; }
+    .header .menu__item {
+      padding: 0px 20px; }
+      .header .menu__item a {
+        font-size: 16px;
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.3s ease; }
+        .header .menu__item a:hover {
+          color: #A3E129; }
+    .header .menu__link svg path, .header .menu__link circle {
+      transition: all 0.3s ease; }
+    .header .menu__link:hover svg path, .header .menu__link:hover circle {
+      fill: #A3E129; }
+    .header .menu__link:last-child {
+      position: relative; }
+      .header .menu__link:last-child:hover svg path, .header .menu__link:last-child:hover circle {
+        fill: #fff; }
+      .header .menu__link:last-child span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #A3E129;
+        color: #06131B;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        font-size: 10px;
+        font-weight: 700;
+        font-family: "PTreg", monospace;
+        position: absolute;
+        top: -3px;
+        right: -10px; }
+  .header__menu {
+    padding-left: 56px; }
+  .header__links {
+    width: 140px;
+    padding-left: 20px;
+    justify-content: space-between; }
+
+.offer {
+  transition: all 0.3s ease;
+  padding-top: 242px;
+  background: #DADFE3 url("../img/offer/offer__bg.png") right bottom/cover no-repeat;
+  min-height: 662px; }
+  .offer.scroll {
+    padding-top: 82px; }
+  .offer__title {
+    width: 958px;
+    font-size: 96px;
+    line-height: 86px;
+    font-family: "PTbold", monospace;
+    color: #000000;
+    padding-top: 80px; }
+  .offer__subtitle {
+    color: #000000;
+    font-family: "PTreg", monospace;
+    font-size: 32px;
+    padding-top: 28px; }
+
+.promo {
+  min-height: 509px;
+  padding: 67px 0px;
+  background: #A3E129 url("../img/change/promo_1_bg.svg") center top/cover no-repeat; }
+  .promo__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .promo__title a {
+    display: block;
+    width: 496px;
+    font-size: 96px;
+    line-height: 86px;
+    font-family: "PTbold", monospace;
+    color: #000000;
+    transition: all 0.5s ease; }
+    .promo__title a:hover {
+      color: #fff; }
+  .promo__text {
+    color: #3C3D42;
+    font-size: 32px;
+    line-height: 38px; }
+    .promo__text span {
+      font-size: 96px;
+      line-height: 86px;
+      font-family: "PTbold", monospace; }
+  .promo__price {
+    padding-top: 24px; }
+  .promo.second {
+    background: #3C3D42 url("../img/change/promo_2_bg.png") center top/cover no-repeat; }
+    .promo.second .promo__title a {
+      color: #fff; }
+      .promo.second .promo__title a:hover {
+        color: #A3E129; }
+    .promo.second .promo__text {
+      color: #fff; }
+
+.hits__title {
+  font-size: 96px;
+  line-height: 86px;
+  font-family: "PTbold", monospace;
+  color: #3C3D42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 117px 0;
+  background: #DADFE3; }
+
+.hits__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.hits__item {
+  min-width: 33.3333%;
+  min-height: 504px;
+  cursor: pointer;
+  position: relative; }
+  .hits__item .hits__buy {
+    display: none; }
+  .hits__item:hover .hits__buy {
+    display: block;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 98; }
+    .hits__item:hover .hits__buy button {
+      padding: 20px 64px;
+      background: #3C3D42;
+      font-size: 36px;
+      line-height: 40px;
+      font-family: "PTbold", monospace;
+      text-transform: lowercase;
+      color: #fff;
+      cursor: pointer;
+      position: absolute;
+      left: 36px;
+      bottom: 38px; }
+      .hits__item:hover .hits__buy button:hover {
+        background: #A3E129; }
+  .hits__item:hover h5 {
+    color: #3C3D42 !important;
+    z-index: 99;
+    position: relative; }
+  .hits__item img {
+    display: block;
+    width: 370px; }
+  .hits__item h5 {
+    width: 285px;
+    font-size: 36px;
+    line-height: 40px;
+    font-family: "PTbold", monospace;
+    margin: 29px 0px 0px 36px; }
+  .hits__item.dark {
+    background: #3C3D42; }
+    .hits__item.dark h5 {
+      color: #fff; }
+    .hits__item.dark .hits__bottom {
+      color: #fff; }
+  .hits__item.green {
+    background: #A3E129; }
+    .hits__item.green h5 {
+      color: #06131B; }
+    .hits__item.green .hits__bottom {
+      color: #06131B; }
+
+.hits__bottom {
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: space-between; }
+  .hits__bottom p {
+    font-size: 24px;
+    line-height: 26px;
+    font-family: "PTbold", monospace;
+    padding: 10px;
+    padding-left: 36px;
+    padding-bottom: 27px; }
+  .hits__bottom img {
+    margin-right: 23px; }
+
+.free-del {
+  text-align: center;
+  padding: 148px 0px;
+  background: #DADFE3; }
+  .free-del h3 {
+    font-size: 96px;
+    line-height: 86px;
+    font-family: "PTbold", monospace;
+    color: #3C3D42;
+    padding-top: 34px; }
+  .free-del a {
+    display: block;
+    font-size: 24px;
+    font-family: "PTbold", monospace;
+    color: #A3E129;
+    transition: all 0.5s ease;
+    padding-top: 26px; }
+    .free-del a:hover {
+      color: #fff; }
+
+.about {
+  background: #A3E129 url("../img/about/bg.svg") center top/cover no-repeat;
+  padding: 187px 0px; }
+  .about p {
+    width: 100%;
+    font-size: 40px;
+    line-height: 44px;
+    font-family: "PTbold", monospace;
+    color: #3C3D42;
+    text-align: center; }
+
+.footer {
+  background: #232228;
+  padding: 74px 0px;
+  color: #fff; }
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .footer .footer__tel {
+    display: block;
+    font-size: 24px;
+    line-height: 26px;
+    font-family: "PTbold", monospace;
+    color: #fff; }
+    .footer .footer__tel:last-child {
+      padding-bottom: 15px; }
+  .footer path {
+    fill: #fff; }
+  .footer a:hover path {
+    fill: #A3E129; }
+  .footer__soc {
+    padding-right: 20px;
+    padding-top: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; }
+  .footer__adress {
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "PTbold", monospace; }

@@ -1,0 +1,26 @@
+.offer {
+    transition: all 0.3s ease;
+    padding-top: 242px;
+    background: $c_grey url('../img/offer/offer__bg.png') right bottom / cover no-repeat;
+    min-height: 662px;
+
+    &.scroll {
+        padding-top: 82px;
+    }
+
+    &__title {
+        width: 958px;
+        font-size: 96px;
+        line-height: 86px;
+        font-family: $f_PTbold;
+        color: $c_black;
+        padding-top: 80px;
+    }
+
+    &__subtitle {
+        color: $c_black;
+        font-family: $f_PTreg;
+        font-size: 32px;
+        padding-top: 28px;
+    }
+}

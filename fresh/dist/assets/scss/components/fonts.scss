@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&family=Rubik&display=swap');
+
+@font-face {
+	font-family: 'PTreg';
+	src:
+		url('../fonts/PT-Mono/PT-Mono_Regular.woff2') format('woff2'),
+		url('../fonts/PT-Mono/PT-Mono_Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PTbold';
+	src:
+		url('../fonts/PT-Mono/PT-Mono_Bold.woff2') format('woff2'),
+		url('../fonts/PT-Mono/PT-Mono_Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}

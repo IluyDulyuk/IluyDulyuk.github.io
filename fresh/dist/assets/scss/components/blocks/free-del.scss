@@ -1,0 +1,26 @@
+.free-del {
+    text-align: center;
+    padding: 148px 0px;
+    background: $c_grey;
+
+    h3 {
+        font-size: 96px;
+        line-height: 86px;
+        font-family: $f_PTbold;
+        color: #3C3D42;
+        padding-top: 34px;
+    }
+
+    a {
+        display: block;
+        font-size: 24px;
+        font-family: $f_PTbold;
+        color: $c_green;
+        transition: all 0.5s ease;
+        padding-top: 26px;
+        
+        &:hover {
+            color: #fff;
+        }
+    }
+}
