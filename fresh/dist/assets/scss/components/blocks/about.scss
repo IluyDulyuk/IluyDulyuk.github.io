@@ -2,6 +2,11 @@
     background: $c_green url('../img/about/bg.svg') center top / cover no-repeat;
     padding: 187px 0px;
 
+    @media screen and (max-width: 1000px) {
+        padding: 218px 0px;
+        background: $c_green;
+    }
+
     p {
         width: 100%;
         font-size: 40px;
@@ -9,5 +14,10 @@
         font-family: $f_PTbold;
         color: #3C3D42;
         text-align: center;
+
+        @media screen and (max-width: 1000px) {
+            font-size: 24px;
+            line-height: 40px;
+        }
     }
 }

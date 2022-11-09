@@ -17,8 +17,18 @@
             </div>
             <nav class="header__nav">
                 <ul class="header__menu menu">
-                    <li class="menu__item">
+                    <li class="menu__item dropdown-link">
                         <p><a href="#">каталог</a></p>
+                        <div class="dropdown">
+                            <ul>
+                                <li>
+                                    <a href="#" class="dropdown__item">корейский салаты</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown__item">соления</a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="menu__item">
                         <p><a href="#">прайс-лист</a></p>
@@ -63,6 +73,40 @@
                     </li>
                 </ul>
             </nav>
+            <div class="header__gum"><img src="./assets/img/common/gum.svg" alt="gum"></div>
+            <div class="mobile-menu">
+                <ul class="mobile-menu__list">
+                    <li>
+                        <a class="mobile-menu__item">каталог</a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="#" class="dropdown__item">корейский салаты</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown__item">соления</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="mobile-menu__item">прайс-лист</a>
+                    </li>
+                    <li>
+                        <a class="mobile-menu__item">доставка</a>
+                    </li>
+                    <li>
+                        <a class="mobile-menu__item">контакты</a>
+                    </li>
+                    <li>
+                        <a class="mobile-menu__item">личный кабинет</a>
+                    </li>
+                    <li>
+                        <a class="mobile-menu__item">корзина</a>
+                    </li>
+                    <li class="mobile-menu__close">
+                        <img src="./assets/img/common/close.svg" alt="close">
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <section class="offer">
@@ -91,6 +135,9 @@
     <section class="promo second">
         <div class="container">
             <div class="promo__wrapper">
+                <div class="promo__image mobile">
+                    <img src="./assets/img/change/promo__image.png" alt="image">
+                </div>
                 <div class="promo__text">
                     <h4 class="promo__title">
                         <a href="#">Соления</a>

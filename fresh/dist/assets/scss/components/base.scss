@@ -5,4 +5,9 @@ body {
 .container {
     width: 1160px;
     margin: 0 auto;
+
+    @media screen and (max-width: 1230px) {
+        width: calc(100% - 70px);
+        padding: 0px 35px;
+    }
 }

@@ -10,12 +10,21 @@
         align-items: center;
         padding: 117px 0;
         background: $c_grey;
+
+        @media screen and (max-width: 1000px) {
+            font-size: 48px;
+            padding: 77px 0;
+        }
     }
 
     &__wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media screen and (max-width: 1540px) {
+            display: block;
+        }
     }
 
     &__item {
@@ -23,6 +32,13 @@
         min-height: 504px;
         cursor: pointer;
         position: relative;
+
+        @media screen and (max-width: 1540px) {
+            width: 100%;
+            padding-top: 29px;
+            padding-bottom: 22px;
+            min-height: auto;
+        }
 
         .hits__buy {
             display: none;
@@ -38,6 +54,10 @@
                 top: 0;
                 left: 0;
                 z-index: 98;
+
+                @media screen and (max-width: 1000px) {
+                    display: none;
+                }
 
                 button {
                     padding: 20px 64px;
@@ -68,6 +88,10 @@
         img {
             display: block;
             width: 370px;
+
+            @media screen and (max-width: 520px) {
+                width: 60%;
+            }
         }
 
         h5 {
@@ -76,6 +100,11 @@
             line-height: 40px;
             font-family: $f_PTbold;
             margin: 29px 0px 0px 36px;
+
+            @media screen and (max-width: 1540px) {
+                margin-top: 0;
+                margin-bottom: 29px;
+            }
         }
             
         &.dark {

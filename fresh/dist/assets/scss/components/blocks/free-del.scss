@@ -3,12 +3,21 @@
     padding: 148px 0px;
     background: $c_grey;
 
+    @media screen and (max-width: 1000px) {
+        padding: 111px 0px;
+    }
+
     h3 {
         font-size: 96px;
         line-height: 86px;
         font-family: $f_PTbold;
         color: #3C3D42;
         padding-top: 34px;
+
+        @media screen and (max-width: 1000px) {
+            font-size: 48px;
+            line-height: 60px;
+        }
     }
 
     a {
@@ -18,6 +27,10 @@
         color: $c_green;
         transition: all 0.5s ease;
         padding-top: 26px;
+
+        @media screen and (max-width: 1000px) {
+            padding-top: 40px;
+        }
         
         &:hover {
             color: #fff;

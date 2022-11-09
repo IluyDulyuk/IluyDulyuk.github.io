@@ -4,6 +4,10 @@
     background: $c_grey url('../img/offer/offer__bg.png') right bottom / cover no-repeat;
     min-height: 662px;
 
+    @media screen and (max-width: 1000px) {
+        padding-top: 175px;
+    }
+
     &.scroll {
         padding-top: 82px;
     }
@@ -15,6 +19,18 @@
         font-family: $f_PTbold;
         color: $c_black;
         padding-top: 80px;
+
+        @media screen and (max-width: 1000px) {
+            padding-top: 32px;
+            font-size: 64px;
+            line-height: 64px;
+            width: 100%;
+        }
+
+        @media screen and (max-width: 415px) {
+            font-size: 44px;
+            line-height: 44px;
+        }
     }
 
     &__subtitle {
@@ -22,5 +38,12 @@
         font-family: $f_PTreg;
         font-size: 32px;
         padding-top: 28px;
+
+        @media screen and (max-width: 1000px) {
+            padding-top: 18px;
+            font-size: 24px;
+            line-height: 28px;
+            width: 251px;
+        }
     }
 }

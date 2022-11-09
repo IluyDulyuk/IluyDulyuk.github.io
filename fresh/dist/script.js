@@ -86,9 +86,9 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/js/components/scroll.js":
+/***/ "./src/js/components/header.js":
 /*!*************************************!*\
-  !*** ./src/js/components/scroll.js ***!
+  !*** ./src/js/components/header.js ***!
   \*************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -97,7 +97,10 @@
 __webpack_require__.r(__webpack_exports__);
 var scroll = function scroll() {
   var header = document.querySelector('.header'),
-    offer = document.querySelector('.offer');
+    offer = document.querySelector('.offer'),
+    mobileMenu = document.querySelector('.mobile-menu'),
+    gum = document.querySelector('.header__gum'),
+    close = document.querySelector('.mobile-menu__close');
   window.addEventListener('scroll', function () {
     if (window.pageYOffset > 0) {
       header.classList.add('scroll');
@@ -106,6 +109,12 @@ var scroll = function scroll() {
       header.classList.remove('scroll');
       offer.classList.remove('scroll');
     }
+  });
+  gum.addEventListener('click', function () {
+    mobileMenu.classList.toggle('active');
+  });
+  close.addEventListener('click', function () {
+    mobileMenu.classList.toggle('active');
   });
 };
 /* harmony default export */ __webpack_exports__["default"] = (scroll);
@@ -121,10 +130,10 @@ var scroll = function scroll() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components_scroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/scroll */ "./src/js/components/scroll.js");
+/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header */ "./src/js/components/header.js");
 
 window.addEventListener('DOMContentLoaded', function () {
-  Object(_components_scroll__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  Object(_components_header__WEBPACK_IMPORTED_MODULE_0__["default"])();
 });
 
 /***/ })
