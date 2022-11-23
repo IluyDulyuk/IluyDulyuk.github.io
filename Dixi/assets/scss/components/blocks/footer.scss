@@ -1,0 +1,40 @@
+.footer {
+
+    .container {
+        border-top: 1px solid #2B2A29;
+        padding: 20px 0px 55px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    &__contacts {
+
+        a {
+            display: flex;
+            align-items: center;
+            color: #000;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 21px;
+
+            &:first-child {
+                margin-bottom: 20px;
+                
+                &:before {
+                    content: url('../img/icons/footer__tel.svg');
+                    margin-right: 24px;
+                }
+            }
+
+            &:last-child {
+
+                &:before {
+                    content: url('../img/icons/footer__mail.svg');
+                    height: 24px;
+                    margin-right: 24px;
+                }
+            }
+        }
+    }
+}
