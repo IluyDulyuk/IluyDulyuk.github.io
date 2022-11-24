@@ -2,8 +2,26 @@
     padding-top: 80px;
     color: #2B2A28;
 
+    @media screen and (max-width: 910px) {
+        padding-top: 64px;
+    }
+
+    .container {
+        @media screen and (max-width: 910px) {
+            width: calc(100% - 60px);
+        }
+
+        @media screen and (max-width: 628px) {
+            width: calc(100% - 40px);
+        }
+    }
+
     &__list {
         padding-top: 74px;
+
+        @media screen and (max-width: 910px) {
+            padding-top: 40px;
+        }
     }
 
     &__item {
@@ -17,25 +35,53 @@
         &:last-child {
             margin-bottom: 0px;
         }
+
+        @media screen and (max-width: 910px) {
+            display: block;
+            width: 100%;
+            margin-bottom: 32px;
+        }
     }
 
     &__image {
         width: 412px;
         height: 312px;
-        background: url('../img/services/services__image_1.png') center center no-repeat;
 
-        &:nth-child(2) {
-            background: url('../img/services/services__image_2.png') center center no-repeat;
+        @media screen and (max-width: 910px) {
+            
+            &:nth-child(3) {
+                display: none;
+            }
         }
 
-        &:nth-child(3) {
-            background: url('../img/services/services__image_3.png') center center no-repeat;
+        @media screen and (max-width: 628px) {
+            height: 265px;
+        }
+
+        @media screen and (max-width: calc(412px + 40px)) {
+            width: 100%;
+        }
+    }
+
+    .services__image._mobile {
+        display: none;
+
+        @media screen and (max-width: 910px) {
+            display: block;
         }
     }
 
     &__text {
         width: 315px;
         margin: 0 auto;
+
+        @media screen and (max-width: 910px) {
+            margin: 18px 0px 0px 0px;
+        }
+
+        @media screen and (max-width: calc(315px + 40px)) {
+            width: 100%;
+        }
     }
 
     &__text-title {
@@ -44,9 +90,17 @@
         line-height: 21px;
         margin-bottom: 14px;
         transform: translateX(-16px);
+
+        @media screen and (max-width: 910px) {
+            transform: translateX(0px);
+        }
     }
 
     &__ul {
+
+        @media screen and (max-width: 910px) {
+            transform: translateX(18px);
+        }
 
         li {
             font-size: 14px;

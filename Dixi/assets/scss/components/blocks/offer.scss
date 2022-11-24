@@ -4,6 +4,10 @@
     background: url('../img/offer/offer__bg.jpg') center top / cover no-repeat;
     color: #fff;
 
+    @media screen and (max-width: 1200px) {
+        min-width: auto;
+    }
+
     .container {
         display: flex;
         flex-direction: column;
@@ -17,12 +21,24 @@
         line-height: 52.8px;
         font-weight: 500;
         padding-bottom: 4px;
+
+        @media screen and (max-width: 628px) {
+            font-size: 28px;
+            line-height: 30px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
     }
 
     &__subtitle {
         font-size: 18px;
         font-weight: 400;
         line-height: 25.2px;
+
+        @media screen and (max-width: 628px) {
+            width: 306px;
+            text-align: center; 
+        }
     }
 
     &__arrow {

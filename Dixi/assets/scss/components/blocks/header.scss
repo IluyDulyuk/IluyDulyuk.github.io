@@ -17,11 +17,23 @@
     &__logo {
         position: absolute;
         left: 30px;
+
+        @media screen and (max-width: 628px) {
+            left: 19px;
+
+            img {
+                width: 159px;
+            }
+        }
     }
 
     &__menu {
         display: flex;
         gap: 24px;
+
+        @media screen and (max-width: 1025px) {
+            display: none;
+        }
     }
 
     &__link {

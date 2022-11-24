@@ -2,13 +2,40 @@
 
     .container {
         border-top: 1px solid #2B2A29;
-        padding: 20px 0px 55px 0px;
+        padding: 20px 10px 55px 10px;
         display: flex;
         justify-content: space-between;
         align-items: start;
+        width: calc(1200px - 20px);
+
+        @media screen and (max-width: 1200px) {
+            width: calc(100% - 20px);
+        }
+
+        @media screen and (max-width: 628px) {
+            padding-bottom: 30px;
+        } 
+
+        @media screen and (max-width: 430px) {
+            display: block;
+        } 
+    }
+
+    &__logo {
+
+        @media screen and (max-width: 628px) {
+            
+            img {
+                width: 157px;
+            }
+        }    
     }
 
     &__contacts {
+
+        @media screen and (max-width: 430px) {
+            margin-top: 39px;
+        } 
 
         a {
             display: flex;

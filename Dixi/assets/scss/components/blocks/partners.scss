@@ -1,6 +1,10 @@
 .partners {
     padding: 80px 0px;
 
+    @media screen and (max-width: 910px) {
+        padding: 63px 0px;
+    }
+
     &__title {
         margin-bottom: 32px;
     }
@@ -11,5 +15,19 @@
         justify-content: center;
         margin: 0 auto;
         gap: 25px;
+
+        @media screen and (max-width: calc(850px + 60px)) {
+            width: 350px;
+            flex-wrap: wrap;
+            gap: 20px;
+
+            img {
+                width: 157px;
+            }
+        }
+
+        @media screen and (max-width: 390px) {
+            width: 200px;
+        }
     }
 }
