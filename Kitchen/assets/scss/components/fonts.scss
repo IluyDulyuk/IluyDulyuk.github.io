@@ -52,3 +52,13 @@
 	font-weight: 900;
 	font-style: normal;
 }
+
+@font-face {
+	font-family: 'TTJenevers';
+	font-display: swap;
+	src: local("O"), url("../fonts/TTJenevers-Light.woff") format("woff"), 
+			url("../fonts/TTJenevers-Light.ttf") format("truetype"), 
+			url("../fonts/TTJenevers-Light.woff2") format("woff2");
+	font-weight: 300;
+	font-style: normal;
+}
