@@ -301,6 +301,20 @@ module.exports = function (METHOD_NAME, argument) {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/internals/array-slice.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/core-js/internals/array-slice.js ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var uncurryThis = __webpack_require__(/*! ../internals/function-uncurry-this */ "./node_modules/core-js/internals/function-uncurry-this.js");
+
+module.exports = uncurryThis([].slice);
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/internals/array-species-constructor.js":
 /*!*********************************************************************!*\
   !*** ./node_modules/core-js/internals/array-species-constructor.js ***!
@@ -794,6 +808,27 @@ module.exports = function (exec) {
     return true;
   }
 };
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/internals/function-apply.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/core-js/internals/function-apply.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var NATIVE_BIND = __webpack_require__(/*! ../internals/function-bind-native */ "./node_modules/core-js/internals/function-bind-native.js");
+
+var FunctionPrototype = Function.prototype;
+var apply = FunctionPrototype.apply;
+var call = FunctionPrototype.call;
+
+// eslint-disable-next-line es-x/no-reflect -- safe
+module.exports = typeof Reflect == 'object' && Reflect.apply || (NATIVE_BIND ? call.bind(apply) : function () {
+  return call.apply(apply, arguments);
+});
 
 
 /***/ }),
@@ -1757,6 +1792,48 @@ module.exports = function (it) {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/internals/schedulers-fix.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/core-js/internals/schedulers-fix.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var global = __webpack_require__(/*! ../internals/global */ "./node_modules/core-js/internals/global.js");
+var apply = __webpack_require__(/*! ../internals/function-apply */ "./node_modules/core-js/internals/function-apply.js");
+var isCallable = __webpack_require__(/*! ../internals/is-callable */ "./node_modules/core-js/internals/is-callable.js");
+var userAgent = __webpack_require__(/*! ../internals/engine-user-agent */ "./node_modules/core-js/internals/engine-user-agent.js");
+var arraySlice = __webpack_require__(/*! ../internals/array-slice */ "./node_modules/core-js/internals/array-slice.js");
+var validateArgumentsLength = __webpack_require__(/*! ../internals/validate-arguments-length */ "./node_modules/core-js/internals/validate-arguments-length.js");
+
+var MSIE = /MSIE .\./.test(userAgent); // <- dirty ie9- check
+var Function = global.Function;
+
+var wrap = function (scheduler) {
+  return MSIE ? function (handler, timeout /* , ...arguments */) {
+    var boundArgs = validateArgumentsLength(arguments.length, 1) > 2;
+    var fn = isCallable(handler) ? handler : Function(handler);
+    var args = boundArgs ? arraySlice(arguments, 2) : undefined;
+    return scheduler(boundArgs ? function () {
+      apply(fn, this, args);
+    } : fn, timeout);
+  } : scheduler;
+};
+
+// ie9- setTimeout & setInterval additional parameters fix
+// https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#timers
+module.exports = {
+  // `setTimeout` method
+  // https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-settimeout
+  setTimeout: wrap(global.setTimeout),
+  // `setInterval` method
+  // https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-setinterval
+  setInterval: wrap(global.setInterval)
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/internals/shared-key.js":
 /*!******************************************************!*\
   !*** ./node_modules/core-js/internals/shared-key.js ***!
@@ -2097,6 +2174,23 @@ module.exports = DESCRIPTORS && fails(function () {
 
 /***/ }),
 
+/***/ "./node_modules/core-js/internals/validate-arguments-length.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/core-js/internals/validate-arguments-length.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var $TypeError = TypeError;
+
+module.exports = function (passed, required) {
+  if (passed < required) throw $TypeError('Not enough arguments');
+  return passed;
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/internals/weak-map-basic-detection.js":
 /*!********************************************************************!*\
   !*** ./node_modules/core-js/internals/weak-map-basic-detection.js ***!
@@ -2224,6 +2318,60 @@ handlePrototype(DOMTokenListPrototype);
 
 /***/ }),
 
+/***/ "./node_modules/core-js/modules/web.set-interval.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/core-js/modules/web.set-interval.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $ = __webpack_require__(/*! ../internals/export */ "./node_modules/core-js/internals/export.js");
+var global = __webpack_require__(/*! ../internals/global */ "./node_modules/core-js/internals/global.js");
+var setInterval = __webpack_require__(/*! ../internals/schedulers-fix */ "./node_modules/core-js/internals/schedulers-fix.js").setInterval;
+
+// ie9- setInterval additional parameters fix
+// https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-setinterval
+$({ global: true, bind: true, forced: global.setInterval !== setInterval }, {
+  setInterval: setInterval
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/web.set-timeout.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/core-js/modules/web.set-timeout.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var $ = __webpack_require__(/*! ../internals/export */ "./node_modules/core-js/internals/export.js");
+var global = __webpack_require__(/*! ../internals/global */ "./node_modules/core-js/internals/global.js");
+var setTimeout = __webpack_require__(/*! ../internals/schedulers-fix */ "./node_modules/core-js/internals/schedulers-fix.js").setTimeout;
+
+// ie9- setTimeout additional parameters fix
+// https://html.spec.whatwg.org/multipage/timers-and-user-prompts.html#dom-settimeout
+$({ global: true, bind: true, forced: global.setTimeout !== setTimeout }, {
+  setTimeout: setTimeout
+});
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/modules/web.timers.js":
+/*!****************************************************!*\
+  !*** ./node_modules/core-js/modules/web.timers.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// TODO: Remove this module from `core-js@4` since it's split to modules listed below
+__webpack_require__(/*! ../modules/web.set-interval */ "./node_modules/core-js/modules/web.set-interval.js");
+__webpack_require__(/*! ../modules/web.set-timeout */ "./node_modules/core-js/modules/web.set-timeout.js");
+
+
+/***/ }),
+
 /***/ "./node_modules/webpack-stream/node_modules/webpack/buildin/global.js":
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
@@ -2314,6 +2462,210 @@ var menu = function menu() {
 
 /***/ }),
 
+/***/ "./src/js/components/recipes.js":
+/*!**************************************!*\
+  !*** ./src/js/components/recipes.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.for-each.js */ "./node_modules/core-js/modules/es.array.for-each.js");
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/web.timers.js */ "./node_modules/core-js/modules/web.timers.js");
+/* harmony import */ var core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_timers_js__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+
+var recipes = function recipes() {
+  var mediaDesctop = window.matchMedia('(min-width: 1200px)'),
+      mediaTablet = window.matchMedia('(min-width: 960px)'),
+      meadiaTabletSmall = window.matchMedia('(min-width: 640px)'),
+      mediaMobile = window.matchMedia('(max-width: 640px)'),
+      recipesSections = document.querySelectorAll('.recipes');
+  recipesSections.forEach(function (recipesSection) {
+    var columnsWrapper = recipesSection.querySelector('.recipes__columns'),
+        recipesItems = recipesSection.querySelectorAll('.recipe');
+
+    var addColumns = function addColumns(count) {
+      for (var i = 0; i < count; i++) {
+        var column = document.createElement('div');
+        column.classList.add('recipes__column');
+        columnsWrapper.appendChild(column);
+      }
+    };
+
+    var addRecipes = function addRecipes(countColumns) {
+      var columns = recipesSection.querySelectorAll('.recipes__column');
+
+      if (countColumns == 4) {
+        recipesItems.forEach(function (item, i) {
+          if (!item.getAttribute('data-recipe')) {
+            recipesItems[i].setAttribute('data-recipe', 1);
+
+            if (recipesItems[i + 1]) {
+              recipesItems[i + 1].setAttribute('data-recipe', 2);
+            }
+
+            if (recipesItems[i + 2]) {
+              recipesItems[i + 2].setAttribute('data-recipe', 3);
+            }
+
+            if (recipesItems[i + 1]) {
+              recipesItems[i + 1].setAttribute('data-recipe', 2);
+            }
+
+            if (recipesItems[i + 3]) {
+              recipesItems[i + 3].setAttribute('data-recipe', 4);
+            }
+          }
+        });
+      }
+
+      if (countColumns == 3) {
+        recipesItems.forEach(function (item, i) {
+          if (!item.getAttribute('data-recipe')) {
+            recipesItems[i].setAttribute('data-recipe', 1);
+
+            if (recipesItems[i + 1]) {
+              recipesItems[i + 1].setAttribute('data-recipe', 2);
+            }
+
+            if (recipesItems[i + 2]) {
+              recipesItems[i + 2].setAttribute('data-recipe', 3);
+            }
+          }
+        });
+      }
+
+      if (countColumns == 2) {
+        recipesItems.forEach(function (item, i) {
+          if (!item.getAttribute('data-recipe')) {
+            recipesItems[i].setAttribute('data-recipe', 1);
+
+            if (recipesItems[i + 1]) {
+              recipesItems[i + 1].setAttribute('data-recipe', 2);
+            }
+          }
+        });
+      }
+
+      if (countColumns == 1) {
+        recipesItems.forEach(function (item, i) {
+          if (!item.getAttribute('data-recipe')) {
+            recipesItems[i].setAttribute('data-recipe', 1);
+          }
+        });
+      }
+
+      columns.forEach(function (column, i) {
+        recipesItems.forEach(function (item) {
+          if (i + 1 == item.getAttribute('data-recipe')) {
+            column.appendChild(item);
+          }
+        });
+      });
+    };
+
+    var animateRecipes = function animateRecipes() {
+      var subscribe = document.querySelector('.subscribe');
+
+      var offset = function offset(el) {
+        var rect = el.getBoundingClientRect(),
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        return {
+          top: rect.top + scrollTop,
+          left: rect.left + scrollLeft
+        };
+      };
+
+      recipesItems.forEach(function (item) {
+        var itemHeight = item.offsetHeight,
+            itemOffset = offset(item).top,
+            start = 15;
+        var itemPoint = window.innerHeight - itemHeight / start;
+
+        if (window.pageYOffset > itemOffset - itemPoint && window.pageYOffset < itemOffset + itemHeight) {
+          item.classList.add('_recipe-show');
+        }
+      });
+      var subscribeHeight = subscribe.clientHeight,
+          subscribeOffset = offset(subscribe).top,
+          start = 1;
+      var subscribePoint = window.innerHeight - subscribeHeight / start;
+
+      if (window.pageYOffset > subscribeOffset - subscribePoint && window.pageYOffset < subscribeOffset + subscribeHeight) {
+        subscribe.classList.add('_show-block');
+      }
+    };
+
+    if (mediaDesctop.matches) {
+      addColumns(4);
+      addRecipes(4);
+      recipesItems.forEach(function (item, i) {
+        if (i < 4) {
+          setTimeout(function () {
+            item.classList.add('_recipe-show');
+          }, 1000);
+        }
+      });
+      window.addEventListener('scroll', function () {
+        animateRecipes();
+      });
+    } else if (mediaTablet.matches) {
+      addColumns(3);
+      addRecipes(3);
+      recipesItems.forEach(function (item, i) {
+        if (i < 3) {
+          setTimeout(function () {
+            item.classList.add('_recipe-show');
+          }, 1000);
+        }
+      });
+      window.addEventListener('scroll', function () {
+        animateRecipes();
+      });
+    } else if (meadiaTabletSmall.matches) {
+      addColumns(2);
+      addRecipes(2);
+      recipesItems.forEach(function (item, i) {
+        if (i < 2) {
+          setTimeout(function () {
+            item.classList.add('_recipe-show');
+          }, 1000);
+        }
+      });
+      window.addEventListener('scroll', function () {
+        animateRecipes();
+      });
+    } else if (mediaMobile.matches) {
+      addColumns(1);
+      addRecipes(1);
+      recipesItems.forEach(function (item, i) {
+        if (i < 1) {
+          setTimeout(function () {
+            item.classList.add('_recipe-show');
+          }, 1000);
+        }
+
+        item.classList.add('_recipe-show');
+      });
+    }
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (recipes);
+
+/***/ }),
+
 /***/ "./src/js/main.js":
 /*!************************!*\
   !*** ./src/js/main.js ***!
@@ -2324,17 +2676,20 @@ var menu = function menu() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/menu */ "./src/js/components/menu.js");
+/* harmony import */ var _components_recipes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/recipes */ "./src/js/components/recipes.js");
+
 
 window.addEventListener('DOMContentLoaded', function () {
-  var toTopBtn = document.querySelector('.pre-footer__btn-to-top');
-  toTopBtn.addEventListener('click', function () {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: 'smooth'
-    });
-  });
+  // const toTopBtn = document.querySelector('.pre-footer__btn-to-top');
+  // toTopBtn.addEventListener('click', () => {
+  //     window.scrollTo({
+  //         top: 0,
+  //         left: 0,
+  //         behavior: 'smooth'
+  //     });
+  // })
   Object(_components_menu__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  Object(_components_recipes__WEBPACK_IMPORTED_MODULE_1__["default"])();
 });
 
 /***/ })

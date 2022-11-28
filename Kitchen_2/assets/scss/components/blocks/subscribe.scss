@@ -1,0 +1,111 @@
+.subscribe {
+    padding: 45px 0px 120px;
+    opacity: 0;
+    transition: .5s;
+
+    &._show-block {
+        opacity: 1;
+    } 
+    
+    @media screen and (max-width: 640px) {
+       opacity: 1;
+    }
+
+    &__wrapper {
+        width: 560px;
+        margin: 0 auto;
+        text-align: center;
+
+        @media screen and (max-width: 640px) {
+            width: calc(100% - 40px);
+        }
+    }
+
+    &__title {
+        color: #9e8b73;
+        line-height: 1.4;
+        font-size: 20px;
+        padding-bottom: 60px;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    .form {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        padding-bottom: 30px;
+        font-size: 16px;
+        position: relative;
+
+        @media screen and (max-width: 640px) {
+            display: block;
+            padding-bottom: 52px;
+            height: auto;
+        }
+
+        &__button {
+            padding: 0 60px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            background-color: #9e8b73;
+            cursor: pointer;
+            transition: .3s;
+
+            @media screen and (max-width: 640px) {
+                width: 100%;
+                height: 60px;
+            }
+
+            &:hover {
+                background: #f7f7f7;
+            }
+        }
+
+        &__placeholder {
+            display: block;
+            opacity: 0.5;
+            position: absolute;
+            left: 20px;
+            top: 22px;
+            transition: .3s;
+            font-weight: 500;
+        }
+
+        &__input {
+            @media screen and (max-width: 640px) {
+                padding-bottom: 10px;
+            }
+            
+            input {
+                font-size: inherit;
+                font-weight: 500;
+                width: 314px;
+                line-height: 1.33;
+                padding: 26px 0px 10px;
+                border-bottom: 1px solid #000;
+                background: transparent;
+                position: relative;
+                z-index: 100;
+
+                @media screen and (max-width: 640px) {
+                    width: 100%;
+                }
+            }
+
+            input:focus ~ .form__placeholder {
+                transform: translate(-10px, -100%) scale(.7);
+            }
+        }
+    }
+
+    &__privacy {
+        font-size: 14px;
+        color: rgb(199, 199, 199);
+        line-height: 1.27;
+    }
+}

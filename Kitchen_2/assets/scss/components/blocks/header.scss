@@ -7,11 +7,17 @@
     color: #000;
     font-weight: 400;
     background: #fff;
-    z-index: 10000;
+    z-index: 1000;
 
     @media screen and (max-width: 1005px) {
         color: #fff;
         height: 70px;
+    }
+
+    @media screen and (min-width: 1005px) {
+        position: static;
+        height: auto;
+        padding-bottom: 30px;
     }
 
     &__wrapper {
@@ -24,6 +30,12 @@
         @media screen and (max-width: 1200px) {
             padding: 0 20px;
         }
+
+        @media screen and (min-width: 1005px) {
+            display: block;
+            text-align: center;
+            padding: 0;
+        }
     }
 
     &__logo {
@@ -31,11 +43,19 @@
         align-items: center;
         justify-content: center;
 
+        @media screen and (min-width: 1005px) {
+            height: 140px;
+        }
+
         img {
             width: 300px;
 
             @media screen and (max-width: 1005px) {
                 width: 250px;
+            }
+
+            @media screen and (min-width: 1005px) {
+                width: 330px;
             }
         }
     }
@@ -139,6 +159,12 @@
             padding: 48px 40px 38px;
             text-align: right;
             position: relative;
+        }
+
+        @media screen and (min-width: 1005px) {
+            height: 60px;
+            align-items: center;
+            justify-content: center;
         }
 
         &__item {
@@ -317,10 +343,19 @@
             color: inherit;
             position: relative;
 
+            &._active {
+                opacity: 0.7;
+            }
+
             @media screen and (max-width: 1005px) {
                 font-size: 21px;
                 text-transform: none;
                 font-weight: 500;
+            }
+
+            @media screen and (min-width: 1005px) {
+                font-size: 14px;
+                letter-spacing: 0.5px;
             }
 
             &:after {
@@ -339,6 +374,10 @@
 
                 &:after {
                     opacity: 1;
+
+                    @media screen and (min-width: 1005px) {
+                        opacity: 0;
+                    }
                 }
             }
         }

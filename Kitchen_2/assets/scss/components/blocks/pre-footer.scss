@@ -1,0 +1,62 @@
+.pre-footer {
+    padding: 30px 20px 45px;
+    background: #f2efea;
+    position: relative;
+    color: #616161;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 1.35;
+
+    @media screen and (max-width: 961px) {
+        padding: 70px 20px 85px;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 961px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    
+    &__socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 50%;
+        top: 50%;
+        gap: 5px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+
+        @media screen and (max-width: 961px) {
+            position: static;
+            transform: none;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__text {
+        font-family: 'TTJenevers';
+
+        @media screen and (max-width: 961px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__btn-to-top {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        cursor: pointer;
+
+        span {
+            padding-left: 6px;
+        }
+    }
+}

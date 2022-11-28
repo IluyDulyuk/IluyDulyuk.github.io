@@ -1,0 +1,25 @@
+.socials {
+    height: 26px;
+    padding-bottom: 30px;
+
+    &__wrapper {
+
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    .social-link {
+        width: 26px;
+        height: 26px;
+        border-radius: 2px;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+}
