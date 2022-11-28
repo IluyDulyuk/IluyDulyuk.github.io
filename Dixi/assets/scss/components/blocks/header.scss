@@ -18,8 +18,12 @@
         position: absolute;
         left: 30px;
 
+        @media screen and (max-width: 1025px) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
         @media screen and (max-width: 628px) {
-            left: 19px;
 
             img {
                 width: 159px;

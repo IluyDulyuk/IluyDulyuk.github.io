@@ -32,6 +32,17 @@
         margin: 0 auto;
         margin-bottom: 39px;
 
+        &._left-text-item {
+
+            .services__text {
+                margin-left: 35px;
+
+                @media screen and (max-width: 910px) {
+                    margin-left: 0;
+                }
+            }
+        }
+
         &:last-child {
             margin-bottom: 0px;
         }
