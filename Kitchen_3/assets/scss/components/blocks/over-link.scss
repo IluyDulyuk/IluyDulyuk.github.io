@@ -1,0 +1,36 @@
+.over-link {
+    padding: 45px 0px;
+
+    &__wrapper {
+        width: 250px;
+        margin: 0 auto;
+
+        a {
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 11px;
+
+            &:hover {
+
+                span {
+                    text-decoration: underline;
+                }
+            }
+
+            img {
+                width: 30px;
+            }
+    
+            span {
+                display: block;
+                font-size: 20px;
+
+                @media screen and (max-width: 1200px) {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

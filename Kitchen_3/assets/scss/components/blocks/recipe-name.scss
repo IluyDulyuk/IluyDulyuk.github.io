@@ -1,0 +1,47 @@
+.recipe-head {
+    margin-top: 135px;
+    padding-bottom: 90px;
+    
+    &__wrapper {
+        width: 760px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__subtitle {
+        display: block;
+        font-weight: 400;
+        letter-spacing: 2.5px;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-size: 62px;
+        line-height: 66px;
+        color: #cfbeb2;
+        padding-bottom: 50px;
+    }
+
+    &__about {
+        font-size: 16px;
+        line-height: 1.45;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding-bottom: 104px;
+    }
+
+    &__image {
+        padding-bottom: 75px;
+
+        img {
+            width: 560px;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 1.55;
+        text-align: left;
+    }
+}

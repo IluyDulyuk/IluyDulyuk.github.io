@@ -1,0 +1,27 @@
+.socials {
+    padding: 30px 0px 45px;
+    text-align: center;
+
+    &__title {
+        line-height: 42px;
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    .social-link {
+        width: 26px;
+        height: 26px;
+        border-radius: 2px;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+}
