@@ -683,7 +683,11 @@ h1, h2, h3, h4, h5, h6 {
     .recipe-steps__images {
       justify-content: space-between;
       gap: 0px; } }
+  @media screen and (max-width: 640px) {
+    .recipe-steps__images a {
+      width: 30%; } }
   .recipe-steps__images img {
+    cursor: zoom-in;
     width: 369.33px; }
     @media screen and (max-width: 1200px) {
       .recipe-steps__images img {
@@ -693,7 +697,7 @@ h1, h2, h3, h4, h5, h6 {
         width: 182.66px; } }
     @media screen and (max-width: 640px) {
       .recipe-steps__images img {
-        width: 30%; } }
+        width: 100%; } }
 
 .recipe-steps__result {
   text-align: center;

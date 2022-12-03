@@ -153,8 +153,15 @@
             justify-content: space-between;
             gap: 0px;
         }
+
+        a {
+            @media screen and (max-width: 640px) {
+                width: 30%;
+            }
+        }
         
         img {
+            cursor: zoom-in;
             width: 369.33px;
 
             @media screen and (max-width: 1200px) {
@@ -166,7 +173,7 @@
             }
 
             @media screen and (max-width: 640px) {
-                width: 30%;
+                width: 100%;
             }
         }
     }

@@ -2666,6 +2666,64 @@ var recipes = function recipes() {
 
 /***/ }),
 
+/***/ "./src/js/components/scroll.js":
+/*!*************************************!*\
+  !*** ./src/js/components/scroll.js ***!
+  \*************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.for-each.js */ "./node_modules/core-js/modules/es.array.for-each.js");
+/* harmony import */ var core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+var scroll = function scroll() {
+  var animateItems = document.querySelectorAll('.animate-on-scroll');
+  animateItems.forEach(function (item) {
+    item.style.transition = '.5s';
+    item.style.opacity = '0';
+  });
+
+  var animate = function animate() {
+    var offset = function offset(el) {
+      var rect = el.getBoundingClientRect(),
+          scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+          scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      return {
+        top: rect.top + scrollTop,
+        left: rect.left + scrollLeft
+      };
+    };
+
+    animateItems.forEach(function (item) {
+      var itemHeight = item.offsetHeight,
+          itemOffset = offset(item).top,
+          start = 3;
+      var itemPoint = window.innerHeight - itemHeight / start;
+
+      if (window.pageYOffset > itemOffset - itemPoint && window.pageYOffset < itemOffset + itemHeight) {
+        item.style.opacity = '1';
+      }
+    });
+  };
+
+  window.addEventListener('scroll', function () {
+    animate();
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (scroll);
+
+/***/ }),
+
 /***/ "./src/js/main.js":
 /*!************************!*\
   !*** ./src/js/main.js ***!
@@ -2677,6 +2735,8 @@ var recipes = function recipes() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/menu */ "./src/js/components/menu.js");
 /* harmony import */ var _components_recipes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/recipes */ "./src/js/components/recipes.js");
+/* harmony import */ var _components_scroll__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/scroll */ "./src/js/components/scroll.js");
+
 
 
 window.addEventListener('DOMContentLoaded', function () {
@@ -2688,7 +2748,10 @@ window.addEventListener('DOMContentLoaded', function () {
   //         behavior: 'smooth'
   //     });
   // })
-  Object(_components_menu__WEBPACK_IMPORTED_MODULE_0__["default"])(); // recipes();
+  Object(_components_menu__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  Object(_components_scroll__WEBPACK_IMPORTED_MODULE_2__["default"])(); // recipes();
+
+  lightGallery(document.querySelector('#lightgallery'));
 });
 
 /***/ })
