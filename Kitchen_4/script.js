@@ -2301,11 +2301,17 @@ var menu = function menu() {
     var title = link.querySelector('.menu__title'),
         dropdown = link.querySelector('.dropdown');
     title.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.querySelectorAll('.dropdown').forEach(function (item) {
-        item.classList.remove('_dropdown-open');
-      });
-      dropdown.classList.add('_dropdown-open');
+      e.preventDefault(); // document.querySelectorAll('.dropdown').forEach(item => {
+      //     item.classList.remove('_dropdown-open');
+      // })
+
+      if (!dropdown.classList.contains('_dropdown-open')) {
+        document.querySelectorAll('.dropdown').forEach(function (item) {
+          item.classList.remove('_dropdown-open');
+        });
+      }
+
+      dropdown.classList.toggle('_dropdown-open');
     });
   });
 };
