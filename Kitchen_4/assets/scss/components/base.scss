@@ -34,3 +34,8 @@ body {
 .menu-bg {
     display: none;
 }
+
+.lg-container.lg-show.lg-show-in {
+    position: relative;
+    z-index: 100000;
+}

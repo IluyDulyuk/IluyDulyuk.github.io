@@ -28,6 +28,10 @@ body {
 .menu-bg {
   display: none; }
 
+.lg-container.lg-show.lg-show-in {
+  position: relative;
+  z-index: 100000; }
+
 @font-face {
   font-family: 'Gerbera';
   font-display: swap;
@@ -632,6 +636,8 @@ h1, h2, h3, h4, h5, h6 {
       margin-top: 70px; } }
   .article__image {
     padding: 0px 15px 20px; }
+    .article__image._full-width {
+      padding: 0px 0px 20px; }
     .article__image img {
       width: 560px; }
       @media screen and (max-width: 1200px) {
@@ -644,10 +650,10 @@ h1, h2, h3, h4, h5, h6 {
         .article__image img {
           width: 100%; } }
   .article__title-block {
-    padding: 39px 0px 113px; }
+    padding: 39px 0px 24px; }
     @media screen and (max-width: 640px) {
       .article__title-block {
-        padding: 39px 20px 113px; } }
+        padding: 39px 20px 24px; } }
   .article__subtitle {
     font-size: 14px;
     font-weight: 500;
@@ -713,20 +719,24 @@ h1, h2, h3, h4, h5, h6 {
         flex-direction: column;
         align-items: center;
         gap: 10px; } }
+    .article__images a {
+      display: block;
+      cursor: zoom-in; }
+      .article__images a:last-child {
+        transform: translateY(65px); }
+        @media screen and (max-width: 960px) {
+          .article__images a:last-child {
+            transform: translateY(0px); } }
     .article__images img {
       width: 570px;
-      object-fit: cover; }
+      object-fit: cover;
+      min-height: 100%; }
       @media screen and (max-width: 1200px) {
         .article__images img {
           width: 460px; } }
       @media screen and (max-width: 640px) {
         .article__images img {
           width: 100%; } }
-      .article__images img:last-child {
-        transform: translateY(65px); }
-        @media screen and (max-width: 960px) {
-          .article__images img:last-child {
-            transform: translateY(0px); } }
   .article__advice {
     padding-bottom: 30px;
     width: 960px;
@@ -751,6 +761,31 @@ h1, h2, h3, h4, h5, h6 {
       height: 1px;
       background: #000;
       margin: 0 auto; }
+  .article__share {
+    margin-bottom: 60px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; }
+    .article__share img {
+      width: 22px; }
+    .article__share a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      background: #6287ae;
+      color: #fff;
+      font: 400 12px Arial, Helvetica, sans-serif;
+      letter-spacing: 0.1px;
+      border-radius: 2px;
+      padding: 0px 6px; }
+      .article__share a:last-child {
+        background: transparent;
+        font-size: 16px;
+        font-family: 'Times New Roman', serif;
+        color: #000; }
 
 .over-articles {
   padding: 58px 0px 98px;

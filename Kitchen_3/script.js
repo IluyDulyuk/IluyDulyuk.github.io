@@ -2751,7 +2751,9 @@ window.addEventListener('DOMContentLoaded', function () {
   Object(_components_menu__WEBPACK_IMPORTED_MODULE_0__["default"])();
   Object(_components_scroll__WEBPACK_IMPORTED_MODULE_2__["default"])(); // recipes();
 
-  lightGallery(document.querySelector('#lightgallery'));
+  lightGallery(document.querySelector('#lightgallery'), {
+    controls: true
+  });
 });
 
 /***/ })
