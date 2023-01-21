@@ -7,7 +7,7 @@ import os
 
 
 
-session = vk_api.VkApi(token="vk1.a.C053otCiy5UsJ5zteb4ITiACPlFExXFFi1BNRxuXly1ykgg4HxYqWsizKPoeJNY5zFYyhH8ydCtjoiGHWsj4xl_QgDlNyArJ92wwPv5HWoR6znUgtlLvU1mzL_PMC33vxknsCzL7HXHdkoKHMsrJHPMdSU_i2uZCbTiJcdTRSfkTySBAOhBMV26ueSP2LZD92wupy5ZmXeMl9tBdXNt7-A")
+session = vk_api.VkApi(token="vk1.a.CnrPBkEkuVA2Y0HjtAZX7x6Pu8GT_oyv2wk4QWu81ULSoa91FbTQu9l-b65InTPoA7Bod1xMkGiC2R8oR0ienMwzDb9FvZhjxirIvimFSS5m_NGMRqjTkxuJMbJEXxkwnY1qdjj5E_QoYXIuiMDP_cz_zGtKf7LksIwE1vQXtk5YU9eUuZwiNTRowABuQkR45U3PZSRjuwUkes6U4mdKKQ")
 session_id = session.get_api()
 longpool = VkLongPoll(session)
 upload = VkUpload(session)
