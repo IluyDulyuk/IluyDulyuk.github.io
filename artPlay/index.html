@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230223170113"
+    />
     <title>Art Play</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=20230222210153">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230223170113">
 </head>
 
 <body>
@@ -53,12 +57,83 @@
 
     <main>
         <section class="offer">
+    <div class="offer__video">
+        <video src="./files/video/offer/offer__bg.mp4" muted autoplay loop></video>
+        <div class="offer__gradient"></div>
+        <div class="offer__bg">
+            Создаем стильные Создаем стильные Создаем стильные Создаем стильные
+        </div>
+    </div>
     <div class="offer__wrapper">
-        <div class="offer__video">
-            <video src="./files/video/offer/offer__bg.mp4" muted autoplay loop></video>
-            <div class="offer__gradient"></div>
-            <div class="offer__bg">
-                Создаем стильные Создаем стильные Создаем стильные Создаем стильные
+        <div class="offer__content">
+            <h2 class="offer__title">Создаем <br> <span>стильные</span> <br> <span>интерьеры</span></h2>
+            <div class="offer__advantages advantages advantages__static">
+                <ul class="advantages__list">
+                    <li class="advantages__item">
+                        <div>
+                            Входим в топ 3
+                            <span>интерьерных компаний <br>  в Сибири</span>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <div>
+                            Более 15 лет
+                            <span>в бюджетах классов <br>  от стандарт+ до премиум</span>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <div>
+                            Мебель и техника
+                            <span>от >150 производителей</span>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <div>
+                            Прямые поставки
+                            <span>зарубежной мебели</span>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <div>
+                            Производство
+                            <span>собственной марки мебели <br> и элементов интерьера <br> ART PLAY Light</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="offer__advantages advantages advantages__slider swiper">
+                <ul class="swiper-wrapper">
+                    <li class="advantages__item swiper-slide">
+                        <div>
+                            Входим в топ 3
+                            <span>интерьерных компаний <br>  в Сибири</span>
+                        </div>
+                    </li>
+                    <li class="advantages__item swiper-slide">
+                        <div>
+                            Более 15 лет
+                            <span>в бюджетах классов <br>  от стандарт+ до премиум</span>
+                        </div>
+                    </li>
+                    <li class="advantages__item swiper-slide">
+                        <div>
+                            Мебель и техника
+                            <span>от >150 производителей</span>
+                        </div>
+                    </li>
+                    <li class="advantages__item swiper-slide">
+                        <div>
+                            Прямые поставки
+                            <span>зарубежной мебели</span>
+                        </div>
+                    </li>
+                    <li class="advantages__item swiper-slide">
+                        <div>
+                            Производство
+                            <span>собственной марки мебели <br> и элементов интерьера <br> ART PLAY Light</span>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -68,6 +143,7 @@
     <footer></footer>
 
 
-    <script src="js/app.min.js?_v=20230222210153"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230223170113"></script>
+    <script src="js/app.min.js?_v=20230223170113"></script>
 </body>
 </html>
