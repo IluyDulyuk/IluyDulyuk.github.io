@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
         rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230224224512"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230225220704"
     />
     <title>Art Play</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=20230224224512">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230225220704">
 </head>
 
 <body>
 
-    <header class="header">
+    <header class="header fix-block">
     <div class="header__wrapper">
         <div class="header__logo">
             <div class="header__gum">
@@ -43,9 +43,9 @@
             </ul>
         </nav>
         <div class="header__contacts">
-            <div class="header__ques _arrow-hover">Задать вопрос</div>
+            <div class="header__ques _arrow-hover modal-trigger" data-modal="modal-call">Задать вопрос</div>
             <a href="tel:73952629100" class="header__tel _red-hover">+7 (3952) 629-100</a>
-            <span class="header__ques_mobile">
+            <span class="header__ques_mobile modal-trigger" data-modal="modal-call">
                 <img src="img/header/header__ques.svg" alt="header__ques">
             </span>
             <span class="header__tel_mobile">
@@ -268,7 +268,51 @@
     <footer></footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230224224512"></script>
-    <script src="js/app.min.js?_v=20230224224512"></script>
+    <section class="modal-call modal" data-modal="modal-call">
+    <div class="modal__wrapper modal-call__wrapper">
+        <div class="modal__widow modal-call__window">
+            <div class="modal__header_right modal-call__header">
+                <span>Обратная связь</span>
+                <div class="modal__close_right modal-call__close modal__close">
+                    <img src="img/icons/modal__close.svg" alt="modal__close">
+                </div>
+            </div>
+            <div class="modal__call-form call-form modal-call__call-form ">
+                <div class="modal-call__thank thank-block">
+                    <h3 class="thank-block__title">Спасибо</h3>
+                    <span class="thank-block__text">Скоро мы свяжемся с вами. Спасибо за обращение. <br> Оставайтесь на связи!</span>
+                </div>
+                <h3 class="call-form__title _no-thank">задать вопрос</h3>
+                <form action="#" class="call-form__form _no-thank" novalidate>
+                    <div class="call-form__personal">
+                        <label>
+                            <input type="text" name="name" class="required" required>
+                            <span>Имя</span>
+                            <p class="call-form__wrong">Введите имя</p>
+                        </label>
+                        <label>
+                            <input type="text" name="tel" class="call-form__tel required" required>
+                            <span>Телефон</span>
+                            <p class="call-form__wrong call-form__tel-wrong">Проверьте телефон</p>
+                        </label>
+                    </div>
+                    <label>
+                        <input type="text" name="comment" class="" required>
+                        <span>Ваш комментарий</span>
+                    </label>
+                    <button class="btn btn_trans call-form__btn" type="submit">задать</button>
+                    <div class="call-form__policy custom-checkbox">
+                        <input type="checkbox" class="call-form__checkbox" name="call-form__policy" id="call-form__policy">
+                        <label for="call-form__policy"><div>Я согласен с политикой обработки <a href="#">персональных данных</a></div> <p class="call-form__wrong call-form__checkbox-wrong">Дайте согласие</p></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230225220704"></script>
+    <script src="js/app.min.js?_v=20230225220704"></script>
 </body>
 </html>
