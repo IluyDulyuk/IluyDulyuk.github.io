@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
         rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230225220704"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230227130241"
     />
     <title>Art Play</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=20230225220704">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230227130241">
 </head>
 
 <body>
 
-    <header class="header fix-block">
+    <header class="header fixed">
     <div class="header__wrapper">
         <div class="header__logo">
             <div class="header__gum">
@@ -38,7 +38,7 @@
                 <li><a href="#" class="header__link _red-hover">Проекты</a></li>
                 <li><a href="#" class="header__link _red-hover">Услуги</a></li>
                 <li><a href="#" class="header__link _red-hover">Контакты</a></li>
-                <li><a href="#" class="header__link _red-hover">ART PLAY Life</a></li>
+                <li><a href="#" class="header__link _red-hover modal-trigger" data-modal="modal-art">ART PLAY Life</a></li>
                 <li><a href="tel:73952629100" class="header__link header__link_mobile _red-hover">+7 (3952) 629-100</a></li>
             </ul>
         </nav>
@@ -264,16 +264,166 @@
     </div>
 </section>
 
+        <section class="catalog">
+    <div class="catalog__bg bg-text">
+        Поставляем мебель поставляем мебель поставляем мебель
+    </div>
+    <h2 class="catalog__title">
+        Поставляем мебель <br>
+        <span>Со всего мира</span>
+    </h2>
+    <div class="catalog__wrapper">
+        <div class="catalog__tabs catalog-tabs">
+            <div class="catalog-tabs__wrapper catalog-tabs__static">
+                <div class="catalog-tabs__list">
+                    <div class="catalog-tabs__item">
+                        <span class="catalog-tabs__category">КУХНИ</span>
+                    </div>
+                    <div class="catalog-tabs__item">
+                        <span class="catalog-tabs__category">МЯГКАЯ МЕБЕЛЬ</span>
+                    </div>
+                    <div class="catalog-tabs__item catalog-tabs__item_dropdown">
+                        <span class="catalog-tabs__category _arrow-hover">МЕБЕЛЬ на заказ</span>
+                        <div class="catalog-tabs__dropdown catalog-dropdown">
+                            <div class="catalog-dropdown__wrapper">
+                                <div class="catalog-dropdown__list">
+                                    <div class="catalog-dropdown__item">шкафы и гардеробные</div>
+                                    <div class="catalog-dropdown__item">столы и стулья</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-tabs__item catalog-tabs__item_dropdown">
+                        <span class="catalog-tabs__category _arrow-hover">декор и АКСЕССУАРЫ</span>
+                        <div class="catalog-tabs__dropdown catalog-dropdown">
+                            <div class="catalog-dropdown__wrapper">
+                                <div class="catalog-dropdown__list">
+                                    <div class="catalog-dropdown__item">часы</div>
+                                    <div class="catalog-dropdown__item">ковры</div>
+                                    <div class="catalog-dropdown__item">Камины</div>
+                                    <div class="catalog-dropdown__item">зеркала</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-tabs__item">
+                        <span class="catalog-tabs__category">акриловый камень</span>
+                    </div>
+                    <div class="catalog-tabs__item">
+                        <span class="catalog-tabs__category">техника/сантехника/доп оборудование</span>
+                    </div>
+                    <div class="catalog-tabs__item">
+                        <span class="catalog-tabs__category">освещение</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog-tabs__wrapper catalog-tabs__slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="catalog-tabs__item swiper-slide">
+                        <span class="catalog-tabs__category">КУХНИ</span>
+                    </div>
+                    <div class="catalog-tabs__item swiper-slide">
+                        <span class="catalog-tabs__category">МЯГКАЯ МЕБЕЛЬ</span>
+                    </div>
+                    <div class="catalog-tabs__item catalog-tabs__item_dropdown swiper-slide">
+                        <span class="catalog-tabs__category _arrow-hover">МЕБЕЛЬ на заказ</span>
+                        <div class="catalog-tabs__dropdown catalog-dropdown">
+                            <div class="catalog-dropdown__wrapper">
+                                <div class="catalog-dropdown__list">
+                                    <div class="catalog-dropdown__item">шкафы и гардеробные</div>
+                                    <div class="catalog-dropdown__item">столы и стулья</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-tabs__item catalog-tabs__item_dropdown swiper-slide">
+                        <span class="catalog-tabs__category _arrow-hover">декор и АКСЕССУАРЫ</span>
+                        <div class="catalog-tabs__dropdown catalog-dropdown">
+                            <div class="catalog-dropdown__wrapper">
+                                <div class="catalog-dropdown__list">
+                                    <div class="catalog-dropdown__item">часы</div>
+                                    <div class="catalog-dropdown__item">ковры</div>
+                                    <div class="catalog-dropdown__item">Камины</div>
+                                    <div class="catalog-dropdown__item">зеркала</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-tabs__item swiper-slide">
+                        <span class="catalog-tabs__category">акриловый камень</span>
+                    </div>
+                    <div class="catalog-tabs__item swiper-slide">
+                        <span class="catalog-tabs__category">техника/сантехника/доп оборудование</span>
+                    </div>
+                    <div class="catalog-tabs__item swiper-slide">
+                        <span class="catalog-tabs__category">освещение</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="catalog__cards catalog-cards">
+            <div class="catalog-cards__wrapper">
+                <div class="catalog-cards__list">
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_1.webp" type="image/webp"><img src="img/catalog/catalog-card__image_1.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Cucinelube</h5>
+                        <button class="catalog-card__button btn btn_trans">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_2.webp" type="image/webp"><img src="img/catalog/catalog-card__image_2.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Maistri</h5>
+                        <button class="catalog-card__button btn btn_trans">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_3.webp" type="image/webp"><img src="img/catalog/catalog-card__image_3.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Borgoantico <br> cucine</h5>
+                        <button class="catalog-card__button btn btn_trans">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_4.webp" type="image/webp"><img src="img/catalog/catalog-card__image_4.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Kamea</h5>
+                        <button class="catalog-card__button btn btn_trans">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_5.webp" type="image/webp"><img src="img/catalog/catalog-card__image_5.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">BINOVA</h5>
+                        <button class="catalog-card__button btn btn_trans">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_6.webp" type="image/webp"><img src="img/catalog/catalog-card__image_6.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">MITON</h5>
+                        <button class="catalog-card__button btn btn_trans">подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
     </main>
     <footer></footer>
 
 
-    <section class="modal-call modal" data-modal="modal-call">
+    <section class="modal-call modal" id="modal-call">
     <div class="modal__wrapper modal-call__wrapper">
         <div class="modal__widow modal-call__window">
             <div class="modal__header_right modal-call__header">
                 <span>Обратная связь</span>
-                <div class="modal__close_right modal-call__close modal__close">
+                <div class="modal__close_right modal-call__close modal__close" data-modal="modal-call">
                     <img src="img/icons/modal__close.svg" alt="modal__close">
                 </div>
             </div>
@@ -311,8 +461,53 @@
     </div>
 </section>
 
+    <section class="modal-art modal" id="modal-art">
+    <div class="modal__wrapper modal-art__wrapper">
+        <div class="modal__window modal-art__window">
+            <div class="modal__header_right modal-art__header">
+                <span>ART PLAY Life</span>
+                <div class="modal__close_right modal-call__close modal__close" data-modal="modal-art">
+                    <img src="img/icons/modal__close.svg" alt="modal__close">
+                </div>
+            </div>
+            <div class="modal-art__content">
+                <div class="modal-art__text">
+                    <h4 class="modal-art__title">ART PLAY LIFe</h4>
+                    <p class="modal-art__p">Проекты Алексея отличаются содержанием идеи
+                        и стильной ее реализацией. Работа с цветом —
+                        это отдельный разговор, особое владение опытного дизайнера психологией пространства и интерьера. Мы приняли участие в обстановки квартиры мягкой мебелью от Sits, Bolzan, Сalligaris.</p>
+                </div>
+                <div class="modal-art__blocks">
+                    <div class="modal-art__block block_1">
+                        <picture><source srcset="img/modal-art/modal-art__image_1.webp" type="image/webp"><img src="img/modal-art/modal-art__image_1.png" alt="modal-art__image"></picture>
+                        <picture><source srcset="img/modal-art/modal-art__image_2.webp" type="image/webp"><img src="img/modal-art/modal-art__image_2.png" alt="modal-art__image"></picture>
+                    </div>
+                    <div class="modal-art__block block_2">
+                        <picture><source srcset="img/modal-art/modal-art__image_4.webp" type="image/webp"><img src="img/modal-art/modal-art__image_4.png" alt="modal-art__image"></picture>
+                    </div>
+                    <div class="modal-art__block block_3">
+                        <div class="image">
+                            <span></span>
+                            <picture><source srcset="img/modal-art/modal-art__image_5.webp" type="image/webp"><img src="img/modal-art/modal-art__image_5.png" alt="modal-art__image"></picture>
+                        </div>
+                        <span class="modal-art__button">
+                            <img src="img/modal-art/modal-art__arrow.svg" alt="modal-art__arrow">
+                        </span>
+                    </div>
+                    <div class="modal-art__block block_4">
+                        <picture><source srcset="img/modal-art/modal-art__image_6.webp" type="image/webp"><img src="img/modal-art/modal-art__image_6.png" alt="modal-art__image"></picture>
+                    </div>
+                    <div class="modal-art__block block_5">
+                        <picture><source srcset="img/modal-art/modal-art__image_3.webp" type="image/webp"><img src="img/modal-art/modal-art__image_3.png" alt="modal-art__image"></picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230225220704"></script>
-    <script src="js/app.min.js?_v=20230225220704"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230227130241"></script>
+    <script src="js/app.min.js?_v=20230227130241"></script>
 </body>
 </html>
