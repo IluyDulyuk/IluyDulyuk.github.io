@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
         rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230227140456"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230301171622"
     />
     <title>Art Play</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=20230227140456">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230301171622">
 </head>
 
 <body>
@@ -277,18 +277,18 @@
             <div class="catalog-tabs__wrapper catalog-tabs__static">
                 <div class="catalog-tabs__list">
                     <div class="catalog-tabs__item">
-                        <span class="catalog-tabs__category">КУХНИ</span>
+                        <span class="catalog-tabs__category catalog-tabs__category_active tab-item" data-catalog-tab="kitchen">КУХНИ</span>
                     </div>
                     <div class="catalog-tabs__item">
-                        <span class="catalog-tabs__category">МЯГКАЯ МЕБЕЛЬ</span>
+                        <span class="catalog-tabs__category" data-catalog-tab="cushioned furniture">МЯГКАЯ МЕБЕЛЬ</span>
                     </div>
                     <div class="catalog-tabs__item catalog-tabs__item_dropdown">
                         <span class="catalog-tabs__category _arrow-hover">МЕБЕЛЬ на заказ</span>
                         <div class="catalog-tabs__dropdown catalog-dropdown">
                             <div class="catalog-dropdown__wrapper">
                                 <div class="catalog-dropdown__list">
-                                    <div class="catalog-dropdown__item">шкафы и гардеробные</div>
-                                    <div class="catalog-dropdown__item">столы и стулья</div>
+                                    <div class="catalog-dropdown__item" data-catalog-tab="cabinets">шкафы и гардеробные</div>
+                                    <div class="catalog-dropdown__item" data-catalog-tab="tables">столы и стулья</div>
                                 </div>
                             </div>
                         </div>
@@ -298,22 +298,22 @@
                         <div class="catalog-tabs__dropdown catalog-dropdown">
                             <div class="catalog-dropdown__wrapper">
                                 <div class="catalog-dropdown__list">
-                                    <div class="catalog-dropdown__item">часы</div>
-                                    <div class="catalog-dropdown__item">ковры</div>
-                                    <div class="catalog-dropdown__item">Камины</div>
-                                    <div class="catalog-dropdown__item">зеркала</div>
+                                    <div class="catalog-dropdown__item" data-catalog-tab="clock">часы</div>
+                                    <div class="catalog-dropdown__item" data-catalog-tab="carpets">ковры</div>
+                                    <div class="catalog-dropdown__item" data-catalog-tab="fireplaces">Камины</div>
+                                    <div class="catalog-dropdown__item" data-catalog-tab="mirrors">зеркала</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="catalog-tabs__item">
-                        <span class="catalog-tabs__category">акриловый камень</span>
+                    <div class="catalog-tabs__item" data-catalog-tab="cushioned furniture">
+                        <span class="catalog-tabs__category" data-catalog-tab="acrylic stone">акриловый камень</span>
                     </div>
                     <div class="catalog-tabs__item">
-                        <span class="catalog-tabs__category">техника/сантехника/доп оборудование</span>
+                        <span class="catalog-tabs__category" data-catalog-tab="technique">техника/сантехника/доп оборудование</span>
                     </div>
                     <div class="catalog-tabs__item">
-                        <span class="catalog-tabs__category">освещение</span>
+                        <span class="catalog-tabs__category" data-catalog-tab="light">освещение</span>
                     </div>
                 </div>
             </div>
@@ -365,50 +365,897 @@
 
         <div class="catalog__cards catalog-cards">
             <div class="catalog-cards__wrapper">
-                <div class="catalog-cards__list">
+                <div class="catalog-cards__list tab-list" data-catalog-tab="kitchen">
                     <div class="catalog-cards__item catalog-card">
                         <div class="catalog-card__image">
                             <picture><source srcset="img/catalog/catalog-card__image_1.webp" type="image/webp"><img src="img/catalog/catalog-card__image_1.png" alt="catalog-card__image"></picture>
                         </div>
                         <h5 class="catalog-card__title">Cucinelube</h5>
-                        <button class="catalog-card__button btn btn_trans">подробнее</button>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
                     </div>
                     <div class="catalog-cards__item catalog-card">
                         <div class="catalog-card__image">
                             <picture><source srcset="img/catalog/catalog-card__image_2.webp" type="image/webp"><img src="img/catalog/catalog-card__image_2.png" alt="catalog-card__image"></picture>
                         </div>
                         <h5 class="catalog-card__title">Maistri</h5>
-                        <button class="catalog-card__button btn btn_trans">подробнее</button>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
                     </div>
                     <div class="catalog-cards__item catalog-card">
                         <div class="catalog-card__image">
                             <picture><source srcset="img/catalog/catalog-card__image_3.webp" type="image/webp"><img src="img/catalog/catalog-card__image_3.png" alt="catalog-card__image"></picture>
                         </div>
                         <h5 class="catalog-card__title">Borgoantico <br> cucine</h5>
-                        <button class="catalog-card__button btn btn_trans">подробнее</button>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
                     </div>
                     <div class="catalog-cards__item catalog-card">
                         <div class="catalog-card__image">
                             <picture><source srcset="img/catalog/catalog-card__image_4.webp" type="image/webp"><img src="img/catalog/catalog-card__image_4.png" alt="catalog-card__image"></picture>
                         </div>
                         <h5 class="catalog-card__title">Kamea</h5>
-                        <button class="catalog-card__button btn btn_trans">подробнее</button>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
                     </div>
                     <div class="catalog-cards__item catalog-card">
                         <div class="catalog-card__image">
                             <picture><source srcset="img/catalog/catalog-card__image_5.webp" type="image/webp"><img src="img/catalog/catalog-card__image_5.png" alt="catalog-card__image"></picture>
                         </div>
                         <h5 class="catalog-card__title">BINOVA</h5>
-                        <button class="catalog-card__button btn btn_trans">подробнее</button>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
                     </div>
                     <div class="catalog-cards__item catalog-card">
                         <div class="catalog-card__image">
                             <picture><source srcset="img/catalog/catalog-card__image_6.webp" type="image/webp"><img src="img/catalog/catalog-card__image_6.png" alt="catalog-card__image"></picture>
                         </div>
                         <h5 class="catalog-card__title">MITON</h5>
-                        <button class="catalog-card__button btn btn_trans">подробнее</button>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
                     </div>
                 </div>
+                <div class="catalog-cards__list tab-list" data-catalog-tab="cushioned furniture">
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_3.webp" type="image/webp"><img src="img/catalog/catalog-card__image_3.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Borgoantico <br> cucine</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_4.webp" type="image/webp"><img src="img/catalog/catalog-card__image_4.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Kamea</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_5.webp" type="image/webp"><img src="img/catalog/catalog-card__image_5.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">BINOVA</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_6.webp" type="image/webp"><img src="img/catalog/catalog-card__image_6.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">MITON</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                </div>
+                <div class="catalog-cards__list tab-list" data-catalog-tab="acrylic stone">
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_1.webp" type="image/webp"><img src="img/catalog/catalog-card__image_1.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Cucinelube</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_2.webp" type="image/webp"><img src="img/catalog/catalog-card__image_2.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Maistri</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_3.webp" type="image/webp"><img src="img/catalog/catalog-card__image_3.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Borgoantico <br> cucine</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_4.webp" type="image/webp"><img src="img/catalog/catalog-card__image_4.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Kamea</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_5.webp" type="image/webp"><img src="img/catalog/catalog-card__image_5.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">BINOVA</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_6.webp" type="image/webp"><img src="img/catalog/catalog-card__image_6.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">MITON</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                </div>
+                <div class="catalog-cards__list tab-list" data-catalog-tab="technique">
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_1.webp" type="image/webp"><img src="img/catalog/catalog-card__image_1.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Cucinelube</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_2.webp" type="image/webp"><img src="img/catalog/catalog-card__image_2.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Maistri</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_3.webp" type="image/webp"><img src="img/catalog/catalog-card__image_3.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Borgoantico <br> cucine</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_4.webp" type="image/webp"><img src="img/catalog/catalog-card__image_4.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Kamea</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_5.webp" type="image/webp"><img src="img/catalog/catalog-card__image_5.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">BINOVA</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_6.webp" type="image/webp"><img src="img/catalog/catalog-card__image_6.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">MITON</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                </div>
+                <div class="catalog-cards__list tab-list" data-catalog-tab="light">
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_1.webp" type="image/webp"><img src="img/catalog/catalog-card__image_1.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Cucinelube</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_2.webp" type="image/webp"><img src="img/catalog/catalog-card__image_2.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Maistri</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_3.webp" type="image/webp"><img src="img/catalog/catalog-card__image_3.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Borgoantico <br> cucine</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_4.webp" type="image/webp"><img src="img/catalog/catalog-card__image_4.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Kamea</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_5.webp" type="image/webp"><img src="img/catalog/catalog-card__image_5.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">BINOVA</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_6.webp" type="image/webp"><img src="img/catalog/catalog-card__image_6.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">MITON</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                </div>
+                <div class="catalog-cards__list tab-list" data-catalog-tab="cabinets">
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_3.webp" type="image/webp"><img src="img/catalog/catalog-card__image_3.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Borgoantico <br> cucine</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_4.webp" type="image/webp"><img src="img/catalog/catalog-card__image_4.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Kamea</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_5.webp" type="image/webp"><img src="img/catalog/catalog-card__image_5.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">BINOVA</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_6.webp" type="image/webp"><img src="img/catalog/catalog-card__image_6.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">MITON</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                </div>
+                <div class="catalog-cards__list tab-list" data-catalog-tab="tables">
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_3.webp" type="image/webp"><img src="img/catalog/catalog-card__image_3.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Borgoantico <br> cucine</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_4.webp" type="image/webp"><img src="img/catalog/catalog-card__image_4.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Kamea</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_5.webp" type="image/webp"><img src="img/catalog/catalog-card__image_5.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">BINOVA</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_6.webp" type="image/webp"><img src="img/catalog/catalog-card__image_6.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">MITON</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                </div>
+                <div class="catalog-cards__list tab-list" data-catalog-tab="clock">
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_3.webp" type="image/webp"><img src="img/catalog/catalog-card__image_3.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Borgoantico <br> cucine</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_4.webp" type="image/webp"><img src="img/catalog/catalog-card__image_4.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Kamea</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_5.webp" type="image/webp"><img src="img/catalog/catalog-card__image_5.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">BINOVA</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_6.webp" type="image/webp"><img src="img/catalog/catalog-card__image_6.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">MITON</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                </div>
+                <div class="catalog-cards__list tab-list" data-catalog-tab="carpets">
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_3.webp" type="image/webp"><img src="img/catalog/catalog-card__image_3.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Borgoantico <br> cucine</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_4.webp" type="image/webp"><img src="img/catalog/catalog-card__image_4.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Kamea</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_5.webp" type="image/webp"><img src="img/catalog/catalog-card__image_5.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">BINOVA</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_6.webp" type="image/webp"><img src="img/catalog/catalog-card__image_6.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">MITON</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                </div>
+                <div class="catalog-cards__list tab-list" data-catalog-tab="fireplaces">
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_3.webp" type="image/webp"><img src="img/catalog/catalog-card__image_3.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Borgoantico <br> cucine</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_4.webp" type="image/webp"><img src="img/catalog/catalog-card__image_4.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Kamea</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_5.webp" type="image/webp"><img src="img/catalog/catalog-card__image_5.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">BINOVA</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_6.webp" type="image/webp"><img src="img/catalog/catalog-card__image_6.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">MITON</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                </div>
+                <div class="catalog-cards__list tab-list" data-catalog-tab="mirrors">
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_3.webp" type="image/webp"><img src="img/catalog/catalog-card__image_3.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Borgoantico <br> cucine</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_4.webp" type="image/webp"><img src="img/catalog/catalog-card__image_4.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">Kamea</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_5.webp" type="image/webp"><img src="img/catalog/catalog-card__image_5.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">BINOVA</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                    <div class="catalog-cards__item catalog-card">
+                        <div class="catalog-card__image">
+                            <picture><source srcset="img/catalog/catalog-card__image_6.webp" type="image/webp"><img src="img/catalog/catalog-card__image_6.png" alt="catalog-card__image"></picture>
+                        </div>
+                        <h5 class="catalog-card__title">MITON</h5>
+                        <button class="catalog-card__button btn btn_trans modal-trigger" data-modal="modal-get">подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="we">
+    <div class="we__bg bg-text">
+        работаем с 2008 года работаем с 2008 года работаем с 2008 года работаем с 2008 года
+    </div>
+    <h2 class="we__title">
+        15 лет воплощаем<br>
+        <span>мечты в реальность</span>
+    </h2>
+    <div class="we__images we-images">
+        <div class="we-images__list">
+            <div class="we-images__item">
+                <picture><source srcset="img/we/we-images__item_1.webp" type="image/webp"><img src="img/we/we-images__item_1.png" alt="we__images__item"></picture>
+            </div>
+            <div class="we-images__item">
+                <picture><source srcset="img/we/we-images__item_2.webp" type="image/webp"><img src="img/we/we-images__item_2.png" alt="we__images__item"></picture>
+            </div>
+            <div class="we-images__item">
+                <picture><source srcset="img/we/we-images__item_3.webp" type="image/webp"><img src="img/we/we-images__item_3.png" alt="we__images__item"></picture>
+            </div>
+            <div class="we-images__item">
+                <!-- <picture><source srcset="img/we/we-images__item_4.webp" type="image/webp"><img src="img/we/we-images__item_4.png" alt="we__images__item"></picture> -->
+            </div>
+            <div class="we-images__item">
+                <picture><source srcset="img/we/we-images__item_5.webp" type="image/webp"><img src="img/we/we-images__item_5.png" alt="we__images__item"></picture>
+            </div>
+            <div class="we-images__item">
+                <picture><source srcset="img/we/we-images__item_6.webp" type="image/webp"><img src="img/we/we-images__item_6.png" alt="we__images__item"></picture>
+            </div>
+        </div>
+    </div>
+    <div class="we__wrapper">
+        <p class="we__text">Являемся официальными дилерами европейских и российских фабрик и даем гарантию лучшей цены. Имеем <span>два собственных производства мебели</span> ART PLAY Light: изготавливаем мягкую мебель и производим изделия из акрилового камня. Нам доверяют комплектацию интерьеров мебелью <span>ведущие дизайнеры</span> и <span>архитекторы города</span>. Также, вы можете пройти тест-драйв мебели и оборудования на реальных экспозициях в наших шоу-румах в Иркутске</p>
+        <h6 class="we__subtitle">Доставляем и устанавливаем стильную
+            качественную мебель и аксессуары
+        </h6>
+    </div>
+    <div class="we__sliders we-sliders">
+        <div class="we-sliders__wrapper">
+            <div class="we-sliders__slider" data-route="-">
+                <div class="we-sliders__list">
+                    <div class="we-sliders__item">
+                        <span>диваны</span>
+                        <picture><source srcset="img/we/we-sliders__item_1.webp" type="image/webp"><img src="img/we/we-sliders__item_1.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>гардеробные</span>
+                        <picture><source srcset="img/we/we-sliders__item_2.webp" type="image/webp"><img src="img/we/we-sliders__item_2.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>стулья</span>
+                        <picture><source srcset="img/we/we-sliders__item_3.webp" type="image/webp"><img src="img/we/we-sliders__item_3.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>бытовая техника</span>
+                        <picture><source srcset="img/we/we-sliders__item_4.webp" type="image/webp"><img src="img/we/we-sliders__item_4.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кухни</span>
+                        <picture><source srcset="img/we/we-sliders__item_5.webp" type="image/webp"><img src="img/we/we-sliders__item_5.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>столы</span>
+                        <picture><source srcset="img/we/we-sliders__item_6.webp" type="image/webp"><img src="img/we/we-sliders__item_6.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кресла</span>
+                        <picture><source srcset="img/we/we-sliders__item_7.webp" type="image/webp"><img src="img/we/we-sliders__item_7.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>шкафы</span>
+                        <picture><source srcset="img/we/we-sliders__item_8.webp" type="image/webp"><img src="img/we/we-sliders__item_8.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>пуфы</span>
+                        <picture><source srcset="img/we/we-sliders__item_9.webp" type="image/webp"><img src="img/we/we-sliders__item_9.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>столешницы</span>
+                        <picture><source srcset="img/we/we-sliders__item_10.webp" type="image/webp"><img src="img/we/we-sliders__item_10.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кровати</span>
+                        <picture><source srcset="img/we/we-sliders__item_11.webp" type="image/webp"><img src="img/we/we-sliders__item_11.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>диваны</span>
+                        <picture><source srcset="img/we/we-sliders__item_1.webp" type="image/webp"><img src="img/we/we-sliders__item_1.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>гардеробные</span>
+                        <picture><source srcset="img/we/we-sliders__item_2.webp" type="image/webp"><img src="img/we/we-sliders__item_2.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>стулья</span>
+                        <picture><source srcset="img/we/we-sliders__item_3.webp" type="image/webp"><img src="img/we/we-sliders__item_3.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>бытовая техника</span>
+                        <picture><source srcset="img/we/we-sliders__item_4.webp" type="image/webp"><img src="img/we/we-sliders__item_4.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кухни</span>
+                        <picture><source srcset="img/we/we-sliders__item_5.webp" type="image/webp"><img src="img/we/we-sliders__item_5.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>столы</span>
+                        <picture><source srcset="img/we/we-sliders__item_6.webp" type="image/webp"><img src="img/we/we-sliders__item_6.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кресла</span>
+                        <picture><source srcset="img/we/we-sliders__item_7.webp" type="image/webp"><img src="img/we/we-sliders__item_7.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>шкафы</span>
+                        <picture><source srcset="img/we/we-sliders__item_8.webp" type="image/webp"><img src="img/we/we-sliders__item_8.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>пуфы</span>
+                        <picture><source srcset="img/we/we-sliders__item_9.webp" type="image/webp"><img src="img/we/we-sliders__item_9.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>столешницы</span>
+                        <picture><source srcset="img/we/we-sliders__item_10.webp" type="image/webp"><img src="img/we/we-sliders__item_10.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кровати</span>
+                        <picture><source srcset="img/we/we-sliders__item_11.webp" type="image/webp"><img src="img/we/we-sliders__item_11.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>диваны</span>
+                        <picture><source srcset="img/we/we-sliders__item_1.webp" type="image/webp"><img src="img/we/we-sliders__item_1.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>гардеробные</span>
+                        <picture><source srcset="img/we/we-sliders__item_2.webp" type="image/webp"><img src="img/we/we-sliders__item_2.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>стулья</span>
+                        <picture><source srcset="img/we/we-sliders__item_3.webp" type="image/webp"><img src="img/we/we-sliders__item_3.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>бытовая техника</span>
+                        <picture><source srcset="img/we/we-sliders__item_4.webp" type="image/webp"><img src="img/we/we-sliders__item_4.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кухни</span>
+                        <picture><source srcset="img/we/we-sliders__item_5.webp" type="image/webp"><img src="img/we/we-sliders__item_5.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>столы</span>
+                        <picture><source srcset="img/we/we-sliders__item_6.webp" type="image/webp"><img src="img/we/we-sliders__item_6.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кресла</span>
+                        <picture><source srcset="img/we/we-sliders__item_7.webp" type="image/webp"><img src="img/we/we-sliders__item_7.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>шкафы</span>
+                        <picture><source srcset="img/we/we-sliders__item_8.webp" type="image/webp"><img src="img/we/we-sliders__item_8.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>пуфы</span>
+                        <picture><source srcset="img/we/we-sliders__item_9.webp" type="image/webp"><img src="img/we/we-sliders__item_9.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>столешницы</span>
+                        <picture><source srcset="img/we/we-sliders__item_10.webp" type="image/webp"><img src="img/we/we-sliders__item_10.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кровати</span>
+                        <picture><source srcset="img/we/we-sliders__item_11.webp" type="image/webp"><img src="img/we/we-sliders__item_11.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>диваны</span>
+                        <picture><source srcset="img/we/we-sliders__item_1.webp" type="image/webp"><img src="img/we/we-sliders__item_1.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>гардеробные</span>
+                        <picture><source srcset="img/we/we-sliders__item_2.webp" type="image/webp"><img src="img/we/we-sliders__item_2.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>стулья</span>
+                        <picture><source srcset="img/we/we-sliders__item_3.webp" type="image/webp"><img src="img/we/we-sliders__item_3.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>бытовая техника</span>
+                        <picture><source srcset="img/we/we-sliders__item_4.webp" type="image/webp"><img src="img/we/we-sliders__item_4.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кухни</span>
+                        <picture><source srcset="img/we/we-sliders__item_5.webp" type="image/webp"><img src="img/we/we-sliders__item_5.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>столы</span>
+                        <picture><source srcset="img/we/we-sliders__item_6.webp" type="image/webp"><img src="img/we/we-sliders__item_6.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кресла</span>
+                        <picture><source srcset="img/we/we-sliders__item_7.webp" type="image/webp"><img src="img/we/we-sliders__item_7.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>шкафы</span>
+                        <picture><source srcset="img/we/we-sliders__item_8.webp" type="image/webp"><img src="img/we/we-sliders__item_8.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>пуфы</span>
+                        <picture><source srcset="img/we/we-sliders__item_9.webp" type="image/webp"><img src="img/we/we-sliders__item_9.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>столешницы</span>
+                        <picture><source srcset="img/we/we-sliders__item_10.webp" type="image/webp"><img src="img/we/we-sliders__item_10.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кровати</span>
+                        <picture><source srcset="img/we/we-sliders__item_11.webp" type="image/webp"><img src="img/we/we-sliders__item_11.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>диваны</span>
+                        <picture><source srcset="img/we/we-sliders__item_1.webp" type="image/webp"><img src="img/we/we-sliders__item_1.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>гардеробные</span>
+                        <picture><source srcset="img/we/we-sliders__item_2.webp" type="image/webp"><img src="img/we/we-sliders__item_2.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>стулья</span>
+                        <picture><source srcset="img/we/we-sliders__item_3.webp" type="image/webp"><img src="img/we/we-sliders__item_3.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>бытовая техника</span>
+                        <picture><source srcset="img/we/we-sliders__item_4.webp" type="image/webp"><img src="img/we/we-sliders__item_4.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кухни</span>
+                        <picture><source srcset="img/we/we-sliders__item_5.webp" type="image/webp"><img src="img/we/we-sliders__item_5.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>столы</span>
+                        <picture><source srcset="img/we/we-sliders__item_6.webp" type="image/webp"><img src="img/we/we-sliders__item_6.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кресла</span>
+                        <picture><source srcset="img/we/we-sliders__item_7.webp" type="image/webp"><img src="img/we/we-sliders__item_7.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>шкафы</span>
+                        <picture><source srcset="img/we/we-sliders__item_8.webp" type="image/webp"><img src="img/we/we-sliders__item_8.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>пуфы</span>
+                        <picture><source srcset="img/we/we-sliders__item_9.webp" type="image/webp"><img src="img/we/we-sliders__item_9.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>столешницы</span>
+                        <picture><source srcset="img/we/we-sliders__item_10.webp" type="image/webp"><img src="img/we/we-sliders__item_10.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кровати</span>
+                        <picture><source srcset="img/we/we-sliders__item_11.webp" type="image/webp"><img src="img/we/we-sliders__item_11.png" alt="we-sliders__item"></picture>
+                    </div>
+                </div>
+            </div>
+            <div class="we-sliders__slider" data-route="+">
+                <div class="we-sliders__list we-sliders__list_left">
+                    <div class="we-sliders__item">
+                        <span>диваны</span>
+                        <picture><source srcset="img/we/we-sliders__item_1.webp" type="image/webp"><img src="img/we/we-sliders__item_1.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>гардеробные</span>
+                        <picture><source srcset="img/we/we-sliders__item_2.webp" type="image/webp"><img src="img/we/we-sliders__item_2.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>стулья</span>
+                        <picture><source srcset="img/we/we-sliders__item_3.webp" type="image/webp"><img src="img/we/we-sliders__item_3.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>бытовая техника</span>
+                        <picture><source srcset="img/we/we-sliders__item_4.webp" type="image/webp"><img src="img/we/we-sliders__item_4.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кухни</span>
+                        <picture><source srcset="img/we/we-sliders__item_5.webp" type="image/webp"><img src="img/we/we-sliders__item_5.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>столы</span>
+                        <picture><source srcset="img/we/we-sliders__item_6.webp" type="image/webp"><img src="img/we/we-sliders__item_6.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кресла</span>
+                        <picture><source srcset="img/we/we-sliders__item_7.webp" type="image/webp"><img src="img/we/we-sliders__item_7.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>шкафы</span>
+                        <picture><source srcset="img/we/we-sliders__item_8.webp" type="image/webp"><img src="img/we/we-sliders__item_8.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>пуфы</span>
+                        <picture><source srcset="img/we/we-sliders__item_9.webp" type="image/webp"><img src="img/we/we-sliders__item_9.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>столешницы</span>
+                        <picture><source srcset="img/we/we-sliders__item_10.webp" type="image/webp"><img src="img/we/we-sliders__item_10.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кровати</span>
+                        <picture><source srcset="img/we/we-sliders__item_11.webp" type="image/webp"><img src="img/we/we-sliders__item_11.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>диваны</span>
+                        <picture><source srcset="img/we/we-sliders__item_1.webp" type="image/webp"><img src="img/we/we-sliders__item_1.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>гардеробные</span>
+                        <picture><source srcset="img/we/we-sliders__item_2.webp" type="image/webp"><img src="img/we/we-sliders__item_2.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>стулья</span>
+                        <picture><source srcset="img/we/we-sliders__item_3.webp" type="image/webp"><img src="img/we/we-sliders__item_3.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>бытовая техника</span>
+                        <picture><source srcset="img/we/we-sliders__item_4.webp" type="image/webp"><img src="img/we/we-sliders__item_4.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кухни</span>
+                        <picture><source srcset="img/we/we-sliders__item_5.webp" type="image/webp"><img src="img/we/we-sliders__item_5.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>столы</span>
+                        <picture><source srcset="img/we/we-sliders__item_6.webp" type="image/webp"><img src="img/we/we-sliders__item_6.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кресла</span>
+                        <picture><source srcset="img/we/we-sliders__item_7.webp" type="image/webp"><img src="img/we/we-sliders__item_7.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>шкафы</span>
+                        <picture><source srcset="img/we/we-sliders__item_8.webp" type="image/webp"><img src="img/we/we-sliders__item_8.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>пуфы</span>
+                        <picture><source srcset="img/we/we-sliders__item_9.webp" type="image/webp"><img src="img/we/we-sliders__item_9.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>столешницы</span>
+                        <picture><source srcset="img/we/we-sliders__item_10.webp" type="image/webp"><img src="img/we/we-sliders__item_10.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кровати</span>
+                        <picture><source srcset="img/we/we-sliders__item_11.webp" type="image/webp"><img src="img/we/we-sliders__item_11.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>диваны</span>
+                        <picture><source srcset="img/we/we-sliders__item_1.webp" type="image/webp"><img src="img/we/we-sliders__item_1.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>гардеробные</span>
+                        <picture><source srcset="img/we/we-sliders__item_2.webp" type="image/webp"><img src="img/we/we-sliders__item_2.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>стулья</span>
+                        <picture><source srcset="img/we/we-sliders__item_3.webp" type="image/webp"><img src="img/we/we-sliders__item_3.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>бытовая техника</span>
+                        <picture><source srcset="img/we/we-sliders__item_4.webp" type="image/webp"><img src="img/we/we-sliders__item_4.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кухни</span>
+                        <picture><source srcset="img/we/we-sliders__item_5.webp" type="image/webp"><img src="img/we/we-sliders__item_5.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>столы</span>
+                        <picture><source srcset="img/we/we-sliders__item_6.webp" type="image/webp"><img src="img/we/we-sliders__item_6.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кресла</span>
+                        <picture><source srcset="img/we/we-sliders__item_7.webp" type="image/webp"><img src="img/we/we-sliders__item_7.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>шкафы</span>
+                        <picture><source srcset="img/we/we-sliders__item_8.webp" type="image/webp"><img src="img/we/we-sliders__item_8.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>пуфы</span>
+                        <picture><source srcset="img/we/we-sliders__item_9.webp" type="image/webp"><img src="img/we/we-sliders__item_9.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>столешницы</span>
+                        <picture><source srcset="img/we/we-sliders__item_10.webp" type="image/webp"><img src="img/we/we-sliders__item_10.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кровати</span>
+                        <picture><source srcset="img/we/we-sliders__item_11.webp" type="image/webp"><img src="img/we/we-sliders__item_11.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>диваны</span>
+                        <picture><source srcset="img/we/we-sliders__item_1.webp" type="image/webp"><img src="img/we/we-sliders__item_1.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>гардеробные</span>
+                        <picture><source srcset="img/we/we-sliders__item_2.webp" type="image/webp"><img src="img/we/we-sliders__item_2.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>стулья</span>
+                        <picture><source srcset="img/we/we-sliders__item_3.webp" type="image/webp"><img src="img/we/we-sliders__item_3.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>бытовая техника</span>
+                        <picture><source srcset="img/we/we-sliders__item_4.webp" type="image/webp"><img src="img/we/we-sliders__item_4.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кухни</span>
+                        <picture><source srcset="img/we/we-sliders__item_5.webp" type="image/webp"><img src="img/we/we-sliders__item_5.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>столы</span>
+                        <picture><source srcset="img/we/we-sliders__item_6.webp" type="image/webp"><img src="img/we/we-sliders__item_6.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кресла</span>
+                        <picture><source srcset="img/we/we-sliders__item_7.webp" type="image/webp"><img src="img/we/we-sliders__item_7.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>шкафы</span>
+                        <picture><source srcset="img/we/we-sliders__item_8.webp" type="image/webp"><img src="img/we/we-sliders__item_8.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>пуфы</span>
+                        <picture><source srcset="img/we/we-sliders__item_9.webp" type="image/webp"><img src="img/we/we-sliders__item_9.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>столешницы</span>
+                        <picture><source srcset="img/we/we-sliders__item_10.webp" type="image/webp"><img src="img/we/we-sliders__item_10.png" alt="we-sliders__item"></picture>
+                    </div>
+                    <div class="we-sliders__item">
+                        <span>кровати</span>
+                        <picture><source srcset="img/we/we-sliders__item_11.webp" type="image/webp"><img src="img/we/we-sliders__item_11.png" alt="we-sliders__item"></picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="we__wrapper">
+        <p class="we__text">Мы — единственная интерьерная компания Иркутска, которая принимает заказы на кастомизированную мебель по индивидуальным размерам. Предлагаем натуральное фрезерованное дерево, шпон, АРТ-цемент, бетон, стекло для фасадов и антивандальные ткани для мягкой мебели</p>
+    </div>
+</section>
+
+        <section class="projects">
+    <div class="projects__bg bg-text">
+        выполнили более 700 проектов выполнили более 700 проектов выполнили более 700 проектов выполнили более 700 проектов
+    </div>
+    <h2 class="projects__title">
+        Выполнили более<br>
+        <span>700 проектов</span>
+    </h2>
+    <div class="projects__wrapper">
+        <div class="projects__list">
+            <div class="projects__item projects-item projects-item_big">
+                <picture><source srcset="img/projects/projects-item_1.webp" type="image/webp"><img src="img/projects/projects-item_1.png" alt="projects-item"></picture>
+                <div class="projects-item__title">Пространство театр</div>
+                <button class="btn btn_trans projects-item__btn modal-trigger" data-modal="modal-port">Подробнее</button>
+            </div>
+            <div class="projects__item projects-item projects-item_small">
+                <picture><source srcset="img/projects/pro900jects-item_1.webp" type="image/webp"><img src="img/projects/pro900jects-item_1.png" alt="projects-item"></picture>
+                <div class="projects-item__title">Пространство театр</div>
+                <button class="btn btn_trans projects-item__btn modal-trigger" data-modal="modal-port">Подробнее</button>
+            </div>
+            <div class="projects__item projects-item projects-item_small projects-item_desctop">
+                <picture><source srcset="img/projects/projects-item_1.webp" type="image/webp"><img src="img/projects/projects-item_1.png" alt="projects-item"></picture>
+                <div class="projects-item__title">Пространство театр</div>
+                <button class="btn btn_trans projects-item__btn modal-trigger" data-modal="modal-port">Подробнее</button>
+            </div>
+        </div>
+        <div class="projects__list">
+            <div class="projects__item projects-item projects-item_small projects-item_desctop projects-item_none">
+                <picture><source srcset="img/projects/projects-item_1.webp" type="image/webp"><img src="img/projects/projects-item_1.png" alt="projects-item"></picture>
+                <div class="projects-item__title">Пространство театр</div>
+                <button class="btn btn_trans projects-item__btn modal-trigger" data-modal="modal-port">Подробнее</button>
+            </div>
+            <div class="projects__list projects__list_long">
+                <div class="projects__item projects-item projects-item_long">
+                    <picture><source srcset="img/projects/projects-item_1.webp" type="image/webp"><img src="img/projects/projects-item_1.png" alt="projects-item"></picture>
+                    <div class="projects-item__title">Пространство театр</div>
+                    <button class="btn btn_trans projects-item__btn modal-trigger" data-modal="modal-port">Подробнее</button>
+                </div>
+                <div class="projects__item projects-item projects-item_long">
+                    <picture><source srcset="img/projects/projects-item_1.webp" type="image/webp"><img src="img/projects/projects-item_1.png" alt="projects-item"></picture>
+                    <div class="projects-item__title">Пространство театр</div>
+                    <button class="btn btn_trans projects-item__btn modal-trigger" data-modal="modal-port">Подробнее</button>
+                </div>
+                <div class="projects__item projects-item projects-item_link">
+                    <picture><source srcset="img/projects/projects-item_buy.webp" type="image/webp"><img src="img/projects/projects-item_buy.png" alt="projects-item_buy"></picture>
+                    <button class="btn btn_trans projects-item__btn"><div><span>заказать дизайн</span><span>интерьера</span></div></button>
+                </div>
+            </div>
+            <div class="projects__item projects-item projects-item_link--desctop">
+                <picture><source srcset="img/projects/projects-item_buy.webp" type="image/webp"><img src="img/projects/projects-item_buy.png" alt="projects-item_buy"></picture>
+                <button class="btn btn_trans projects-item__btn"><div><span>заказать дизайн</span><span>интерьера</span></div></button>
             </div>
         </div>
     </div>
@@ -506,8 +1353,128 @@
     </div>
 </section>
 
+    <section class="modal modal-get" id="modal-get">
+    <div class="modal__wrapper modal-get__wrapper">
+        <div class="modal__window modal-get__window">
+            <div class="modal__header_right modal-get__header">
+                <span>Обратная связь</span>
+                <div class="modal__close_right modal-call__close modal__close" data-modal="modal-call">
+                    <img src="img/icons/modal__close.svg" alt="modal__close">
+                </div>
+            </div>
+            <div class="modal__call-form call-form modal-get__call-form">
+                <div class="modal-call__thank thank-block">
+                    <h3 class="thank-block__title">Спасибо</h3>
+                    <span class="thank-block__text">Скоро мы свяжемся с вами. Спасибо за обращение. <br> Оставайтесь на связи!</span>
+                </div>
+                <h3 class="call-form__title _no-thank">получить каталог</h3>
+                <form action="#" class="call-form__form _no-thank" novalidate>
+                    <label>
+                        <input type="text" name="name" class="required" required>
+                        <span>Имя</span>
+                        <p class="call-form__wrong">Введите имя</p>
+                    </label>
+                    <label>
+                        <input type="text" name="tel" class="call-form__tel required" required>
+                        <span>Телефон</span>
+                        <p class="call-form__wrong call-form__tel-wrong">Проверьте телефон</p>
+                    </label>
+                    <button class="btn btn_trans call-form__btn _light" type="submit">отправить</button>
+                    <div class="call-form__policy custom-checkbox _light">
+                        <input type="checkbox" class="call-form__checkbox" name="call-form__policy" id="call-form__policy">
+                        <label for="call-form__policy"><div>Я согласен с политикой обработки <a href="#">персональных данных</a></div> <p class="call-form__wrong call-form__checkbox-wrong">Дайте согласие</p></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230227140456"></script>
-    <script src="js/app.min.js?_v=20230227140456"></script>
+    <section class="modal modal-port" id="modal-port">
+    <div class="modal__wrapper modal-port__wrapper">
+        <div class="modal__window modal-port__window">
+            <div class="modal-port__slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <picture><source srcset="img/modal/modal-port__image.webp" type="image/webp"><img src="img/modal/modal-port__image.png" alt="modal-port"></picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture><source srcset="img/modal/modal-port__image.webp" type="image/webp"><img src="img/modal/modal-port__image.png" alt="modal-port"></picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture><source srcset="img/modal/modal-port__image.webp" type="image/webp"><img src="img/modal/modal-port__image.png" alt="modal-port"></picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture><source srcset="img/modal/modal-port__image.webp" type="image/webp"><img src="img/modal/modal-port__image.png" alt="modal-port"></picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture><source srcset="img/modal/modal-port__image.webp" type="image/webp"><img src="img/modal/modal-port__image.png" alt="modal-port"></picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture><source srcset="img/modal/modal-port__image.webp" type="image/webp"><img src="img/modal/modal-port__image.png" alt="modal-port"></picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture><source srcset="img/modal/modal-port__image.webp" type="image/webp"><img src="img/modal/modal-port__image.png" alt="modal-port"></picture>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="modal-port__form">
+                <div class="modal__header_right modal-port__header">
+                    <span>Портфолио</span>
+                    <div class="modal__close_right modal-call__close modal__close" data-modal="modal-call">
+                        <img src="img/icons/modal__close.svg" alt="modal__close">
+                    </div>
+                </div>
+                <div class="modal-port__text">
+                    <h4 class="modal-port__title">Пространство театр</h4>
+                    <p class="modal-port__parg">Проекты Алексея отличаются содержанием идеи
+                        и стильной ее реализацией.
+                        Работа с цветом - это отдельный разговор, особое владение опытного дизайнера психологией
+                        пространства и интерьера. Мы приняли участие
+                        в обстановки квартиры мягкой мебелью
+                        от Sits, Bolzan, Сalligaris.
+                    </p>
+
+                    <div class="modal__call-form call-form modal-port__call-form ">
+                        <!-- <div class="modal-call__thank thank-block">
+                            <h3 class="thank-block__title">Спасибо</h3>
+                            <span class="thank-block__text">Скоро мы свяжемся с вами. Спасибо за обращение. <br> Оставайтесь на связи!</span>
+                        </div> -->
+                        <form action="#" class="call-form__form _no-thank" novalidate>
+                            <div class="call-form__wrapper">
+                                <div class="call-form__personal">
+                                    <label>
+                                        <input type="text" name="name" class="required" required>
+                                        <span>Имя</span>
+                                        <p class="call-form__wrong">Введите имя</p>
+                                    </label>
+                                    <label>
+                                        <input type="text" name="tel" class="call-form__tel required" required>
+                                        <span>Телефон</span>
+                                        <p class="call-form__wrong call-form__tel-wrong">Проверьте телефон</p>
+                                    </label>
+                                </div>
+                                <label>
+                                    <input type="text" name="city" class="" required>
+                                    <span>Город</span>
+                                </label>
+                            </div>
+                            <button class="btn btn_trans call-form__btn _light" type="submit">задать</button>
+                            <div class="call-form__policy custom-checkbox _light">
+                                <input type="checkbox" class="call-form__checkbox" name="call-form__policy" id="call-form__policy">
+                                <label for="call-form__policy"><div>Я согласен с политикой обработки <a href="#">персональных данных</a></div> <p class="call-form__wrong call-form__checkbox-wrong">Дайте согласие</p></label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230301171622"></script>
+    <script src="js/app.min.js?_v=20230301171622"></script>
 </body>
 </html>
