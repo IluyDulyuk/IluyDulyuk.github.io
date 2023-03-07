@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
         rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230307185642"
+        href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230307195520"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery-bundle.min.css?_v=20230307195520" integrity="sha512-nUqPe0+ak577sKSMThGcKJauRI7ENhKC2FQAOOmdyCYSrUh0GnwLsZNYqwilpMmplN+3nO3zso8CWUgu33BDag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Art Play</title>
-    <link rel="stylesheet" href="css/style.min.css?_v=20230307185642">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230307195520">
 </head>
 
 <body>
@@ -1543,25 +1544,37 @@
                         и стильной ее реализацией. Работа с цветом —
                         это отдельный разговор, особое владение опытного дизайнера психологией пространства и интерьера. Мы приняли участие в обстановки квартиры мягкой мебелью от Sits, Bolzan, Сalligaris.</p>
                 </div>
-                <div class="modal-art__blocks">
+                <div class="modal-art__blocks" id="light">
                     <div class="modal-art__block block_1">
-                        <picture><source srcset="img/modal-art/modal-art__image_1.webp" type="image/webp"><img class="block_1--image_1" src="img/modal-art/modal-art__image_1.png" alt="modal-art__image"></picture>
-                        <picture><source srcset="img/modal-art/modal-art__image_2.webp" type="image/webp"><img class="block_1--image_2" src="img/modal-art/modal-art__image_2.png" alt="modal-art__image"></picture>
+                        <div class="item" data-src="img/modal-art/modal-art__image_1.png">
+                            <picture><source srcset="img/modal-art/modal-art__image_1.webp" type="image/webp"><img class="block_1--image_1" src="img/modal-art/modal-art__image_1.png" alt="modal-art__image"></picture>
+                        </div>
+                        <div class="item" data-src="img/modal-art/modal-art__image_2.png">
+                            <picture><source srcset="img/modal-art/modal-art__image_2.webp" type="image/webp"><img class="block_1--image_2" src="img/modal-art/modal-art__image_2.png" alt="modal-art__image"></picture>
+                        </div>
                     </div>
                     <div class="modal-art__block block_2">
-                        <picture><source srcset="img/modal-art/modal-art__image_4.webp" type="image/webp"><img src="img/modal-art/modal-art__image_4.png" alt="modal-art__image"></picture>
+                        <div class="item" data-src="img/modal-art/modal-art__image_4.png">
+                            <picture><source srcset="img/modal-art/modal-art__image_4.webp" type="image/webp"><img src="img/modal-art/modal-art__image_4.png" alt="modal-art__image"></picture>
+                        </div>
                     </div>
                     <div class="modal-art__block block_3">
                         <div class="image">
                             <span></span>
-                            <picture><source srcset="img/modal-art/modal-art__image_5.webp" type="image/webp"><img src="img/modal-art/modal-art__image_5.png" alt="modal-art__image"></picture>
+                            <div class="item" data-src="img/modal-art/modal-art__image_5.png">
+                                <picture><source srcset="img/modal-art/modal-art__image_5.webp" type="image/webp"><img src="img/modal-art/modal-art__image_5.png" alt="modal-art__image"></picture>
+                            </div>
                         </div>
                     </div>
                     <div class="modal-art__block block_4">
-                        <picture><source srcset="img/modal-art/modal-art__image_6.webp" type="image/webp"><img src="img/modal-art/modal-art__image_6.png" alt="modal-art__image"></picture>
+                        <div class="item" data-src="img/modal-art/modal-art__image_6.png">
+                            <picture><source srcset="img/modal-art/modal-art__image_6.webp" type="image/webp"><img src="img/modal-art/modal-art__image_6.png" alt="modal-art__image"></picture>
+                        </div>
                     </div>
                     <div class="modal-art__block block_5">
-                        <picture><source srcset="img/modal-art/modal-art__image_3.webp" type="image/webp"><img src="img/modal-art/modal-art__image_3.png" alt="modal-art__image"></picture>
+                        <div class="item" data-src="img/modal-art/modal-art__image_3.png">
+                            <picture><source srcset="img/modal-art/modal-art__image_3.webp" type="image/webp"><img src="img/modal-art/modal-art__image_3.png" alt="modal-art__image"></picture>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -2365,9 +2378,10 @@
 </section>
 
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230307185642"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230307185642"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU&_v=20230307185642"></script>
-    <script src="js/app.min.js?_v=20230307185642"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.umd.min.js?_v=20230307195520" integrity="sha512-6vFONv+JJD01XArGGqxABRY3Vsm8tKuemThmZYfha9inGIuqPU5OgZP1QizBf0Y3JGPnrofy3jokdebgYNNhEQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js?_v=20230307195520"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230307195520"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU&_v=20230307195520"></script>
+    <script src="js/app.min.js?_v=20230307195520"></script>
 </body>
 </html>
