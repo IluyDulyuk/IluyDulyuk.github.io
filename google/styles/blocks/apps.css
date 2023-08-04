@@ -1,0 +1,18 @@
+.apps {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.apps__icon {
+    display: block;
+    margin: auto;
+    fill: #5f6368
+}
+
+.apps:is(:hover, :focus) {
+    background: #f2f2f2;
+}

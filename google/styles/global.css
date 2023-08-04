@@ -1,0 +1,10 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline-color: #4285f4;
+    outline-width: 1px;
+}

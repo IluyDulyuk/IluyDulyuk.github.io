@@ -1,0 +1,28 @@
+.footer {
+    background: #f2f2f2;
+    color: #70757a;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 15px;
+}
+
+.footer__text {
+    border-bottom: 1px solid #dadce0;
+    padding: 15px 30px;
+    margin: 0;
+    width: 100%;
+}
+
+.footer__list {
+    padding: 15px 30px;
+    list-style: none;
+    margin: 0;
+    display: flex;
+}
+
+.footer__link {
+    padding: 15px;
+    text-decoration: none;
+    color: #70757a;
+}

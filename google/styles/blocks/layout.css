@@ -1,0 +1,17 @@
+.layout {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    grid-template-columns: 1fr minmax(auto, 584px) 1fr;
+}
+
+.layout__header {
+    grid-column: 1 / -1;
+}
+
+.layout__main {
+    grid-column: 2 / -2;
+}
+
+.layout__footer {
+    grid-column: 1 / -1;
+}

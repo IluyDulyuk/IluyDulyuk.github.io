@@ -1,0 +1,29 @@
+.button {
+    text-decoration: none;
+    font-family: inherit;
+    border-radius: 4px;
+    padding: 9px 23px;
+    margin: 0;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.button:is(:hover, :focus) {
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);;
+}
+
+.button--plain {
+    border: 1px solid #f8f9fa;
+    background: #f8f9fa;
+    color: #3c4043;
+}
+
+.button--action {
+    border: 1px solid #1a73e8;
+    background: #1a73e8;
+    color: #ffffff;
+}
+
+.button--action:is(:hover, :focus) {
+    background: #1b66c9;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body class="page__body layout">
+    <header class="header layout__header">
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li><a href="" class="navigation__link">About</a></li>
+                <li><a href="" class="navigation__link">Store</a></li>
+                <li class="navigation__gap"><a href="" class="navigation__link">Gmail</a></li>
+                <li><a href="" class="navigation__link">Images</a></li>
+            </ul>
+            <button class="apps" type="button" aria-label="Apps">
+                <svg class="apps__icon" width="24" height="24">
+					<use href="images/icons.svg#apps"></use>
+				</svg>
+            </button>
+            <a class="button button--action" href="">Sign In</a>
+        </nav>
+    </header>
+    <main class="main layout__main">
+        <h1 class="main__title">
+            <img class="main__logo" src="https://pepelsbey.github.io/playground/code-google/images/logo.svg" width="272" height="92" fetchpriority="high" alt="Google">
+        </h1>
+        <search class="main__search">
+            <form action="">
+                <div class="search">
+                    <svg class="search__icon" class="search__feature" width="24" height="24">
+                        <use href="images/icons.svg#search"></use>
+                    </svg>
+                    <input class="search__input" type="search" aria-label="Search" autofocus>
+                    <button class="search__button" type="button" aria-label="Search by Voice">
+                        <svg class="search__feature" width="24" height="24">
+                            <use href="images/icons.svg#voice"></use>
+                        </svg>
+                    </button>
+                    <button class="search__button" type="button" aria-label="Search by Image">
+                        <svg class="search__feature" width="24" height="24">
+                            <use href="images/icons.svg#image"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="main__buttons">
+                    <button class="button button--plain" type="button">Google Search</button>
+                    <button class="button button--plain" type="button">I’m Feeling Lucky</button>
+                </div>
+            </form>
+        </search>
+        <p class="main__locale">Google offered in: <a class="main__link" href="">Russia</a></p>
+    </main>
+    <footer class="footer layout__footer">
+        <p class="footer__text">Russia</p>
+        <ul class="footer__list">
+            <li><a class="footer__link" href="">Advertising</a></li>
+            <li><a class="footer__link" href="">Buisness</a></li>
+            <li><a class="footer__link" href="">How search works</a></li>
+        </ul>
+        <ul class="footer__list">
+            <li><a class="footer__link" href="">Privacy</a></li>
+            <li><a class="footer__link" href="">Terms</a></li>
+            <li><a class="footer__link" href="">Settings</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
