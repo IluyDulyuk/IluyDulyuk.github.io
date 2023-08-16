@@ -18,7 +18,21 @@
     <header class="header">
     <div class="header__container container">
         <div class="header__gum">
-            <img src="img/header/header__gum.svg" alt="">
+            <img class="open" src="img/header/header__gum.svg" alt="">
+            <img class="close" src="img/header/header__close.svg" alt="">
+        </div>
+        <div class="header__menu">
+            <ul class="header__list">
+                <li><a href="#" class="header__link">О нас</a> <img src="img/icons/link-arrow.svg" alt=""></li>
+                <li><a href="#" class="header__link">Наши работы</a> <img src="img/icons/link-arrow.svg" alt=""></li>
+                <li><a href="#" class="header__link">Услуги</a> <img src="img/icons/link-arrow.svg" alt=""></li>
+                <li><a href="#" class="header__link">Контакты</a> <img src="img/icons/link-arrow.svg" alt=""></li>
+            </ul>
+            <div class="header__contacts">
+                <a class="" href="tel:+79607293403">+7 960 729–34–03</a>
+                <a class="" href="mailto:StroiKarkas33@yandex.ru">StroiKarkas33@yandex.ru</a>
+            </div>
+            <button class="header__button button button--green callback-trigger">Заказать звонок</button>
         </div>
         <div class="header__logo">
             <a href="#" aria-label="Открыть выпадающее меню">
@@ -35,7 +49,7 @@
         </nav>
         <div class="header__call">
             <a href="tel:+79607293403">+7 960 729–34–03</a>
-            <button class="header__button button button--green">Заказать звонок</button>
+            <button class="header__button button button--green callback-trigger">Заказать звонок</button>
         </div>
         <div class="header__phone">
             <a href="#">
@@ -71,7 +85,7 @@
                     <div class="tag tag--green">Крышу</div>
                 </div>
             </div>
-            <button class="offer__button button button--blue">Заказать бесплатную консультацию</button>
+            <button class="offer__button button button--blue callback-trigger">Заказать бесплатную консультацию</button>
         </div>
         <div class="offer__forms forms">
             <div class="forms__qus qus">
@@ -173,7 +187,7 @@
                 </div>
             </div>
             <div class="advantages__pagination"></div>
-            <button class="advantages__button button button--green">Связаться с нами</button>
+            <button class="advantages__button button button--green callback-trigger">Связаться с нами</button>
         </div>
     </div>
 </section>
@@ -287,7 +301,7 @@
                 </div>
             </div>
             <div class="process__pagination"></div>
-            <button class="process__button button button--green">Заказать каркасный дом</button>
+            <button class="process__button button button--green  callback-trigger">Заказать каркасный дом</button>
         </div>
     </div>
 </section>
@@ -319,7 +333,7 @@
                             </p>
                         </form>
                     </div>
-                    <button class="services__button button button--blue">Хочу построить Барнхаус</button>
+                    <button class="services__button button button--blue callback-trigger">Хочу построить Барнхаус</button>
                 </div>
             </div>
         </section>
@@ -350,7 +364,7 @@
                             </p>
                         </form>
                     </div>
-                    <button class="services__button button button--purple">Хочу построить А–Фрейм</button>
+                    <button class="services__button button button--purple callback-trigger">Хочу построить А–Фрейм</button>
                 </div>
             </div>
         </section>
@@ -382,7 +396,7 @@
                             </p>
                         </form>
                     </div>
-                    <button class="services__button button button--yellow">Хочу построить каркасную баню</button>
+                    <button class="services__button button button--yellow callback-trigger">Хочу построить каркасную баню</button>
                 </div>
             </div>
         </section>
@@ -425,7 +439,7 @@
             </div>
         </div>
         <div class="steps__pagination"></div>
-        <button class="steps__button button button--green">Связаться с нами</button>
+        <button class="steps__button button button--green callback-trigger">Связаться с нами</button>
         <div class="steps__footer">
             <p class="steps__prg steps__prg--desctop">Мы строим с 2013 год. За эти годы мы создали профессиональную команду с узкой специализацией по строительству каркасных домов, коттеджей, бань, пристроек и малых архитектурных форм. Строим малоэтажные жилые и не жилые здания по типовым и индивидуально разработанным проектам</p>
             <div class="forms__qus qus">
@@ -454,9 +468,138 @@
     </div>
 </section>
 
-        
-        
-        <!-- <section class="process" style="background: linear-gradient(180deg, #EDFFED 0%, #FFF 100%);">
+        <section class="exemples">
+    <div class="exemples__container container">
+        <h2 class="exemples__title title title--green">Примеры <span>наших <br>работ</span></h2>
+        <div class="exemples__tags">
+            <div class="tag tag--green">Дом по индивидуальному проекту</div>
+            <div class="tag tag--blue">Барнхаус</div>
+            <div class="tag tag--green">Беседку</div>
+            <div class="tag tag--purple">А–Фрейм</div>
+            <div class="tag tag--green">Гараж</div>
+            <div class="tag tag--green">Навес</div>
+            <div class="tag tag--green">Крышу</div>
+        </div>
+        <div class="exemples__wrapper">
+            <div class="exemples__list">
+                <div class="exemples__item">
+                    <img src="" alt="">
+                    <div class="exemples__under"></div>
+                    <h4 class="exemples__name">Каркасный дом · 120 м2</h4>
+                    <div class="exemples__adress">г. Радужный, Владимирская обл.</div>
+                </div>
+                <div class="exemples__item">
+                    <img src="" alt="">
+                    <div class="exemples__under"></div>
+                    <h4 class="exemples__name">Каркасный дом · 120 м2</h4>
+                    <div class="exemples__adress">г. Радужный, Владимирская обл.</div>
+                </div>
+                <button class="exemples__button button button--green callback-trigger">Оставить заявку на строительство</button>
+            </div>
+            <div class="exemples__list">
+                <div class="exemples__item exemples__item--long">
+                    <img src="" alt="">
+                    <div class="exemples__under"></div>
+                    <h4 class="exemples__name">Каркасный дом · 120 м2</h4>
+                    <div class="exemples__adress">г. Радужный, Владимирская обл.</div>
+                </div>
+                <div class="exemples__item">
+                    <img src="" alt="">
+                    <div class="exemples__under"></div>
+                    <h4 class="exemples__name">Каркасный дом · 120 м2</h4>
+                    <div class="exemples__adress">г. Радужный, Владимирская обл.</div>
+                </div>
+            </div>
+            <div class="exemples__list">
+                <div class="exemples__item">
+                    <img src="" alt="">
+                    <div class="exemples__under"></div>
+                    <h4 class="exemples__name">Каркасный дом · 120 м2</h4>
+                    <div class="exemples__adress">г. Радужный, Владимирская обл.</div>
+                </div>
+                <div class="exemples__item">
+                    <img src="" alt="">
+                    <div class="exemples__under"></div>
+                    <h4 class="exemples__name">Каркасный дом · 120 м2</h4>
+                    <div class="exemples__adress">г. Радужный, Владимирская обл.</div>
+                </div>
+            </div>
+        </div>
+        <div class="exemples__slider swiper">
+            <div class="swiper-wrapper">
+                <div class="exemples__item swiper-slide">
+                    <img src="" alt="">
+                    <div class="exemples__under"></div>
+                    <h4 class="exemples__name">Каркасный дом · 120 м2</h4>
+                    <div class="exemples__adress">г. Радужный, Владимирская обл.</div>
+                </div>
+                <div class="exemples__item swiper-slide">
+                    <img src="" alt="">
+                    <div class="exemples__under"></div>
+                    <h4 class="exemples__name">Каркасный дом · 120 м2</h4>
+                    <div class="exemples__adress">г. Радужный, Владимирская обл.</div>
+                </div>
+                <div class="exemples__item swiper-slide">
+                    <img src="" alt="">
+                    <div class="exemples__under"></div>
+                    <h4 class="exemples__name">Каркасный дом · 120 м2</h4>
+                    <div class="exemples__adress">г. Радужный, Владимирская обл.</div>
+                </div>
+                <div class="exemples__item swiper-slide">
+                    <img src="" alt="">
+                    <div class="exemples__under"></div>
+                    <h4 class="exemples__name">Каркасный дом · 120 м2</h4>
+                    <div class="exemples__adress">г. Радужный, Владимирская обл.</div>
+                </div>
+                <div class="exemples__item swiper-slide">
+                    <img src="" alt="">
+                    <div class="exemples__under"></div>
+                    <h4 class="exemples__name">Каркасный дом · 120 м2</h4>
+                    <div class="exemples__adress">г. Радужный, Владимирская обл.</div>
+                </div>
+                <div class="exemples__item swiper-slide">
+                    <img src="" alt="">
+                    <div class="exemples__under"></div>
+                    <h4 class="exemples__name">Каркасный дом · 120 м2</h4>
+                    <div class="exemples__adress">г. Радужный, Владимирская обл.</div>
+                </div>
+            </div>
+        </div>
+        <div class="exemples__pagination"></div>
+        <button class="exemples__trigger-btn button button--green callback-trigger">Связаться с нами</button>
+    </div>
+</section>
+
+        <section class="project">
+    <div class="project__container container">
+        <h2 class="project__title title title--green">Разработаем <br><span>индивидуальный проект</span></h2>
+        <div class="project__main">
+            <div class="project__text">
+                <p>• Перед началом строительства дома необходимо создать его <span>индивидуальный проект</span> – тщательно проработанный, выверенный и учитывающий все пожелания и нужды заказчика.И тогда <span>возведение дома будет успешным!</span> Если у вас есть желание и возможность строить дом самостоятельно,мы поможем вам разработать проект, в котором учтем все пожелания и нюансы. Это поможет вам соблюсти строительные нормы , а так же <span>сэкономить деньги на покупке материала</span></p>
+                <p>• <span>Большой опыт</span> наших специалистов в строительстве  и проектировании помогает создать <span>качественный проект</span>, <span>который реально построить!</span> Мы несем ответственность за конечный результат</p>
+            </div>
+            <div class="project__form">
+                <h4>Заказать разработку проекта</h4>
+                <div class="form">
+                    <h3 class="form__title">Оставьте свой номер телефона. <br> Мы оперативно позвоним вам</h3>
+                    <form action="#">
+                        <div class="form__input">
+                            <span>+7</span>
+                            <input type="text" name="phone-number" placeholder="000 000-00-00">
+                            <div class="indicator indicator--wrong"></div>
+                        </div>
+                        <button class="form__button button button--green" type="submit">Заказать звонок</button>
+                        <p>*Оставляя заявку на бесплатную консультацию
+                            вы соглашаетесь на передачу персональных данных
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="process" style="background: linear-gradient(180deg, #EDFFED 0%, #FFF 100%);">
             <div class="process__container container">
                 <div class="process__header">
                     <h2 class="process__title title title--green">Этапы создания <br> <span>индивидуального проекта</span></span></h2>
@@ -512,12 +655,102 @@
                             <p class="process__text">Согласование проекта</p>
                         </div>
                     </div>
+                    <div class="process__slider--second swiper">
+                        <div class="process__wrapper swiper-wrapper">
+                            <div class="process__item swiper-slide">
+                                <div class="process__step">
+                                    <img src="img/process/process__step--1.svg" alt="">
+                                </div>
+                                <p class="process__text">Согласование проекта</p>
+                            </div>
+                            <div class="process__item swiper-slide">
+                                <div class="process__step">
+                                    <img src="img/process/process__step--2.svg" alt="">
+                                </div>
+                                <p class="process__text">Согласование проекта</p>
+                            </div>
+                            <div class="process__item swiper-slide">
+                                <div class="process__step">
+                                    <img src="img/process/process__step--3.svg" alt="">
+                                </div>
+                                <p class="process__text">Согласование проекта</p>
+                            </div>
+                            <div class="process__item swiper-slide">
+                                <div class="process__step">
+                                    <img src="img/process/process__step--4.svg" alt="">
+                                </div>
+                                <p class="process__text">Согласование проекта</p>
+                            </div>
+                            <div class="process__item swiper-slide">
+                                <div class="process__step">
+                                    <img src="img/process/process__step--5.svg" alt="">
+                                </div>
+                                <p class="process__text">Согласование проекта</p>
+                            </div>
+                            <div class="process__item swiper-slide">
+                                <div class="process__step">
+                                    <img src="img/process/process__step--6.svg" alt="">
+                                </div>
+                                <p class="process__text">Согласование проекта</p>
+                            </div>
+                            <div class="process__item swiper-slide">
+                                <div class="process__step">
+                                    <img src="img/process/process__step--7.svg" alt="">
+                                </div>
+                                <p class="process__text">Согласование проекта</p>
+                            </div>
+                            <div class="process__item swiper-slide">
+                                <div class="process__step">
+                                    <img src="img/process/process__step--8.svg" alt="">
+                                </div>
+                                <p class="process__text">Согласование проекта</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="process__pagination--second"></div>
+                    <button class="process__button button button--green callback-trigger">Связаться с нами</button>
                 </div>
             </div>
-        </section> -->
+        </section>
 
     </main>
-    
+    <footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__logo">
+            <a href="#">
+                <img src="img/header/header__logo.svg" alt="Логотип">
+            </a>
+        </div>
+        <span class="footer__tagline">
+            Быстро
+            <span></span>
+            Качественно
+            <span></span>
+            Долговечно
+        </span>
+        <div class="footer__tel">
+            <a href="tel:+79607293403">+7 960 729–34–03</a>
+        </div>
+        <ul class="footer__links">
+            <li>
+                <a href="#"><img src="img/icons/tg.svg" alt="Телеграм"></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/icons/phone.svg" alt="Телефон"></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/icons/viber.svg" alt="Вайбер"></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/icons/vk.svg" alt="ВКонтакте"></a>
+            </li>
+            <li>
+                <a href="#"><img src="img/icons/inst.svg" alt="Инстаграм"></a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
     <div class="modal  callback">
     <div class="modal__wrapper callback__wrapper">
         <div class="callback__close modal__close">
@@ -562,6 +795,13 @@
 </div>
 
         </div>
+    </div>
+</div>
+<div class="modal secsess">
+    <div class="modal__wrapper secsess__wrapper">
+        <h5 class="secsess__title">Звонок заказан</h5>
+        <p class="secsess__text">Спасибо за заявку.Мы свяжемся с вами в ближайшее время</p>
+        <button class="secsess__close button button--green">Ок</button>
     </div>
 </div>
 
