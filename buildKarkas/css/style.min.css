@@ -101,6 +101,39 @@ body {
   color: #000;
 }
 
+.scroll {
+  position: fixed;
+  right: 100px;
+  bottom: 50px;
+  padding: 16px;
+  border-radius: 50%;
+  background: #f9f9f9;
+  cursor: pointer;
+  z-index: 4;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+@media screen and (max-width: 1024px) {
+  .scroll {
+    padding: 12px;
+    right: 50px;
+    bottom: 25px;
+  }
+  .scroll img {
+    width: 25px;
+  }
+}
+.scroll--active {
+  opacity: 1;
+  visibility: visible;
+}
+.scroll img {
+  transform: rotate(90deg);
+  width: 30px;
+  height: 30px;
+}
+
 .container {
   width: 1130px;
   margin: 0 auto;
@@ -962,6 +995,8 @@ body {
     padding: 64px 0px 44px;
     margin: 0;
     border-radius: 0;
+    min-height: 692px;
+    position: relative;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1022,7 +1057,6 @@ body {
 @media screen and (max-width: 1024px) {
   .services__tags {
     max-width: 100%;
-    margin-bottom: 300px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -1036,7 +1070,11 @@ body {
 @media screen and (max-width: 1024px) {
   .services__button {
     display: block;
-    width: 100%;
+    width: calc(100% - 32px);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 44px;
   }
 }
 
