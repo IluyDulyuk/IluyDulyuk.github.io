@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>РУСАЛ</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -13,9 +17,14 @@
 
     <header class="header">
     <div class="header__container container">
-        <div class="header__logo">
+        <div class="header__logo header__logo--desctop">
             <a href="#" aria-label="На главную страницу">
                 <img src="img/icons/logo.svg" alt="Логотип">
+            </a>
+        </div>
+        <div class="header__logo header__logo--mobile">
+            <a href="#" aria-label="На главную страницу">
+                <img src="img/icons/logo--mobile.svg" alt="Логотип">
             </a>
         </div>
         <div class="header__wrapper">
@@ -161,11 +170,143 @@
 </header>
 
     <main>
+        <section class="offer">
+    <div class="offer__image">
+        <img src="img/offer/offer__image.jpg" alt="offer__image">
+    </div>
+    <div class="offer__container container">
+        <h2 class="offer__title col-xxl-5 col-xl-6">Главное о фонде </h2>
+        <div class="offer__text col-xxl-6 col-xl-6">
+            <p class="paragraph">
+                Благотворительный фонд «Центр социальных программ» — один из крупнейших российских некоммерческих корпоративных фондов. Фонд поддерживает, развивает
+                и вовлекает местные сообщества в решение городских проблем. При этом помощь не ограничивается только финансированием.
+            </p>
+            <p class="paragraph">
+                <span>
+                    Большое внимание уделяется применению новейших технологий в реализации социальных проектов, а также тиражированию эффективных практик и вовлечению сообществ в решение важных социальных проблем территорий.
+                </span>
+            </p>
+            <p class="paragraph">
+                Миссия фонда — повышать качество жизни
+                в территориях ответственности компании через разработку, реализацию
+                и опуляризацию стандартов осознанной корпоративной благотворительности.
+            </p>
+        </div>
+        <button class="offer__more-button button button--primary">Подробнее о фонде</button>
+    </div>
+</section>
+
+        <section class="news">
+    <div class="news__container container">
+        <h2 class="news__title title">Новости</h2>
+        <div class="news__row row">
+            <div class="news__article col-xxl-7 col-xl-7">
+                <div class="article">
+    <div class="article__image">
+        <img src="img/article/article__image.jpg" alt="article__image">
+    </div>
+    <div class="article__text text">
+        <div class="article__date date">
+            <span>01.08.2022</span>
+        </div>
+        <h4 class="article__name name">Итоги грантового конкурса </h4>
+        <p class="article__description description">РУСАЛ выделяет 35 миллионов рублей для поддержки социально ориентированных НКО</p>
+        <a href="#" class="article__link link">Читать далее</a>
+    </div>
+</div>
+
+                <button class="news__all-button news__all-button--desctop button button--primary">ВСЕ НОВОСТИ</button>
+            </div>
+            <div class="news__article-shorts offset-xxl-1 offset-xl-1 col-xxl-4 col-xl-4">
+                <div class="article-short">
+    <div class="article-short__image">
+        <img src="img/article/article__image.jpg" alt="article__image">
+    </div>
+    <div class="article-short__text text">
+        <div class="article-short__header">
+            <div class="article-short__tag">#волонтер_РУСАЛА</div>
+            <div class="article-short__date date">
+                <span>01.08.2022</span>
+            </div>
+        </div>
+        <h4 class="article-short__name name">Итоги грантового конкурса </h4>
+        <p class="article-short__description description">«Поддержать важно»</p>
+        <a href="#" class="article-short__link link">Смотреть отчет</a>
+    </div>
+</div>
+
+                <div class="article-short">
+    <div class="article-short__image">
+        <img src="img/article/article__image.jpg" alt="article__image">
+    </div>
+    <div class="article-short__text text">
+        <div class="article-short__header">
+            <div class="article-short__tag">#волонтер_РУСАЛА</div>
+            <div class="article-short__date date">
+                <span>01.08.2022</span>
+            </div>
+        </div>
+        <h4 class="article-short__name name">Итоги грантового конкурса </h4>
+        <p class="article-short__description description">«Поддержать важно»</p>
+        <a href="#" class="article-short__link link">Смотреть отчет</a>
+    </div>
+</div>
+
+                <button class="news__all-button news__all-button--mobile button button--primary">ВСЕ НОВОСТИ</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="routes">
+    <div class="routes__container container">
+        <h2 class="routes__title title title--upper">НАПРАВЛЕНИЯ <br> ПРОГРАММ</h2>
+        <div class="routes__row row">
+            <div class="routes__tags routes__tags-static col-xxl-5 col-xl-5">
+                <span>#ВОЛОНТЕРСТВО</span>
+                <span>#ЭКОПРОЕКТЫ</span>
+                <span>#СЕТЕВЫЕ АКЦИИ</span>
+                <span>#ФАНДРАЙЗИНГ</span>
+            </div>
+            <div class="routes__tags routes__tags-slider swiper">
+                <div class="routes__tags-wrapper swiper-wrapper">
+                    <span class="swiper-slide">#ВОЛОНТЕРСТВО</span>
+                    <span class="swiper-slide">#ЭКОПРОЕКТЫ</span>
+                    <span class="swiper-slide">#СЕТЕВЫЕ АКЦИИ</span>
+                    <span class="swiper-slide">#ФАНДРАЙЗИНГ</span>
+                </div>
+            </div>
+            <div class="routes__images offset-xxl-2 col-xxl-5 offset-xl-2 col-xl-5">
+                <div class="routes__slider swiper">
+                    <div class="routes__wrapper swiper-wrapper">
+                        <div class="routes__slide swiper-slide">
+                            <img src="img/article/article__image.jpg" alt="routes__slide">
+                        </div>
+                        <div class="routes__slide swiper-slide">
+                            <img src="img/article/article__image.jpg" alt="routes__slide">
+                        </div>
+                        <div class="routes__slide swiper-slide">
+                            <img src="img/article/article__image.jpg" alt="routes__slide">
+                        </div>
+                    </div>
+                </div>
+                <div class="routes__arrow routes__arrow--prev">
+                    <img src="img/icons/arrow.svg" alt="arrow">
+                </div>
+                <div class="routes__arrow routes__arrow--next">
+                    <img src="img/icons/arrow.svg" alt="arrow">
+                </div>
+            </div>
+            <button class="routes__all-button button button--primary">ВСЕ ПРОЕКТЫ</button>
+        </div>
+    </div>
+</section>
 
     </main>
     <footer></footer>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="js/app.min.js"></script>
 </body>
