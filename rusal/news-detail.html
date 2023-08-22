@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РУСАЛ | Новость</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+    <div class="header__container container">
+        <div class="header__logo header__logo--desctop">
+            <a href="#" aria-label="На главную страницу">
+                <img src="img/icons/logo.svg" alt="Логотип">
+            </a>
+        </div>
+        <div class="header__logo header__logo--mobile">
+            <a href="#" aria-label="На главную страницу">
+                <img src="img/icons/logo--mobile.svg" alt="Логотип">
+            </a>
+        </div>
+        <div class="header__wrapper">
+            <div class="header__menu menu">
+                <div class="menu__header">
+                    <div class="menu__logo">
+                        <img src="img/menu/menu__logo.svg" alt="menu__logo">
+                    </div>
+                    <button class="menu__gum header__gum header__gum--close header__gum--active" aria-label="Закрыть меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item--dropdown">
+                            <a href="" class="header__link">о фонде</a>
+                            <div class="header__dropdown dropdown">
+                                <div class="dropdown__container">
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">Команда</a>
+                                            <span>
+                                                <img src="img/dropdown/dropdown__link.svg" alt="dropdown__link">
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Новости</a>
+                                            <span>
+                                                <img src="img/dropdown/dropdown__link.svg" alt="dropdown__link">
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Документы</a>
+                                            <span>
+                                                <img src="img/dropdown/dropdown__link.svg" alt="dropdown__link">
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Награды</a>
+                                            <span>
+                                                <img src="img/dropdown/dropdown__link.svg" alt="dropdown__link">
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Контакты</a>
+                                            <span>
+                                                <img src="img/dropdown/dropdown__link.svg" alt="dropdown__link">
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__item--dropdown">
+                            <a href="#" class="header__link">Программы</a>
+                            <div class="header__dropdown dropdown">
+                                <div class="dropdown__container">
+                                    <ul class="dropdown__list">
+                                        <li>
+                                            <a href="#" class="dropdown__link">Волонтёры Русала</a>
+                                            <span>
+                                                <img src="img/dropdown/dropdown__link.svg" alt="dropdown__link">
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Городские акции</a>
+                                            <span>
+                                                <img src="img/dropdown/dropdown__link.svg" alt="dropdown__link">
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Фандрайзинг-события</a>
+                                            <span>
+                                                <img src="img/dropdown/dropdown__link.svg" alt="dropdown__link">
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Территория РУСАЛа</a>
+                                            <span>
+                                                <img src="img/dropdown/dropdown__link.svg" alt="dropdown__link">
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Помогать просто</a>
+                                            <span>
+                                                <img src="img/dropdown/dropdown__link.svg" alt="dropdown__link">
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Школа городских изменений</a>
+                                            <span>
+                                                <img src="img/dropdown/dropdown__link.svg" alt="dropdown__link">
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown__link">Центр инноваци в социальной сфере</a>
+                                            <span>
+                                                <img src="img/dropdown/dropdown__link.svg" alt="dropdown__link">
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="header__link">ПОЛЕЗНОЕ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__link">ГРАНТЫ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__link">контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu__footer">
+                    <button class="menu__grants button button--secondary">ГРАНТЫ</button>
+                    <div class="menu__links">
+                        <a href="#">+7 (391) 227-31-91</a>
+                        <a href="#">bilay@fcsp.ru</a>
+                    </div>
+                    <div class="menu__socials">
+                        <a href="#" aria-label="Вконтакте">
+                            <img src="img/icons/vk.svg" alt="Вконтакте">
+                        </a>
+                        <a href="#" aria-label="Телеграм">
+                            <img src="img/icons/tg.svg" alt="Телеграм">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="header__help-button button button--secondary">ХОЧУ ПОМОЧЬ!</button>
+        <button class="header__grants-button button button--secondary">Гранты</button>
+        <button class="header__gum header__gum--open" aria-label="Открыть мобильное меню">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+    <main>
+        <div class="container">
+            <div class="back">
+                <a href="#">
+                    <img src="img/icons/arrow.svg" alt="arrow">
+                </a>
+            </div>
+        </div>
+        <section class="news-detail">
+            <div class="news-detail__container container">
+                <h2 class="news-detail__title">Итоги грантового конкурса <br> «Поддержать важно»</h2>
+                <div class="news-detail__row row">
+                    <div class="news-detail__image col-xxl-6 col-xl-6">
+                        <img src="img/news-detail/news-detail__image.jpg" alt="news-detail__image">
+                    </div>
+                    <div class="news-detail__text col-xxl-6 col-xl-6">
+                        <p class="paragraph">В аббревиатуре <span>«ЦСП»</span> заключены три ключевых трека социальной политики РУСАЛа, по которым фонд осуществляет свою деятельность. </p>
+                    </div>
+                </div>
+                <h4 class="news-detail__subtitle">Исполнительный директор БО Фонд «ЦСП»</h4>
+                <p class="news-detail__paragraph paragraph">
+                    “С момента создания в 2004 г. фонд работает на развитие местных сообществ на территориях ответственности компании РУСАЛ. Эволюция нашей деятельности прошла путь от социальной помощи до комплексных программ социальных инвестиций. На протяжении своей истории фонд вбирает в себя лучшие практики социальных изменений для поддержки и развития социальных инициатив и практик развития устойчивости городов.
+                    <br>
+                    <br>
+                    <span>С каждым годом фонд финансирует всё более масштабные социальные проекты РУСАЛа</span> и, по сути, сочетает в себе две функции: ресурсный центр развития местных сообществ и волонтёрства и финансовый инструмент реализации социальных инфраструктурных проектов.
+                    <br>
+                    <br>
+                    <span>Последние два года</span> для фонда были значимыми с точки зрения наращивания компетенций и технологий для повышения эффективности работы с многоканальным целевым финансированием проектов, интегрированных в приоритетные национальные инициативы. Они реализуются в партнёрстве с местными и региональными органами власти. Это проекты по строительству госпиталей, развитию открытых общественных пространств, реализации образовательных программ для лидеров городских изменений, включая представителей муниципальных управленческих команд.”
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+    <div class="footer__main">
+        <div class="footer__container container">
+            <div class="footer__row-main row">
+                <ul class="footer__list col-xxl-2 col-xl-2">
+                    <li class="footer__category">
+                        <a href="#" class="footer__link">О фонде</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Команда</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Документы</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Отчеты</a>
+                    </li>
+                </ul>
+                <ul class="footer__list col-xxl-2 col-xl-2">
+                    <li class="footer__category">
+                        <a href="#" class="footer__link">Территория РУСАЛа</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Помогать просто</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Школа городских изменений</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Центр инноваци в социальной сфере</a>
+                    </li>
+                </ul>
+                <ul class="footer__list col-xxl-2 col-xl-2 offset-xxl-1 offset-xl-1">
+                    <li class="footer__category">
+                        <a href="#" class="footer__link">Помочь</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Полезная информация</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Лучшие социальные проекты</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Стать волонтером</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">Стать партнером</a>
+                    </li>
+                </ul>
+                <div class="footer__contacts col-xxl-2 col-xl-2 offset-xxl-2 offset-xl-2">
+                    <div class="footer__call">
+                        <a href="#">+7 (391) 227-31-91</a>
+                        <a href="#">bilay@fcsp.ru</a>
+                    </div>
+                    <div class="footer__socials">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="19" viewBox="0 0 33 19" fill="none">
+                                <g clip-path="url(#clip0_187_790)">
+                                    <path d="M31.7785 15.6697C30.6907 14.4751 29.5494 13.3303 28.4125 12.1674C27.3648 11.086 27.3069 10.6199 28.1807 9.38008C28.8628 8.4208 29.5895 7.49772 30.285 6.5475C31.2596 5.3366 32.086 4.01017 32.7459 2.59727C33.2943 1.28505 32.9688 0.787316 31.5779 0.787316C29.8213 0.787316 28.0648 0.82804 26.3127 0.82804C26.0434 0.810017 25.776 0.883987 25.553 1.03816C25.33 1.19233 25.1642 1.41783 25.0822 1.67872C24.8504 2.2579 24.6364 2.83257 24.36 3.4027C23.593 5.17407 22.5975 6.83415 21.3997 8.33935C21.1175 8.66574 20.7971 8.95597 20.4456 9.20361C20.3883 9.25382 20.3204 9.29015 20.2472 9.30983C20.174 9.32952 20.0974 9.33204 20.0231 9.31722C19.9488 9.3024 19.8787 9.27062 19.8183 9.22428C19.7579 9.17794 19.7087 9.11826 19.6743 9.04976C19.4866 8.78896 19.3628 8.48648 19.3132 8.16741C19.2597 7.12216 19.2597 6.07691 19.2597 5.03166C19.2597 3.98641 19.3177 2.85519 19.2954 1.76922C19.2954 0.82804 18.9075 0.411751 18.0114 0.22623C16.342 -0.0465642 14.6432 -0.0800739 12.9647 0.126683C12.632 0.160252 12.3043 0.233144 11.9883 0.343877C11.7446 0.41882 11.5208 0.549002 11.3339 0.724591C11.147 0.90018 11.0018 1.11658 10.9094 1.35745C12.1488 1.47057 12.7774 2.18098 12.8487 3.32125C12.929 4.64705 12.929 5.98189 12.9067 7.3122C12.8834 7.79968 12.7857 8.28053 12.6169 8.73754C12.5953 8.87575 12.5351 9.00479 12.4435 9.1094C12.3519 9.21402 12.2328 9.28984 12.1001 9.32791C11.9674 9.36598 11.8268 9.3647 11.6948 9.32423C11.5628 9.28376 11.4449 9.20579 11.3552 9.09953C11.0187 8.81647 10.7191 8.49108 10.4636 8.13121C9.09205 6.2603 7.96374 4.21785 7.10651 2.05428C6.99278 1.67497 6.75275 1.34755 6.42746 1.128C6.10217 0.908447 5.71183 0.810414 5.3232 0.850665C3.90994 0.904963 2.48776 0.877814 1.07003 0.904963C0.883001 0.91074 0.69736 0.93961 0.517207 0.990936C0.424254 1.00552 0.335793 1.04139 0.258525 1.09582C0.181258 1.15026 0.117213 1.22183 0.0712435 1.30511C0.0252741 1.3884 -0.00141349 1.48121 -0.00679665 1.57651C-0.0121798 1.67182 0.0038827 1.76712 0.0401736 1.85519C0.0848963 2.01092 0.14308 2.16234 0.214045 2.30768C0.78916 3.52035 1.33753 4.74659 1.94831 5.92759C3.38149 8.89776 5.13222 11.6989 7.16892 14.2805C8.74721 16.2906 10.8798 17.7777 13.2946 18.552C14.7106 18.9181 16.1734 19.063 17.6324 18.9819C18.8674 18.9819 19.224 18.5837 19.3177 17.3348C19.3647 16.646 19.5151 15.9685 19.7635 15.3258C20.1112 14.457 20.78 14.3213 21.5067 14.905C21.9117 15.2587 22.2958 15.6364 22.6569 16.0362C23.3747 16.7647 24.0568 17.5339 24.8147 18.2217C25.3654 18.7337 26.0875 19.0136 26.8343 19.0045C28.3323 19.0045 29.8347 18.9683 31.3327 18.9366C31.5924 18.933 31.8503 18.8934 32.0995 18.819C32.9421 18.5656 33.2051 17.9728 32.7861 17.1946C32.5153 16.6449 32.1767 16.1325 31.7785 15.6697Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_187_790">
+                                        <rect width="33" height="19" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="23" viewBox="0 0 28 23" fill="none">
+                                <g clip-path="url(#clip0_187_794)">
+                                    <path d="M26.5463 5.26644e-05C26.3842 0.026131 26.226 0.0713063 26.0749 0.134606L6.77093 7.43089C4.89427 8.13838 3.01322 8.84587 1.14097 9.54902C0.652386 9.69798 0.242677 10.03 0 10.4735L0 10.7947C0.237147 11.1509 0.604966 11.4029 1.02643 11.4979C3.08223 12.1287 5.13803 12.7537 7.19383 13.373C7.32817 13.4014 7.46847 13.3781 7.5859 13.3078C12.4082 10.339 17.232 7.36578 22.0573 4.38824C22.2201 4.2733 22.4042 4.19074 22.5991 4.14517C22.7687 4.14394 22.9371 4.17185 23.0969 4.22764C23.0264 4.3622 22.9604 4.50109 22.8855 4.6313C22.8855 4.66169 22.8326 4.67905 22.8062 4.70509C18.9266 8.13983 15.0485 11.5746 11.1718 15.0093C11.0681 15.1035 11.0024 15.2314 10.9868 15.3696C10.8546 17.0493 10.7357 18.7334 10.6167 20.4218C10.5859 20.7994 10.5639 21.1814 10.5374 21.572C10.7434 21.5784 10.9486 21.5432 11.1403 21.4685C11.3319 21.3939 11.5061 21.2814 11.652 21.138C12.6696 20.1744 13.696 19.2108 14.7357 18.2516L14.9604 18.0563L15.2203 18.2386C17.2203 19.6796 19.2159 21.1293 21.2247 22.579C21.4777 22.7522 21.7573 22.8841 22.0529 22.9697C22.3139 23.0669 22.603 23.0611 22.8598 22.9536C23.1167 22.8461 23.3215 22.645 23.4317 22.3924C23.58 22.1038 23.6896 21.7974 23.7577 21.4809C25.094 15.3522 26.4156 9.2206 27.7225 3.08611C27.8649 2.51637 27.9563 1.93541 27.9956 1.34993C28.0312 1.1579 28.0176 0.960137 27.956 0.774609C27.8943 0.589082 27.7866 0.421665 27.6426 0.287563C27.4986 0.15346 27.3229 0.0569206 27.1315 0.00671101C26.94 -0.0434985 26.7388 -0.0457873 26.5463 5.26644e-05Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_187_794">
+                                        <rect width="28" height="23" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__copy">
+        <div class="footer__container container">
+            <div class="footer__row-copy row">
+                <div class="footer__text col-xll-8 col-xl-8">
+                    <h4>© 2023, Центр социальных программ РУСАЛа при поддержке Фонда президентских грантов</h4>
+                    <p>Центр социальных программ РУСАЛа является некоммерческой органихацией, учрежденной ОК РУСАЛ в 2004 году для осуществления отбора и поддержки наиболее общественно-полезных и перспективных социальных инициатив</p>
+                </div>
+                <div class="footer__logo col-xll-2 col-xl-2 offset-xxl-2 offset-xl-2">
+                    <a href="#" aria-label="На главную страницу">
+                        <img src="img/footer/footer__logo.svg" alt="Логотип">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/app.min.js"></script>
+</body>
+</html>
