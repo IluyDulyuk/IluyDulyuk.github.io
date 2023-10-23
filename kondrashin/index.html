@@ -5,14 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="css/style.min.css?_v=20231023122302">
+    <link rel="stylesheet" href="css/style.min.css?_v=20231023211145">
     <link
         rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231023122302"
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20231023211145"
     />
 </head>
 
 <body>
+
+    <section class="preloader"></section>
+    <section class="modal">
+    <div class="modal__wrapper">
+        <div class="modal__box">
+            <h5 class="modal__title">Я готов обсуждать любые задачи. Оставьте свои контакты и я свяжусь с Вами</h5>
+            <form action="#" class="modal__form">
+                <input type="text" name="name" class="modal__input" placeholder="Имя">
+                <input type="text" name="phone" class="modal__input" placeholder="+7 (...)">
+                <button class="button button--fill" type="submit">Связаться</button>
+            </form>
+            <div class="modal__close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                    <path d="M10.9565 10.9567L29.3413 29.3414" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M10.9565 28.87L29.3413 10.4852" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
 
     <header class="header">
     <div class="header__container container">
@@ -90,6 +110,11 @@
                     <p>Рост вашего бизнеса через мою экспертизу в управлении продажами</p>
                     <button class="button button--transparent">Связаться</button>
                 </div>
+            </div>
+            <div class="offer__arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="60" viewBox="0 0 38 60" fill="none">
+                    <path d="M21.5 30C21.5 28.6193 20.3807 27.5 19 27.5C17.6193 27.5 16.5 28.6193 16.5 30H21.5ZM17.2322 32.7678C18.2085 33.7441 19.7915 33.7441 20.7678 32.7678L36.6777 16.8579C37.654 15.8816 37.654 14.2986 36.6777 13.3223C35.7014 12.346 34.1184 12.346 33.1421 13.3223L19 27.4645L4.85786 13.3223C3.88155 12.346 2.29864 12.346 1.32233 13.3223C0.34602 14.2986 0.34602 15.8816 1.32233 16.8579L17.2322 32.7678ZM16.5 30V31H21.5V30H16.5Z" fill="#5989FF"/>
+                </svg>
             </div>
         </div>
     </div>
@@ -475,12 +500,394 @@
                     </a>
                 </div>
             </div>
+            <div class="services__navigation">
+                <div class="services__prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="48" viewBox="0 0 27 48" fill="none">
+                        <path d="M26 47L1 24L26 1" stroke="#5989FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="services__next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="48" viewBox="0 0 27 48" fill="none">
+                        <path d="M1 1L26 24L1 47" stroke="#5989FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+            </div>
         </div>
     </div>
     <div class="services__pagination"></div>
 </section>
 
-        
+        <section class="clients">
+    <div class="clients__wrapper">
+        <ul class="clients__list">
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--1.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--1--1400.svg">
+                        <img src="img/clients/clients__logo--1--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--1.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--2.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--2--1400.svg">
+                        <img src="img/clients/clients__logo--2--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--2.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--3.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--3--1400.svg">
+                        <img src="img/clients/clients__logo--3--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--3.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--4.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--4--1400.svg">
+                        <img src="img/clients/clients__logo--4--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--4.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--5.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--5--1400.svg">
+                        <img src="img/clients/clients__logo--5--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--5.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--6.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--6--1400.svg">
+                        <img src="img/clients/clients__logo--6--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--6.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item clients__item--tablet">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--7.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--7--1400.svg">
+                        <img src="img/clients/clients__logo--7--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--7.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item clients__item--tablet">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--8.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--8--1400.svg">
+                        <img src="img/clients/clients__logo--8--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--8.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item clients__item--tablet">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--9.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--9--1400.svg">
+                        <img src="img/clients/clients__logo--9--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--9.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item clients__item--tablet">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--10.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--10--1400.svg">
+                        <img src="img/clients/clients__logo--10--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--10.svg" aria-hidden="true">
+                </div>
+            </li>
+        </ul>
+        <ul class="clients__list clients__list--mobile">
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--6.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--6--1400.svg">
+                        <img src="img/clients/clients__logo--10--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--6.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--6.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--6--1400.svg">
+                        <img src="img/clients/clients__logo--9--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--6.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--6.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--6--1400.svg">
+                        <img src="img/clients/clients__logo--8--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--6.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--6.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--6--1400.svg">
+                        <img src="img/clients/clients__logo--7--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--6.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--6.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--6--1400.svg">
+                        <img src="img/clients/clients__logo--6--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--6.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--5.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--5--1400.svg">
+                        <img src="img/clients/clients__logo--5--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--5.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--4.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--4--1400.svg">
+                        <img src="img/clients/clients__logo--4--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--4.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--3.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--3--1400.svg">
+                        <img src="img/clients/clients__logo--3--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--3.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--2.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--2--1400.svg">
+                        <img src="img/clients/clients__logo--2--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--2.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--1.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--1--1400.svg">
+                        <img src="img/clients/clients__logo--1--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--1.svg" aria-hidden="true">
+                </div>
+            </li>
+        </ul>
+        <ul class="clients__list">
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--6.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--6--1400.svg">
+                        <img src="img/clients/clients__logo--6--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--6.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--4.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--4--1400.svg">
+                        <img src="img/clients/clients__logo--4--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--4.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--8.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--8--1400.svg">
+                        <img src="img/clients/clients__logo--8--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--8.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--2.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--2--1400.svg">
+                        <img src="img/clients/clients__logo--2--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--2.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--1.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--1--1400.svg">
+                        <img src="img/clients/clients__logo--1--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--1.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--9.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--9--1400.svg">
+                        <img src="img/clients/clients__logo--9--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--9.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--10.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--10--1400.svg">
+                        <img src="img/clients/clients__logo--10--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--10.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--3.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--3--1400.svg">
+                        <img src="img/clients/clients__logo--3--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--3.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--7.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--7--1400.svg">
+                        <img src="img/clients/clients__logo--7--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--7.svg" aria-hidden="true">
+                </div>
+            </li>
+            <li class="clients__item">
+                <div class="clients__logo">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="img/clients/clients__logo--5.svg">
+                        <source media="(min-width: 810px)" srcset="img/clients/clients__logo--5--1400.svg">
+                        <img src="img/clients/clients__logo--5--810.svg" aria-hidden="true">
+                    </picture>
+                </div>
+                <div class="clients__logo--hover">
+                    <img src="img/clients/clients__logo--hover--5.svg" aria-hidden="true">
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
         <section class="articles">
     <div class="articles__container container">
         <div class="articles__wrapper">
@@ -640,31 +1047,10 @@
     </div>
 </footer>
 
-        <section class="callback-modal">
-    <div class="callback-modal__container container">
-        <div class="callback-modal__wrapper">
-            <h5 class="callback-modal__title">Хочу внедрить такой кейс у себя</h5>
-            <form action="#" class="callback-modal__form">
-               <input type="text" class="callback-modal__input" placeholder="Имя" name="name">
-               <input type="text" class="callback-modal__input" placeholder="+7 (...)" name="phone">
-               <button class="callback-modal__button button button--fill" type="submit">Отправить</button>
-            </form>
-            <div class="callback-modal__close">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                    <g opacity="0.8">
-                    <path d="M10.9565 10.9561L29.3413 29.3408" stroke="white" stroke-width="3" stroke-linecap="round"/>
-                    <path d="M10.9565 28.8701L29.3413 10.4853" stroke="white" stroke-width="3" stroke-linecap="round"/>
-                    </g>
-                </svg>
-            </div>
-        </div>
-    </div>
-</section>
-
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231023122302"></script>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js?_v=20231023122302"></script>
-    <script src="js/app.min.js?_v=20231023122302"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20231023211145"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js?_v=20231023211145"></script>
+    <script src="js/app.min.js?_v=20231023211145"></script>
 </body>
 </html>
