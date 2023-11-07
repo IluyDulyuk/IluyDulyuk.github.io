@@ -7,3 +7,10 @@ body {
 .faq {
     background: url('../img/faq/faq__bg.jpg') center top / cover no-repeat;
 }
+
+@media screen and (max-width: 1160px) {
+
+    .footer__copy {
+        gap: 20px;
+    }
+}
