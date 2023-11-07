@@ -7,11 +7,11 @@
     <title>Империя Меха | Карточка товара</title>
     <link
         rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20231103090902"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20231107220636"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-video.min.css?_v=20231103090902" integrity="sha512-89gDQOHnYjji90NPJ7+M5tgA/0E+fjL4KuSFhi6tjH6sZ54yUEogPMmOAgbI599fW1CtCyrsJbch8k/QzuoXzw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css?_v=20231103090902" integrity="sha512-F2E+YYE1gkt0T5TVajAslgDfTEUQKtlu4ralVq78ViNxhKXQLrgQLLie8u1tVdG2vWnB3ute4hcdbiBtvJQh0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.min.css?_v=20231103090902">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-video.min.css?_v=20231107220636" integrity="sha512-89gDQOHnYjji90NPJ7+M5tgA/0E+fjL4KuSFhi6tjH6sZ54yUEogPMmOAgbI599fW1CtCyrsJbch8k/QzuoXzw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css?_v=20231107220636" integrity="sha512-F2E+YYE1gkt0T5TVajAslgDfTEUQKtlu4ralVq78ViNxhKXQLrgQLLie8u1tVdG2vWnB3ute4hcdbiBtvJQh0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20231107220636">
 </head>
 
 <body>
@@ -33,6 +33,7 @@
                     <li>
                         <a href="#" class="header__link scroll-link" data-scroll="buy">Как купить</a>
                     </li>
+
                 </ul>
             </nav>
             <div class="header__logo">
@@ -40,6 +41,13 @@
             </div>
             <div class="header__call">
                 <a href="tel:+78006005848" class="header__link">8 (800) 600-58-48</a>
+            </div>
+            <div class="header__gum">
+                <button type="button" aria-label="Открыть мобильное меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </div>
@@ -105,9 +113,22 @@
                                 <picture><source srcset="img/card/card__image--1.webp" type="image/webp"><img src="img/card/card__image--1.jpg" alt="" aria-hidden="true"></picture>
                             </a>
                         </li>
-                        <li class=" swiper-slide">
-                            <a href="img/card/card__image--2.jpg">
-                                <picture><source srcset="img/card/card__image--2.webp" type="image/webp"><img src="img/card/card__image--2.jpg" alt="" aria-hidden="true"></picture>
+                        <li class="card-video swiper-slide">
+                            <a
+                                data-lg-size="1280-720"
+                                data-video='{"source": [{"src":"./files/video/video.mp4", "type":"video/mp4"}], "attributes": {"preload": false, "playsinline": true, "controls": true}}'
+                            >
+                                <div class="card-video__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="63" height="69" viewBox="0 0 63 69" fill="none">
+                                        <path d="M60.059 31.3436L6.59704 0.650607C5.97299 0.292356 5.26169 0.0999508 4.5355 0.0929704C3.80932 0.08599 3.09418 0.264683 2.46285 0.610867C1.83152 0.957051 1.30655 1.45837 0.941342 2.06381C0.576137 2.66924 0.38374 3.35719 0.383728 4.05764V64.2159C0.384576 64.91 0.574231 65.5918 0.933752 66.1932C1.29327 66.7946 1.81008 67.2944 2.43256 67.6429C3.05504 67.9913 3.7614 68.1761 4.48111 68.1789C5.20082 68.1816 5.90868 68.0022 6.53401 67.6586L59.9956 38.1937C60.6194 37.8498 61.1389 37.3543 61.5023 36.7564C61.8657 36.1586 62.0603 35.4793 62.0666 34.7863C62.073 34.0933 61.8909 33.4108 61.5386 32.8069C61.1862 32.2029 60.6764 31.6981 60.059 31.3436ZM5.86481 61.9385V6.38241L55.2363 34.7274L5.86481 61.9385Z" fill="#DEDEDE"/>
+                                    </svg>
+                                </div>
+                                <img
+                                    width="100%"
+                                    height="100%"
+                                    class="img-responsive"
+                                    src="img/company/company__video-poster.jpg"
+                                />
                             </a>
                         </li>
                         <li class=" swiper-slide">
@@ -322,10 +343,10 @@
 </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20231103090902"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/video/lg-video.umd.min.js?_v=20231103090902" integrity="sha512-olksMIiITctwLVsKDH2fm9nylHHYzK2v/bIY+LzBO9GAw9A44MBjYaJGm/2eIbhTtXZXdXQUoS17HoV2rI+fFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js?_v=20231103090902" integrity="sha512-jEJ0OA9fwz5wUn6rVfGhAXiiCSGrjYCwtQRUwI/wRGEuWRZxrnxoeDoNc+Pnhx8qwKVHs2BRQrVR9RE6T4UHBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://unpkg.com/imask?_v=20231103090902"></script>
-    <script src="js/app.min.js?_v=20231103090902"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20231107220636"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/video/lg-video.umd.min.js?_v=20231107220636" integrity="sha512-olksMIiITctwLVsKDH2fm9nylHHYzK2v/bIY+LzBO9GAw9A44MBjYaJGm/2eIbhTtXZXdXQUoS17HoV2rI+fFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js?_v=20231107220636" integrity="sha512-jEJ0OA9fwz5wUn6rVfGhAXiiCSGrjYCwtQRUwI/wRGEuWRZxrnxoeDoNc+Pnhx8qwKVHs2BRQrVR9RE6T4UHBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/imask?_v=20231107220636"></script>
+    <script src="js/app.min.js?_v=20231107220636"></script>
 </body>
 </html>

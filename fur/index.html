@@ -7,11 +7,11 @@
     <title>Империя Меха</title>
     <link
         rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20231103090902"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20231107220636"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-video.min.css?_v=20231103090902" integrity="sha512-89gDQOHnYjji90NPJ7+M5tgA/0E+fjL4KuSFhi6tjH6sZ54yUEogPMmOAgbI599fW1CtCyrsJbch8k/QzuoXzw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css?_v=20231103090902" integrity="sha512-F2E+YYE1gkt0T5TVajAslgDfTEUQKtlu4ralVq78ViNxhKXQLrgQLLie8u1tVdG2vWnB3ute4hcdbiBtvJQh0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/style.min.css?_v=20231103090902">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lg-video.min.css?_v=20231107220636" integrity="sha512-89gDQOHnYjji90NPJ7+M5tgA/0E+fjL4KuSFhi6tjH6sZ54yUEogPMmOAgbI599fW1CtCyrsJbch8k/QzuoXzw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery.min.css?_v=20231107220636" integrity="sha512-F2E+YYE1gkt0T5TVajAslgDfTEUQKtlu4ralVq78ViNxhKXQLrgQLLie8u1tVdG2vWnB3ute4hcdbiBtvJQh0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20231107220636">
 </head>
 
 <body>
@@ -33,6 +33,7 @@
                     <li>
                         <a href="#" class="header__link scroll-link" data-scroll="buy">Как купить</a>
                     </li>
+
                 </ul>
             </nav>
             <div class="header__logo">
@@ -40,6 +41,13 @@
             </div>
             <div class="header__call">
                 <a href="tel:+78006005848" class="header__link">8 (800) 600-58-48</a>
+            </div>
+            <div class="header__gum">
+                <button type="button" aria-label="Открыть мобильное меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </div>
@@ -205,21 +213,13 @@
             </div>
             <div class="company__block">
                 <div class="company__video">
-                    <div class="company__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
-                            <path d="M83.325 44.1072L24.8016 9.27215C24.1184 8.86555 23.3398 8.64718 22.5448 8.63926C21.7499 8.63134 20.9671 8.83415 20.276 9.22705C19.5849 9.61995 19.0102 10.1889 18.6104 10.8761C18.2106 11.5632 18 12.344 18 13.139V81.4156C18.0009 82.2034 18.2085 82.9773 18.6021 83.6598C18.9957 84.3423 19.5614 84.9096 20.2428 85.3051C20.9242 85.7005 21.6975 85.9103 22.4853 85.9134C23.2732 85.9166 24.048 85.7129 24.7326 85.3229L83.2556 51.8817C83.9385 51.4915 84.5072 50.929 84.905 50.2505C85.3028 49.572 85.5158 48.801 85.5227 48.0145C85.5297 47.228 85.3304 46.4534 84.9447 45.7679C84.559 45.0825 84.0003 44.5101 83.3244 44.1078L83.325 44.1072ZM24 78.8309V15.7775L78.0458 47.9476L24 78.8309Z" fill="#DEDEDE"/>
-                        </svg>
-                    </div>
-                    <a
-                        data-lg-size="1280-720"
-                        data-video='{"source": [{"src":"./files/video/video.mp4", "type":"video/mp4"}], "attributes": {"preload": false, "playsinline": true, "controls": true}}'
-                    >
-                        <img
-                            width="100%"
-                            height="100%"
-                            class="img-responsive"
-                            src="img/company/company__video-poster.jpg"
-                        />
+                    <a style="position: relative;" data-lg-size="1280-720" data-video="{&quot;source&quot;: [{&quot;src&quot;:&quot;./files/video/video.mp4&quot;, &quot;type&quot;:&quot;video/mp4&quot;}], &quot;attributes&quot;: {&quot;preload&quot;: false, &quot;playsinline&quot;: true, &quot;controls&quot;: true}}" data-lg-id="d777d1db-cf22-4f74-8cb3-4106437d8352">
+                        <div class="company__icon" style="top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" fill="none">
+                                <path d="M83.325 44.1072L24.8016 9.27215C24.1184 8.86555 23.3398 8.64718 22.5448 8.63926C21.7499 8.63134 20.9671 8.83415 20.276 9.22705C19.5849 9.61995 19.0102 10.1889 18.6104 10.8761C18.2106 11.5632 18 12.344 18 13.139V81.4156C18.0009 82.2034 18.2085 82.9773 18.6021 83.6598C18.9957 84.3423 19.5614 84.9096 20.2428 85.3051C20.9242 85.7005 21.6975 85.9103 22.4853 85.9134C23.2732 85.9166 24.048 85.7129 24.7326 85.3229L83.2556 51.8817C83.9385 51.4915 84.5072 50.929 84.905 50.2505C85.3028 49.572 85.5158 48.801 85.5227 48.0145C85.5297 47.228 85.3304 46.4534 84.9447 45.7679C84.559 45.0825 84.0003 44.5101 83.3244 44.1078L83.325 44.1072ZM24 78.8309V15.7775L78.0458 47.9476L24 78.8309Z" fill="#DEDEDE"/>
+                            </svg>
+                        </div>
+                        <img width="100%" height="100%" class="img-responsive" src="img/company/company__video-poster.jpg">
                     </a>
                 </div>
             </div>
@@ -590,7 +590,7 @@
                         </div>
                         <div class="faq__pagination">
                             <!-- <span>01</span> -->
-                        </div>  
+                        </div>
                         <div class="faq__arrow faq__next">
                             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="51" viewBox="0 0 50 51" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M27.3904 5.95534L44.3613 22.9262L7.29461 22.9262C6.71961 22.9262 6.25294 23.3928 6.25294 23.9678C6.25294 24.5449 6.71961 25.0095 7.29461 25.0095L44.3613 25.0095L27.3904 41.9824C26.9842 42.3887 26.9842 43.0491 27.3904 43.4553C27.7967 43.8616 28.4571 43.8616 28.8634 43.4553L47.6113 24.7074C48.0175 24.3241 48.0196 23.6158 47.6113 23.2303L28.8634 4.48242C28.4571 4.07617 27.7967 4.07617 27.3904 4.48242C26.9842 4.88867 26.9842 5.54909 27.3904 5.95534Z" fill="white"/>
@@ -968,10 +968,10 @@
 </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20231103090902"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/video/lg-video.umd.min.js?_v=20231103090902" integrity="sha512-olksMIiITctwLVsKDH2fm9nylHHYzK2v/bIY+LzBO9GAw9A44MBjYaJGm/2eIbhTtXZXdXQUoS17HoV2rI+fFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js?_v=20231103090902" integrity="sha512-jEJ0OA9fwz5wUn6rVfGhAXiiCSGrjYCwtQRUwI/wRGEuWRZxrnxoeDoNc+Pnhx8qwKVHs2BRQrVR9RE6T4UHBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://unpkg.com/imask?_v=20231103090902"></script>
-    <script src="js/app.min.js?_v=20231103090902"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20231107220636"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/video/lg-video.umd.min.js?_v=20231107220636" integrity="sha512-olksMIiITctwLVsKDH2fm9nylHHYzK2v/bIY+LzBO9GAw9A44MBjYaJGm/2eIbhTtXZXdXQUoS17HoV2rI+fFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js?_v=20231107220636" integrity="sha512-jEJ0OA9fwz5wUn6rVfGhAXiiCSGrjYCwtQRUwI/wRGEuWRZxrnxoeDoNc+Pnhx8qwKVHs2BRQrVR9RE6T4UHBg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/imask?_v=20231107220636"></script>
+    <script src="js/app.min.js?_v=20231107220636"></script>
 </body>
 </html>
