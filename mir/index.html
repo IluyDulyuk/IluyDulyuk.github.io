@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>Мир колясок</title>
+    <!-- End Page title -->
+
+    <!-- Include styles -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.min.css">
+    <!-- End Include styles -->
+
+</head>
+
+<body class="body">
+
+    <!-- Ad Banner -->
+    <section class="banner no-margin">
+    <div class="banner__wrapper">
+        <a href="#">
+            <picture>
+                <source srcset="./img/vector/banner/banner.webp"  type="image/webp">
+                <img src="./img/vector/banner/banner.jpg" alt="Реклама">
+            </picture>
+        </a>
+        <button class="banner__close"></button>
+    </div>
+</section>
+
+    <!-- End Ad Banner -->
+
+    <!-- Call -->
+    <section class="call no-margin">
+        <div class="container">
+            <div class="call__wrapper">
+                <a href="tel:8800000000">
+                    <button>
+                        <picture>
+                            <source srcset="./img/vector/call/call.webp"  type="image/webp">
+                            <img src="./img/vector/call/call.png" alt="Позвонить">
+                        </picture>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- End Call -->
+
+    <!-- Header -->
+    <header class="header">
+    <div class="container">
+        <div class="header__wrapper translate">
+            <button class="header__gum">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="header__logo">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/vector/logo/logo.webp"  type="image/webp">
+                        <img src="./img/vector/logo/logo.png" alt="header__logo">
+                    </picture>
+                </a>
+            </div>
+            <div class="header__cart">
+                <a href="#">
+                    <picture>
+                        <source srcset="./img/vector/cart/cart.webp"  type="image/webp">
+                        <img src="./img/vector/cart/cart.png" alt="Корзина">
+                    </picture>
+                </a>
+            </div>
+        </div>
+        <nav class="header__nav">
+            <div class="header__close">
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="#" class="header__link">Каталог</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Каталог</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Каталог</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Каталог</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Каталог</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Каталог</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Каталог</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Каталог</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Каталог</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Каталог</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Каталог</a>
+                </li>
+                <li class="header__item">
+                    <a href="#" class="header__link">Каталог</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<section class="search no-margin">
+    <div class="container">
+        <div class="search__wrapper">
+            <form action="/search/">
+                <input type="text" id="title-search-input" name="q" placeholder="Поиск товаров" autocomplete="off">
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0,0,256,256"
+                        style="fill:#000000;">
+                        <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M13,3c-5.511,0 -10,4.489 -10,10c0,5.511 4.489,10 10,10c2.39651,0 4.59738,-0.85101 6.32227,-2.26367l5.9707,5.9707c0.25082,0.26124 0.62327,0.36648 0.97371,0.27512c0.35044,-0.09136 0.62411,-0.36503 0.71547,-0.71547c0.09136,-0.35044 -0.01388,-0.72289 -0.27512,-0.97371l-5.9707,-5.9707c1.41266,-1.72488 2.26367,-3.92576 2.26367,-6.32227c0,-5.511 -4.489,-10 -10,-10zM13,5c4.43012,0 8,3.56988 8,8c0,4.43012 -3.56988,8 -8,8c-4.43012,0 -8,-3.56988 -8,-8c0,-4.43012 3.56988,-8 8,-8z"></path></g></g>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!-- End Header -->
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Menu -->
+        <section class="menu">
+    <div class="container">
+        <nav class="menu__nav">
+            <ul class="menu__list">
+                <li class="menu__item active">
+                    <a href="#" class="menu__link">
+                        <div class="menu__icon">
+                            <svg width="19" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.397 2.481a2.25 2.25 0 012.206 0l5 2.812a2.25 2.25 0 011.147 1.962V16a2.25 2.25 0 01-2.25 2.25h-1.25V13a2.75 2.75 0 00-2.75-2.75h-2A2.75 2.75 0 005.75 13v5.25H4.5A2.25 2.25 0 012.25 16V7.255a2.25 2.25 0 011.147-1.962l5-2.812zM11.75 18.25h-4.5V13c0-.69.56-1.25 1.25-1.25h2c.69 0 1.25.56 1.25 1.25v5.25zm-6 1.5H4.5A3.75 3.75 0 01.75 16V7.255a3.75 3.75 0 011.912-3.269l5-2.812a3.75 3.75 0 013.676 0l5 2.812a3.75 3.75 0 011.912 3.269V16a3.75 3.75 0 01-3.75 3.75H5.75z" fill="#AFAFAF"></path></svg>
+                        </div>
+                        <span class="menu__text">Главная</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                        <div class="menu__icon">
+                            <svg width="17" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" class="menu-nav__icon-svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2.25 8.5c0-3.778 2.846-6.75 6.25-6.75s6.25 2.972 6.25 6.75c0 2.714-1.595 5.161-3.304 6.988a20.769 20.769 0 01-2.958 2.6 20.732 20.732 0 01-2.946-2.6C3.84 13.663 2.25 11.217 2.25 8.501zm5.83 11.13l.407-.63.405.631a.75.75 0 01-.811 0zm0 0l.407-.63c.405.631.406.63.406.63h.002l.005-.004.019-.012.065-.043.236-.162a22.277 22.277 0 003.322-2.896c1.797-1.922 3.708-4.726 3.708-8.013 0-4.507-3.422-8.25-7.75-8.25C4.172.25.75 3.993.75 8.5c0 3.286 1.904 6.09 3.695 8.012a22.22 22.22 0 003.31 2.896 13.497 13.497 0 00.3.205l.018.012.006.004.002.001zM6.25 8a2.25 2.25 0 114.5 0 2.25 2.25 0 01-4.5 0zM8.5 4.25a3.75 3.75 0 100 7.5 3.75 3.75 0 000-7.5z" fill="#AFAFAF"></path></svg>
+                        </div>
+                        <span class="menu__text">Магазины</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                        <div class="menu__icon">
+                            <svg width="24" height="17" fill="none" xmlns="http://www.w3.org/2000/svg" class="menu-nav__icon-svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.5.25a.75.75 0 000 1.5h13a.75.75 0 000-1.5h-13zm9.75 8.77a4.27 4.27 0 117.299 3.01l-.01.01-.008.009a4.27 4.27 0 01-7.28-3.029zm10.04 0a5.745 5.745 0 01-1.194 3.515l2.934 2.935a.75.75 0 01-1.06 1.06l-2.934-2.934A5.77 5.77 0 1121.29 9.02zM.75 7a.75.75 0 01.75-.75h4a.75.75 0 010 1.5h-4A.75.75 0 01.75 7zm.75 5.25a.75.75 0 000 1.5h6a.75.75 0 000-1.5h-6z" fill="#AFAFAF"></path></svg>
+                        </div>
+                        <span class="menu__text">Каталог</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                        <div class="menu__icon">
+                            <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg" class="menu-nav__icon-svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.75 1A.75.75 0 011.5.25h1.382a1.75 1.75 0 011.565.967l-.67.336.67-.336.517 1.033h13.674a1.25 1.25 0 011.086 1.87l-3.285 5.748a1.75 1.75 0 01-1.52.882H7.417l-1.324 2.117a.25.25 0 00.212.383H17.5a.75.75 0 010 1.5H6.304c-1.374 0-2.212-1.512-1.484-2.678L6.172 9.91 3.809 3.295l-.703-1.407a.25.25 0 00-.224-.138H1.5A.75.75 0 01.75 1zm4.814 2.75l1.965 5.5h7.39a.25.25 0 00.218-.126l3.07-5.374H5.565zM8.5 17.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM16 19a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" fill="#AFAFAF"></path></svg>
+                        </div>
+                        <span class="menu__text">Магазины</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                        <div class="menu__icon">
+                            <svg width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg" class="menu-nav__icon-svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 1.75a8.25 8.25 0 00-6.35 13.517c1.447-1.48 3.392-2.701 6.35-2.701 2.957 0 4.902 1.21 6.351 2.7A8.25 8.25 0 0010.5 1.75zm5.293 14.579c-1.244-1.285-2.83-2.263-5.293-2.263-2.46 0-4.047.984-5.292 2.263A8.217 8.217 0 0010.5 18.25c2.014 0 3.86-.722 5.293-1.921zM.75 10C.75 4.615 5.115.25 10.5.25s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S.75 15.385.75 10zm9.75-4.46a2.566 2.566 0 100 5.131 2.566 2.566 0 000-5.132zM6.434 8.104a4.066 4.066 0 118.132 0 4.066 4.066 0 01-8.132 0z" fill="#AFAFAF"></path></svg>
+                        </div>
+                        <span class="menu__text">Профиль</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</section>
+
+        <!-- End Menu -->
+
+        <!-- Catalog -->
+        <section class="cataog">
+            <div class="container">
+                <div class="catalog__wrapper">
+                    <div class="catalog__box">
+                        <div class="catalog__slider swiper">
+                            <div class="swiper-wrapper">
+                                <a href="#" class="swiper-slide">
+                                    <div class="catalog__image">
+                                        <svg data-v-5e6a92c6="" class="catalog-menu-mobile__item_image" loading="lazy" width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg"><g data-v-5e6a92c6="" filter="url(#filter0_d_626_14936)"><rect data-v-5e6a92c6="" x="2" y="1" width="48" height="48" rx="12" fill="white"></rect><path data-v-5e6a92c6="" d="M19 21C19.5523 21 20 20.5523 20 20C20 19.4477 19.5523 19 19 19C18.4477 19 18 19.4477 18 20C18 20.5523 18.4477 21 19 21Z" fill="#333333"></path><path data-v-5e6a92c6="" d="M23 19.25C22.5858 19.25 22.25 19.5858 22.25 20C22.25 20.4142 22.5858 20.75 23 20.75H34C34.4142 20.75 34.75 20.4142 34.75 20C34.75 19.5858 34.4142 19.25 34 19.25H23Z" fill="#333333"></path><path data-v-5e6a92c6="" d="M23 24.25C22.5858 24.25 22.25 24.5858 22.25 25C22.25 25.4142 22.5858 25.75 23 25.75H34C34.4142 25.75 34.75 25.4142 34.75 25C34.75 24.5858 34.4142 24.25 34 24.25H23Z" fill="#333333"></path><path data-v-5e6a92c6="" d="M22.25 30C22.25 29.5858 22.5858 29.25 23 29.25H34C34.4142 29.25 34.75 29.5858 34.75 30C34.75 30.4142 34.4142 30.75 34 30.75H23C22.5858 30.75 22.25 30.4142 22.25 30Z" fill="#333333"></path><path data-v-5e6a92c6="" d="M20 25C20 25.5523 19.5523 26 19 26C18.4477 26 18 25.5523 18 25C18 24.4477 18.4477 24 19 24C19.5523 24 20 24.4477 20 25Z" fill="#333333"></path><path data-v-5e6a92c6="" d="M19 31C19.5523 31 20 30.5523 20 30C20 29.4477 19.5523 29 19 29C18.4477 29 18 29.4477 18 30C18 30.5523 18.4477 31 19 31Z" fill="#333333"></path></g><defs data-v-5e6a92c6=""><filter data-v-5e6a92c6="" id="filter0_d_626_14936" x="0" y="0" width="52" height="52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood data-v-5e6a92c6="" flood-opacity="0" result="BackgroundImageFix"></feFlood><feColorMatrix data-v-5e6a92c6="" in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix><feOffset data-v-5e6a92c6="" dy="1"></feOffset><feGaussianBlur data-v-5e6a92c6="" stdDeviation="1"></feGaussianBlur><feColorMatrix data-v-5e6a92c6="" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"></feColorMatrix><feBlend data-v-5e6a92c6="" mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_626_14936"></feBlend><feBlend data-v-5e6a92c6="" mode="normal" in="SourceGraphic" in2="effect1_dropShadow_626_14936" result="shape"></feBlend></filter></defs></svg>
+                                    </div>
+                                    <span class="catalog__text">Каталог товаров</span>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <div class="catalog__image">
+                                        <picture>
+                                            <source srcset="./img/vector/content/content-4.webp"  type="image/webp">
+                                            <img src="./img/vector/content/content-4.png" alt="Детские коляски">
+                                        </picture>
+                                    </div>
+                                    <span class="catalog__text">Детские кровватки</span>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <div class="catalog__image">
+                                        <picture>
+                                            <source srcset="./img/vector/content/content-4.webp"  type="image/webp">
+                                            <img src="./img/vector/content/content-4.png" alt="Детские коляски">
+                                        </picture>
+                                    </div>
+                                    <span class="catalog__text">Детские кровватки</span>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <div class="catalog__image">
+                                        <picture>
+                                            <source srcset="./img/vector/content/content-4.webp"  type="image/webp">
+                                            <img src="./img/vector/content/content-4.png" alt="Детские коляски">
+                                        </picture>
+                                    </div>
+                                    <span class="catalog__text">Детские кровватки</span>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <div class="catalog__image">
+                                        <picture>
+                                            <source srcset="./img/vector/content/content-4.webp"  type="image/webp">
+                                            <img src="./img/vector/content/content-4.png" alt="Детские коляски">
+                                        </picture>
+                                    </div>
+                                    <span class="catalog__text">Детские кровватки</span>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <div class="catalog__image">
+                                        <picture>
+                                            <source srcset="./img/vector/content/content-4.webp"  type="image/webp">
+                                            <img src="./img/vector/content/content-4.png" alt="Детские коляски">
+                                        </picture>
+                                    </div>
+                                    <span class="catalog__text">Детские кровватки</span>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <div class="catalog__image">
+                                        <picture>
+                                            <source srcset="./img/vector/content/content-4.webp"  type="image/webp">
+                                            <img src="./img/vector/content/content-4.png" alt="Детские коляски">
+                                        </picture>
+                                    </div>
+                                    <span class="catalog__text">Детские кровватки</span>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <div class="catalog__image">
+                                        <picture>
+                                            <source srcset="./img/vector/content/content-4.webp"  type="image/webp">
+                                            <img src="./img/vector/content/content-4.png" alt="Детские коляски">
+                                        </picture>
+                                    </div>
+                                    <span class="catalog__text">Детские кровватки</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Catalog -->
+
+        <!-- New -->
+        <section class="new">
+            <div class="container">
+                <h2 class="new__title title padding">Новинки</h2>
+                <div class="new__wrapper padding-wrapper">
+                    <div class="new__slider swiper base-slider">
+                        <div class="swiper-wrapper">
+                            <a href="#" class="swiper-slide">
+                                <div>
+                                    <picture>
+                                        <source srcset="./img/vector/content/content-1.webp"  type="image/webp">
+                                        <img src="./img/vector/content/content-1.jpg" alt="Дождевик">
+                                    </picture>
+                                    <h3>Дождевик Easywalker Rudey</h3>
+                                </div>
+                                <span>4700 руб.</span>
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <div>
+                                    <picture>
+                                        <source srcset="./img/vector/content/content-1.webp"  type="image/webp">
+                                        <img src="./img/vector/content/content-1.jpg" alt="Дождевик">
+                                    </picture>
+                                    <h3>Дождевик Easywalker Rudey</h3>
+                                </div>
+                                <span>4700 руб.</span>
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <div>
+                                    <picture>
+                                        <source srcset="./img/vector/content/content-1.webp"  type="image/webp">
+                                        <img src="./img/vector/content/content-1.jpg" alt="Дождевик">
+                                    </picture>
+                                    <h3>Дождевик Easywalker Rudey</h3>
+                                </div>
+                                <span>4700 руб.</span>
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <div>
+                                    <picture>
+                                        <source srcset="./img/vector/content/content-1.webp"  type="image/webp">
+                                        <img src="./img/vector/content/content-1.jpg" alt="Дождевик">
+                                    </picture>
+                                    <h3>Дождевик Easywalker Rudey</h3>
+                                </div>
+                                <span>4700 руб.</span>
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <div>
+                                    <picture>
+                                        <source srcset="./img/vector/content/content-1.webp"  type="image/webp">
+                                        <img src="./img/vector/content/content-1.jpg" alt="Дождевик">
+                                    </picture>
+                                    <h3>Дождевик Easywalker Rudey</h3>
+                                </div>
+                                <span>4700 руб.</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End New -->
+
+        <!-- Sale -->
+        <section class="sale">
+            <div class="container">
+                <h2 class="title padding">Распродажа</h2>
+                <div class="sale__wrapper padding-wrapper">
+                    <div class="sale__slider swiper base-slider">
+                        <div class="swiper-wrapper">
+                            <a href="#" class="swiper-slide">
+                                <div>
+                                    <picture>
+                                        <source srcset="./img/vector/content/content-1.webp"  type="image/webp">
+                                        <img src="./img/vector/content/content-1.jpg" alt="Дождевик">
+                                    </picture>
+                                    <h3>Дождевик Easywalker Rudey</h3>
+                                </div>
+                                <span>4700 руб.</span>
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <div>
+                                    <picture>
+                                        <source srcset="./img/vector/content/content-1.webp"  type="image/webp">
+                                        <img src="./img/vector/content/content-1.jpg" alt="Дождевик">
+                                    </picture>
+                                    <h3>Дождевик Easywalker Rudey</h3>
+                                </div>
+                                <span>4700 руб.</span>
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <div>
+                                    <picture>
+                                        <source srcset="./img/vector/content/content-1.webp"  type="image/webp">
+                                        <img src="./img/vector/content/content-1.jpg" alt="Дождевик">
+                                    </picture>
+                                    <h3>Дождевик Easywalker Rudey</h3>
+                                </div>
+                                <span>4700 руб.</span>
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <div>
+                                    <picture>
+                                        <source srcset="./img/vector/content/content-1.webp"  type="image/webp">
+                                        <img src="./img/vector/content/content-1.jpg" alt="Дождевик">
+                                    </picture>
+                                    <h3>Дождевик Easywalker Rudey</h3>
+                                </div>
+                                <span>4700 руб.</span>
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <div>
+                                    <picture>
+                                        <source srcset="./img/vector/content/content-1.webp"  type="image/webp">
+                                        <img src="./img/vector/content/content-1.jpg" alt="Дождевик">
+                                    </picture>
+                                    <h3>Дождевик Easywalker Rudey</h3>
+                                </div>
+                                <span>4700 руб.</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Sale -->
+
+        <!-- Tabs -->
+        <section class="tabs" data-tabs-for="sliders">
+            <div class="container">
+                <div class="tabs__wrapper">
+                    <div class="tabs__slider swiper padding">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide tabs__item active" data-tab-id="1">
+                                <span>Обзоры</span>
+                            </div>
+                            <div class="swiper-slide tabs__item" data-tab-id="2">
+                                <span>Статьи</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Tabs -->
+
+        <!-- Tabs Content -->
+        <div class="tabs-contents" data-tabs-name="sliders">
+
+            <section class="reviews tabs-content active no-padding margin-sm" data-tab-id="1">
+                <div class="container">
+                    <div class="reviews__wrapper">
+                        <div class="reviews__slider swiper base-slider tabs-slider">
+                            <div class="swiper-wrapper">
+                                <a href="#" class="swiper-slide">
+                                    <div>
+                                        <picture>
+                                            <source srcset="./img/vector/content/content-2.webp"  type="image/webp">
+                                            <img src="./img/vector/content/content-2.jpg" alt="8 правил для воспитания подростка">
+                                        </picture>
+                                        <h3>8 правил для воспитания подростка</h3>
+                                    </div>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <div>
+                                        <picture>
+                                            <source srcset="./img/vector/content/content-2.webp"  type="image/webp">
+                                            <img src="./img/vector/content/content-2.jpg" alt="8 правил для воспитания подростка">
+                                        </picture>
+                                        <h3>8 правил для воспитания подростка</h3>
+                                    </div>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <div>
+                                        <picture>
+                                            <source srcset="./img/vector/content/content-2.webp"  type="image/webp">
+                                            <img src="./img/vector/content/content-2.jpg" alt="8 правил для воспитания подростка">
+                                        </picture>
+                                        <h3>8 правил для воспитания подростка</h3>
+                                    </div>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <div>
+                                        <picture>
+                                            <source srcset="./img/vector/content/content-2.webp"  type="image/webp">
+                                            <img src="./img/vector/content/content-2.jpg" alt="8 правил для воспитания подростка">
+                                        </picture>
+                                        <h3>8 правил для воспитания подростка</h3>
+                                    </div>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <div>
+                                        <picture>
+                                            <source srcset="./img/vector/content/content-2.webp"  type="image/webp">
+                                            <img src="./img/vector/content/content-2.jpg" alt="8 правил для воспитания подростка">
+                                        </picture>
+                                        <h3>8 правил для воспитания подростка</h3>
+                                    </div>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <div>
+                                        <picture>
+                                            <source srcset="./img/vector/content/content-2.webp"  type="image/webp">
+                                            <img src="./img/vector/content/content-2.jpg" alt="8 правил для воспитания подростка">
+                                        </picture>
+                                        <h3>8 правил для воспитания подростка</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="articles tabs-content no-padding margin-sm" data-tab-id="2">
+                <div class="container">
+                    <div class="articles__wrapper">
+                        <div class="articles__slider swiper base-slider tabs-slider">
+                            <div class="swiper-wrapper">
+                                <a href="#" class="swiper-slide">
+                                    <div>
+                                        <picture>
+                                            <source srcset="./img/vector/content/content-2.webp"  type="image/webp">
+                                            <img src="./img/vector/content/content-2.jpg" alt="8 правил для воспитания подростка">
+                                        </picture>
+                                        <h3>Последствия лжи в семье</h3>
+                                    </div>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <div>
+                                        <picture>
+                                            <source srcset="./img/vector/content/content-2.webp"  type="image/webp">
+                                            <img src="./img/vector/content/content-2.jpg" alt="8 правил для воспитания подростка">
+                                        </picture>
+                                        <h3>Последствия лжи в семье</h3>
+                                    </div>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <div>
+                                        <picture>
+                                            <source srcset="./img/vector/content/content-2.webp"  type="image/webp">
+                                            <img src="./img/vector/content/content-2.jpg" alt="8 правил для воспитания подростка">
+                                        </picture>
+                                        <h3>Последствия лжи в семье</h3>
+                                    </div>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <div>
+                                        <picture>
+                                            <source srcset="./img/vector/content/content-2.webp"  type="image/webp">
+                                            <img src="./img/vector/content/content-2.jpg" alt="8 правил для воспитания подростка">
+                                        </picture>
+                                        <h3>Последствия лжи в семье</h3>
+                                    </div>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <div>
+                                        <picture>
+                                            <source srcset="./img/vector/content/content-2.webp"  type="image/webp">
+                                            <img src="./img/vector/content/content-2.jpg" alt="8 правил для воспитания подростка">
+                                        </picture>
+                                        <h3>Последствия лжи в семье</h3>
+                                    </div>
+                                </a>
+                                <a href="#" class="swiper-slide">
+                                    <div>
+                                        <picture>
+                                            <source srcset="./img/vector/content/content-2.webp"  type="image/webp">
+                                            <img src="./img/vector/content/content-2.jpg" alt="8 правил для воспитания подростка">
+                                        </picture>
+                                        <h3>Последствия лжи в семье</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <!-- End Tabs Content -->
+
+        <!-- Brands -->
+        <section class="brands">
+            <div class="container">
+                <h2 class="title padding">Бренды</h2>
+                <div class="brands__wrapper padding-wrapper">
+                    <div class="brands__slider swiper base-slider brands-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div>
+                                    <picture>
+                                        <source srcset="./img/vector/content/content-3.webp"  type="image/webp">
+                                        <img src="./img/vector/content/content-3.png" alt="DEXP">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <picture>
+                                        <source srcset="./img/vector/content/content-3.webp"  type="image/webp">
+                                        <img src="./img/vector/content/content-3.png" alt="DEXP">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <picture>
+                                        <source srcset="./img/vector/content/content-3.webp"  type="image/webp">
+                                        <img src="./img/vector/content/content-3.png" alt="DEXP">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <picture>
+                                        <source srcset="./img/vector/content/content-3.webp"  type="image/webp">
+                                        <img src="./img/vector/content/content-3.png" alt="DEXP">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <picture>
+                                        <source srcset="./img/vector/content/content-3.webp"  type="image/webp">
+                                        <img src="./img/vector/content/content-3.png" alt="DEXP">
+                                    </picture>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <picture>
+                                        <source srcset="./img/vector/content/content-3.webp"  type="image/webp">
+                                        <img src="./img/vector/content/content-3.png" alt="DEXP">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Brands -->
+
+        <!-- Video -->
+        <section class="video">
+            <div class="container">
+                <h2 class="title padding">Видеообзоры</h2>
+                <div class="video__wrapper padding-wrapper">
+                    <div class="video__slider swiper base-slider tabs-slider">
+                        <div class="swiper-wrapper">
+                            <a href="#" class="swiper-slide">
+                                <div>
+                                    <picture>
+                                            <source srcset="./img/vector/content/content-2.webp"  type="image/webp">
+                                            <img src="./img/vector/content/content-2.jpg" alt="8 правил для воспитания подростка">
+                                        </picture>
+                                    <h3>Обзор Дождевика Easywalker Rudey</h3>
+                                </div>
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <div>
+                                    <picture>
+                                            <source srcset="./img/vector/content/content-2.webp"  type="image/webp">
+                                            <img src="./img/vector/content/content-2.jpg" alt="8 правил для воспитания подростка">
+                                        </picture>
+                                    <h3>Обзор Дождевика Easywalker Rudey</h3>
+                                </div>
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <div>
+                                    <picture>
+                                            <source srcset="./img/vector/content/content-2.webp"  type="image/webp">
+                                            <img src="./img/vector/content/content-2.jpg" alt="8 правил для воспитания подростка">
+                                        </picture>
+                                    <h3>Обзор Дождевика Easywalker Rudey</h3>
+                                </div>
+                            </a>
+                            <a href="#" class="swiper-slide">
+                                <div>
+                                    <picture>
+                                            <source srcset="./img/vector/content/content-2.webp"  type="image/webp">
+                                            <img src="./img/vector/content/content-2.jpg" alt="8 правил для воспитания подростка">
+                                        </picture>
+                                    <h3>Обзор Дождевика Easywalker Rudey</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Video -->
+
+    </main>
+    <!-- End Main -->
+
+    <!-- Footer -->
+    <footer class="footer margin-sm">
+    <div class="container">
+        <div class="footer__wrapper">
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#">Оплата</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Гарантия и возврат</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Всё о доставке</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Контакты</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Оптовым покупателям</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Информация для СМИ</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Франшиза магазина колясок и кроваток</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Инструкции по сборке и эксплуатации</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Обзоры</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Отзывы о магазине Коляски-Кроватки.Ру</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer__links">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#">
+                            <picture>
+                                <source srcset="./img/vector/socials/youtube.webp"  type="image/webp">
+                                <img src="./img/vector/socials/youtube.png" alt="youtube">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">
+                            <picture>
+                                <source srcset="./img/vector/socials/vk.webp"  type="image/webp">
+                                <img src="./img/vector/socials/vk.png" alt="vk">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">
+                            <picture>
+                                <source srcset="./img/vector/socials/insta.webp"  type="image/webp">
+                                <img src="./img/vector/socials/insta.png" alt="insta">
+                            </picture>
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">
+                            <picture>
+                                <source srcset="./img/vector/socials/facebook.webp"  type="image/webp">
+                                <img src="./img/vector/socials/facebook.png" alt="facebook">
+                            </picture>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__copy">
+                <span>Copyright © 2006-2023 Коляски-кроватки.РУ </span>
+                <p>Информация на данном интернет-сайте носит исключительно ознакомительный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- End Footer -->
+
+</body>
+
+<!-- Include JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./js/scripts.min.js"></script>
+<!-- End Include JS -->
+
+</html>
