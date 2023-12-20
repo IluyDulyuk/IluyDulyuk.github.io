@@ -1,0 +1,96 @@
+    <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Графический редактор</title>
+</head>
+<body>
+
+    <!-- <canvas id="canvas"></canvas> -->
+
+    <main>
+        <div class="settings">
+            <h2 class="settings__title">Настройки</h2>
+            <div class="settings__list">
+                <div class="settings__item setting">
+                    <h3 class="setting__title">Цвет</h3>
+                    <div class="colors">
+                        <div class="colors__list">
+                            <div class="colors__item active">
+                                <span style="background-color: black;"></span>
+                            </div>
+                            <div class="colors__item">
+                                <span style="background-color: grey;"></span>
+                            </div>
+                            <div class="colors__item">
+                                <span style="background-color: bisque;"></span>
+                            </div>
+                            <div class="colors__item">
+                                <span style="background-color: burlywood"></span>
+                            </div>
+                            <div class="colors__item">
+                                <span style="background-color: brown;"></span>
+                            </div>
+                            <div class="colors__item colors__select">
+                                <span style="background-color: chocolate;">
+                                    <input type="color" class="colors__select-input" id="colors__select-input">
+                                    <icon>+</icon>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="setting__item setting">
+                    <h3 class="setting__title">Толщина линии</h3>
+                    <div class="line-width">
+                        <div class="line-width__list">
+                            <div class="line-width__item active">
+                                <span style="width: 8px; height: 8px;"></span>
+                            </div>
+                            <div class="line-width__item">
+                                <span style="width: 10px; height: 10px;"></span>
+                            </div>
+                            <div class="line-width__item">
+                                <span style="width: 12px; height: 12px;"></span>
+                            </div>
+                            <div class="line-width__item">
+                                <span style="width: 14px; height: 14px;"></span>
+                            </div>
+                            <div class="line-width__item">
+                                <span style="width: 16px; height: 16px;"></span>
+                            </div>
+                            <div class="line-width__item line-width__input">
+                                <input type="text" id="line-width__input" placeholder="5">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="setting__item setting">
+                    <h3 class="setting__title">Инструмент</h3>
+                    <div class="tool">
+                        <div class="tool__list">
+                            <div class="tool__item">
+                                <button class="active">Карандаш</button>
+                            </div>
+                            <div class="tool__item">
+                                <button>Ластик</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="save-button">Сохранить в JPG</button>
+        </div>
+        <div class="canvas">
+            <canvas id="canvas"></canvas>
+        </div>
+    </main>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
