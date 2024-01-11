@@ -33,7 +33,7 @@
                         <img src="./img/header/logo.svg" alt="Логотип" aria-hidden="true">
                     </a>
                 </div>
-                <button type="button" role="button" aria-label="Заказать Rooma A10S" class="header__button button button--transparent">
+                <button type="button" role="button" aria-label="Заказать Rooma A10S" class="header__button button button--transparent modal-trigger">
                     <span>Заказать Rooma A10S</span>
                 </button>
                 <div class="header__menu menu">
@@ -45,58 +45,75 @@
                     </button>
                     <div class="menu__wrapper">
                         <div class="menu__container">
-                            <ul class="menu__list">
-                                <li>
-                                    <span>01</span>
-                                    <a href="#" class="menu__link link-hover link-hover--underline">Бонусы от нас</a>
-                                </li>
-                                <li>
-                                    <span>02</span>
-                                    <a href="#" class="menu__link link-hover link-hover--underline">О Rooma A10S</a>
-                                </li>
-                                <li>
-                                    <span>03</span>
-                                    <a href="#" class="menu__link link-hover link-hover--underline">Отзывы</a>
-                                </li>
-                                <li>
-                                    <span>04</span>
-                                    <a href="#" class="menu__link link-hover link-hover--underline">Гид от бариста</a>
-                                </li>
-                                <li>
-                                    <span>05</span>
-                                    <a href="#" class="menu__link link-hover link-hover--underline">Как купить?</a>
-                                </li>
-                                <li>
-                                    <span>06</span>
-                                    <a href="#" class="menu__link link-hover link-hover--underline">FAQ</a>
-                                </li>
-                                <li>
-                                    <span>07</span>
-                                    <a href="#" class="menu__link link-hover link-hover--underline">Контакты</a>
-                                </li>
-                            </ul>
-                            <div class="menu__links">
-                                <div>
-                                    <ul>
-                                        <h6 class="menu__title">Смотрите и читайте:</h6>
-                                        <li>
-                                            <a href="#" class="link-hover link-hover--underline">instagram</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link-hover link-hover--underline">youtube</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="link-hover link-hover--underline">telegram</a>
-                                        </li>
-                                    </ul>
-                                    <ul>
-                                        <h6 class="menu__title">Звоните:</h6>
-                                        <li>
-                                            <a href="#" class="link-hover link-hover--underline"><span>+7 (707)</span> <strong>266 89 09</strong></a>
-                                        </li>
-                                    </ul>
+                            <div class="menu__header">
+                                <div class="container">
+                                    <div class="menu__logo">
+                                        <img src="./img/header/menu-logo.svg" alt="menu-logo" aria-hidden="true">
+                                    </div>
+                                    <button class="menu__close" type="button" role="button" aria-label="Закрыть меню">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="95" height="88" viewBox="0 0 95 88" fill="none">
+                                            <path d="M72.2413 48.5526L46.4482 22.7593M72.2413 22.7593L46.4482 48.5526" stroke="white" stroke-width="2.27586" stroke-linecap="round"/>
+                                            <circle cx="57.8277" cy="37.1724" r="36.0345" stroke="white" stroke-width="2.27586"/>
+                                            <circle cx="40.3794" cy="48.5518" r="39.069" stroke="white" stroke-opacity="0.3" stroke-width="0.758621"/>
+                                        </svg>
+                                    </button>
                                 </div>
-                                <button class="button"><span>Заказать Rooma A10S</span></button>
+                            </div>
+                            <button class="button menu__button modal-trigger"><span>Заказать Rooma A10S</span></button>
+                            <div class="menu__content">
+                                <ul class="menu__list">
+                                    <li>
+                                        <span>01</span>
+                                        <a href="#" class="menu__link link-hover link-hover--underline">Бонусы от нас</a>
+                                    </li>
+                                    <li>
+                                        <span>02</span>
+                                        <a href="#" class="menu__link link-hover link-hover--underline">О Rooma A10S</a>
+                                    </li>
+                                    <li>
+                                        <span>03</span>
+                                        <a href="#" class="menu__link link-hover link-hover--underline">Отзывы</a>
+                                    </li>
+                                    <li>
+                                        <span>04</span>
+                                        <a href="#" class="menu__link link-hover link-hover--underline">Гид от бариста</a>
+                                    </li>
+                                    <li>
+                                        <span>05</span>
+                                        <a href="#" class="menu__link link-hover link-hover--underline">Как купить?</a>
+                                    </li>
+                                    <li>
+                                        <span>06</span>
+                                        <a href="#" class="menu__link link-hover link-hover--underline">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <span>07</span>
+                                        <a href="#" class="menu__link link-hover link-hover--underline">Контакты</a>
+                                    </li>
+                                </ul>
+                                <div class="menu__links">
+                                    <div>
+                                        <ul>
+                                            <h6 class="menu__title">Смотрите и читайте:</h6>
+                                            <li>
+                                                <a href="#" class="link-hover link-hover--underline">instagram</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="link-hover link-hover--underline">youtube</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="link-hover link-hover--underline">telegram</a>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <h6 class="menu__title">Звоните:</h6>
+                                            <li>
+                                                <a href="#" class="link-hover link-hover--underline"><span>+7 (707)</span> <strong>266 89 09</strong></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="button  modal-trigger"><span>Заказать Rooma A10S</span></button>
+                                </div>
                             </div>
                             <div class="menu__footer">
                                 <div>
@@ -109,18 +126,7 @@
                                     ответим в <span>течение 5 минут</span>
                                 </p>
                             </div>
-                            <button class="button menu__button"><span>Заказать Rooma A10S</span></button>
                         </div>
-                        <div class="menu__logo">
-                            <img src="./img/header/menu-logo.svg" alt="menu-logo" aria-hidden="true">
-                        </div>
-                        <button class="menu__close" type="button" role="button" aria-label="Закрыть меню">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="95" height="88" viewBox="0 0 95 88" fill="none">
-                                <path d="M72.2413 48.5526L46.4482 22.7593M72.2413 22.7593L46.4482 48.5526" stroke="white" stroke-width="2.27586" stroke-linecap="round"/>
-                                <circle cx="57.8277" cy="37.1724" r="36.0345" stroke="white" stroke-width="2.27586"/>
-                                <circle cx="40.3794" cy="48.5518" r="39.069" stroke="white" stroke-opacity="0.3" stroke-width="0.758621"/>
-                            </svg>
-                        </button>
                     </div>
                 </div>
             </div>
@@ -138,11 +144,13 @@
                 </ul>
             </nav>
             <div class="header__links">
-                <a aria-label="Позвонить нам." class="link-hover link-hover--underline" href="tel:+77070000000"><span>+7 (707)</span> <strong>266 89 09</strong></a>
+                <div>
+                    <a aria-label="Позвонить нам." class="link-hover link-hover--underline" href="tel:+77070000000"><span>+7 (707)</span> <strong>266 89 09</strong></a>
+                    <span class="header__cta" aria-hidden="true">ответим <strong>в течение 5 минут</strong></span>
+                </div>
                 <a href="#" aria-label="Написать в WhatsApp">
                     <img src="./img/header/whatsapp.svg" alt="WhatsApp" aria-hidden="true">
                 </a>
-                <span class="header__cta" aria-hidden="true">ответим <strong>в течение 5 минут</strong></span>
             </div>
         </div>
     </div>
@@ -157,7 +165,7 @@
                 <div class="offer__content">
                     <div class="offer__block">
                         <h1 class="offer__title">
-                            Автоматическая кофемашина
+                            Автоматическая кофемашина <br>
                             для HoReCa и для дома
                         </h1>
                         <p class="offer__subtitle">
@@ -172,18 +180,16 @@
                         </div>
                         <div class="offer__arrow">
                             <img src="./img/offer/arrow.svg" alt="arrow" aria-hidden="true">
-                            <span>Для клиентов</span>
+                            <span>для клиентов</span>
                         </div>
                         <div class="offer__text">
                             <p>Широкий ассортимент <br> зёрен от наших обжарщиков, <br> натуральных чаев и снеков</p>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="offer__image">
-                    <img src="./img/offer/coffe.png" alt="coffe" aria-hidden="true">
-                </div> -->
                 <div class="offer__footer">
                     <div class="offer__video">
+                            <!-- <video src="./img/video/video.mp4" width="500px"></video> -->
                             <img src="./img/offer/preview.jpg" alt="preview" aria-hidden="true">
                             <button class="offer__play" type="button" role="button" aria-label="Запустить видео">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="63" height="63" viewBox="0 0 63 63" fill="none">
@@ -194,7 +200,10 @@
                     <p>Доставим кофемашину <br> в любую точку <br> Казахстана </p>
                 </div>
                 <div class="offer__p">
-                    <p>Широкий ассортимент  зёрен от наших обжарщиков, натуральных чаев и снеков</p>
+                    <p>Широкий ассортимент <br> зёрен от наших обжарщиков, <br> натуральных чаев и снеков</p>
+                </div>
+                <div class="offer__image">
+                    <img src="./img/offer/bg.png" alt="coffemachine" aria-hidden="true">
                 </div>
             </div>
         </section>
@@ -258,7 +267,7 @@
                         <h2>Готовьте любые напитки за <br> 1 минуту и увеличивайте поток <br> гостей в три раза</h2>
                     </div>
                     <div class="about__content">
-                        <div class="about__image">
+                        <div class="about__image about__image--lg">
                             <img src="./img/about/machine.png" alt="machine" aria-hidden="true">
                         </div>
                         <ul class="about__list">
@@ -267,24 +276,28 @@
                                     <img src="./img/about/clean.svg" alt="clean" aria-hidden="true">
                                 </div>
                                 <div class="about-item__line"></div>
-                                <h3 class="about-item__title">Увеличенные <br> емкости для отходов</h3>
-                                <p class="about-item__text">Вмещает до 20 порций кофейного <br> жмыха и до 2,5 л воды</p>
+                                <div><h3 class="about-item__title">Увеличенные <br> емкости для отходов</h3>
+                                    <p class="about-item__text">Вмещает до 20 порций кофейного <br> жмыха и до 2,5 л воды</p></div>
                             </li>
                             <li class="about__item about-item">
                                 <div class="about-item__icon">
                                     <img src="./img/about/cappuchinator.svg" alt="cappuchinator" aria-hidden="true">
                                 </div>
                                 <div class="about-item__line"></div>
-                                <h3 class="about-item__title">Автоматический <br> капучинатор</h3>
-                                <p class="about-item__text">Подает нежную молочную пенку <br> прямо в чашку</p>
+                                <div>
+                                    <h3 class="about-item__title">Автоматический <br> капучинатор</h3>
+                                    <p class="about-item__text">Подает нежную молочную пенку <br> прямо в чашку</p>
+                                </div>
                             </li>
                             <li class="about__item about-item about-item--short">
                                 <div class="about-item__icon">
                                     <img src="./img/about/onetouch.svg" alt="onetouch" aria-hidden="true">
                                 </div>
                                 <div class="about-item__line"></div>
-                                <h3 class="about-item__title">OneTouch <br> технология</h3>
-                                <p class="about-item__text">Все напитки на одном <br> сенсорном дисплее с подсветкой</p>
+                                <div>
+                                    <h3 class="about-item__title">OneTouch <br> технология</h3>
+                                    <p class="about-item__text">Все напитки на одном <br> сенсорном дисплее с подсветкой</p>
+                                </div>
                             </li>
                         </ul>
                         <ul class="about__list">
@@ -293,26 +306,35 @@
                                     <img src="./img/about/coffe.svg" alt="coffe" aria-hidden="true">
                                 </div>
                                 <div class="about-item__line"></div>
-                                <h3 class="about-item__title">Встроенная <br> кофемолка</h3>
-                                <p class="about-item__text">С контейнером для зерна на 250 гр. <br> или 30 чашек кофейных напитков</p>
+                                <div>
+                                    <h3 class="about-item__title">Встроенная <br> кофемолка</h3>
+                                    <p class="about-item__text">С контейнером для зерна на 250 гр. <br> или 30 чашек кофейных напитков</p>
+                                </div>
                             </li>
                             <li class="about__item about-item about-item--opposite">
                                 <div class="about-item__icon">
                                     <img src="./img/about/water.svg" alt="water" aria-hidden="true">
                                 </div>
                                 <div class="about-item__line"></div>
-                                <h3 class="about-item__title">Подключение <br> к водопроводу</h3>
-                                <p class="about-item__text">Автоматически доливает воду с <br> помощью адаптера</p>
+                                <div>
+                                    <h3 class="about-item__title">Подключение <br> к водопроводу</h3>
+                                    <p class="about-item__text">Автоматически доливает воду с <br> помощью адаптера</p>
+                                </div>
                             </li>
                             <li class="about__item about-item about-item--opposite ">
                                 <div class="about-item__icon">
                                     <img src="./img/about/termo.svg" alt="termo" aria-hidden="true">
                                 </div>
                                 <div class="about-item__line"></div>
-                                <h3 class="about-item__title">Термо контейнер <br> для молока</h3>
-                                <p class="about-item__text">Сохранит молоко охлажденным дольше</p>
+                                <div>
+                                    <h3 class="about-item__title">Термо контейнер <br> для молока</h3>
+                                    <p class="about-item__text">Сохранит молоко охлажденным <br> дольше</p>
+                                </div>
                             </li>
                         </ul>
+                    </div>
+                    <div class="about__image about__image--sm">
+                        <img src="./img/about/machine.png" alt="machine" aria-hidden="true">
                     </div>
                     <div class="about__footer">
                         <p>готовы помочь разобраться <br> в каждом нюансе</p>
@@ -332,6 +354,67 @@
 
     <!-- End Footer -->
 
+
+    <modal class="modal">
+        <div class="modal__wrapper">
+            <div class="modal__box">
+                <button type="button" role="button" aria-label="Закрыть модальное окно." class="modal__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="62" height="58" viewBox="0 0 62 58" fill="none">
+                        <path d="M47 32.0001L30 15M47 15L30 32.0001" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                        <circle cx="37.5" cy="24.5" r="23.75" stroke="white" stroke-width="1.5"/>
+                        <circle cx="26" cy="32" r="25.75" stroke="white" stroke-opacity="0.3" stroke-width="0.5"/>
+                    </svg>
+                </button>
+                <div class="modal__header">
+                    <h3 class="modal__title">Заказывайте Rooma A10S — и <br> мы сразу включим вас в нашу <br> бонусную программу</h3>
+                    <p class="modal__subtitle">
+                        Начислим <span>скидку в 15% и подарим набор из 5 сортов кофе</span> <br> и брю-гид по кофейным напиткам
+                    </p>
+                </div>
+                <div class="modal__content">
+                    <form class="modal__form">
+                        <label class="modal__name">
+                            <span>Имя</span>
+                            <input type="text" name="name" class="modal__input">
+                        </label>
+                        <div class="modal__flexbox">
+                            <label>
+                                <span>Номер телефона</span>
+                                <input type="text" name="phone" class="modal__input">
+                            </label>
+                            <label class="modal__buttons">
+                                <span>Где с вами связаться?</span>
+                                <div>
+                                    <button class="active" type="button" role="button" aria-label="Связаться со мной через WhatsApp.">
+                                        <img src="./img/modal/whatsapp.svg" alt="whatsapp" aria-hidden="true">
+                                        <img src="./img/modal/whatsapp-active.svg" alt="whatsapp" aria-hidden="true">
+                                        <span>WhatsApp</span>
+                                    </button>
+                                    <button type="button" role="button" aria-label="Связаться со мной через Почту.">
+                                        <img src="./img/modal/mail.svg" alt="mail" aria-hidden="true">
+                                        <img src="./img/modal/mail-active.svg" alt="mail" aria-hidden="true">
+                                        <span>E-mail</span>
+                                    </button>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="modal__footer">
+                            <button class="button">
+                                <span>Заказать Rooma A10S</span>
+                            </button>
+                            <label class="modal__check">
+                                <input type="checkbox">
+                                <div class="modal__checkbox-fall" role="input"></div>
+                                <span>
+                                    Нажимая на кнопку, ты соглашаешься <br> с <a href="#">политикой конфиденциальности</a>
+                                </span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </modal>
 </body>
 
 <!-- Include JS -->
