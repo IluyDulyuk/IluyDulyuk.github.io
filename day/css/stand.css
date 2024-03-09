@@ -1,0 +1,145 @@
+table {
+	background:  	 white;
+	margin-top:  	 10px;
+	border-collapse: collapse;
+}
+
+table.results td {
+	white-space:    nowrap;
+	border:   		1px solid black;
+	font-family: 	garamond;
+}
+
+table.subm_list td {
+	padding-left:   8px;
+	padding-right:  8px;
+	padding-top:    2px;
+	padding-bottom: 2px;
+	font-family: 	garamond;
+}
+
+td.solved, td.penalty, td.weight, td.contest, td.problem, td.ok, td.ac, td.wa, td.pt, td.pe, td.sv, td.none, td.cf, td.dq, td.pr, td.rj, td.pending, td.all_result {
+	text-align: center;
+}
+
+td.verdict {
+	text-align: center;
+}
+
+td.WA, td.TL, td.ML, td.RT, td.PE {
+    background: #ffaaaa;
+}
+
+td.SV {
+    background: #ffaa70;
+}
+
+td.OK {
+    background: #aaffaa;
+}
+
+td.RJ {
+    background: #aaaaff;
+}
+
+td.AC, td.PR, td.PT {
+    background: #ffff99;
+}
+
+td.CF {
+    background: #ff0000;
+}
+
+td.DQ {
+    background: #000000;
+}
+
+td.NO {
+    background: white;
+}
+
+table.results td.name {
+	padding-right: 10px;
+}
+
+table.results td {
+	padding: 3px;
+}
+
+table.results {
+}
+
+td.weight {
+	font-weight: bold;
+}
+
+td.pending {
+	background: #ffff88;
+}
+
+td.ok_inf {
+	background: #ff0000;
+}
+
+td.ok_15 {
+	background: #ff7a00;
+}
+
+td.ok_10 {
+	background: #ffff00;
+}
+
+td.ok_5 {
+	background: #ccff00;
+}
+
+td.ok_0 {
+	background: #00ff00;
+}
+
+td.problem_obligatory {
+	background: #6677ff;
+	color: 		#ffffff;
+}
+
+p.header {
+	font-family: verdana;
+	font-size: 24;
+}
+
+td.probstat, td.probstat_all {
+	text-align: right;
+}
+
+td.probstat_all {
+	background: #6677ff;
+	color: 		#ffffff;
+}
+
+p.cf_list {
+	font-size: 36pt;
+}
+
+table.subm_list {
+	cellspacing: 100;
+}
+
+form.filter_form {
+	margin: 0em;
+}
+
+td.exam_2 {
+    background: #ff0000;
+}
+
+td.exam_3 {
+    background: #ffff00;
+}
+
+td.exam_4 {
+    background: #00b0ff;
+}
+
+td.exam_5 {
+    background: #00ff00;
+}

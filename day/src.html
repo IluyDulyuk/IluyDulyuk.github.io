@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+
+    <!-- Set the document's title -->
+    <title>New year contest</title>
+    <meta name="title" content="New year contest">
+    <meta name="page-topic" content="New year contest" />
+    <meta name="application-name" content="New year contest"/>
+    <meta name="msapplication-tooltip" content="New year contest"/>
+    <meta name="abstract" content="New year">
+    <meta name="subject" content="New year">
+
+    <meta property="article:author" content="Владимир Владимирович Ильин">
+
+    <!-- Theme Color for Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#eee">
+    <!-- Control the behavior of search engine crawling and indexing -->
+
+    <meta name="robots" content="all,index,follow,max-snippet:-1, max-image-preview:large"><!-- All Search Engines -->
+    <meta name="googlebot" content="all,index,follow,max-snippet:-1, max-image-preview:large">
+
+    <META NAME="Copyright" CONTENT="Владимир Владимирович Ильин">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="New year contest">
+    <meta property="og:site_name" content="New year contest">
+    <meta property="og:locale" content="ru_RU">
+    <meta name="og:country-name" content="RUSSIA"/>
+
+    <!-- Link to an external CSS file -->
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <!-- Links to a JSON file that specifies "installation" credentials for the web applications -->
+    <link rel="manifest" href="favicon/manifest.json">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+
+</head>
+<body>
+
+    <noscript class="no_script_message">
+        У вас отключен JavaScript. Сайт может отображаться некорректно. Рекомендуем включить JavaScript.
+    </noscript>
+    <!-- saved from url=(0014)about:internet -->
+    <picture class="vetochka">
+        <source type="image/svg+xml" srcset="svg/vetochka.svg">
+        <source type="image/webp" srcset="img/vetochka.webp">
+        <img src="img/vetochka.png" alt="Новогодний орнамент 2024">
+    </picture>
+    <main>
+        
+        <h1>Староновогодний контест</h1>
+        <a href="#">
+            <h2>Контест 2297</h2>
+        </a>
+        <form action="#">
+            <select id="task" onchange="changeText()">
+                <option value="taskA">Задача A</option>
+                <option value="taskB">Задача B</option>
+                <option value="taskC">Задача C</option>
+                <option value="taskD">Задача D</option>
+                <option value="taskE">Задача E</option>
+            <option value="taskF">Задача F</option>
+                <option value="taskG">Задача G</option>
+                <option value="taskH">Задача H</option>
+            <option value="taskI">Задача I</option>
+                <option value="taskJ">Задача J</option>
+            </select><br>
+            <div id="input_format"></div>
+            <textarea id="user_input" placeholder="Входные данные" rows="5"></textarea><br>
+            <button onclick="getDataFromPython()" id="start">Запустить</button>
+        </form>
+        <pre id="result"></pre>
+    </main>
+    <picture id="tree">
+        <source type="image/svg+xml" srcset="svg/tree.svg">
+        <source type="image/webp" srcset="img/tree.webp">
+        <img src="img/tree.png" alt="Новогодняя ёлка 2024">
+    </picture>
+    
+
+   
+    <div id="globe">
+        <canvas id="town"></canvas>
+        <canvas id="snowFlakes"></canvas>
+      </div>
+    
+
+    <script src="js/script.min.js"></script>
+
+    
+</body>
+</html>
