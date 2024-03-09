@@ -41,7 +41,11 @@ window.onload = function () {
 const backback = document.querySelector('.backpack');
 
 backback.addEventListener('click', () => {
-  backback.classList.toggle('jump');
+  backback.classList.add('jump');
+
+  setTimeout(() => {
+    backback.classList.remove('jump');
+  }, 500)
 })
 
 function getDataFromPython() {
