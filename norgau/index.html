@@ -3,9 +3,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link
     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240416140132"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20240416211023"
 />
-<link rel="stylesheet" href="css/style.min.css?_v=20240416140132">
+<link rel="stylesheet" href="css/style.min.css?_v=20240416211023">
 <body>
 
     <header class="header">
@@ -18,20 +18,58 @@
         <div class="header__menu menu">
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a href="#" class="menu__link hover">О компании</a>
+                    <a href="#" class="menu__link hover scroll-link" data-scroll-id="about">О компании</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link hover">Каталог</a>
+                    <a href="#" class="menu__link hover scroll-link" data-scroll-id="products">Каталог</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link hover">Контакты</a>
+                    <a href="#" class="menu__link hover scroll-link" data-scroll-id="contacts">Контакты</a>
                 </li>
             </ul>
         </div>
         <div class="header__contacts">
-            <button class="contact-button">
+            <a href="#">
+                <!-- +971 50 484 7983 -->
+            </a>
+            <button class="contact-button scroll-link" data-scroll-id="callback">
                 Contact Us
             </button>
+        </div>
+    </div>
+
+    <div class="header__gum">
+        <span></span>
+        <span></span>
+    </div>
+    <div class="header__sidemenu sidemenu">
+        <div class="sidemenu__wrapper">
+            <div class="sidemenu__close">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="sidemenu__logo">
+                <a href="#">
+                    <img src="img/header/sidemenu-logo.svg" alt="Logo">
+                </a>
+            </div>
+            <ul class="sidemenu__list">
+                <li class="sidemenu__item">
+                    <a href="#" class="sidemenu__link scroll-link" data-scroll-id="about">О компании</a>
+                </li>
+                <li class="sidemenu__item">
+                    <a href="#" class="sidemenu__link scroll-link" data-scroll-id="products">Каталог</a>
+                </li>
+                <li class="sidemenu__item">
+                    <a href="#" class="sidemenu__link scroll-link" data-scroll-id="contacts">Контакты</a>
+                </li>
+            </ul>
+            <div class="sidemenu__contacts">
+                <a href="#">
+                    <!-- +971 50 484 7983 -->
+                </a>
+                <button class="sidemenu__button scroll-link" data-scroll-id="callback">Contact us</button>
+            </div>
         </div>
     </div>
 </header>
@@ -49,6 +87,14 @@
                            <div class="offer__content">
                                 <h2 class="offer__title">Компания Norgau – поставщик <br> профессионального инструмента</h2>
                                 <span class="offer__subtitle">на рынок Middle East и Северной Африки</span>
+                                <a href="#">
+                                    <button class="download-button">
+                                        Download the catalog
+                                        <span>
+                                            <img src="img/icons/download-icon.svg" alt="download-icon">
+                                        </span>
+                                    </button>
+                                </a>
                            </div>
                         </div>
                         <div class="offer__slide swiper-slide">
@@ -59,6 +105,14 @@
                             <div class="offer__content">
                                  <h2 class="offer__title">Компания Norgau – поставщик <br> профессионального инструмента</h2>
                                  <span class="offer__subtitle">на рынок Middle East и Северной Африки</span>
+                                 <a href="#">
+                                    <button class="download-button">
+                                        Download the catalog
+                                        <span>
+                                            <img src="img/icons/download-icon.svg" alt="download-icon">
+                                        </span>
+                                    </button>
+                                 </a>
                             </div>
                          </div>
                     </div>
@@ -73,7 +127,7 @@
                 </div>
             </div>
         </section>
-        <section class="about padding">
+        <section class="about padding" id="about">
             <div class="about__container container">
                 <div class="about__header section-header">
                     <h3 class="section-title">О Компании</h3>
@@ -86,7 +140,7 @@
                 </div>
             </div>
         </section>
-        <section class="products padding">
+        <section class="products padding" id="products">
             <div class="products__container container">
                 <div class="products__header section-header">
                     <h3 class="section-title">Продукция Norgau</h3>
@@ -96,44 +150,89 @@
                     <div class="products__image content-image">
                         <picture><source srcset="img/products/products__image.webp" type="image/webp"><img src="img/products/products__image.png" alt="products__image"></picture>
                     </div>
+                    <a class="products__button" href="#">
+                        <button class="download-button">
+                            Download the catalog
+                            <span>
+                                <img src="img/icons/download-icon.svg" alt="download-icon">
+                            </span>
+                        </button>
+                    </a>
                 </div>
             </div>
         </section>
-        <section class="gallery addititonal-bg">
+        <section class="gallery addititonal-bg tabs-section">
             <div class="gallery__container container">
                 <div class="gallery__wrapper">
                     <div class="gallery__tabs tabs-wrapper">
-                        <div class="gallery__tab tab-item active">Измерительные инструменты и приборы</div>
-                        <div class="gallery__tab tab-item">Механообрабатывающий инструмент и станочная оснастка</div>
-                        <div class="gallery__tab tab-item">Сборочный инструмент и средства хранения</div>
+                        <div class="gallery__tab tab-item active" data-tab-id="1">Измерительные инструменты и приборы</div>
+                        <div class="gallery__tab tab-item" data-tab-id="2">Механообрабатывающий инструмент и станочная оснастка</div>
+                        <div class="gallery__tab tab-item" data-tab-id="3">Сборочный инструмент и средства хранения</div>
                     </div>
-                    <div class="gallery__content">
-                        <div class="gallery__item">
-                            <picture><source srcset="img/gallery/gallery__image--1.webp" type="image/webp"><img src="img/gallery/gallery__image--1.png" alt="gallery__image--1"></picture>
+                    <div class="tabs-content active" data-tab-id="1">
+                        <div class="gallery__content">
+                            <div class="gallery__item">
+                                <picture><source srcset="img/gallery/gallery__image--1.webp" type="image/webp"><img src="img/gallery/gallery__image--1.png" alt="gallery__image--1"></picture>
+                            </div>
+                            <div class="gallery__item">
+                                <picture><source srcset="img/gallery/gallery__image--2.webp" type="image/webp"><img src="img/gallery/gallery__image--2.png" alt="gallery__image--1"></picture>
+                            </div>
+                            <div class="gallery__item">
+                                <picture><source srcset="img/gallery/gallery__image--3.webp" type="image/webp"><img src="img/gallery/gallery__image--3.png" alt="gallery__image--1"></picture>
+                            </div>
+                            <div class="gallery__item">
+                                <picture><source srcset="img/gallery/gallery__image--4.webp" type="image/webp"><img src="img/gallery/gallery__image--4.png" alt="gallery__image--1"></picture>
+                            </div>
+                            <div class="gallery__item">
+                                <picture><source srcset="img/gallery/gallery__image--5.webp" type="image/webp"><img src="img/gallery/gallery__image--5.png" alt="gallery__image--1"></picture>
+                            </div>
+                            <div class="gallery__item">
+                                <picture><source srcset="img/gallery/gallery__image--6.webp" type="image/webp"><img src="img/gallery/gallery__image--6.png" alt="gallery__image--1"></picture>
+                            </div>
+                            <div class="gallery__item">
+                                <picture><source srcset="img/gallery/gallery__image--7.webp" type="image/webp"><img src="img/gallery/gallery__image--7.png" alt="gallery__image--1"></picture>
+                            </div>
                         </div>
-                        <div class="gallery__item">
-                            <picture><source srcset="img/gallery/gallery__image--2.webp" type="image/webp"><img src="img/gallery/gallery__image--2.png" alt="gallery__image--1"></picture>
+                    </div>
+                    <div class="tabs-content" data-tab-id="2">
+                        <div class="gallery__content">
+                            <div class="gallery__item">
+                                <picture><source srcset="img/gallery/gallery__image--3.webp" type="image/webp"><img src="img/gallery/gallery__image--3.png" alt="gallery__image--1"></picture>
+                            </div>
+                            <div class="gallery__item">
+                                <picture><source srcset="img/gallery/gallery__image--4.webp" type="image/webp"><img src="img/gallery/gallery__image--4.png" alt="gallery__image--1"></picture>
+                            </div>
+                            <div class="gallery__item">
+                                <picture><source srcset="img/gallery/gallery__image--5.webp" type="image/webp"><img src="img/gallery/gallery__image--5.png" alt="gallery__image--1"></picture>
+                            </div>
+                            <div class="gallery__item">
+                                <picture><source srcset="img/gallery/gallery__image--6.webp" type="image/webp"><img src="img/gallery/gallery__image--6.png" alt="gallery__image--1"></picture>
+                            </div>
+                            <div class="gallery__item">
+                                <picture><source srcset="img/gallery/gallery__image--7.webp" type="image/webp"><img src="img/gallery/gallery__image--7.png" alt="gallery__image--1"></picture>
+                            </div>
                         </div>
-                        <div class="gallery__item">
-                            <picture><source srcset="img/gallery/gallery__image--3.webp" type="image/webp"><img src="img/gallery/gallery__image--3.png" alt="gallery__image--1"></picture>
-                        </div>
-                        <div class="gallery__item">
-                            <picture><source srcset="img/gallery/gallery__image--4.webp" type="image/webp"><img src="img/gallery/gallery__image--4.png" alt="gallery__image--1"></picture>
-                        </div>
-                        <div class="gallery__item">
-                            <picture><source srcset="img/gallery/gallery__image--5.webp" type="image/webp"><img src="img/gallery/gallery__image--5.png" alt="gallery__image--1"></picture>
-                        </div>
-                        <div class="gallery__item">
-                            <picture><source srcset="img/gallery/gallery__image--6.webp" type="image/webp"><img src="img/gallery/gallery__image--6.png" alt="gallery__image--1"></picture>
-                        </div>
-                        <div class="gallery__item">
-                            <picture><source srcset="img/gallery/gallery__image--7.webp" type="image/webp"><img src="img/gallery/gallery__image--7.png" alt="gallery__image--1"></picture>
+                    </div>
+                    <div class="tabs-content" data-tab-id="3">
+                        <div class="gallery__content">
+                            <div class="gallery__item">
+                                <picture><source srcset="img/gallery/gallery__image--4.webp" type="image/webp"><img src="img/gallery/gallery__image--4.png" alt="gallery__image--1"></picture>
+                            </div>
+                            <div class="gallery__item">
+                                <picture><source srcset="img/gallery/gallery__image--5.webp" type="image/webp"><img src="img/gallery/gallery__image--5.png" alt="gallery__image--1"></picture>
+                            </div>
+                            <div class="gallery__item">
+                                <picture><source srcset="img/gallery/gallery__image--6.webp" type="image/webp"><img src="img/gallery/gallery__image--6.png" alt="gallery__image--1"></picture>
+                            </div>
+                            <div class="gallery__item">
+                                <picture><source srcset="img/gallery/gallery__image--7.webp" type="image/webp"><img src="img/gallery/gallery__image--7.png" alt="gallery__image--1"></picture>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="contacts padding addititonal-bg">
+        <section class="contacts padding addititonal-bg" id="contacts">
             <div class="contacts__container container">
                 <div class="contacts__header section-header">
                     <h3 class="section-title">Наши контактные данные</h3>
@@ -163,7 +262,7 @@
                 </div>
             </div>
         </section>
-        <section class="callback padding">
+        <section class="callback tabs-section padding" id="callback">
             <div class="callback__container container">
                 <div class="callback__header section-header">
                     <h3 class="section-title under-text">
@@ -174,29 +273,53 @@
                 <div class="callback__wrapper">
                     <div class="callback__forms">
                         <div class="callback__tabs tabs-wrapper">
-                            <div class="callback__tab tab-item active">Для клиентов</div>
-                            <div class="callback__tab tab-item">Для поставщиков</div>
+                            <div class="callback__tab tab-item active"  data-tab-id="1">Для клиентов</div>
+                            <div class="callback__tab tab-item"  data-tab-id="2">Для поставщиков</div>
                         </div>
                         <div class="callback__form">
-                            <form action="#">
-                                <input type="text" name="name" placeholder="Имя">
-                                <input type="text" name="phone" placeholder="Телефон">
-                                <input type="text" name="email" placeholder="Email">
-                                <div class="select">
-                                    <select name="select">
-                                        <option value="" disabled selected>Выберите</option>
-                                        <option value="">Физ.лицо</option>
-                                        <option value="">Юр.лицо</option>
-                                    </select>
-                                </div>
-                                <textarea name="message" placeholder="Ваш комментарий"></textarea>
-                                <label class="file">
-                                    <img src="img/callback/file-icon.svg" alt="file-icon">
-                                    <span class="hover">Прикрепить файл</span>
-                                    <input type="file">
-                                </label>
-                                <button class="contact-button" type="submit">Submit a request</button>
-                            </form>
+                            <div class="tabs-content active" data-tab-id="1">
+                                <form action="#">
+                                    <input type="text" name="name" placeholder="Имя">
+                                    <input type="text" name="phone" placeholder="Телефон">
+                                    <input type="text" name="email" placeholder="Email">
+                                    <div class="select">
+                                        <select name="select">
+                                            <option value="" disabled selected>Выберите</option>
+                                            <option value="">Физ.лицо</option>
+                                            <option value="">Юр.лицо</option>
+                                        </select>
+                                    </div>
+                                    <textarea name="message" placeholder="Ваш комментарий"></textarea>
+                                    <label class="file">
+                                        <img src="img/callback/file-icon.svg" alt="file-icon">
+                                        <span class="hover">Прикрепить файл</span>
+                                        <input type="file">
+                                    </label>
+                                    <button class="contact-button" type="submit">Submit a request</button>
+                                </form>
+                            </div>
+                            <div class="tabs-content" data-tab-id="2">
+                                <form action="#">
+                                    <input type="text" name="name" placeholder="Имя">
+                                    <input type="text" name="phone" placeholder="Телефон">
+                                    <input type="text" name="email" placeholder="Email">
+                                    <input type="text" name="email" placeholder="Дополнительное поле">
+                                    <div class="select">
+                                        <select name="select">
+                                            <option value="" disabled selected>Выберите</option>
+                                            <option value="">Физ.лицо</option>
+                                            <option value="">Юр.лицо</option>
+                                        </select>
+                                    </div>
+                                    <textarea name="message" placeholder="Ваш комментарий"></textarea>
+                                    <label class="file">
+                                        <img src="img/callback/file-icon.svg" alt="file-icon">
+                                        <span class="hover">Прикрепить файл</span>
+                                        <input type="file">
+                                    </label>
+                                    <button class="contact-button" type="submit">Submit a request</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                     <div class="callback__image">
@@ -216,18 +339,21 @@
         <div class="header__menu menu">
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a href="#" class="menu__link hover">О компании</a>
+                    <a href="#" class="menu__link hover scroll-link" data-scroll-id="about">О компании</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link hover">Каталог</a>
+                    <a href="#" class="menu__link hover scroll-link" data-scroll-id="products">Каталог</a>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link hover">Контакты</a>
+                    <a href="#" class="menu__link hover scroll-link" data-scroll-id="contacts">Контакты</a>
                 </li>
             </ul>
         </div>
         <div class="header__contacts">
-            <button class="contact-button">
+            <a href="#">
+                <!-- +971 50 484 7983 -->
+            </a>
+            <button class="contact-button scroll-link" data-scroll-id="callback">
                 Contact Us
             </button>
         </div>
@@ -240,7 +366,7 @@
             key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "beta"
         });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240416140132"></script>
-    <script src="js/app.min.js?_v=20240416140132"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20240416211023"></script>
+    <script src="js/app.min.js?_v=20240416211023"></script>
 </body>
 </html>
