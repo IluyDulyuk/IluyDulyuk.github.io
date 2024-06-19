@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Поиск услуг</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<!-- <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg"> -->
+		<!-- <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png"> -->
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__row">
+					<div class="logo">
+						<a href="#">
+							<img src="./img/logo.svg" alt="Логотип." />
+						</a>
+					</div>
+					<div class="header__gum">
+						<img src="./img/gum.svg" alt="" />
+					</div>
+					<nav class="header__nav nav">
+						<div class="nav__wrapper">
+							<div class="nav__close">
+								<img src="./img/close.svg" alt="" />
+							</div>
+
+							<ul class="nav__list">
+								<li class="nav__item nav__item--dropdown-item dropdown">
+									<a href="#"
+										>Для заказчика
+										<div class="dropdown__arrow">
+											<svg class="icon icon--dropdown-arrow">
+												<use href="./img/svgsprite/sprite.symbol.svg#dropdown-arrow"></use>
+											</svg>
+										</div>
+									</a>
+									<div class="dropdown__wrapper">
+										<ul class="dropdown__list">
+											<li class="dropdown__item">
+												<a href="#">Поиск услуг</a>
+											</li>
+											<li class="dropdown__item">
+												<a href="#">Размещение заказа</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="nav__item nav__item--dropdown-item dropdown">
+									<a href="#"
+										>Для исполнителя
+										<div class="dropdown__arrow">
+											<svg class="icon icon--dropdown-arrow">
+												<use href="./img/svgsprite/sprite.symbol.svg#dropdown-arrow"></use>
+											</svg>
+										</div>
+									</a>
+									<div class="dropdown__wrapper">
+										<ul class="dropdown__list">
+											<li class="dropdown__item">
+												<a href="#">Поиск заказов</a>
+											</li>
+											<li class="dropdown__item">
+												<a href="#">Размещение услуг</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="nav__item"><a href="#">О&#160;сервисе</a></li>
+							</ul>
+							<button class="button button--fill">Войти</button>
+							<div class="nav__mobile">
+								<div class="nav__mobile-block">
+									<a class="nav__mobile-link">
+										<svg class="icon icon--phone">
+											<use href="./img/svgsprite/sprite.symbol.svg#phone"></use>
+										</svg>
+										<span>+7&#160;915&#160;442-28-58</span>
+									</a>
+								</div>
+								<div class="nav__mobile-block">
+									<a class="nav__mobile-link">
+										<svg class="icon icon--mail">
+											<use href="./img/svgsprite/sprite.symbol.svg#mail"></use>
+										</svg>
+										<span>info.buildertoy@gmail.com</span>
+									</a>
+								</div>
+								<div class="nav__mobile-block">
+									<ul class="nav__mobile-list">
+										<li>
+											<a href="#">
+												<img src="./img/vk.svg" alt="" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="./img/youtube.svg" alt="" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="./img/telegram.svg" alt="" />
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="nav__mobile-block">
+									<span class="nav__mobile-copy">
+										&#169; BuilderToy, 2024
+									</span>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<div class="mobile-nav">
+			<ul class="mobile-nav__list">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="docs.html">Документация</a></li>
+			</ul>
+		</div>
+
+		<main class="main add">
+			<section class="breadcrambs">
+				<div class="container">
+					<ul class="breadcrambs__list">
+						<li class="breadcrambs__item">
+							<a href="#">Главная</a>
+						</li>
+						<li class="breadcrambs__item breadcrambs__item--active">
+							<span>Создать заказ</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<header class="add-header">
+				<div class="container">
+					<h2 class="add-header__title">Создать заказ</h2>
+				</div>
+			</header>
+
+			<section class="add-order">
+				<div class="container">
+					<div class="add-order__wrapper">
+						<div class="add__label">
+							<span>Название</span>
+							<input type="text" class="text-input" />
+						</div>
+						<div class="add__label">
+							<span>
+								Описание
+							</span>
+							<textarea class="text-input"></textarea>
+						</div>
+						<div class="add__label">
+							<span>Город</span>
+							<label class="add__select-label">
+								<select class="add__select text-input">
+									<option value="">Санкт-Петербург</option>
+									<option value="">Санкт-Петербург</option>
+									<option value="">Санкт-Петербург</option>
+								</select>
+								<svg class="icon icon--dropdown-arrow">
+									<use href="./img/svgsprite/sprite.symbol.svg#dropdown-arrow"></use>
+								</svg>
+							</label>
+						</div>
+						<div class="add__grid-wrapper">
+							<div class="add__label">
+								<span>Стоимость, ₽</span>
+								<input type="text" class="text-input" />
+							</div>
+							<div class="add__label">
+								<span>Сроки</span>
+								<input type="text" class="text-input" />
+							</div>
+						</div>
+						<div class="add__label add-order__save-button">
+							<button class="button button--fill">Сохранить</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__wrapper">
+					<div class="footer__brand">
+						<a href="#" class="footer__logo">
+							<img src="./img/logo.svg" alt="Логотип" />
+						</a>
+						<span class="footer__copy">&#169; BuilderToy, 2024</span>
+					</div>
+					<nav class="footer__nav">
+						<ul class="footer__list">
+							<li class="footer__list-title">Для заказчика</li>
+							<li>
+								<a href="#">Поиск услуг</a>
+							</li>
+							<li>
+								<a href="#">Размещение заказа</a>
+							</li>
+						</ul>
+						<ul class="footer__list">
+							<li class="footer__list-title">Для исполнителя</li>
+							<li>
+								<a href="#">Поиск заказов</a>
+							</li>
+							<li>
+								<a href="#">Размещение услуг</a>
+							</li>
+						</ul>
+						<ul class="footer__list">
+							<li class="footer__list-title">О&#160;нас</li>
+							<li>
+								<a href="#">О&#160;сервисе</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="footer__links">
+						<div class="footer__link">
+							<svg class="icon icon--phone">
+								<use href="./img/svgsprite/sprite.symbol.svg#phone"></use>
+							</svg>
+							<a href="#">+7&#160;915&#160;442-28-58</a>
+						</div>
+						<div class="footer__link">
+							<svg class="icon icon--mail">
+								<use href="./img/svgsprite/sprite.symbol.svg#mail"></use>
+							</svg>
+							<a href="#">info.buildertoy@gmail.com</a>
+						</div>
+						<div class="footer__socials">
+							<div class="footer__social">
+								<a href="#">
+									<img src="./img/vk.svg" alt="vk" />
+								</a>
+							</div>
+							<div class="footer__social">
+								<a href="#">
+									<img src="./img/youtube.svg" alt="youtube" />
+								</a>
+							</div>
+							<div class="footer__social">
+								<a href="#">
+									<img src="./img/telegram.svg" alt="telegram" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<span class="footer__copy footer__copy-mobile">&#169; BuilderToy, 2024</span>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>

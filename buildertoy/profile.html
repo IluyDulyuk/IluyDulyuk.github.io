@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Поиск услуг</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="./css/main.css" />
+
+		<!-- <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg"> -->
+		<!-- <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png"> -->
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__row">
+					<div class="logo">
+						<a href="#">
+							<img src="./img/logo.svg" alt="Логотип." />
+						</a>
+					</div>
+					<div class="header__gum">
+						<img src="./img/gum.svg" alt="" />
+					</div>
+					<nav class="header__nav nav">
+						<div class="nav__wrapper">
+							<div class="nav__close">
+								<img src="./img/close.svg" alt="" />
+							</div>
+
+							<ul class="nav__list">
+								<li class="nav__item nav__item--dropdown-item dropdown">
+									<a href="#"
+										>Для заказчика
+										<div class="dropdown__arrow">
+											<svg class="icon icon--dropdown-arrow">
+												<use href="./img/svgsprite/sprite.symbol.svg#dropdown-arrow"></use>
+											</svg>
+										</div>
+									</a>
+									<div class="dropdown__wrapper">
+										<ul class="dropdown__list">
+											<li class="dropdown__item">
+												<a href="#">Поиск услуг</a>
+											</li>
+											<li class="dropdown__item">
+												<a href="#">Размещение заказа</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="nav__item nav__item--dropdown-item dropdown">
+									<a href="#"
+										>Для исполнителя
+										<div class="dropdown__arrow">
+											<svg class="icon icon--dropdown-arrow">
+												<use href="./img/svgsprite/sprite.symbol.svg#dropdown-arrow"></use>
+											</svg>
+										</div>
+									</a>
+									<div class="dropdown__wrapper">
+										<ul class="dropdown__list">
+											<li class="dropdown__item">
+												<a href="#">Поиск заказов</a>
+											</li>
+											<li class="dropdown__item">
+												<a href="#">Размещение услуг</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="nav__item"><a href="#">О&#160;сервисе</a></li>
+							</ul>
+							<button class="button button--fill">Войти</button>
+							<div class="nav__mobile">
+								<div class="nav__mobile-block">
+									<a class="nav__mobile-link">
+										<svg class="icon icon--phone">
+											<use href="./img/svgsprite/sprite.symbol.svg#phone"></use>
+										</svg>
+										<span>+7&#160;915&#160;442-28-58</span>
+									</a>
+								</div>
+								<div class="nav__mobile-block">
+									<a class="nav__mobile-link">
+										<svg class="icon icon--mail">
+											<use href="./img/svgsprite/sprite.symbol.svg#mail"></use>
+										</svg>
+										<span>info.buildertoy@gmail.com</span>
+									</a>
+								</div>
+								<div class="nav__mobile-block">
+									<ul class="nav__mobile-list">
+										<li>
+											<a href="#">
+												<img src="./img/vk.svg" alt="" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="./img/youtube.svg" alt="" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="./img/telegram.svg" alt="" />
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="nav__mobile-block">
+									<span class="nav__mobile-copy">
+										&#169; BuilderToy, 2024
+									</span>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<div class="mobile-nav">
+			<ul class="mobile-nav__list">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="docs.html">Документация</a></li>
+			</ul>
+		</div>
+
+		<main class="main profile-main">
+			<section class="breadcrambs">
+				<div class="container">
+					<ul class="breadcrambs__list">
+						<li class="breadcrambs__item">
+							<a href="#">Главная</a>
+						</li>
+						<li class="breadcrambs__item breadcrambs__item--active">
+							<span>Профиль Георгий Лосев</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="profile-header">
+				<div class="container">
+					<div class="profile-header__wrapper">
+						<div class="profile-header__info">
+							<div class="profile-header__avatar">
+								<picture>
+									<source srcset="./img/profile-header.webp 1x, ./img/profile-header@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/profile-header.jpg 1x, ./img/profile-header@2x.jpg 2x" type="image/jpeg" />
+									<img src="./img/profile-header.jpg" alt="profile-header" />
+								</picture>
+							</div>
+							<div class="profile-header__about">
+								<h3 class="profile-header__name">Георгий Лосев</h3>
+								<div class="profile-header__rate">
+									<span class="profile-header__rate-value">5.0</span>
+									<ul class="profile-header__rate-stars">
+										<li class="profile-header__rate-star active">
+											<img class="rate-star" src="./img/rate-star.svg" alt="" />
+											<img class="rate-star--active" src="./img/rate-star--active.svg" alt="" />
+										</li>
+										<li class="profile-header__rate-star active">
+											<img class="rate-star" src="./img/rate-star.svg" alt="" />
+											<img class="rate-star--active" src="./img/rate-star--active.svg" alt="" />
+										</li>
+										<li class="profile-header__rate-star active">
+											<img class="rate-star" src="./img/rate-star.svg" alt="" />
+											<img class="rate-star--active" src="./img/rate-star--active.svg" alt="" />
+										</li>
+										<li class="profile-header__rate-star active">
+											<img class="rate-star" src="./img/rate-star.svg" alt="" />
+											<img class="rate-star--active" src="./img/rate-star--active.svg" alt="" />
+										</li>
+										<li class="profile-header__rate-star active">
+											<img class="rate-star" src="./img/rate-star.svg" alt="" />
+											<img class="rate-star--active" src="./img/rate-star--active.svg" alt="" />
+										</li>
+									</ul>
+								</div>
+								<span class="profile-header__city">
+									Санкт-Петербург
+								</span>
+							</div>
+						</div>
+						<div class="profile-header__buttons">
+							<button class="button button--fill">Написать</button>
+							<button class="button button--fill">Оставить отзыв</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="profile-reviews profile-section">
+				<div class="container">
+					<h3 class="profile-title profile-title--reviews">Отзывы</h3>
+					<div class="profile-reviews__wrapper">
+						<div class="profile-reviews__slider-wrapper">
+							<div class="profile-reviews__slider swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide profile-reviews__item">
+										<header class="profile-reviews__item-header">
+											<div class="profile-reviews__item-avatar">
+												<img src="./img/avatar-none.svg" alt="avatar-none" />
+											</div>
+											<div class="profile-reviews__item-name">Артем Борисов</div>
+										</header>
+										<div class="profile-reviews__item-content">
+											<p class="profile-reviews__item-text">
+												Очень доволен работой исполнителя! Он&#160;проявил высокий профессионализм и&#160;внимательное отношение к&#160;деталям. Результат
+												превзошел ожидания. Рекомендую с&#160;уверенностью!
+											</p>
+										</div>
+									</div>
+									<div class="swiper-slide profile-reviews__item">
+										<header class="profile-reviews__item-header">
+											<div class="profile-reviews__item-avatar">
+												<img src="./img/avatar-none.svg" alt="avatar-none" />
+											</div>
+											<div class="profile-reviews__item-name">Артем Борисов</div>
+										</header>
+										<div class="profile-reviews__item-content">
+											<p class="profile-reviews__item-text">
+												Очень доволен работой исполнителя! Он&#160;проявил высокий профессионализм и&#160;внимательное отношение к&#160;деталям. Результат
+												превзошел ожидания. Рекомендую с&#160;уверенностью!
+											</p>
+										</div>
+									</div>
+									<div class="swiper-slide profile-reviews__item">
+										<header class="profile-reviews__item-header">
+											<div class="profile-reviews__item-avatar">
+												<img src="./img/avatar-none.svg" alt="avatar-none" />
+											</div>
+											<div class="profile-reviews__item-name">Артем Борисов</div>
+										</header>
+										<div class="profile-reviews__item-content">
+											<p class="profile-reviews__item-text">
+												Очень доволен работой исполнителя! Он&#160;проявил высокий профессионализм и&#160;внимательное отношение к&#160;деталям. Результат
+												превзошел ожидания. Рекомендую с&#160;уверенностью!
+											</p>
+										</div>
+									</div>
+									<div class="swiper-slide profile-reviews__item">
+										<header class="profile-reviews__item-header">
+											<div class="profile-reviews__item-avatar">
+												<img src="./img/avatar-none.svg" alt="avatar-none" />
+											</div>
+											<div class="profile-reviews__item-name">Артем Борисов</div>
+										</header>
+										<div class="profile-reviews__item-content">
+											<p class="profile-reviews__item-text">
+												Очень доволен работой исполнителя! Он&#160;проявил высокий профессионализм и&#160;внимательное отношение к&#160;деталям. Результат
+												превзошел ожидания. Рекомендую с&#160;уверенностью!
+											</p>
+										</div>
+									</div>
+									<div class="swiper-slide profile-reviews__item">
+										<header class="profile-reviews__item-header">
+											<div class="profile-reviews__item-avatar">
+												<img src="./img/avatar-none.svg" alt="avatar-none" />
+											</div>
+											<div class="profile-reviews__item-name">Артем Борисов</div>
+										</header>
+										<div class="profile-reviews__item-content">
+											<p class="profile-reviews__item-text">
+												Очень доволен работой исполнителя! Он&#160;проявил высокий профессионализм и&#160;внимательное отношение к&#160;деталям. Результат
+												превзошел ожидания. Рекомендую с&#160;уверенностью!
+											</p>
+										</div>
+									</div>
+									<div class="swiper-slide profile-reviews__item">
+										<header class="profile-reviews__item-header">
+											<div class="profile-reviews__item-avatar">
+												<img src="./img/avatar-none.svg" alt="avatar-none" />
+											</div>
+											<div class="profile-reviews__item-name">Артем Борисов</div>
+										</header>
+										<div class="profile-reviews__item-content">
+											<p class="profile-reviews__item-text">
+												Очень доволен работой исполнителя! Он&#160;проявил высокий профессионализм и&#160;внимательное отношение к&#160;деталям. Результат
+												превзошел ожидания. Рекомендую с&#160;уверенностью!
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button class="profile-reviews__loadmore">
+								Все отзывы
+								<span
+									><svg class="icon icon--dropdown-arrow">
+										<use href="./img/svgsprite/sprite.symbol.svg#dropdown-arrow"></use></svg
+								></span>
+							</button>
+						</div>
+						<div class="profile-reviews__navigation">
+							<div class="profile-reviews__navigation-arrow profile-reviews__navigation-arrow--prev">
+								<img src="./img/reviews-arrow.svg" alt="arrow" />
+							</div>
+							<div class="profile-reviews__navigation-arrow profile-reviews__navigation-arrow--next">
+								<img src="./img/reviews-arrow.svg" alt="arrow" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="profile-contacts profile-section">
+				<div class="container">
+					<h3 class="profile-title">Контакты</h3>
+					<div class="profile-contacts__content">
+						<div class="profile-contacts__top">
+							<div class="profile-contacts__link">
+								<svg class="icon icon--phone">
+									<use href="./img/svgsprite/sprite.symbol.svg#phone"></use>
+								</svg>
+								<a href="#">+7&#160;915&#160;442-28-58</a>
+							</div>
+							<div class="profile-contacts__link">
+								<svg class="icon icon--mail">
+									<use href="./img/svgsprite/sprite.symbol.svg#mail"></use>
+								</svg>
+								<a href="#">info.buildertoy@gmail.com</a>
+							</div>
+						</div>
+						<div class="profile-contacts__socials">
+							<div class="profile-contacts__social">
+								<a href="#">
+									<img src="./img/whatsapp.svg" alt="whatsapp" />
+								</a>
+							</div>
+							<div class="profile-contacts__social">
+								<a href="#">
+									<img src="./img/viber.svg" alt="viber" />
+								</a>
+							</div>
+							<div class="profile-contacts__social">
+								<a href="#">
+									<img src="./img/telegram.svg" alt="telegram" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="profile-services profile-section">
+				<div class="container">
+					<h3 class="profile-title">Услуги</h3>
+					<div class="profile-services__content profile-wrapper">
+						<div class="profile-smth-card">
+							<div class="service-card card">
+								<header class="service-card__header">
+									<div class="service-card__profile">
+										<div class="service-card__avatar">
+											<picture>
+												<source srcset="./img/avatar.webp 1x, ./img/avatar@2x.webp 2x" type="image/webp" />
+												<source srcset="./img/avatar.jpg 1x, ./img/avatar@2x.jpg 2x" type="image/jpeg" />
+												<img src="./img/avatar.jpg" alt="avatar" />
+											</picture>
+										</div>
+										<div class="service-card__profile-info">
+											<span class="service-card__name">Георгий Лосев</span>
+											<div class="service-card__rate">
+												<span class="service-card__rate-value">5.0</span>
+												<ul class="service-card__rate-stars">
+													<li class="service-card__rate-star active">
+														<img class="rate-star" src="./img/rate-star.svg" alt="" />
+														<img class="rate-star--active" src="./img/rate-star--active.svg" alt="" />
+													</li>
+													<li class="service-card__rate-star active">
+														<img class="rate-star" src="./img/rate-star.svg" alt="" />
+														<img class="rate-star--active" src="./img/rate-star--active.svg" alt="" />
+													</li>
+													<li class="service-card__rate-star active">
+														<img class="rate-star" src="./img/rate-star.svg" alt="" />
+														<img class="rate-star--active" src="./img/rate-star--active.svg" alt="" />
+													</li>
+													<li class="service-card__rate-star active">
+														<img class="rate-star" src="./img/rate-star.svg" alt="" />
+														<img class="rate-star--active" src="./img/rate-star--active.svg" alt="" />
+													</li>
+													<li class="service-card__rate-star active">
+														<img class="rate-star" src="./img/rate-star.svg" alt="" />
+														<img class="rate-star--active" src="./img/rate-star--active.svg" alt="" />
+													</li>
+												</ul>
+											</div>
+											<span class="service-card__city">Санкт-Петербург</span>
+										</div>
+									</div>
+									<div class="service-card__info">
+										<div class="service-card__buttons">
+											<div class="service-card__button button button--fill d-n">Подробнее</div>
+											<button class="active service-card__favorite-button active">
+												<img class="favorite-img" src="./img/favorit-heart.svg" alt="favorit-button" />
+												<img class="favorite-img--active" src="./img/favorit-heart--active.svg" alt="favorit-button" />
+											</button>
+										</div>
+										<div class="service-card__price d-n">
+											<div>Цены от: <span>1 700</span> /&#8776; м&#178;</div>
+										</div>
+										<div class="service-card__id d-n">ID: <span>3950054</span></div>
+									</div>
+								</header>
+								<div class="service-card__id d-b">ID: <span>3950054</span></div>
+								<div class="service-card__content">
+									<h6 class="service-card__title">Коротко о&#160;себе</h6>
+									<p class="service-card__text">
+										Мы&#160;союз профессионалов, в&#160;строительстве и&#160;отделке мы&#160;сможем предложить адекватные цены и&#160;высокое качество исполнения
+										работ. С&#160;педантичностью подходим к&#160;каждому этапу работ и&#160;подбору материалов, каждый клиент будет доволен предоставленным
+										сервисом и&#160;подходом налаженного процесса.
+									</p>
+									<div class="service-card__price d-b">
+										<div>Цены от: <span>1 700</span> /&#8776; м&#178;</div>
+									</div>
+									<ul class="service-card__jobs">
+										<li class="service-card__jobs-item">
+											Фасадные работы
+										</li>
+										<li class="service-card__jobs-item">
+											Кровельные работы
+										</li>
+										<li class="service-card__jobs-item">
+											Услуги каменьщиков
+										</li>
+										<li class="service-card__jobs-item">
+											Бетонные работы
+										</li>
+										<li class="service-card__jobs-item">
+											Монтаж металлоконструкций
+										</li>
+									</ul>
+									<div class="service-card__button button button--fill d-b">Подробнее</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="profile-orders profile-section">
+				<div class="container">
+					<h3 class="profile-title">Заказы</h3>
+					<div class="profile-orders__content profile-wrapper">
+						<div class="profile-smth-card">
+							<div class="order-card card">
+								<header class="order-card__header">
+									<div class="order-card__header-info">
+										<div class="order-card__date">05.04.2024</div>
+										<div class="order-card__id">ID: <span>3950054</span></div>
+										<div class="order-card__city">Санкт-Петербург</div>
+									</div>
+									<div class="order-card__header-button">
+										<button class="order-card__favorite-button">
+											<img class="favorite-img" src="./img/favorit-heart.svg" alt="favorit-button" />
+											<img class="favorite-img--active" src="./img/favorit-heart--active.svg" alt="favorit-button" />
+										</button>
+									</div>
+								</header>
+								<div class="order-card__content">
+									<h2 class="order-card__title">Требуется бригада отделочников для выравнивания стен</h2>
+									<p class="order-card__desc">
+										В&#160;школу требуется бригада отделочников, штукатуров, плотников. Объемы большие, цена за&#160;выравнивание стен ротгипсом 1 920
+										000&#160;руб.
+									</p>
+								</div>
+								<footer class="order-card__footer">
+									<div class="order-card__price">Цены от: <span>2 000</span> /&#8776; м&#178;</div>
+									<div class="order-card__deadline">Сроки: <span>14-20 дней</span></div>
+									<div class="order-card__button">
+										<button class="button button--fill">Подробнее</button>
+									</div>
+								</footer>
+							</div>
+						</div>
+						<div class="profile-smth-card">
+							<div class="order-card card">
+								<header class="order-card__header">
+									<div class="order-card__header-info">
+										<div class="order-card__date">05.04.2024</div>
+										<div class="order-card__id">ID: <span>3950054</span></div>
+										<div class="order-card__city">Санкт-Петербург</div>
+									</div>
+									<div class="order-card__header-button">
+										<button class="order-card__favorite-button">
+											<img class="favorite-img" src="./img/favorit-heart.svg" alt="favorit-button" />
+											<img class="favorite-img--active" src="./img/favorit-heart--active.svg" alt="favorit-button" />
+										</button>
+									</div>
+								</header>
+								<div class="order-card__content">
+									<h2 class="order-card__title">Требуется бригада отделочников для выравнивания стен</h2>
+									<p class="order-card__desc">
+										В&#160;школу требуется бригада отделочников, штукатуров, плотников. Объемы большие, цена за&#160;выравнивание стен ротгипсом 1 920
+										000&#160;руб.
+									</p>
+								</div>
+								<footer class="order-card__footer">
+									<div class="order-card__price">Цены от: <span>2 000</span> /&#8776; м&#178;</div>
+									<div class="order-card__deadline">Сроки: <span>14-20 дней</span></div>
+									<div class="order-card__button">
+										<button class="button button--fill">Подробнее</button>
+									</div>
+								</footer>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__wrapper">
+					<div class="footer__brand">
+						<a href="#" class="footer__logo">
+							<img src="./img/logo.svg" alt="Логотип" />
+						</a>
+						<span class="footer__copy">&#169; BuilderToy, 2024</span>
+					</div>
+					<nav class="footer__nav">
+						<ul class="footer__list">
+							<li class="footer__list-title">Для заказчика</li>
+							<li>
+								<a href="#">Поиск услуг</a>
+							</li>
+							<li>
+								<a href="#">Размещение заказа</a>
+							</li>
+						</ul>
+						<ul class="footer__list">
+							<li class="footer__list-title">Для исполнителя</li>
+							<li>
+								<a href="#">Поиск заказов</a>
+							</li>
+							<li>
+								<a href="#">Размещение услуг</a>
+							</li>
+						</ul>
+						<ul class="footer__list">
+							<li class="footer__list-title">О&#160;нас</li>
+							<li>
+								<a href="#">О&#160;сервисе</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="footer__links">
+						<div class="footer__link">
+							<svg class="icon icon--phone">
+								<use href="./img/svgsprite/sprite.symbol.svg#phone"></use>
+							</svg>
+							<a href="#">+7&#160;915&#160;442-28-58</a>
+						</div>
+						<div class="footer__link">
+							<svg class="icon icon--mail">
+								<use href="./img/svgsprite/sprite.symbol.svg#mail"></use>
+							</svg>
+							<a href="#">info.buildertoy@gmail.com</a>
+						</div>
+						<div class="footer__socials">
+							<div class="footer__social">
+								<a href="#">
+									<img src="./img/vk.svg" alt="vk" />
+								</a>
+							</div>
+							<div class="footer__social">
+								<a href="#">
+									<img src="./img/youtube.svg" alt="youtube" />
+								</a>
+							</div>
+							<div class="footer__social">
+								<a href="#">
+									<img src="./img/telegram.svg" alt="telegram" />
+								</a>
+							</div>
+						</div>
+					</div>
+					<span class="footer__copy footer__copy-mobile">&#169; BuilderToy, 2024</span>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>
