@@ -73,7 +73,7 @@
 								</li>
 								<li class="nav__item"><a href="#">О&#160;сервисе</a></li>
 							</ul>
-							<button class="button button--fill">Войти</button>
+							<button class="button button--fill modal-trigger" data-modal="auth">Войти</button>
 							<div class="nav__mobile">
 								<div class="nav__mobile-block">
 									<a class="nav__mobile-link">
@@ -187,7 +187,7 @@
 						</div>
 						<div class="profile-header__buttons">
 							<button class="button button--fill">Написать</button>
-							<button class="button button--fill">Оставить отзыв</button>
+							<button class="button button--fill modal-trigger" data-modal="review">Оставить отзыв</button>
 						</div>
 					</div>
 				</div>
@@ -392,7 +392,7 @@
 									</div>
 									<div class="service-card__info">
 										<div class="service-card__buttons">
-											<div class="service-card__button button button--fill d-n">Подробнее</div>
+											<div class="service-card__button button button--fill d-n modal-trigger" data-modal="service">Подробнее</div>
 											<button class="active service-card__favorite-button active">
 												<img class="favorite-img" src="./img/favorit-heart.svg" alt="favorit-button" />
 												<img class="favorite-img--active" src="./img/favorit-heart--active.svg" alt="favorit-button" />
@@ -432,7 +432,7 @@
 											Монтаж металлоконструкций
 										</li>
 									</ul>
-									<div class="service-card__button button button--fill d-b">Подробнее</div>
+									<div class="service-card__button button button--fill d-b modal-trigger" data-modal="service">Подробнее</div>
 								</div>
 							</div>
 						</div>
@@ -470,7 +470,7 @@
 									<div class="order-card__price">Цены от: <span>2 000</span> /&#8776; м&#178;</div>
 									<div class="order-card__deadline">Сроки: <span>14-20 дней</span></div>
 									<div class="order-card__button">
-										<button class="button button--fill">Подробнее</button>
+										<button class="button button--fill modal-trigger" data-modal="order">Подробнее</button>
 									</div>
 								</footer>
 							</div>
@@ -501,7 +501,7 @@
 									<div class="order-card__price">Цены от: <span>2 000</span> /&#8776; м&#178;</div>
 									<div class="order-card__deadline">Сроки: <span>14-20 дней</span></div>
 									<div class="order-card__button">
-										<button class="button button--fill">Подробнее</button>
+										<button class="button button--fill modal-trigger" data-modal="order">Подробнее</button>
 									</div>
 								</footer>
 							</div>
@@ -510,6 +510,433 @@
 				</div>
 			</section>
 		</main>
+
+		<modal class="modal" id="auth">
+			<div class="modal__wrapper">
+				<div class="container">
+					<div class="modal__window modal-window modal-auth">
+						<h2 class="modal-window__title">
+							Авторизация
+						</h2>
+						<div class="modal-auth__socials">
+							<span>Через социальные сети:</span>
+							<ul>
+								<li>
+									<a href="#">
+										<img src="./img/vk.svg" alt="" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="./img/ok.svg" alt="" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="./img/google.svg" alt="" />
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="modal-auth__or-text">или через форму</div>
+						<form class="modal-auth__form">
+							<label class="modal-auth__label">
+								<span>E-mail</span>
+								<input type="text" class="text-input" />
+							</label>
+							<label class="modal-auth__label">
+								<span>Пароль</span>
+								<input type="password" class="text-input" />
+							</label>
+							<div class="modal-auth__forgot">
+								<a href="#">Забыли пароль?</a>
+							</div>
+							<div class="modal-auth__button">
+								<button class="button button--fill" type="submit">Войти</button>
+							</div>
+						</form>
+						<div class="modal-auth__singup">
+							<span>Впервые на&#160;сайте? <button class="modal-trigger" data-modal="singup">Зарегистрируйтесь</button></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</modal>
+		<modal class="modal" id="singup">
+			<div class="modal__wrapper">
+				<div class="container">
+					<div class="modal__window modal-window modal-auth">
+						<h2 class="modal-window__title">
+							Регистрация
+						</h2>
+						<div class="modal-auth__socials">
+							<span>Через социальные сети:</span>
+							<ul>
+								<li>
+									<a href="#">
+										<img src="./img/vk.svg" alt="" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="./img/ok.svg" alt="" />
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="./img/google.svg" alt="" />
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="modal-auth__or-text">или через форму</div>
+						<form class="modal-auth__form">
+							<label class="modal-auth__label">
+								<span>E-mail</span>
+								<input type="text" class="text-input" />
+							</label>
+							<label class="modal-auth__label">
+								<span>Пароль</span>
+								<input type="password" class="text-input" />
+							</label>
+							<div class="modal-auth__policy">
+								<label>
+									<input type="checkbox" />
+									<span></span>
+									Я&#160;принимаю <a href="#">Пользовательское соглашение</a>
+								</label>
+							</div>
+							<div class="modal-auth__button">
+								<button class="button button--fill" type="submit">Зарегистрироваться</button>
+							</div>
+						</form>
+						<div class="modal-auth__singup">
+							<span>Уже зарегистрированы? <button class="modal-trigger" data-modal="auth">Войдите</button></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</modal>
+		<modal class="modal" id="service">
+			<div class="modal__wrapper">
+				<div class="container">
+					<div class="modal__window modal-window">
+						<div class="service-card card service-card--full">
+							<header class="service-card__header">
+								<div class="service-card__profile">
+									<div class="service-card__avatar">
+										<picture>
+											<source srcset="./img/avatar.webp 1x, ./img/avatar@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/avatar.jpg 1x, ./img/avatar@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/avatar.jpg" alt="avatar" />
+										</picture>
+									</div>
+									<div class="service-card__profile-info">
+										<span class="service-card__name">
+											Георгий Лосев
+											<div class="service-card__rate">
+												<span class="service-card__rate-value">5.0</span>
+												<ul class="service-card__rate-stars">
+													<li class="service-card__rate-star active">
+														<img class="rate-star" src="./img/rate-star.svg" alt="" />
+														<img class="rate-star--active" src="./img/rate-star--active.svg" alt="" />
+													</li>
+													<li class="service-card__rate-star active">
+														<img class="rate-star" src="./img/rate-star.svg" alt="" />
+														<img class="rate-star--active" src="./img/rate-star--active.svg" alt="" />
+													</li>
+													<li class="service-card__rate-star active">
+														<img class="rate-star" src="./img/rate-star.svg" alt="" />
+														<img class="rate-star--active" src="./img/rate-star--active.svg" alt="" />
+													</li>
+													<li class="service-card__rate-star active">
+														<img class="rate-star" src="./img/rate-star.svg" alt="" />
+														<img class="rate-star--active" src="./img/rate-star--active.svg" alt="" />
+													</li>
+													<li class="service-card__rate-star active">
+														<img class="rate-star" src="./img/rate-star.svg" alt="" />
+														<img class="rate-star--active" src="./img/rate-star--active.svg" alt="" />
+													</li>
+												</ul>
+											</div>
+										</span>
+										<span class="service-card__city">Санкт-Петербург</span>
+										<div class="service-card__id">ID: <span>3950054</span></div>
+									</div>
+								</div>
+								<div class="service-card__info d-n">
+									<div class="service-card--full__link">
+										<svg class="icon icon--phone">
+											<use href="./img/svgsprite/sprite.symbol.svg#phone"></use>
+										</svg>
+										<a href="#">+7&#160;991&#160;487-64-77</a>
+									</div>
+									<div class="service-card--full__link">
+										<svg class="icon icon--mail">
+											<use href="./img/svgsprite/sprite.symbol.svg#mail"></use>
+										</svg>
+										<a href="#">georgylosev@gmail.com</a>
+									</div>
+									<ul class="service-card--full__socials">
+										<li>
+											<a href="#">
+												<img src="./img/whatsapp.svg" alt="" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="./img/viber.svg" alt="" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="./img/telegram.svg" alt="" />
+											</a>
+										</li>
+									</ul>
+									<div class="service-card--full__button">
+										<button class="button button--fill">Написать в&#160;чат</button>
+									</div>
+								</div>
+							</header>
+							<div class="service-card__price d-n">
+								<div>Цены от: <span>1 700</span> /&#8776; м&#178;</div>
+							</div>
+							<div class="service-card__content">
+								<h6 class="service-card__title">Коротко о&#160;себе</h6>
+								<p class="service-card__text">
+									Мы&#160;союз профессионалов, в&#160;строительстве и&#160;отделке мы&#160;сможем предложить адекватные цены и&#160;высокое качество исполнения
+									работ. С&#160;педантичностью подходим к&#160;каждому этапу работ и&#160;подбору материалов, каждый клиент будет доволен предоставленным сервисом
+									и&#160;подходом налаженного процесса.
+								</p>
+								<div class="service-card__price d-b">
+									<div>Цены от: <span>1 700</span> /&#8776; м&#178;</div>
+								</div>
+								<div class="service-card__info d-b">
+									<div class="service-card--full__link">
+										<svg class="icon icon--phone">
+											<use href="./img/svgsprite/sprite.symbol.svg#phone"></use>
+										</svg>
+										<a href="#">+7&#160;991&#160;487-64-77</a>
+									</div>
+									<div class="service-card--full__link">
+										<svg class="icon icon--mail">
+											<use href="./img/svgsprite/sprite.symbol.svg#mail"></use>
+										</svg>
+										<a href="#">georgylosev@gmail.com</a>
+									</div>
+									<ul class="service-card--full__socials">
+										<li>
+											<a href="#">
+												<img src="./img/whatsapp.svg" alt="" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="./img/viber.svg" alt="" />
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img src="./img/telegram.svg" alt="" />
+											</a>
+										</li>
+									</ul>
+									<div class="service-card--full__button">
+										<button class="button button--fill">Написать в&#160;чат</button>
+									</div>
+								</div>
+								<ul class="service-card__jobs">
+									<li class="service-card__jobs-item">
+										Фасадные работы
+									</li>
+									<li class="service-card__jobs-item">
+										Кровельные работы
+									</li>
+									<li class="service-card__jobs-item">
+										Услуги каменьщиков
+									</li>
+									<li class="service-card__jobs-item">
+										Бетонные работы
+									</li>
+									<li class="service-card__jobs-item">
+										Монтаж металлоконструкций
+									</li>
+								</ul>
+								<div class="service-card--full__works">
+									<div class="service-card--full__title">Примеры работ</div>
+									<div class="service-card--full__slider">
+										<div class="service-card--full__navigation">
+											<div class="service-card--full__navigation-arrow service-card--full__navigation-arrow--prev">
+												<img src="./img/slider-arrow.svg" alt="" />
+											</div>
+										</div>
+										<div class="swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<picture>
+														<source srcset="./img/works.webp 1x, ./img/works@2x.webp 2x" type="image/webp" />
+														<source srcset="./img/works.png 1x, ./img/works@2x.png 2x" type="image/png" />
+														<img src="./img/works.png" alt="" />
+													</picture>
+												</div>
+												<div class="swiper-slide">
+													<picture>
+														<source srcset="./img/works.webp 1x, ./img/works@2x.webp 2x" type="image/webp" />
+														<source srcset="./img/works.png 1x, ./img/works@2x.png 2x" type="image/png" />
+														<img src="./img/works.png" alt="" />
+													</picture>
+												</div>
+												<div class="swiper-slide">
+													<picture>
+														<source srcset="./img/works.webp 1x, ./img/works@2x.webp 2x" type="image/webp" />
+														<source srcset="./img/works.png 1x, ./img/works@2x.png 2x" type="image/png" />
+														<img src="./img/works.png" alt="" />
+													</picture>
+												</div>
+												<div class="swiper-slide">
+													<picture>
+														<source srcset="./img/works.webp 1x, ./img/works@2x.webp 2x" type="image/webp" />
+														<source srcset="./img/works.png 1x, ./img/works@2x.png 2x" type="image/png" />
+														<img src="./img/works.png" alt="" />
+													</picture>
+												</div>
+												<div class="swiper-slide">
+													<picture>
+														<source srcset="./img/works.webp 1x, ./img/works@2x.webp 2x" type="image/webp" />
+														<source srcset="./img/works.png 1x, ./img/works@2x.png 2x" type="image/png" />
+														<img src="./img/works.png" alt="" />
+													</picture>
+												</div>
+												<div class="swiper-slide">
+													<picture>
+														<source srcset="./img/works.webp 1x, ./img/works@2x.webp 2x" type="image/webp" />
+														<source srcset="./img/works.png 1x, ./img/works@2x.png 2x" type="image/png" />
+														<img src="./img/works.png" alt="" />
+													</picture>
+												</div>
+												<div class="swiper-slide">
+													<picture>
+														<source srcset="./img/works.webp 1x, ./img/works@2x.webp 2x" type="image/webp" />
+														<source srcset="./img/works.png 1x, ./img/works@2x.png 2x" type="image/png" />
+														<img src="./img/works.png" alt="" />
+													</picture>
+												</div>
+											</div>
+										</div>
+										<div class="service-card--full__navigation">
+											<div class="service-card--full__navigation-arrow service-card--full__navigation-arrow--next">
+												<img src="./img/slider-arrow.svg" alt="" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</modal>
+		<modal class="modal" id="order">
+			<div class="modal__wrapper">
+				<div class="container">
+					<div class="modal__window modal-window">
+						<div class="order-card card order-card--full">
+							<header class="order-card__header">
+								<div class="order-card__header-info">
+									<div class="order-card__date">05.04.2024</div>
+									<div class="order-card__id">ID: <span>3950054</span></div>
+									<div class="order-card__city">Санкт-Петербург</div>
+								</div>
+								<div class="order-card__header-button">
+									<button class="order-card__favorite-button">
+										<img class="favorite-img" src="./img/favorit-heart.svg" alt="favorit-button" />
+										<img class="favorite-img--active" src="./img/favorit-heart--active.svg" alt="favorit-button" />
+									</button>
+								</div>
+							</header>
+							<div class="order-card__content">
+								<h2 class="order-card__title">Требуется бригада отделочников для выравнивания стен</h2>
+								<p class="order-card__desc">
+									В&#160;школу требуется бригада отделочников, штукатуров, плотников. Объемы большие, цена за&#160;выравнивание стен ротгипсом 1 920 000&#160;руб.
+								</p>
+							</div>
+							<footer class="order-card__footer">
+								<div class="order-card__price">Цены от: <span>2 000</span> /&#8776; м&#178;</div>
+								<div class="order-card__deadline">Сроки: <span>14-20 дней</span></div>
+								<div class="order-card--full__footer">
+									<div class="order-card--full__links">
+										<div class="order-card--full__phone">
+											<svg class="icon icon--phone">
+												<use href="./img/svgsprite/sprite.symbol.svg#phone"></use>
+											</svg>
+											<a href="#">
+												+7&#160;(957-21)&#160;3-48-14
+											</a>
+										</div>
+										<ul>
+											<li>
+												<a href="#">
+													<img src="./img/whatsapp.svg" alt="" />
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<img src="./img/viber.svg" alt="" />
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<img src="./img/telegram.svg" alt="" />
+												</a>
+											</li>
+										</ul>
+									</div>
+									<button class="button button--fill">Написать в&#160;чат</button>
+								</div>
+							</footer>
+						</div>
+					</div>
+				</div>
+			</div>
+		</modal>
+		<modal class="modal" id="review">
+			<div class="modal__wrapper">
+				<div class="container">
+					<div class="modal__window modal-window modal-review">
+						<header class="modal-review__header">
+							<div class="modal-review__name">Георгий Лосев</div>
+							<ul>
+								<li>
+									<img src="./img/star.svg" alt="" />
+								</li>
+								<li>
+									<img src="./img/star.svg" alt="" />
+								</li>
+								<li>
+									<img src="./img/star.svg" alt="" />
+								</li>
+								<li>
+									<img src="./img/star.svg" alt="" />
+								</li>
+								<li>
+									<img src="./img/star.svg" alt="" />
+								</li>
+							</ul>
+						</header>
+						<div class="modal-review__content">
+							<div class="modal-review__title">Отзыв</div>
+							<textarea name="" class="text-input" id=""></textarea>
+						</div>
+						<footer class="modal-review__footer">
+							<div class="modal-review__button">
+								<button class="button button--fill">Сохранить отзыв</button>
+							</div>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</modal>
 
 		<footer class="footer">
 			<div class="footer__container container">
