@@ -1,0 +1,1 @@
+window.addEventListener("DOMContentLoaded",(()=>{const e=document.querySelector(".our-solutions__slider .swiper");e&&new Swiper(e,{spaceBetween:20,slidesPerView:"auto",mousewheel:{enabled:!0}})}));
