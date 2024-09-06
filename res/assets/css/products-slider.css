@@ -1,0 +1,8 @@
+.products-slider header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.products-slider header h3 {
+  font-size: 52px;
+}/*# sourceMappingURL=products-slider.css.map */

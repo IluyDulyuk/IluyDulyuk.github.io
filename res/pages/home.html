@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+    <main class="home-main">
+
+        <section class="meet">
+            <div class="meet__container container">
+                <div class="meet__wrapper">
+                    <div class="meet__images">
+                        <div class="meet__image">
+                            <img src="../assets/images/sections/meet/meet-image-1.png" alt="">
+                        </div>
+                        <div class="meet__image">
+                            <img src="../assets/images/sections/meet/meet-image-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="meet__text">
+                        <h2>Встреча <br>
+                            в частной <br>
+                            резиденции
+                        </h2>
+                        <button class="button button--fill button--light">Запросить</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog add-bg pear">
+            <header class="catalog__header">
+                <div class="catalog__container container">
+                    <h2 class="h2">Каталог</h2>
+                </div>
+            </header>
+
+            <div class="products-slider catalog__slider">
+                <div class="container">
+                    <header>
+                        <h3>Антиквариат и искусство</h3>
+                        <div class="products-slider__arrows">
+                            <div class="products-slider__arrow products-slider__arrow--prev catalog">
+                                <img src="../assets/images/icons/products-slider-arrow.svg" alt="">
+                            </div>
+                            <div class="products-slider__arrow products-slider__arrow--next catalog">
+                                <img src="../assets/images/icons/products-slider-arrow.svg" alt="">
+                            </div>
+                        </div>
+                    </header>
+                </div>
+
+                <div class="swiper" data-id="catalog">
+                    <div class="swiper-wrapper">
+                        <a href="#" class="swiper-slide products__slide products-slider__slide-big">
+                            <div class="products-slider__slide-image">
+                                <img src="../assets/images/components/products-slider/catalog/image-1.png" alt="">
+                            </div>
+                            <div class="products-slider__slide-text">
+                                <h3>ARABESQUE настольная лампа</h3>
+                                <button>
+                                    Запросить стоимость
+                                </button>
+                            </div>
+                            <span class="products-slider__slide-tip">Под заказ</span>
+                        </a>
+                        <a href="#" class="swiper-slide products-slider__slide products__slide">
+                            <div class="products-slider__slide-image">
+                                <img src="../assets/images/components/products-slider/catalog/image-2.png" alt="">
+                            </div>
+                            <div class="products-slider__slide-text">
+                                <h3>ARABESQUE настольная лампа</h3>
+                                <p><span>3 200</span> тыс. руб.</p>
+                            </div>
+                            <span class="products-slider__slide-tip">В наличии</span>
+                        </a>
+                        <a href="#" class="swiper-slide products-slider__slide">
+                            <div class="products-slider__slide-image">
+                                <img src="../assets/images/components/products-slider/catalog/image-3.png" alt="">
+                            </div>
+                            <div class="products-slider__slide-text">
+                                <h3>ARABESQUE настольная лампа</h3>
+                                <button>Запросить стоимость</button>
+                            </div>
+                            <span class="products-slider__slide-tip">Под заказ</span>
+                        </a>
+                        <a href="#" class="swiper-slide products-slider__slide">
+                            <div class="products-slider__slide-image">
+                                <img src="../assets/images/components/products-slider/catalog/image-3.png" alt="">
+                            </div>
+                            <div class="products-slider__slide-text">
+                                <h3>ARABESQUE настольная лампа</h3>
+                                <p><span>3 200</span> тыс. руб.</p>
+                            </div>
+                            <span class="products-slider__slide-tip">В наличии</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta add-bg padding">
+            <div class="cta__container container">
+                <div class="cta__wrapper">
+                    <div class="cta__image">
+                        <img src="../assets/images/components/cta/sub/image.png" alt="">
+                    </div>
+                    <div class="cta__text">
+                        <h2>Подбор предметов искусства и антиквариата</h2>
+                        <p>Наши эксперты и консультанты подберут предметы искусства и антиквариата, подходящие именно вашему дому</p>
+                        <button class="button button--fill button--dark">
+                            Запросить
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-list add-bg padding">
+            <div class="products-list__container container">
+                <div class="products-list__wrapper">
+                    <header class="products-list__header">
+                        <h2>Современная мебель и свет</h2>
+                    </header>
+
+                    <ul>
+                        <li>
+                            <a href="#" class="products-list__item">
+                                <div class="products-list__item-image">
+                                    <img src="../assets/images/sections/products-list/image-1.png" alt="">
+                                </div>
+                                <div class="products-list__item-text">
+                                    <h3>ARABESQUE настольная лампа</h3>
+                                    <button>Запросить стоимость</button>
+                                </div>
+                                <div class="products-list__item-tip">
+                                    Под заказ
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="products-list__item">
+                                <div class="products-list__item-image">
+                                    <img src="../assets/images/sections/products-list/image-2.png" alt="">
+                                </div>
+                                <div class="products-list__item-text">
+                                    <h3>CLESSIDRA люстра</h3>
+                                    <p><span>3 200</span> тыс. руб.</p>
+                                </div>
+                                <div class="products-list__item-tip">
+                                    В наличии
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="products-list__item">
+                                <div class="products-list__item-image">
+                                    <img src="../assets/images/sections/products-list/image-3.png" alt="">
+                                </div>
+                                <div class="products-list__item-text">
+                                    <h3>ARABESQUE настольная лампа</h3>
+                                    <button>Запросить стоимость</button>
+                                </div>
+                                <div class="products-list__item-tip">
+                                    Под заказ
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="products-list__item">
+                                <div class="products-list__item-image">
+                                    <img src="../assets/images/sections/products-list/image-3.png" alt="">
+                                </div>
+                                <div class="products-list__item-text">
+                                    <h3>ARABESQUE настольная лампа</h3>
+                                    <button>Запросить стоимость</button>
+                                </div>
+                                <div class="products-list__item-tip">
+                                    Под заказ
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="products-list__item">
+                                <div class="products-list__item-image">
+                                    <img src="../assets/images/sections/products-list/image-3.png" alt="">
+                                </div>
+                                <div class="products-list__item-text">
+                                    <h3>ARABESQUE настольная лампа</h3>
+                                    <button>Запросить стоимость</button>
+                                </div>
+                                <div class="products-list__item-tip">
+                                    Под заказ
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="products-list__item">
+                                <div class="products-list__item-image">
+                                    <img src="../assets/images/sections/products-list/image-3.png" alt="">
+                                </div>
+                                <div class="products-list__item-text">
+                                    <h3>ARABESQUE настольная лампа</h3>
+                                    <button>Запросить стоимость</button>
+                                </div>
+                                <div class="products-list__item-tip">
+                                    Под заказ
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="products-list__item">
+                                <div class="products-list__item-image">
+                                    <img src="../assets/images/sections/products-list/image-3.png" alt="">
+                                </div>
+                                <div class="products-list__item-text">
+                                    <h3>ARABESQUE настольная лампа</h3>
+                                    <button>Запросить стоимость</button>
+                                </div>
+                                <div class="products-list__item-tip">
+                                    Под заказ
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta add-bg padding">
+            <div class="cta__container container">
+                <div class="cta__wrapper">
+                    <div class="cta__image">
+                        <img src="../assets/images/components/cta/give/image.png" alt="">
+                    </div>
+                    <div class="cta__text">
+                        <h2>Получить персональную консультацию</h2>
+                        <p>Наши эксперты и консультанты подберут предметы искусства и антиквариата, подходящие именно вашему дому</p>
+                        <button class="button button--fill button--dark">
+                            Запросить
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dekor add-bg">
+            <div class="products-slider catalog__slider">
+                <div class="container">
+                    <header>
+                        <h3>Декор, текстиль и подарки</h3>
+                        <div class="products-slider__arrows">
+                            <div class="products-slider__arrow products-slider__arrow--prev dekor">
+                                <img src="../assets/images/icons/products-slider-arrow.svg" alt="">
+                            </div>
+                            <div class="products-slider__arrow products-slider__arrow--next dekor">
+                                <img src="../assets/images/icons/products-slider-arrow.svg" alt="">
+                            </div>
+                        </div>
+                    </header>
+                </div>
+
+                <div class="swiper" data-id="dekor">
+                    <div class="swiper-wrapper">
+                        <a href="#" class="swiper-slide products__slide products-slider__slide-big">
+                            <div class="products-slider__slide-image">
+                                <img src="../assets/images/components/products-slider/dekor/image-1.png" alt="">
+                            </div>
+                            <div class="products-slider__slide-text">
+                                <h3>ARABESQUE настольная лампа</h3>
+                                <button>
+                                    Запросить стоимость
+                                </button>
+                            </div>
+                            <span class="products-slider__slide-tip">Под заказ</span>
+                        </a>
+                        <a href="#" class="swiper-slide products-slider__slide products__slide">
+                            <div class="products-slider__slide-image">
+                                <img src="../assets/images/components/products-slider/dekor/image-2.png" alt="">
+                            </div>
+                            <div class="products-slider__slide-text">
+                                <h3>ARABESQUE настольная лампа</h3>
+                                <p><span>3 200</span> тыс. руб.</p>
+                            </div>
+                            <span class="products-slider__slide-tip">В наличии</span>
+                        </a>
+                        <a href="#" class="swiper-slide products-slider__slide">
+                            <div class="products-slider__slide-image">
+                                <img src="../assets/images/components/products-slider/dekor/image-3.png" alt="">
+                            </div>
+                            <div class="products-slider__slide-text">
+                                <h3>ARABESQUE настольная лампа</h3>
+                                <button>Запросить стоимость</button>
+                            </div>
+                            <span class="products-slider__slide-tip">Под заказ</span>
+                        </a>
+                        <a href="#" class="swiper-slide products-slider__slide">
+                            <div class="products-slider__slide-image">
+                                <img src="../assets/images/components/products-slider/dekor/image-3.png" alt="">
+                            </div>
+                            <div class="products-slider__slide-text">
+                                <h3>ARABESQUE настольная лампа</h3>
+                                <p><span>3 200</span> тыс. руб.</p>
+                            </div>
+                            <span class="products-slider__slide-tip">В наличии</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="arrange pear">
+            <div class="arrange__container container">
+                <div class="arrange__wrapper">
+                    <header>
+                        <h2 class="h2">интерьерные аранжировки</h2>
+                    </header>
+                    <div class="coll-slider">
+                        <header>
+                            <h3>Мы создаем из предметной среды совокупное произведение искусства</h3>
+
+                            <div class="coll-slider__arrows">
+                                <div class="coll-slider__arrow coll-slider__arrow--prev dekor">
+                                    <img src="../assets/images/icons/image-slider-arrow.svg" alt="">
+                                </div>
+                                <div class="coll-slider__arrow coll-slider__arrow--next dekor">
+                                    <img src="../assets/images/icons/image-slider-arrow.svg" alt="">
+                                </div>
+                            </div>
+                        </header>
+
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <a href="#" class="swiper-slide coll-slider__slide">
+                                   <div class="coll-slider__slide-image">
+                                        <img src="../assets/images/components/coll-slider/image-1.png" alt="">
+                                   </div>
+                                   <h3>Название коллекции</h3>
+                                </a>
+                                <a href="#" class="swiper-slide coll-slider__slide">
+                                    <div class="coll-slider__slide-image">
+                                         <img src="../assets/images/components/coll-slider/image-2.png" alt="">
+                                    </div>
+                                    <h3>Название коллекции</h3>
+                                 </a>
+                                 <a href="#" class="swiper-slide coll-slider__slide">
+                                    <div class="coll-slider__slide-image">
+                                         <img src="../assets/images/components/coll-slider/image-2.png" alt="">
+                                    </div>
+                                    <h3>Название коллекции</h3>
+                                 </a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-pagination">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta no-border dark padding">
+            <div class="cta__container container">
+                <div class="cta__wrapper">
+                    <div class="cta__image">
+                        <img src="../assets/images/components/cta/design/image.png" alt="">
+                    </div>
+                    <div class="cta__text">
+                        <h2>Дизайн-проект под ключ</h2>
+                        <p>Наша команда занимается созданием интерьеров с 2013 года. Мы можем освободить Вас от забот и кошмара стройки.</p>
+                        <button class="button button--fill button--white">
+                            Записаться
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="collabs">
+            <header class="collabs__header">
+                <h2>Коллаборации</h2>
+                <p>Раздел с работами дизайнеров, архитекторов и деятелей искусств в нашей резиденции</p>
+                <a href="#" class="link">Подробнее</a>
+            </header>
+
+            <img class="desktop" src="../assets/images/sections/collabs/image.svg" alt="">
+            <img src="../assets/images/sections/collabs/image-m.svg" alt="" class="mobile">
+        </section>
+
+        <section class="virtual">
+            <div class="virtual__container container">
+                <div class="virtual__wrapper">
+                    <div class="virtual__image">
+                        <img src="../assets/images/sections/virtual/image.png" alt="">
+
+                        <span>360</span>
+                    </div>
+                    <div class="virtual__text">
+                        <h2>Виртуальный тур <br>
+                            по частной <br> резиденции
+                        </h2>
+                        <button class="button button--fill button--light">Начать</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+</html>

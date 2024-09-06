@@ -1,0 +1,10 @@
+.logo-slider ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-slider ul img {
+  width: 170px;
+  height: 85px;
+  object-fit: cover;
+}/*# sourceMappingURL=logo-slider.css.map */
