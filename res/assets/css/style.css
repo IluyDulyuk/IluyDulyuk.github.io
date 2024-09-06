@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Gals";
-  src: url("/assets/fonts/Gals-Light.woff2") format("woff2"), url("/assets/fonts/Gals-Light.woff") format("woff");
+  src: url("../fonts/Gals-Light.woff2") format("woff2"), url("../fonts/Gals-Light.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Manege Demo";
-  src: url("/assets/fonts/ManegeDemo-Light.woff2") format("woff2"), url("/assets/fonts/ManegeDemo-Light.woff") format("woff");
+  src: url("../fonts/ManegeDemo-Light.woff2") format("woff2"), url("../fonts/ManegeDemo-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -166,7 +166,7 @@ a {
   overflow: hidden;
 }
 .pear:before {
-  content: url("/assets/images/base//pear.svg");
+  content: url("../images/base/pear.svg");
   position: absolute;
   top: 51px;
   right: 0px;
@@ -1222,10 +1222,10 @@ a {
   }
 }
 .collabs header h2:before {
-  content: url("/assets/images/sections/collabs/before.svg");
+  content: url("../images/sections/collabs/before.svg");
 }
 .collabs header h2:after {
-  content: url("/assets/images/sections/collabs/after.svg");
+  content: url("../images/sections/collabs/after.svg");
 }
 .collabs header p {
   width: 616px;
