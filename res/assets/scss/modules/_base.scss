@@ -1,11 +1,7 @@
 body {
     font-family: $font-main;
-    background: $page-bg;
+    background: $page-bg url('/assets/images/base/bg.png') center top / cover no-repeat;
     color: $text-color;
-}
-
-.white-body {
-    background: $white-color !important;
 }
 
 main {

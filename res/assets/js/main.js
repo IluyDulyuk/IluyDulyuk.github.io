@@ -172,17 +172,44 @@ window.addEventListener('DOMContentLoaded', () => {
     const filterTrigger = document.querySelector('.filters__trigger');
     const filterClose = document.querySelector('.filters__close');
 
-    const toggleFilters = () => {
-        filters.classList.toggle('active');
-        document.body.classList.toggle('no-scroll');
+    if(filters) {
+        const toggleFilters = () => {
+            filters.classList.toggle('active');
+            document.body.classList.toggle('no-scroll');
+        }
+
+        filterTrigger.addEventListener('click', () => {
+            toggleFilters();
+        })
+
+        filterClose.addEventListener('click', () => {
+            toggleFilters();
+        })
     }
 
-    filterTrigger.addEventListener('click', () => {
-        toggleFilters();
-    })
+    // product card
 
-    filterClose.addEventListener('click', () => {
-        toggleFilters();
-    })
+    const productCardSlider = document.querySelector('.product-card__gallery .swiper');
+
+    if(productCardSlider) {
+
+        const thumbs = document.querySelector('.product-card__thumbs .swiper');
+
+        const thumbsSwiper = new Swiper(thumbs, {
+            slidesPerView: 1,
+            slidesPerView: 'auto',
+            direction: "vertical",
+            spaceBetween: 10,
+            freeMode: true,
+            mousewheel: true,
+        });
+
+        const productCardSwiper = new Swiper(productCardSlider, {
+            slidesPerView: 1,
+            thumbs: {
+                swiper: thumbsSwiper,
+            },
+        });
+    }
 
 })

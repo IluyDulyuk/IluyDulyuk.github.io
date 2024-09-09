@@ -101,12 +101,8 @@ legend {
 
 body {
   font-family: "Gals";
-  background: rgb(249, 249, 249);
+  background: rgb(249, 249, 249) url("/assets/images/base/bg.png") center top/cover no-repeat;
   color: #283344;
-}
-
-.white-body {
-  background: #fff !important;
 }
 
 main {
@@ -1912,6 +1908,36 @@ a {
     margin-bottom: 20px;
   }
 }
+.section-header__search {
+  display: none;
+}
+@media screen and (max-width: 1397px) {
+  .section-header__search {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .section-header__search label {
+    display: block;
+    width: 100%;
+    padding: 10px 10px 10px 38px;
+    background: #fff;
+    border-radius: 100px;
+    position: relative;
+  }
+  .section-header__search label input {
+    font-size: 16px;
+    color: #8A7A61;
+  }
+  .section-header__search label input::placeholder {
+    color: #8A7A61;
+  }
+  .section-header__search label span {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
 .section-header__breadcrumbs {
   margin-bottom: 36px;
 }
@@ -1932,6 +1958,9 @@ a {
 .section-header__breadcrumbs ul li a {
   padding-right: 6px;
   border-right: 1px solid rgba(40, 50, 68, 0.2);
+}
+.section-header__breadcrumbs ul li span {
+  color: #283344;
 }
 .section-header__title {
   font-family: "Manege Demo";
@@ -2432,4 +2461,66 @@ a {
   .catalog-text p {
     font-size: 14px;
   }
+}
+
+.product-card {
+  display: flex;
+  justify-content: center;
+  gap: 72px;
+}
+.product-card__gallery {
+  width: 860px;
+  height: 696px;
+  background: rgba(138, 122, 97, 0.1);
+  position: relative;
+}
+.product-card__slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.product-card__slide img {
+  height: 100%;
+}
+.product-card__thumbs {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  z-index: 2;
+}
+.product-card__thumbs .swiper {
+  max-height: 540px;
+}
+.product-card__thumb {
+  width: 77px;
+  height: 77px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 2px;
+  border: 2px solid transparent;
+}
+.product-card__thumb.swiper-slide-thumb-active {
+  border-color: #283344;
+}
+.product-card__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product-card__button {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #8A7A61;
+  cursor: pointer;
+  z-index: 2;
 }/*# sourceMappingURL=style.css.map */
