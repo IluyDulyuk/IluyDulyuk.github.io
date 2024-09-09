@@ -1,0 +1,44 @@
+.logo-slider {
+
+    border-bottom: 1px solid $border-color;
+
+    @media screen and (max-width: 1397px) {
+        padding: 24px 0px;
+    }
+
+    &__container {
+
+        @media screen and (max-width: 1397px) {
+            overflow-x: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            &::-moz-progress-bar {
+                display: none;
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 1397px) {
+            gap: 20px;
+        }
+
+        img {
+            width: 170px;
+            height: 85px;
+            object-fit: cover;
+
+            @media screen and (max-width: 1397px) {
+                min-width: 100px;
+                height: auto;
+            }
+        }
+    }
+}

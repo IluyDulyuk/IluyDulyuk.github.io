@@ -1,0 +1,138 @@
+.home-hero {
+    width: 100%;
+    aspect-ratio: 1514 / 982;
+    background: url('../images/sections/home-hero/bg.jpg') center top / cover no-repeat;
+    position: relative;
+    z-index: 1;
+    color: $white-color;
+
+    @media screen and (max-width: 1397px) {
+        max-width: 575px;
+        margin: 0 auto;
+        aspect-ratio: 393 / 652;
+        min-height: 620px;
+    }
+
+    &__after {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+        opacity: 0.78;
+        z-index: 1;
+    }
+
+    &__tg {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 46px;
+        z-index: 2;
+
+        @media screen and (max-width: 1397px) {
+            bottom: 30px;
+        }
+
+        a {
+            font-size: 21px;
+
+            @media screen and (max-width: 1397px) {
+                font-size: 18px;
+            }
+        }
+    }
+
+    &__container {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 180px;
+        position: relative;
+        z-index: 2;
+
+        @media screen and (max-width: 1397px) {
+            gap: 52px;
+        }
+
+        &-header {
+
+            p {
+                font-size: 26px;
+                margin-bottom: 26px;
+
+                @media screen and (max-width: 1397px) {
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            h1 {
+                font-size: 71px;
+                font-family: $font-secondary;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 22px;
+
+                @media screen and (max-width: 1397px) {
+                    font-size: 45px;
+                    max-width: 350px;
+                    margin: 0 auto;
+
+                    svg {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        &-footer {
+
+            p {
+                font-size: 26px;
+                margin-bottom: 26px;
+
+                @media screen and (max-width: 1397px) {
+                    font-size: 22px;
+                    max-width: 320px;
+                    margin: 0 auto;
+                    margin-bottom: 24px;
+                }
+            }
+
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 100px;
+
+                @media screen and (max-width: 1397px) {
+                    flex-direction: column;
+                    gap: 18px;
+                }
+
+                li {
+
+                    a {
+                        font-size: 19px;
+
+                        @media screen and (max-width: 1397px) {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

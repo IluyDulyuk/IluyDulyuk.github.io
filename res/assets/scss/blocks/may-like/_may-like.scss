@@ -1,0 +1,29 @@
+.may-like {
+    padding-top: 70px;
+
+    @media screen and (max-width: 1397px) {
+        padding-top: 20px;
+    }
+
+    h2 {
+        font-size: 52px;
+        margin-bottom: 28px;
+        font-family: $font-secondary;
+
+        @media screen and (max-width: 1397px) {
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+
+        @media screen and (max-width: 1397px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+    }
+}

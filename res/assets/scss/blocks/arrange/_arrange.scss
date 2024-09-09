@@ -1,0 +1,7 @@
+.arrange {
+    padding: 100px 0px 30px;
+
+    @media screen and (max-width: calc(1360px + 37px)) {
+        padding: 30px 0px;
+    }
+}

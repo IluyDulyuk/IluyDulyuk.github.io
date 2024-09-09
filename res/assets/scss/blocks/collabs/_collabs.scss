@@ -1,0 +1,84 @@
+.collabs {
+    padding: 62px 0px 110px;
+    overflow-x: hidden;
+
+    @media screen and (max-width: calc(1360px + 37px)) {
+        padding: 20px 0px 30px;
+        max-width: 575px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 67px;
+
+        @media screen and (max-width: calc(1360px + 37px)) {
+            margin-bottom: 29px;
+            padding: 0px 16px;
+        }
+
+        h2 {
+            font-size: 51px;
+            text-transform: uppercase;
+            font-family: $font-secondary;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 42px;
+            justify-content: center;
+
+            @media screen and (max-width: calc(1360px + 37px)) {
+                font-size: 36px;
+                margin-bottom: 12px;
+                gap: 20px;
+            }
+
+            &:before {
+                content: url('../images/sections/collabs/before.svg');
+            }
+
+            &:after {
+                content: url('../images/sections/collabs/after.svg');
+            }
+        }
+
+        p {
+            width: 616px;
+            margin: 0 auto;
+            font-size: 32px;
+            margin-bottom: 30px;
+
+            @media screen and (max-width: calc(1360px + 37px)) {
+                width: 100%;
+                font-size: 18px;
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    .desktop {
+
+        @media screen and (max-width: calc(1360px + 37px)) {
+            display: none;
+        }
+    }
+
+    .mobile {
+        display: none;
+
+        @media screen and (max-width: calc(1360px + 37px)) {
+            display: block;
+            padding: 0px 16px;
+        }
+    }
+
+    img {
+        width: 100%;
+        aspect-ratio: 1562 / 583;
+
+        @media screen and (max-width: calc(1360px + 37px)) {
+            aspect-ratio: 361 / 376;
+        }
+    }
+}

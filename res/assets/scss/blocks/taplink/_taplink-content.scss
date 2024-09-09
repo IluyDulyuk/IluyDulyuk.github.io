@@ -1,0 +1,111 @@
+// Таплинк контент
+
+.taplink-content {
+
+    &__container {
+        height: 100%;
+    }
+
+    &__wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+
+        @media screen and (max-width: calc(1360px + 40px)) {
+            gap: 40px;
+        }
+    }
+
+    &__header {
+        text-align: center;
+
+        span {
+            font-size: 26px;
+            margin-bottom: 30px;
+            display: block;
+
+            @media screen and (max-width: calc(1360px + 40px)) {
+                font-size: 22px;
+                margin-bottom: 20px;
+            }
+        }
+
+        h1 {
+            font-size: 70px;
+            margin-bottom: 30px;
+            font-family: $font-secondary;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            @media screen and (max-width: calc(1360px + 40px)) {
+                font-size: 45px;
+                margin-bottom: 17px;
+            }
+
+            span {
+                margin-bottom: 0px;
+
+                @media screen and (max-width: calc(1360px + 40px)) {
+                    display: none;
+                }
+            }
+        }
+
+        p {
+            font-size: 26px;
+            margin: 0 auto;
+            display: block;
+            line-height: 28px;
+
+            @media screen and (max-width: calc(1360px + 40px)) {
+                font-size: 22px;
+                line-height: 23px;
+            }
+        }
+    }
+
+    &__links {
+
+        @media screen and (max-width: calc(1360px + 40px)) {
+            width: 100%;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+
+            li {
+
+                a {
+                    width: 348px;
+                    padding: 10px 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 22px;
+                    color: $white-color;
+                    background: #8A7A61;
+                    line-height: 29px;
+                    transition: 0.3s;
+
+                    &:hover {
+                        background: rgba(180, 160, 129, 0.8);
+                    }
+
+                    @media screen and (max-width: calc(1360px + 40px)) {
+                        width: 100%;
+
+                        &:hover {
+                            background: #8A7A61;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

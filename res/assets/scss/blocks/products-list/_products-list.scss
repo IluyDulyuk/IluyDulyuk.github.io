@@ -1,0 +1,185 @@
+.products-list {
+
+    @media screen and (max-width: calc(1360px + 37px)) {
+        padding: 0px;
+        padding-bottom: 30px;
+    }
+
+    header {
+        padding: 0px 0px 48px 76px;
+
+        @media screen and (max-width: calc(1360px + 37px)) {
+            padding: 0;
+            padding-bottom: 13px;
+        }
+
+        h2 {
+            font-size: 52px;
+
+            @media screen and (max-width: calc(1360px + 37px)) {
+                font-size: 24px;
+            }
+        }
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 24px;
+        row-gap: 48px;
+
+        @media screen and (max-width: calc(1360px + 37px)) {
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 8px;
+            row-gap: 16px;
+        }
+
+        li {
+
+            a {
+                height: 528px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                @media screen and (max-width: calc(1360px + 37px)) {
+                    height: auto;
+                    justify-content: flex-start;
+                }
+            }
+
+            &:nth-child(1) {
+                grid-column: span 2;
+                position: relative;
+
+                .products-list__item-image {
+                    width: 100%;
+                    height: 100%;
+                    aspect-ratio: 360 / 284;
+                }
+
+                .products-list__item-text {
+                    position: absolute;
+                    top: 40px;
+                    left: 40px;
+                    @media screen and (max-width: calc(1360px + 37px)) {
+                        margin-top: 0px;
+                    }
+
+                    @media screen and (max-width: calc(1360px + 37px)) {
+                        top: 15px;
+                        left: 20px;
+                    }
+
+                    h3 {
+                        margin-bottom: 14px;
+                        font-size: 22px;
+
+                        @media screen and (max-width: calc(1360px + 37px)) {
+                            font-size: 16px;
+                            margin-bottom: 6px;
+                        }
+                    }
+
+                    button {
+                        font-size: 16px;
+                        padding-bottom: 9px;
+                        border-bottom: 1px solid $white-color;
+
+                        @media screen and (max-width: calc(1360px + 37px)) {
+                            font-size: 14px;
+                            padding-bottom: 1px;
+                        }
+                    }
+                }
+
+                .products-list__item-tip {
+                    left: auto;
+                    right: 14px;
+
+                    @media screen and (max-width: calc(1360px + 37px)) {
+                        right: 9px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__item {
+        position: relative;
+
+        &-image {
+            width: 100%;
+            aspect-ratio: 322 / 433;
+
+            @media screen and (max-width: calc(1360px + 37px)) {
+                aspect-ratio: 176 / 228;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &-text {
+
+            @media screen and (max-width: calc(1360px + 37px)) {
+                margin-top: 6px;
+            }
+
+            h3 {
+                font-size: 22px;
+                margin-bottom: 16px;
+
+                @media screen and (max-width: calc(1360px + 37px)) {
+                    font-size: 18px;
+                    margin-bottom: 6px;
+                }
+            }
+
+            p {
+                font-size: 16px;
+
+                @media screen and (max-width: calc(1360px + 37px)) {
+                    font-size: 14px;
+                }
+
+                span {
+                    font-size: 22px;
+
+                    @media screen and (max-width: calc(1360px + 37px)) {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            button {
+                padding-bottom: 9px;
+                font-size: 16px;
+                border-bottom: 1px solid $white-color;
+
+                @media screen and (max-width: calc(1360px + 37px)) {
+                    font-size: 14px;
+                    padding-bottom: 1px;
+                }
+            }
+        }
+
+        &-tip {
+            padding: 5px 13px;
+            background: $text-color;
+            border-radius: 54px;
+            position: absolute;
+            top: 14px;
+            left: 14px;
+
+            @media screen and (max-width: calc(1360px + 37px)) {
+                font-size: 14px;
+                top: 10px;
+                left: 10px;
+            }
+        }
+    }
+}

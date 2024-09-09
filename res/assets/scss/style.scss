@@ -1,0 +1,37 @@
+@import './modules/fonts';
+@import './modules/vars';
+@import './modules/reset';
+@import './modules/base';
+@import './modules/containers';
+
+@import './blocks/home-hero/home-hero.scss';
+@import './blocks/taplink/taplink-main.scss';
+@import './blocks/taplink/taplink-video.scss';
+@import './blocks/taplink/taplink-header.scss';
+@import './blocks/taplink/taplink-content.scss';
+
+@import './components/header/header.scss';
+@import './components/image-slider/image-slider.scss';
+@import './components/buttons/buttons.scss';
+@import './components/products-slider/products-slider.scss';
+@import './components/cta/cta.scss';
+@import './components/coll-slider/coll-slider.scss';
+@import './components/product/product.scss';
+@import './components/footer/footer.scss';
+
+@import './blocks/logo-slider/logo-slider.scss';
+@import './blocks/projects/projects.scss';
+@import './blocks/meet/meet.scss';
+@import './blocks/catalog/catalog.scss';
+@import './blocks/products-list/products-list.scss';
+@import './blocks/arrange/arrange.scss';
+@import './blocks/collabs/collabs.scss';
+@import './blocks/virtual/virtual.scss';
+@import './blocks/contacts-footer/contacts-footer.scss';
+@import './blocks/section-header/section-header.scss';
+@import './blocks/tax/tax.scss';
+@import './blocks/filters/filters.scss';
+@import './blocks/catalog-list/catalog-list.scss';
+@import './blocks/get-consul/get-consul.scss';
+@import './blocks/may-like/may-like.scss';
+@import './blocks/catalog-text/catalog-text.scss';

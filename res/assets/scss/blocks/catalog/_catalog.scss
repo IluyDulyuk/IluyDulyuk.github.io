@@ -1,0 +1,20 @@
+.catalog {
+
+    &__slider {
+        padding: 60px 0px;
+
+        @media screen and (max-width: calc(1360px + 37px)) {
+            padding: 0;
+            padding-bottom: 25px;
+        }
+    }
+
+    &__header {
+        padding-top: 70px;
+        border-bottom: 1px solid $border-color;
+
+        @media screen and (max-width: calc(1360px + 37px)) {
+            padding: 25px 0px;
+        }
+    }
+}

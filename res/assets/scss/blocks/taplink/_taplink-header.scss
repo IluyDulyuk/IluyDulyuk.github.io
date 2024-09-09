@@ -1,0 +1,26 @@
+// Таплинк Header
+
+.taplink-header {
+    padding: 23px 0px;
+
+    @media screen and (max-width: calc(1360px + 40px)) {
+        padding: 23px 0px 0px 0px;
+        margin-bottom: 40px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__logo {
+
+        @media screen and (max-width: calc(1360px + 40px)) {
+            width: 228px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

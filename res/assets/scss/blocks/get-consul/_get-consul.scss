@@ -1,0 +1,80 @@
+.get-consul {
+    margin: 48px 0px;
+    padding: 24px 0px;
+    border-top: 1px solid rgba(61, 61, 61, 0.1);
+    border-bottom: 1px solid rgba(61, 61, 61, 0.1);
+    position: relative;
+
+    @media screen and (max-width: 1397px) {
+        margin: 16px 0px;
+        padding: 17px 0px;
+    }
+
+    &__pear {
+        position: absolute;
+        top: -50%;
+        right: 0;
+        z-index: -1;
+
+        @media screen and (max-width: 1397px) {
+            display: none;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 1397px) {
+            flex-direction: column;
+        }
+    }
+
+    &__image {
+        overflow: hidden;
+        width: 162px;
+        height: 186px;
+        border-radius: 107px;
+
+        @media screen and (max-width: 1397px) {
+            width: 241px;
+            height: 186px;
+            margin-bottom: 17px;
+        }
+
+        &--second {
+            width: 313px;
+            height: 116px;
+            border-radius: 107px;
+
+            @media screen and (max-width: 1397px) {
+                display: none;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    h2 {
+        font-size: 49px;
+        max-width: 500px;
+
+        @media screen and (max-width: 1397px) {
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 17px;
+        }
+    }
+
+    button {
+
+        @media screen and (max-width: 1397px) {
+            font-size: 19px;
+        }
+    }
+}

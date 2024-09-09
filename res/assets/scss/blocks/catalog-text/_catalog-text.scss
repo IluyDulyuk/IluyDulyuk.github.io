@@ -1,0 +1,16 @@
+.catalog-text {
+    padding: 60px 0px 100px;
+
+    @media screen and (max-width: 1397px) {
+        padding: 20px 0px 60px;
+    }
+
+    p {
+        max-width: 1000px;
+        font-size: 16px;
+
+        @media screen and (max-width: 1397px) {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,240 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    color: $white-color;
+    z-index: 2;
+    max-width: 1920px;
+    transition: 0.3s;
+
+    &.text-color {
+        color: $text-color;
+
+        &:hover {
+            background: transparent;
+        }
+
+        .text-color {
+            display: block;
+        }
+
+        .white-color {
+            display: none;
+        }
+
+        .header__gum {
+
+            span {
+                background: $text-color;
+            }
+        }
+    }
+
+    .text-color {
+        display: none;
+    }
+
+    @media screen and (max-width: 1397px) {
+        max-width: 575px;
+    }
+
+    &:hover {
+        background: $text-color;
+
+        @media screen and (max-width: 1397px) {
+            background: transparent;
+        }
+    }
+
+    &__gum {
+        display: none;
+
+        @media screen and (max-width: 1397px) {
+            display: flex;
+            width: 24px;
+            flex-direction: column;
+            gap: 8px;
+
+            span {
+                width: 100%;
+                height: 1px;
+                background: $white-color;
+            }
+        }
+    }
+
+    &__lang {
+
+        @media screen and (max-width: 1397px) {
+            display: none;
+        }
+    }
+
+    &__top {
+        padding: 52px 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $border-color;
+        position: relative;
+
+        @media screen and (max-width: 1397px) {
+            border: none;
+            padding: 32px 38px;
+            height: calc(55px + 64px);
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            li {
+
+                @media screen and (max-width: 1397px) {
+                    display: none;
+
+                    &:nth-child(3) {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0px;
+
+        @media screen and (max-width: 1397px) {
+            display: none;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 70px;
+
+            a {
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__logo {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+        @media screen and (max-width: 1397px) {
+            width: 124px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.header-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    background: $white-color;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    min-height: 600px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    header {
+        padding: 32px 38px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &-close {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+            display: block;
+            width: 20px;
+            height: 1px;
+            background: $link-color;
+            transform: rotate(-45deg);
+            position: absolute;
+
+
+            &:nth-child(2) {
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    &-phone {
+        width: 20px;
+        height: 20px;
+
+        a {
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        li {
+
+            a {
+                font-size: 24px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        a {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 16px;
+        }
+    }
+}

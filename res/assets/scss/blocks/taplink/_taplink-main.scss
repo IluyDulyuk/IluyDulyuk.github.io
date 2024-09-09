@@ -1,0 +1,17 @@
+// Таплинк
+
+.taplink-main {
+    width: 100%;
+    height: 100dvh;
+    min-height: 800px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    color: $white-color;
+    position: relative;
+
+    @media screen and (max-width: calc(1360px + 40px)) {
+        display: block;
+        min-height: 670px;
+    }
+}

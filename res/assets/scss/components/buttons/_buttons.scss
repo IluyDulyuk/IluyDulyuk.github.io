@@ -1,0 +1,26 @@
+.button {
+    max-width: fit-content;
+
+    &--fill {
+        font-size: 28px;
+        padding: 20px 40px;
+
+        @media screen and (max-width: calc(1360px + 37px)) {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    }
+
+    &--light {
+        background: #D4C8A6;
+    }
+
+    &--dark {
+        background: $text-color;
+    }
+
+    &--white {
+        background: $white-color;
+        color: $link-color !important;
+    }
+}
