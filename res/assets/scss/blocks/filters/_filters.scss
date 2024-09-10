@@ -1,6 +1,10 @@
 .filters {
     margin-bottom: 40px;
 
+    @media screen and (max-width: 1397px) {
+        margin-bottom: 22.5px;
+    }
+
     &__selections {
         display: flex;
         align-items: center;
@@ -250,6 +254,10 @@
             align-items: center;
             gap: 6px;
             font-size: 16px;
+
+            @media screen and (max-width: 1397px) {
+                font-size: 14px;
+            }
         }
     }
 
@@ -273,8 +281,8 @@
             }
 
             span {
-                width: 20px;
-                height: 20px;
+                width: 15px;
+                height: 15px;
                 background: $text-color;
                 border-radius: 50%;
                 display: flex;

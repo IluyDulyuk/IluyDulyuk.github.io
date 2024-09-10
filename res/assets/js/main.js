@@ -105,6 +105,13 @@ window.addEventListener('DOMContentLoaded', () => {
         toggleMobileMenu();
     })
 
+    document.addEventListener('keydown', (e) => {
+        if(e.key == 'Escape') {
+            mobileMenu.classList.remove('active');
+            document.body.classList.remove('no-scroll');
+        }
+    })
+
     // tax
 
     const taxList = document.querySelectorAll('.tax ul a');
@@ -153,6 +160,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
             const trigger = item.querySelector('h3');
             const ul = item.querySelector('ul');
+            const input = item.querySelector('input');
+            const p = item.querySelector('p');
+            const span = item.querySelector('span');
+            const label = item.querySelector('label');
 
             trigger.addEventListener('click', () => {
 
@@ -161,6 +172,14 @@ window.addEventListener('DOMContentLoaded', () => {
                 } else {
                     removeAllActive();
                     ul.classList.add('active')
+
+                    window.addEventListener('click', (e) => {
+                        // console.log(e.target)
+                        // if(e.target) {
+                        //     console.log('click')
+                        //     // removeAllActive();
+                        // }
+                    })
                 }
             })
         })
@@ -184,6 +203,13 @@ window.addEventListener('DOMContentLoaded', () => {
 
         filterClose.addEventListener('click', () => {
             toggleFilters();
+        })
+
+        document.addEventListener('keydown', (e) => {
+            if(e.key == 'Escape') {
+                filters.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+            }
         })
     }
 

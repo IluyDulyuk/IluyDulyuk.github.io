@@ -2057,6 +2057,11 @@ a {
 .filters {
   margin-bottom: 40px;
 }
+@media screen and (max-width: 1397px) {
+  .filters {
+    margin-bottom: 22.5px;
+  }
+}
 .filters__selections {
   display: flex;
   align-items: center;
@@ -2289,6 +2294,11 @@ a {
   gap: 6px;
   font-size: 16px;
 }
+@media screen and (max-width: 1397px) {
+  .filters__choice button {
+    font-size: 14px;
+  }
+}
 .filters__trigger {
   display: none;
 }
@@ -2309,8 +2319,8 @@ a {
     border-bottom: 1px solid #8A7A61;
   }
   .filters__trigger span {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background: #283344;
     border-radius: 50%;
     display: flex;
@@ -2465,14 +2475,28 @@ a {
 
 .product-card {
   display: flex;
-  justify-content: center;
   gap: 72px;
+  max-width: 1512px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1397px) {
+  .product-card {
+    flex-direction: column;
+    max-width: 575px;
+  }
 }
 .product-card__gallery {
   width: 860px;
   height: 696px;
   background: rgba(138, 122, 97, 0.1);
   position: relative;
+}
+@media screen and (max-width: 1397px) {
+  .product-card__gallery {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 393/400;
+  }
 }
 .product-card__slide {
   width: 100%;
@@ -2523,4 +2547,66 @@ a {
   background: #8A7A61;
   cursor: pointer;
   z-index: 2;
+}
+.product-card__content {
+  max-width: 440px;
+  margin-top: 31px;
+}
+.product-card__content h2 {
+  font-size: 41px;
+  text-transform: uppercase;
+  font-family: "Manege Demo";
+  margin-bottom: 12px;
+}
+.product-card__content p {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+.product-card__content ul {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+.product-card__content ul li {
+  font-size: 16px;
+}
+.product-card__logo {
+  margin-bottom: 39px;
+}
+.product-card__tip {
+  padding: 5px 13px;
+  background: #283344;
+  color: #fff;
+  border-radius: 54px;
+  font-size: 16px;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+.product-card__price {
+  font-size: 16px;
+  margin-bottom: 34px;
+}
+.product-card__price span {
+  font-size: 36px;
+}
+.product-card__pay-button {
+  width: 100%;
+  padding: 20px 0px;
+  text-transform: uppercase;
+  font-size: 23px;
+  background: #8A7A61;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+.product-card__more-button {
+  font-size: 14px;
+  padding-bottom: 1px;
+  color: #8A7A61;
+  border-bottom: 1px solid #8A7A61;
+  display: inline-block;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
