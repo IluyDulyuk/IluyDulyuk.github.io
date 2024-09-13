@@ -1,0 +1,31 @@
+.product-description {
+    margin-bottom: 60px;
+
+    @media screen and (max-width: 1397px) {
+        margin-bottom: 24px;
+    }
+
+    h2 {
+        font-size: 30px;
+        margin-bottom: 12px;
+        color: $add-text-color;
+
+        @media screen and (max-width: 1397px) {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+    }
+
+    p {
+        font-size: 16px;
+
+        @media screen and (max-width: 1397px) {
+            font-size: 14px;
+            line-height: 17px;
+
+            br {
+                display: none;
+            }
+        }
+    }
+}

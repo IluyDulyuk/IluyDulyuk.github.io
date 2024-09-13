@@ -1,0 +1,41 @@
+.about-header {
+    padding: 46px 0px 57px;
+
+    @media screen and (max-width: 1397px) {
+        padding: 20px 0px 40px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        color: $add-text-color;
+
+        @media screen and (max-width: 1397px) {
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        p {
+            width: 600px;
+            font-size: 18px;
+            line-height: 27px;
+
+            @media screen and (max-width: 1397px) {
+                width: 100%;
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+
+        h2 {
+            font-size: 18px;
+            text-transform: uppercase;
+
+            @media screen and (max-width: 1397px) {
+                order: -1;
+                font-size: 16px;
+                text-align: right;
+            }
+        }
+    }
+}

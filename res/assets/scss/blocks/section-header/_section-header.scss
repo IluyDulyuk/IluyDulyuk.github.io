@@ -42,8 +42,20 @@
     &__breadcrumbs {
         margin-bottom: 36px;
 
+        .dot {
+            display: none;
+        }
+
         @media screen and (max-width: 1397px) {
             margin-bottom: 20px;
+
+            .none {
+                display: none;
+            }
+
+            .dot {
+                display: block;
+            }
         }
 
         ul {

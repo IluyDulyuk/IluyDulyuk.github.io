@@ -53,6 +53,7 @@
     }
 
     &__text {
+        padding-right: 50px;
 
         @media screen and (max-width: calc(1360px + 37px)) {
             padding: 17px 16px;

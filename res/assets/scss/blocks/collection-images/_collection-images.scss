@@ -1,0 +1,32 @@
+.collection-images {
+    padding-bottom: 40px;
+
+    @media screen and (max-width: 1397px) {
+        padding-bottom: 20px;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1014px 1fr;
+        gap: 24px;
+
+        @media screen and (max-width: 1397px) {
+            gap: 10px;
+            grid-template-columns: 60% 1fr;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            &:nth-child(1) {
+
+                @media screen and (max-width: 1397px) {
+                    aspect-ratio: 219 / 163;
+                }
+            }
+        }
+    }
+}

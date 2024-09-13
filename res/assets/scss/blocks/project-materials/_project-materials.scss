@@ -1,0 +1,63 @@
+.project-materials {
+    padding: 140px 0px 100px;
+
+    @media screen and (max-width: 1397px) {
+        padding: 20px 0px 70px;
+    }
+
+    h2 {
+        font-size: 47px;
+        margin-bottom: 30px;
+
+        @media screen and (max-width: 1397px) {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 1397px) {
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        ul {
+            width: 520px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            @media screen and (max-width: 1397px) {
+                width: 100%;
+            }
+
+            li {
+                display: flex;
+                align-items: center;
+                font-size: 26px;
+                gap: 15px;
+
+                @media screen and (max-width: 1397px) {
+                    font-size: 16px;
+                    gap: 10px;
+                }
+
+                &:before {
+                    content: "";
+                    width: 7px;
+                    height: 7px;
+                    border-radius: 50%;
+                    background: $text-color;
+
+                    @media screen and (max-width: 1397px) {
+                        width: 5px;
+                        height: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

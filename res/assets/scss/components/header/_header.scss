@@ -11,6 +11,7 @@
 
     &.text-color {
         color: $text-color;
+        background: transparent;
 
         &:hover {
             background: transparent;

@@ -1,6 +1,14 @@
 .may-like {
     padding-top: 70px;
 
+    &.margin-bottom {
+        padding-bottom: 86px;
+
+        @media screen and (max-width: 1397px) {
+            padding-bottom: 30px;
+        }
+    }
+
     @media screen and (max-width: 1397px) {
         padding-top: 20px;
     }

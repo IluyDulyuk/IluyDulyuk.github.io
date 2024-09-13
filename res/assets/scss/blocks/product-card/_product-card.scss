@@ -3,10 +3,13 @@
     gap: 72px;
     max-width: 1512px;
     margin: 0 auto;
+    margin-bottom: 46px;
 
     @media screen and (max-width: 1397px) {
         flex-direction: column;
         max-width: 575px;
+        gap: 90px;
+        margin-bottom: 24px;
     }
 
     &__gallery {
@@ -37,13 +40,25 @@
         position: absolute;
         top: 14px;
         right: 14px;
-        display: flex;
-        flex-direction: column;
         gap: 18px;
         z-index: 2;
 
+        @media screen and (max-width: 1397px) {
+            top: auto;
+            right: auto;
+            left: 0px;
+            bottom: -15px;
+            transform: translateY(100%);
+            width: 100%;
+        }
+
         .swiper {
             max-height: 540px;
+
+            @media screen and (max-width: 1397px) {
+                max-height: auto;
+                width: calc(100% - 32px);
+            }
         }
     }
 
@@ -54,6 +69,11 @@
         transition: 0.3s;
         padding: 2px;
         border: 2px solid transparent;
+
+        @media screen and (max-width: 1397px) {
+            width: 50px;
+            height: 50px;
+        }
 
         &.swiper-slide-thumb-active {
             border-color: $text-color;
@@ -78,23 +98,43 @@
         background: $link-color;
         cursor: pointer;
         z-index: 2;
+
+        @media screen and (max-width: 1397px) {
+            bottom: 18px;
+            right: 15px;
+        }
     }
 
     &__content {
         max-width: 440px;
         margin-top: 31px;
 
+        @media screen and (max-width: 1397px) {
+            max-width: 100%;
+            margin-top: 0px;
+            padding: 0px 16px;
+        }
+
         h2 {
             font-size: 41px;
             text-transform: uppercase;
             font-family: $font-secondary;
             margin-bottom: 12px;
+
+            @media screen and (max-width: 1397px) {
+                font-size: 36px;
+            }
         }
 
         p {
             display: block;
             font-size: 16px;
             margin-bottom: 25px;
+
+            @media screen and (max-width: 1397px) {
+                font-size: 14px;
+                margin-bottom: 24px;
+            }
         }
 
         ul {
@@ -104,14 +144,28 @@
             gap: 20px;
             margin-bottom: 10px;
 
+            @media screen and (max-width: 1397px) {
+                margin-top: 24px;
+                gap: 10px;
+                margin-bottom: 12px;
+            }
+
             li {
                 font-size: 16px;
+
+                @media screen and (max-width: 1397px) {
+                    font-size: 14px;
+                }
             }
         }
     }
 
     &__logo {
         margin-bottom: 39px;
+
+        @media screen and (max-width: 1397px) {
+            bottom: 20px;
+        }
     }
 
     &__tip {
@@ -122,14 +176,27 @@
         font-size: 16px;
         display: inline-block;
         margin-bottom: 25px;
+
+        @media screen and (max-width: 1397px) {
+            font-size: 14px;
+        }
     }
 
     &__price {
         font-size: 16px;
         margin-bottom: 34px;
 
+        @media screen and (max-width: 1397px) {
+            margin-bottom: 24px;
+            font-size: 14px;
+        }
+
         span {
             font-size: 36px;
+
+            @media screen and (max-width: 1397px) {
+                font-size: 22px;
+            }
         }
     }
 
@@ -142,6 +209,10 @@
         color: $white-color;
         text-align: center;
         cursor: pointer;
+
+        @media screen and (max-width: 1397px) {
+            font-size: 18px;
+        }
     }
 
     &__more-button {

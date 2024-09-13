@@ -67,13 +67,14 @@ a {
 
 .pear {
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
 
     &:before {
         content: url('../images/base/pear.svg');
         position: absolute;
         top: 51px;
         right: 0px;
+        z-index: -1;
 
         @media screen and (max-width: calc(1360px + 37px)) {
             display: none;
@@ -120,5 +121,42 @@ a {
 
     @media screen and (max-width: 1397px) {
         margin-top: 119px;
+    }
+}
+
+.about-main {
+
+    .project-content {
+        padding-top: 0px !important;
+    }
+
+    .project-cards {
+
+        @media screen and (max-width: 1397px) {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+.collections-main {
+
+    .cta {
+        border: none;
+        padding-bottom: 90px;
+
+        @media screen and (max-width: 1397px) {
+            padding-bottom: 40px;
+        }
+    }
+}
+
+.collection-main {
+
+    .get-consul {
+        margin: 0 !important;
+
+        &__pear {
+            display: none !important;
+        }
     }
 }

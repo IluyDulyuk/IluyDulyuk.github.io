@@ -85,6 +85,25 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    const projectContentSlider = document.querySelector('.project-content__slider .swiper');
+
+    if(projectContentSlider) {
+
+        const projectContentSwiper = new Swiper(projectContentSlider, {
+            slidesPerView: 1,
+            spaceBetween: 64,
+            pagination: {
+                el: ".project-content__pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                1397: {
+                    slidesPerView: 2,
+                }
+            }
+        });
+    }
+
 
     // header
 
@@ -222,19 +241,23 @@ window.addEventListener('DOMContentLoaded', () => {
         const thumbs = document.querySelector('.product-card__thumbs .swiper');
 
         const thumbsSwiper = new Swiper(thumbs, {
-            slidesPerView: 1,
             slidesPerView: 'auto',
-            direction: "vertical",
             spaceBetween: 10,
             freeMode: true,
             mousewheel: true,
+
+            breakpoints: {
+                1397: {
+                    direction: "vertical",
+                }
+            }
         });
 
         const productCardSwiper = new Swiper(productCardSlider, {
             slidesPerView: 1,
             thumbs: {
                 swiper: thumbsSwiper,
-            },
+            }
         });
     }
 
