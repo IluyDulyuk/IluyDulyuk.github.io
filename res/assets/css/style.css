@@ -245,6 +245,12 @@ a {
   display: none !important;
 }
 
+@media screen and (max-width: 1397px) {
+  .white-bg-header {
+    background: #fff !important;
+  }
+}
+
 .container {
   max-width: 1360px;
   margin: 0 auto;

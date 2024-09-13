@@ -160,3 +160,10 @@ a {
         }
     }
 }
+
+.white-bg-header {
+
+    @media screen and (max-width: 1397px) {
+        background: $white-color !important;
+    }
+}
