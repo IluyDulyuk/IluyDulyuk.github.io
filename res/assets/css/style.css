@@ -225,6 +225,12 @@ a {
 @media screen and (max-width: 1397px) {
   .about-main .project-cards {
     padding-bottom: 20px;
+    padding-top: 20px;
+  }
+}
+@media screen and (max-width: 1397px) {
+  .about-main .cta {
+    padding-bottom: 20px;
   }
 }
 
@@ -254,6 +260,9 @@ a {
 .container {
   max-width: 1360px;
   margin: 0 auto;
+}
+.container--small {
+  max-width: 1208px;
 }
 @media screen and (max-width: 1397px) {
   .container {
@@ -2057,6 +2066,7 @@ a {
 @media screen and (max-width: 1397px) {
   .section-header__text {
     font-size: 14px;
+    line-height: 17px;
   }
 }
 
@@ -2582,17 +2592,23 @@ a {
   .product-card__gallery {
     width: 100%;
     height: auto;
-    aspect-ratio: 393/400;
+    aspect-ratio: 393/380;
   }
 }
 .product-card__slide {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 1397px) {
+  .product-card__slide {
+    padding: 0px 63px;
+  }
+}
 .product-card__slide img {
   height: 100%;
+  object-fit: cover;
 }
 .product-card__thumbs {
   position: absolute;
@@ -2792,20 +2808,24 @@ a {
   font-size: 30px;
   margin-bottom: 12px;
   color: #414141;
+  max-width: 1000px;
 }
 @media screen and (max-width: 1397px) {
   .product-description h2 {
     font-size: 24px;
     margin-bottom: 8px;
+    max-width: 100%;
   }
 }
 .product-description p {
   font-size: 16px;
+  max-width: 1000px;
 }
 @media screen and (max-width: 1397px) {
   .product-description p {
     font-size: 14px;
     line-height: 17px;
+    max-width: 100%;
   }
   .product-description p br {
     display: none;
@@ -2881,6 +2901,21 @@ a {
   display: flex;
   align-items: flex-end;
   color: #fff;
+  position: relative;
+}
+.project-hero:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6) linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 27.09%, rgba(0, 0, 0, 0) 52.14%, rgba(0, 0, 0, 0.4) 100%);
+}
+@media screen and (max-width: 1397px) {
+  .project-hero:after {
+    background: rgba(0, 0, 0, 0.6) linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 27.09%, rgba(0, 0, 0, 0) 52.14%, rgba(0, 0, 0, 0.4) 100%);
+  }
 }
 @media screen and (max-width: 1397px) {
   .project-hero {
@@ -2894,6 +2929,8 @@ a {
 }
 .project-hero__container {
   width: 1360px;
+  position: relative;
+  z-index: 2;
 }
 @media screen and (max-width: 1397px) {
   .project-hero__container {
@@ -2923,6 +2960,10 @@ a {
 }
 .project-hero__breadcrumbs ul li a {
   font-size: 14px;
+  transition: 0.3s;
+}
+.project-hero__breadcrumbs ul li a:hover {
+  color: #8A7A61;
 }
 .project-hero__breadcrumbs ul li:last-child {
   border: none;
@@ -2931,6 +2972,7 @@ a {
   .project-hero h1 {
     font-size: 24px;
     margin-bottom: 12px;
+    line-height: 29px;
   }
 }
 .project-hero p {
@@ -2942,6 +2984,7 @@ a {
   .project-hero p {
     font-size: 16px;
     margin-bottom: 24px;
+    line-height: 21px;
   }
 }
 .project-hero button {
@@ -2974,6 +3017,11 @@ a {
 @media screen and (max-width: 1397px) {
   .project-content {
     padding-top: 20px;
+  }
+}
+@media screen and (max-width: 1397px) {
+  .project-content__container {
+    padding: 0px;
   }
 }
 .project-content__slider .swiper .swiper-slide {
@@ -3012,6 +3060,9 @@ a {
 .project-content__image img {
   width: 100%;
 }
+.project-content .content-header {
+  padding: 0px 16px;
+}
 
 .project-cards {
   padding-top: 88px;
@@ -3019,6 +3070,11 @@ a {
 @media screen and (max-width: 1397px) {
   .project-cards {
     padding-top: 0px;
+  }
+}
+@media screen and (max-width: 1397px) {
+  .project-cards__container {
+    padding: 0px;
   }
 }
 .project-cards__wrapper {
@@ -3045,6 +3101,7 @@ a {
 }
 .project-cards__item:nth-child(2n) .project-cards__text {
   order: -1;
+  margin-right: 0px;
 }
 .project-cards__image {
   aspect-ratio: 576/574;
@@ -3062,11 +3119,14 @@ a {
 }
 .project-cards__text {
   width: 480px;
+  margin-right: 32px;
 }
 @media screen and (max-width: 1397px) {
   .project-cards__text {
     order: -1;
     width: 100%;
+    padding: 0px 16px;
+    margin-right: 0px;
   }
 }
 .project-cards__text h3 {
@@ -3172,6 +3232,7 @@ a {
     padding-bottom: 20px;
     max-width: 575px;
     margin: 0 auto;
+    margin-top: 119px;
   }
 }
 .about-hero__container {
@@ -3205,6 +3266,10 @@ a {
 }
 .about-hero__breadcrumbs ul li a {
   font-size: 14px;
+  transition: 0.3s;
+}
+.about-hero__breadcrumbs ul li a:hover {
+  color: #8A7A61;
 }
 .about-hero__breadcrumbs ul li:last-child {
   border: none;
@@ -3293,6 +3358,11 @@ a {
     padding-bottom: 20px;
   }
 }
+@media screen and (max-width: 1397px) {
+  .collections-list__container {
+    padding: 0;
+  }
+}
 .collections-list__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -3322,6 +3392,7 @@ a {
 @media screen and (max-width: 1397px) {
   .collections-list__list li a h3 {
     font-size: 19px;
+    padding: 0px 16px;
   }
 }
 .collections-list__pagination {

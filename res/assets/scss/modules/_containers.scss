@@ -2,6 +2,10 @@
     max-width: 1360px;
     margin: 0 auto;
 
+    &--small {
+        max-width: 1208px;
+    }
+
     @media screen and (max-width: calc(1360px + 37px)) {
         width: 100%;
         max-width: 575px;

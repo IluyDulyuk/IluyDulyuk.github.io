@@ -5,6 +5,13 @@
         padding-bottom: 20px;
     }
 
+    &__container {
+
+        @media screen and (max-width: 1397px) {
+            padding: 0;
+        }
+    }
+
     &__list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -36,6 +43,7 @@
 
                     @media screen and (max-width: 1397px) {
                         font-size: 19px;
+                        padding: 0px 16px;
                     }
                 }
             }

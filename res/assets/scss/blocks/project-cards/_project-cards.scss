@@ -5,6 +5,13 @@
         padding-top: 0px;
     }
 
+    &__container {
+
+        @media screen and (max-width: 1397px) {
+            padding: 0px;
+        }
+    }
+
     &__wrapper {
         display: flex;
         flex-direction: column;
@@ -30,6 +37,7 @@
 
             .project-cards__text {
                 order: -1;
+                margin-right: 0px;
             }
         }
     }
@@ -51,10 +59,13 @@
 
     &__text {
         width: 480px;
+        margin-right: 32px;
 
         @media screen and (max-width: 1397px) {
             order: -1;
             width: 100%;
+            padding: 0px 16px;
+            margin-right: 0px;
         }
 
         h3 {
@@ -77,4 +88,17 @@
             }
         }
     }
+
+    // &.about {
+
+    //     .project-cards__item {
+    //         justify-content: start;
+    //         gap: 121px;
+
+    //         &:nth-child(2n) {
+    //             gap: 0px;
+    //             justify-content: space-between;
+    //         }
+    //     }
+    // }
 }

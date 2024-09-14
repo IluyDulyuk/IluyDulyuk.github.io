@@ -13,6 +13,13 @@
         padding-top: 20px;
     }
 
+    &__container {
+
+        @media screen and (max-width: 1397px) {
+            padding: 0px;
+        }
+    }
+
     &__slider {
 
         .swiper {
@@ -59,5 +66,9 @@
         img {
             width: 100%;
         }
+    }
+
+    .content-header {
+        padding: 0px 16px;
     }
 }

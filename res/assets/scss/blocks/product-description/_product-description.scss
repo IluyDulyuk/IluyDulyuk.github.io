@@ -9,19 +9,23 @@
         font-size: 30px;
         margin-bottom: 12px;
         color: $add-text-color;
+        max-width: 1000px;
 
         @media screen and (max-width: 1397px) {
             font-size: 24px;
             margin-bottom: 8px;
+            max-width: 100%;
         }
     }
 
     p {
         font-size: 16px;
+        max-width: 1000px;
 
         @media screen and (max-width: 1397px) {
             font-size: 14px;
             line-height: 17px;
+            max-width: 100%;
 
             br {
                 display: none;
