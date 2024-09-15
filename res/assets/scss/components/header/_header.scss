@@ -68,6 +68,12 @@
 
     &__lang {
 
+        transition: 0.3s;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+
         @media screen and (max-width: 1397px) {
             display: none;
         }
@@ -92,7 +98,21 @@
             align-items: center;
             gap: 30px;
 
+            div {
+
+                transition: 0.3s;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+
             li {
+                transition: 0.3s;
+
+                &:hover {
+                    opacity: 0.8;
+                }
 
                 @media screen and (max-width: 1397px) {
                     display: none;
@@ -100,6 +120,7 @@
                     &:nth-child(3) {
                         display: block;
                     }
+
                 }
             }
         }
@@ -123,6 +144,11 @@
             a {
                 font-size: 14px;
                 text-transform: uppercase;
+                transition: 0.3s;
+
+                &:hover {
+                    opacity: 0.8;
+                }
             }
         }
     }

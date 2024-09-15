@@ -54,6 +54,12 @@
                 a {
                     text-transform: uppercase;
                     font-size: 14px;
+
+                    transition: 0.3s;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
                 }
             }
         }
@@ -63,6 +69,12 @@
             align-items: center;
             font-size: 16px;
             gap: 14px;
+
+            transition: 0.3s;
+
+                &:hover {
+                    opacity: 0.8;
+                }
         }
     }
 
@@ -72,6 +84,12 @@
         gap: 33px;
         font-size: 18px;
         cursor: pointer;
+
+        transition: 0.3s;
+
+                &:hover {
+                    opacity: 0.8;
+                }
 
         @media screen and (max-width: 1397px) {
             font-size: 16px;

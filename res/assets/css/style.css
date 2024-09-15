@@ -643,6 +643,12 @@ a {
     background: #fff;
   }
 }
+.header__lang {
+  transition: 0.3s;
+}
+.header__lang:hover {
+  opacity: 0.8;
+}
 @media screen and (max-width: 1397px) {
   .header__lang {
     display: none;
@@ -667,6 +673,18 @@ a {
   display: flex;
   align-items: center;
   gap: 30px;
+}
+.header__top ul div {
+  transition: 0.3s;
+}
+.header__top ul div:hover {
+  opacity: 0.8;
+}
+.header__top ul li {
+  transition: 0.3s;
+}
+.header__top ul li:hover {
+  opacity: 0.8;
 }
 @media screen and (max-width: 1397px) {
   .header__top ul li {
@@ -695,6 +713,10 @@ a {
 .header__bottom ul a {
   font-size: 14px;
   text-transform: uppercase;
+  transition: 0.3s;
+}
+.header__bottom ul a:hover {
+  opacity: 0.8;
 }
 .header__logo {
   position: absolute;
@@ -1499,12 +1521,20 @@ a {
 .footer header ul li a {
   text-transform: uppercase;
   font-size: 14px;
+  transition: 0.3s;
+}
+.footer header ul li a:hover {
+  opacity: 0.8;
 }
 .footer header a {
   display: flex;
   align-items: center;
   font-size: 16px;
   gap: 14px;
+  transition: 0.3s;
+}
+.footer header a:hover {
+  opacity: 0.8;
 }
 .footer__sub {
   display: flex;
@@ -1512,6 +1542,10 @@ a {
   gap: 33px;
   font-size: 18px;
   cursor: pointer;
+  transition: 0.3s;
+}
+.footer__sub:hover {
+  opacity: 0.8;
 }
 @media screen and (max-width: 1397px) {
   .footer__sub {
