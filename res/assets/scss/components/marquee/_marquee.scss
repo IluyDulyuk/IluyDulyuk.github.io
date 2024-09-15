@@ -1,0 +1,14 @@
+.marquee {
+    font-size: 390px;
+    opacity: 0.1;
+    position: absolute;
+
+    @media screen and (max-width: 1397px) {
+        font-size: 106px;
+    }
+
+    p {
+        position: relative;
+        left: -100%;
+    }
+}

@@ -12,13 +12,22 @@ window.addEventListener('DOMContentLoaded', () => {
             let id = imageSlider.getAttribute('data-id');
 
             let imageSwiper = new Swiper(imageSlider, {
-                slidesPerView: 'auto',
-                // centeredSlides: true,
-                spaceBetween: 36,
+                slidesPerView: 1,
                 navigation: {
                     prevEl: `.image-slider__arrow--prev.${id}`,
                     nextEl: `.image-slider__arrow--next.${id}`,
                 },
+                pagination: {
+                    el: `.image-slider__pagination.${id}`,
+                    clickable: true,
+                },
+
+                breakpoints: {
+                    1397: {
+                        slidesPerView: 'auto',
+                        spaceBetween: 36,
+                    }
+                }
             });
 
         })
@@ -36,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
             let productsSwiper = new Swiper(productsSlider, {
                 slidesPerView: 'auto',
-                spaceBetween: 36,
+                spaceBetween: 24,
                 navigation: {
                     prevEl: `.products-slider__arrow--prev.${id}`,
                     nextEl: `.products-slider__arrow--next.${id}`,
@@ -259,6 +268,64 @@ window.addEventListener('DOMContentLoaded', () => {
                 swiper: thumbsSwiper,
             }
         });
+    }
+
+
+    // form
+
+    const formChoice = document.querySelector('.form__choice');
+    const formChoiceTrigger = document.querySelector('.form__choice header');
+
+    if(formChoice) {
+
+        const toggleFormChoice = () => {
+            formChoice.classList.toggle('active');
+        }
+
+        formChoiceTrigger.addEventListener('click', () => {
+            toggleFormChoice();
+        })
+
+    }
+
+
+    const map = document.querySelector('#map');
+
+    if(map) {
+
+        ymaps.ready(init);
+        function init(){
+            // Создание карты.
+            var myMap = new ymaps.Map("map", {
+                // Координаты центра карты.
+                // Порядок по умолчанию: «широта, долгота».
+                // Чтобы не определять координаты центра карты вручную,
+                // воспользуйтесь инструментом Определение координат.
+                center: [55.74710956898429,37.58938349999992],
+                // Уровень масштабирования. Допустимые значения:
+                // от 0 (весь мир) до 19.
+                zoom: 17
+            });
+
+            let placemark = new ymaps.Placemark([55.74710956898429,37.58938349999992], {}, {
+                iconLayout: 'default#image',
+                iconImageHref: 'https://image.flaticon.com/icons/png/512/64/64113.png',
+                iconImageSize: [40, 40],
+                iconImageOffset: [-19, -44]
+            });
+
+            myMap.controls.remove('geolocationControl'); // удаляем геолокацию
+            myMap.controls.remove('searchControl'); // удаляем поиск
+            myMap.controls.remove('trafficControl'); // удаляем контроль трафика
+            myMap.controls.remove('typeSelector'); // удаляем тип
+            myMap.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+            myMap.controls.remove('zoomControl'); // удаляем контрол зуммирования
+            myMap.controls.remove('rulerControl'); // удаляем контрол правил
+            // map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+
+            myMap.geoObjects.add(placemark);
+        }
+
     }
 
 })

@@ -1,6 +1,6 @@
 .meet {
-    border-top: 1px solid $border-color;
-    border-bottom: 1px solid $border-color;
+    border-top: 1px solid $add-border-color;
+    border-bottom: 1px solid $add-border-color;
 
     @media screen and (max-width: calc(1360px + 37px)) {
         padding: 40px 0px;
@@ -20,7 +20,7 @@
         display: flex;
         align-items: center;
         gap: 38px;
-        border-right: 1px solid $border-color;
+        border-right: 1px solid $add-border-color;
         padding: 60px 87px 60px 76px;
 
         @media screen and (max-width: calc(1360px + 37px)) {

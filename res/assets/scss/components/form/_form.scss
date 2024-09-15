@@ -1,0 +1,168 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    width: 100%;
+
+    @media screen and (max-width: 1397px) {
+        gap: 16px;
+    }
+
+    &__text-label {
+        display: block;
+        width: 100%;
+
+        span {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 22px;
+            line-height: 29px;
+
+            font-size: 18px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px 20px;
+            background: $white-color;
+            border: 1px solid $link-color;
+            font-size: 22px;
+            border-radius: 0px;
+
+            @media screen and (max-width: 1397px) {
+                padding: 8px 16px;
+                font-size: 16px;
+                line-height: 29px;
+            }
+        }
+    }
+
+    &__choice {
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            cursor: pointer;
+
+            @media screen and (max-width: 1397px) {
+                justify-content: space-between;
+                gap: 0px;
+            }
+
+            span {
+                font-size: 22px;
+                line-height: 29px;
+                color: $link-color;
+
+                @media screen and (max-width: 1397px) {
+                    font-size: 18px;
+                }
+            }
+        }
+
+        &.active {
+
+            header {
+
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+
+            ul {
+                display: flex;
+            }
+        }
+
+        ul {
+            margin-top: 4px;
+            flex-direction: column;
+            gap: 4px;
+            display: none;
+
+            li {
+
+                label {
+
+                    div {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 10px 20px;
+                        background: $white-color;
+                        border: 1px solid $white-color;
+                        transition: 0.3s;
+
+                        @media screen and (max-width: 1397px) {
+                            padding: 8px 16px;
+                        }
+
+                        p {
+                            font-size: 22px;
+                            line-height: 29px;
+
+                            @media screen and (max-width: 1397px) {
+                                font-size: 18px;
+                            }
+                        }
+
+                        span {
+                            width: 22px;
+                            height: 22px;
+                            border-radius: 4px;
+                            border: 1px solid $link-color;
+                            transition: 0.3s;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            @media screen and (max-width: 1397px) {
+                                width: 18px;
+                                height: 18px;
+                            }
+
+                            svg {
+                                transition: 0.3s;
+                                opacity: 0;
+                            }
+                        }
+                    }
+
+                    input {
+                        display: none;
+
+                        &:checked ~ div {
+                            border-color: $text-color;
+                        }
+
+                        &:checked ~ div span {
+                            background: #40c35d;
+                            border-color: #40c35d;
+                        }
+
+                        &:checked ~ div span svg {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &__submit {
+
+        button {
+            width: 100%;
+            height: 50px;
+            font-size: 22px;
+            color: $white-color;
+            background: $text-color;
+
+            @media screen and (max-width: 1397px) {
+                font-size: 18px;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.checkout-grid {
+    margin: 40px 0px 60px;
+
+    @media screen and (max-width: 1397px) {
+        margin: 0px 0px 75px
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 804px 470px;
+        justify-content: space-between;
+
+        @media screen and (max-width: 1397px) {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.home-image-slider {
+    padding: 60px 0px 204px;
+    position: relative;
+
+    @media screen and (max-width: 1397px) {
+        padding: 30px 0px 100px;
+    }
+
+    .marquee {
+        bottom: -100px;
+        left: 0;
+
+        @media screen and (max-width: 1397px) {
+            bottom: -20px;
+        }
+    }
+}
