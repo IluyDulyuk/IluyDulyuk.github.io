@@ -3901,6 +3901,7 @@ a {
 .home-image-slider {
   padding: 60px 0px 204px;
   position: relative;
+  overflow: hidden;
 }
 @media screen and (max-width: 1397px) {
   .home-image-slider {
@@ -3920,6 +3921,7 @@ a {
 .production {
   padding: 140px 0px 60px;
   position: relative;
+  overflow: hidden;
 }
 @media screen and (max-width: 1397px) {
   .production {

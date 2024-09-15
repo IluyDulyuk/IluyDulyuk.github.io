@@ -1,6 +1,7 @@
 .production {
     padding: 140px 0px 60px;
     position: relative;
+    overflow: hidden;
 
     @media screen and (max-width: 1397px) {
         padding: 98px 0px 30px;
