@@ -214,6 +214,11 @@
         color: $white-color;
         text-align: center;
         cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            opacity: 0.8;
+        }
 
         @media screen and (max-width: 1397px) {
             font-size: 18px;

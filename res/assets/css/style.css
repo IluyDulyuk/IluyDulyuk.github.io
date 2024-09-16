@@ -3155,6 +3155,10 @@ a {
   color: #fff;
   text-align: center;
   cursor: pointer;
+  transition: 0.3s;
+}
+.product-card__pay-button:hover {
+  opacity: 0.8;
 }
 @media screen and (max-width: 1397px) {
   .product-card__pay-button {
