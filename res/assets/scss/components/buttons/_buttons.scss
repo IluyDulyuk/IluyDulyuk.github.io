@@ -1,5 +1,10 @@
 .button {
     max-width: fit-content;
+    transition: 0.3s;
+
+    &:hover {
+        opacity: 0.8;
+    }
 
     &--fill {
         font-size: 28px;

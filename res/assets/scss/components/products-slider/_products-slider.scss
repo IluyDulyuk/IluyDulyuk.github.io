@@ -74,6 +74,11 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        transition: 0.3s;
+
+        &:hover {
+            opacity: 0.6;
+        }
 
         &:nth-child(n + 4) {
 
@@ -109,6 +114,11 @@
         &-big {
             width: 668px;
             position: relative;
+            transition: 0.3s;
+
+            &:hover {
+                opacity: 0.6;
+            }
 
             @media screen and (max-width: calc(1360px + 37px)) {
                 width: 100%;

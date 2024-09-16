@@ -1,8 +1,8 @@
-@import './modules/fonts';
-@import './modules/vars';
-@import './modules/reset';
-@import './modules/base';
-@import './modules/containers';
+@import './modules/fonts.scss';
+@import './modules/vars.scss';
+@import './modules/reset.scss';
+@import './modules/base.scss';
+@import './modules/containers.scss';
 
 @import './blocks/home-hero/home-hero.scss';
 @import './blocks/taplink/taplink-main.scss';
@@ -56,3 +56,6 @@
 @import './blocks/home-image-slider/home-image-slider.scss';
 @import './blocks/production/production.scss';
 @import './blocks/contacts/contacts.scss';
+@import './blocks/our-projects-list/our-projects-list.scss';
+@import './blocks/modal/modal.scss';
+@import './blocks/product-slideshow/product-slideshow.scss';

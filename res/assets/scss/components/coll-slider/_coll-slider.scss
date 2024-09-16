@@ -51,6 +51,11 @@
     }
 
     &__slide {
+        transition: 0.3s;
+
+        &:hover {
+            opacity: 0.8;
+        }
 
         &-image {
             aspect-ratio: 668 / 429;

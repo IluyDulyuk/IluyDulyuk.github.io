@@ -1,0 +1,39 @@
+.our-projects-list {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 1397px) {
+        padding-top: 0px;
+    }
+
+    .image-slider {
+        border-bottom: 1px solid $add-border-color;
+        padding-bottom: 60px;
+        padding-top: 60px;
+
+        @media screen and (max-width: 1397px) {
+            padding-bottom: 20px;
+            padding-top: 0px;
+            border: none;
+        }
+
+        &:nth-child(1) {
+            padding-top: 0px;
+        }
+
+        &:last-child {
+            padding-bottom: 0px;
+            border-bottom: none;
+        }
+
+        header {
+            padding-left: 0px;
+            padding-bottom: 0px;
+
+            @media screen and (max-width: 1397px) {
+                padding: 0px 18.5px;
+            }
+        }
+    }
+}

@@ -16,5 +16,16 @@
             column-gap: 8px;
             row-gap: 16px;
         }
+
+        li {
+
+            a {
+                transition: 0.3s;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
     }
 }
