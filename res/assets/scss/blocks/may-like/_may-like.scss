@@ -33,5 +33,13 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 8px;
         }
+
+        li {
+            transition: 0.3s;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
     }
 }

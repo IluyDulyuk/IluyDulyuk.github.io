@@ -15,7 +15,8 @@
     &__list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
+        column-gap: 24px;
+        row-gap: 48px;
         margin-bottom: 24px;
 
         @media screen and (max-width: 1397px) {
