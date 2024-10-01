@@ -4152,6 +4152,24 @@ a {
     object-fit: cover;
   }
 }
+.contacts__map #map {
+  width: 100%;
+  height: 432px;
+}
+@media screen and (max-width: 1397px) {
+  .contacts__map #map {
+    height: auto;
+    aspect-ratio: 393/301;
+  }
+}
+
+[class*=copyrights-pane] {
+  display: none !important;
+}
+
+[class*=ground-pane] {
+  filter: grayscale(1);
+}
 
 .our-projects-list {
   padding-top: 20px;

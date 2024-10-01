@@ -292,26 +292,23 @@ window.addEventListener('DOMContentLoaded', () => {
     const map = document.querySelector('#map');
 
     if(map) {
+        const centerCoords = [55.74710956898429,37.58938349999992];
 
         ymaps.ready(init);
         function init(){
             // Создание карты.
             var myMap = new ymaps.Map("map", {
-                // Координаты центра карты.
-                // Порядок по умолчанию: «широта, долгота».
-                // Чтобы не определять координаты центра карты вручную,
-                // воспользуйтесь инструментом Определение координат.
-                center: [55.74710956898429,37.58938349999992],
+                center: centerCoords,
                 // Уровень масштабирования. Допустимые значения:
                 // от 0 (весь мир) до 19.
-                zoom: 17
+                zoom: 18
             });
 
-            let placemark = new ymaps.Placemark([55.74710956898429,37.58938349999992], {}, {
+            let placemark = new ymaps.Placemark(centerCoords, {}, {
                 iconLayout: 'default#image',
-                iconImageHref: 'https://image.flaticon.com/icons/png/512/64/64113.png',
-                iconImageSize: [40, 40],
-                iconImageOffset: [-19, -44]
+                iconImageHref: 'https://i.ibb.co/9T1pgFf/pear-pin-62b6d52f.png',
+                iconImageSize: [40, 50],
+                iconImageOffset: [-30, -50]
             });
 
             myMap.controls.remove('geolocationControl'); // удаляем геолокацию
@@ -321,7 +318,6 @@ window.addEventListener('DOMContentLoaded', () => {
             myMap.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
             myMap.controls.remove('zoomControl'); // удаляем контрол зуммирования
             myMap.controls.remove('rulerControl'); // удаляем контрол правил
-            // map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
 
             myMap.geoObjects.add(placemark);
         }
