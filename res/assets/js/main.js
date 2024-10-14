@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-    const media = window.matchMedia('(max-width: 1397px)');
+    const media = window.matchMedia('(max-width: 1279px)');
 
     const imageSliders = document.querySelectorAll('.image-slider .swiper');
 
@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 },
 
                 breakpoints: {
-                    1397: {
+                    1279: {
                         slidesPerView: 'auto',
                         spaceBetween: 36,
                     }
@@ -87,7 +87,7 @@ window.addEventListener('DOMContentLoaded', () => {
             },
 
             breakpoints: {
-                1397: {
+                1279: {
                     slidesPerView: 2,
                 }
             }
@@ -106,7 +106,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 clickable: true,
             },
             breakpoints: {
-                1397: {
+                1279: {
                     slidesPerView: 2,
                 }
             }
@@ -256,7 +256,7 @@ window.addEventListener('DOMContentLoaded', () => {
             mousewheel: true,
 
             breakpoints: {
-                1397: {
+                1279: {
                     direction: "vertical",
                 }
             }
@@ -273,17 +273,20 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // form
 
-    const formChoice = document.querySelector('.form__choice');
-    const formChoiceTrigger = document.querySelector('.form__choice header');
+    const formChoice = document.querySelectorAll('.form__choice');
 
-    if(formChoice) {
+    if(formChoice.length > 0) {
 
-        const toggleFormChoice = () => {
-            formChoice.classList.toggle('active');
-        }
+        formChoice.forEach(choice => {
+            const formChoiceTrigger = choice.querySelector('header');
 
-        formChoiceTrigger.addEventListener('click', () => {
-            toggleFormChoice();
+            const toggleFormChoice = () => {
+                choice.classList.toggle('active');
+            }
+
+            formChoiceTrigger.addEventListener('click', () => {
+                toggleFormChoice();
+            })
         })
 
     }
@@ -327,43 +330,48 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // modal
 
-    const modal = document.querySelector('.modal');
+    const modals = document.querySelectorAll('.modal');
     const modalTriggers = document.querySelectorAll('.modal-trigger');
 
     if(modalTriggers.length > 0) {
 
-        const modalClose = modal.querySelector('.close');
-        const modalWrapper = modal.querySelector('.modal__wrapper');
+        modals.forEach(modal => {
 
-        const removeModalActive = () => {
-            modal.classList.remove('active');
-        }
+            const modalClose = modal.querySelector('.close');
+            const modalWrapper = modal.querySelector('.modal__wrapper');
 
-        const addModalActive = () => {
-            modal.classList.add('active');
-        }
+            const removeModalActive = () => {
+                modal.classList.remove('active');
+            }
 
-        modalTriggers.forEach(item => {
+            const addModalActive = () => {
+                modal.classList.add('active');
+            }
 
-            item.addEventListener('click', () => {
-                addModalActive();
+            modalTriggers.forEach(item => {
+
+                item.addEventListener('click', () => {
+                    if(item.getAttribute('data-modal') === modal.getAttribute('data-modal')) {
+                        addModalActive();
+                    }
+                })
             })
-        })
 
-        modalClose.addEventListener('click', () => {
-            removeModalActive();
-        })
-
-        window.addEventListener('keydown', (e) => {
-            if(e.key == 'Escape') {
+            modalClose.addEventListener('click', () => {
                 removeModalActive();
-            }
-        })
+            })
 
-        window.addEventListener('click', (e) => {
-            if(e.target == modalWrapper) {
-                removeModalActive();
-            }
+            window.addEventListener('keydown', (e) => {
+                if(e.key == 'Escape') {
+                    removeModalActive();
+                }
+            })
+
+            window.addEventListener('click', (e) => {
+                if(e.target == modalWrapper) {
+                    removeModalActive();
+                }
+            })
         })
     }
 
@@ -379,7 +387,7 @@ window.addEventListener('DOMContentLoaded', () => {
             slidesPerView: 'auto',
             spaceBetween: 12,
             breakpoints: {
-                1397: {
+                1279: {
                     spaceBetween: 18,
                 }
             }
