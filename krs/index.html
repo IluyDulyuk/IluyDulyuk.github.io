@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТРК 7мой</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-11 col offset-xl-1  d-flex light-text-color header__top">
+                    <a href="#" class="light-text-color fw-semibold hover hover--underline hover--secondary-color">005</a>
+                    <a href="#" class="light-text-color fw-semibold hover hover--underline hover--secondary-color">Афиша</a>
+                    <a href="#" class="light-text-color fw-semibold hover hover--underline hover--secondary-color">Кино</a>
+                    <a href="#" class="light-text-color fw-semibold hover hover--underline hover--secondary-color">Телепрограмма</a>
+                    <a href="#" class="light-text-color fw-semibold hover hover--underline hover--secondary-color">Погода</a>
+                    <a href="#" class="light-text-color fw-semibold hover hover--underline hover--secondary-color">Гороскоп</a>
+                    <a href="#" class="light-text-color fw-semibold hover hover--underline hover--secondary-color">Недвижимость</a>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="header__gum d-none d-sm-flex col-1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header__nav col offset-0 offset-sm-1 offset-lg-0 d-flex align-items-center">
+                    <a href="#" class="header__logo">
+                        <img src="./assets/img/header/logo.png" alt="logo">
+                    </a>
+                    <div class="header__live">
+                        <button class="live-button hover">
+                            <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.3418 26C20.9692 26 26.3418 20.6274 26.3418 14C26.3418 7.37258 20.9692 2 14.3418 2C7.71438 2 2.3418 7.37258 2.3418 14C2.3418 20.6274 7.71438 26 14.3418 26Z" stroke="#F47C01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.7092 9.33337L18.7347 14L11.7092 18.6667V9.33337Z" stroke="#F47C01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p class="accent-text-color fw-bold">Прямой эфир</p>
+                        </button>
+                    </div>
+                    <ul class="header__menu menu d-lg-flex d-none align-items-center flex-wrap">
+                        <li class="menu__item menu__item--dropdown secondary-text-color fw-bold">
+                            <a href="#" class="menu__link d-flex align-items-center hover hover--underline">
+                                Новости
+                                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.65703 7.071L2.66411e-05 1.414L1.41403 -4.94551e-07L6.36403 4.95L11.314 -6.18079e-08L12.728 1.414L7.07103 7.071C6.8835 7.25847 6.62919 7.36379 6.36403 7.36379C6.09886 7.36379 5.84455 7.25847 5.65703 7.071Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu__item menu__item--dropdown secondary-text-color fw-bold">
+                            <a href="#" class="menu__link d-flex align-items-center hover hover--underline">
+                                Видео
+                                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.65703 7.071L2.66411e-05 1.414L1.41403 -4.94551e-07L6.36403 4.95L11.314 -6.18079e-08L12.728 1.414L7.07103 7.071C6.8835 7.25847 6.62919 7.36379 6.36403 7.36379C6.09886 7.36379 5.84455 7.25847 5.65703 7.071Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu__item menu__item--dropdown secondary-text-color fw-bold">
+                            <a href="#" class="menu__link d-flex align-items-center hover hover--underline">
+                                Статьи
+                                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.65703 7.071L2.66411e-05 1.414L1.41403 -4.94551e-07L6.36403 4.95L11.314 -6.18079e-08L12.728 1.414L7.07103 7.071C6.8835 7.25847 6.62919 7.36379 6.36403 7.36379C6.09886 7.36379 5.84455 7.25847 5.65703 7.071Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu__item menu__item--dropdown secondary-text-color fw-bold">
+                            <a href="#" class="menu__link d-flex align-items-center hover hover--underline">
+                                Проекты
+                                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.65703 7.071L2.66411e-05 1.414L1.41403 -4.94551e-07L6.36403 4.95L11.314 -6.18079e-08L12.728 1.414L7.07103 7.071C6.8835 7.25847 6.62919 7.36379 6.36403 7.36379C6.09886 7.36379 5.84455 7.25847 5.65703 7.071Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu__item secondary-text-color fw-bold">
+                            <a href="#" class="menu__link d-flex align-items-center hover hover--underline">
+                                Объявления
+                                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.65703 7.071L2.66411e-05 1.414L1.41403 -4.94551e-07L6.36403 4.95L11.314 -6.18079e-08L12.728 1.414L7.07103 7.071C6.8835 7.25847 6.62919 7.36379 6.36403 7.36379C6.09886 7.36379 5.84455 7.25847 5.65703 7.071Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu__item secondary-text-color fw-bold">
+                            <a href="#" class="menu__link d-flex align-items-center hover hover--underline">
+                                Телепрограмма
+                                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.65703 7.071L2.66411e-05 1.414L1.41403 -4.94551e-07L6.36403 4.95L11.314 -6.18079e-08L12.728 1.414L7.07103 7.071C6.8835 7.25847 6.62919 7.36379 6.36403 7.36379C6.09886 7.36379 5.84455 7.25847 5.65703 7.071Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu__item secondary-text-color fw-bold">
+                            <a href="#" class="menu__link d-flex align-items-center hover hover--underline">
+                                О нас
+                                <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.65703 7.071L2.66411e-05 1.414L1.41403 -4.94551e-07L6.36403 4.95L11.314 -6.18079e-08L12.728 1.414L7.07103 7.071C6.8835 7.25847 6.62919 7.36379 6.36403 7.36379C6.09886 7.36379 5.84455 7.25847 5.65703 7.071Z" fill="white"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="header__search search d-none d-xxl-block">
+                        <button class="search__open-button">
+                            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M17.125 0.833374C14.5271 0.833595 11.967 1.45507 9.65816 2.64595C7.34933 3.83684 5.35876 5.56259 3.85253 7.67923C2.34631 9.79588 1.3681 12.242 0.999522 14.8136C0.630944 17.3852 0.882684 20.0077 1.73374 22.4622C2.58479 24.9167 4.01049 27.1321 5.89187 28.9235C7.77325 30.715 10.0558 32.0305 12.549 32.7604C15.0422 33.4904 17.6738 33.6134 20.2243 33.1195C22.7748 32.6255 25.1701 31.5287 27.2105 29.9207L34.2102 36.9204C34.5717 37.2695 35.0558 37.4627 35.5584 37.4583C36.0609 37.454 36.5416 37.2524 36.897 36.897C37.2523 36.5417 37.4539 36.0609 37.4583 35.5584C37.4627 35.0559 37.2695 34.5717 36.9203 34.2102L29.9207 27.2105C31.8143 24.8082 32.9934 21.9213 33.3229 18.8802C33.6525 15.8391 33.1192 12.7666 31.7841 10.0144C30.449 7.26219 28.366 4.94147 25.7736 3.31782C23.1811 1.69416 20.1839 0.833169 17.125 0.833374ZM4.66666 17.125C4.66666 13.8209 5.97924 10.6521 8.31563 8.31567C10.652 5.97928 13.8208 4.66671 17.125 4.66671C20.4292 4.66671 23.598 5.97928 25.9344 8.31567C28.2708 10.6521 29.5833 13.8209 29.5833 17.125C29.5833 20.4292 28.2708 23.598 25.9344 25.9344C23.598 28.2708 20.4292 29.5834 17.125 29.5834C13.8208 29.5834 10.652 28.2708 8.31563 25.9344C5.97924 23.598 4.66666 20.4292 4.66666 17.125Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <div class="search__wrapper d-flex align-items-center">
+                            <form class="d-flex align-items-center search__form">
+                                <label class="search__label">
+                                    <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.06262 0.170898C7.76369 0.171012 6.48362 0.489718 5.3292 1.10043C4.17478 1.71114 3.1795 2.59614 2.42639 3.6816C1.67328 4.76706 1.18417 6.0215 0.999883 7.34026C0.815594 8.65902 0.941464 10.0039 1.36699 11.2626C1.79252 12.5213 2.50537 13.6574 3.44606 14.5761C4.38675 15.4948 5.528 16.1694 6.77461 16.5438C8.02122 16.9181 9.33703 16.9812 10.6123 16.7279C11.8875 16.4745 13.0852 15.9121 14.1054 15.0875L17.6052 18.6771C17.7859 18.8561 18.028 18.9552 18.2793 18.9529C18.5306 18.9507 18.7709 18.8473 18.9486 18.6651C19.1263 18.4828 19.2271 18.2363 19.2293 17.9786C19.2315 17.7209 19.1349 17.4726 18.9603 17.2872L15.4605 13.6977C16.4073 12.4657 16.9968 10.9852 17.1616 9.42567C17.3264 7.86612 17.0597 6.29049 16.3922 4.87911C15.7246 3.46773 14.6831 2.27762 13.3869 1.44497C12.0907 0.612328 10.5921 0.170793 9.06262 0.170898ZM2.83345 8.5256C2.83345 6.83116 3.48974 5.20612 4.65793 4.00797C5.82613 2.80982 7.41054 2.13671 9.06262 2.13671C10.7147 2.13671 12.2991 2.80982 13.4673 4.00797C14.6355 5.20612 15.2918 6.83116 15.2918 8.5256C15.2918 10.22 14.6355 11.8451 13.4673 13.0432C12.2991 14.2414 10.7147 14.9145 9.06262 14.9145C7.41054 14.9145 5.82613 14.2414 4.65793 13.0432C3.48974 11.8451 2.83345 10.22 2.83345 8.5256Z" fill="#F47C01"/>
+                                    </svg>
+                                    <input type="text" class="search__input" name="s" placeholder="Введите свой запрос...">
+                                </label>
+                                <button class="search__submit-button secondary-text-color fw-bold" type="submit">
+                                    Искать
+                                </button>
+                            </form>
+                            <div class="serach__close-button">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2 2L38 38" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                                    <path d="M38 2L2 38" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header__mobile-buttons d-sm-none d-flex align-items-center">
+                        <button class="search__open-button">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.8333 22.1667C17.988 22.1667 22.1667 17.988 22.1667 12.8333C22.1667 7.67868 17.988 3.5 12.8333 3.5C7.67868 3.5 3.5 7.67868 3.5 12.8333C3.5 17.988 7.67868 22.1667 12.8333 22.1667Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M24.5 24.5L19.425 19.425" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="header__gum">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container header__tax-container">
+            <div class="row">
+                <div class="header__tax header-tax col">
+                    <ul class="header-tax__list d-flex align-items-center">
+                        <li class="header-tax__item">
+                            <a href="#" class="header-tax__link fw-bold fs-sm hover">
+                                Тематическая плашка
+                            </a>
+                        </li>
+                        <li class="header-tax__item">
+                            <a href="#" class="header-tax__link fw-bold fs-sm hover">
+                                Рекламная плашка
+                            </a>
+                        </li>
+                        <li class="header-tax__item">
+                            <a href="#" class="header-tax__link fw-bold fs-sm hover">
+                                Метро...
+                            </a>
+                        </li>
+                        <li class="header-tax__item">
+                            <a href="#" class="header-tax__link fw-bold fs-sm hover">
+                                Медведи
+                            </a>
+                        </li>
+                        <li class="header-tax__item">
+                            <a href="#" class="header-tax__link fw-bold fs-sm hover">
+                                Лето 2024
+                            </a>
+                        </li>
+                        <li class="header-tax__item">
+                            <a href="#" class="header-tax__link fw-bold fs-sm hover">
+                                Наши на СВО
+                            </a>
+                        </li>
+                        <li class="header-tax__item">
+                            <a href="#" class="header-tax__link fw-bold fs-sm hover">
+                                Лагерная жизнь
+                            </a>
+                        </li>
+                        <li class="header-tax__item">
+                            <a href="#" class="header-tax__link fw-bold fs-sm hover">
+                                На спорте
+                            </a>
+                        </li>
+                        <li class="header-tax__item">
+                            <a href="#" class="header-tax__link fw-bold fs-sm hover">
+                                Еще одна популярная
+                            </a>
+                        </li>
+                        <li class="header-tax__item">
+                            <a href="#" class="header-tax__link fw-bold fs-sm hover">
+                                В культуре
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xxl-5 col-xl-6 col-lg-8 col-12">
+                        <h1 class="fs-xl fw-bold d-none d-sm-block">Главные новости Красноярска и края</h1>
+                        <h1 class="fw-bold d-sm-none">Новости Красноярска и края</h1>
+                    </div>
+                    <div class="row col-xxl-7 col-xl-6 col-4 d-lg-flex d-none justify-content-end">
+                        <a href="#" class="col-xxl-3 col-12 d-none d-lg-flex">
+                            <button class="button button--light hover">
+                                Сообщить новость
+                            </button>
+                        </a>
+                        <a href="#" class="col-xxl-3 d-none d-xl-flex">
+                            <button class="button button--light hover">
+                                Подписаться
+                            </button>
+                        </a>
+                        <a href="#" class="col-5 d-none d-xxl-flex">
+                            <button class="button button--fill hover">
+                                Разместить объявление в 2 клика
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="current-news">
+            <div class="container">
+                <div class="d-flex current-news__list">
+                    <a href="#" class="current-news__item current-news-item current-news-item--with-play-icon">
+                        <div class="current-news-item__content">
+                            <div class="current-news-item__image">
+                                <img src="./assets/img/current-news/image-1.jpg" alt="Изображение новости">
+                            </div>
+                            <h3 class="current-news-item__title secondary-text-color fw-bold fs-lg">
+                                «Он давление на людей оказывает, поджогами пугает»: новые детали конфликта в СНТ «Кедр»
+                            </h3>
+                            <button class="current-news-item__play-icon">
+                                <img src="./assets/img/icons/play.svg" alt="">
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="current-news__item current-news-item">
+                        <div class="current-news-item__content">
+                            <div class="current-news-item__image">
+                                <img src="./assets/img/current-news/image-2.jpg" alt="Изображение новости">
+                            </div>
+                            <h3 class="current-news-item__title secondary-text-color fw-bold fs-lg">
+                                «Подайте на меня в суд»: мэр Красноярска отчитал подрядчика за медленный ремонт на Копылова
+                            </h3>
+                            <button class="current-news-item__play-icon">
+                                <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.25 0.666626L10 6.99996L0.25 13.3333V0.666626Z" fill="white"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="current-news__item current-news-item">
+                        <div class="current-news-item__content">
+                            <div class="current-news-item__image">
+                                <img src="./assets/img/current-news/image-3.jpg" alt="Изображение новости">
+                            </div>
+                            <h3 class="current-news-item__title secondary-text-color fw-bold fs-lg">
+                                «С понедельника приступаем»: подрядчики пообещали перенести ЛЭП на развязке с Пашенного
+                            </h3>
+                            <button class="current-news-item__play-icon">
+                                <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.25 0.666626L10 6.99996L0.25 13.3333V0.666626Z" fill="white"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </a>
+                    <a href="#" class="current-news__item current-news-item">
+                        <div class="current-news-item__content">
+                            <div class="current-news-item__image">
+                                <img src="./assets/img/current-news/image-4.jpg" alt="Изображение новости">
+                            </div>
+                            <h3 class="current-news-item__title secondary-text-color fw-bold fs-lg">
+                                «С понедельника приступаем»: подрядчики пообещали перенести ЛЭП на развязке с Пашенного
+                            </h3>
+                            <button class="current-news-item__play-icon">
+                                <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.25 0.666626L10 6.99996L0.25 13.3333V0.666626Z" fill="white"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="layout">
+            <div class="container">
+                <div class="row">
+                    <section class="feed col-xxl-3 col-xl-4 col-lg-5 col-12">
+                        <a href="#" class="feed__more d-none d-lg-block">
+                            <button class="button button--fill hover">Читать все новости</button>
+                        </a>
+                        <h2 class="feed__title fw-bold fs-xl">
+                            Лента новостей
+                            <a href="#" class="d-lg-none">
+                                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17 31.1666C24.824 31.1666 31.1666 24.824 31.1666 17C31.1666 9.17595 24.824 2.83331 17 2.83331C9.17595 2.83331 2.83331 9.17595 2.83331 17C2.83331 24.824 9.17595 31.1666 17 31.1666Z" stroke="#F47C01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M14.1667 11.3333L22.6667 17L14.1667 22.6666V11.3333Z" stroke="#F47C01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <p>видео</p>
+                            </a>
+                        </h2>
+                        <div class="feed__category feed-category">
+                            <div class="feed-category__source fs-sm secondary-light-text-color">
+                                <a href="#" class="underline">ОБЩЕСТВО</a> / <span class="underline">сегодня</span>,<time>10:40</time>
+                            </div>
+                            <ul class="feed-category__list">
+                                <li class="feed-category__item">
+                                    <a href="#">
+                                        <h3 class="fw-bold">
+                                            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_360_537)">
+                                                <path d="M11.2298 19.3577C16.3982 19.3577 20.588 15.4456 20.588 10.6199C20.588 5.79421 16.3982 1.8822 11.2298 1.8822C6.0614 1.8822 1.87158 5.79421 1.87158 10.6199C1.87158 15.4456 6.0614 19.3577 11.2298 19.3577Z" stroke="#F47C01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M9.3584 7.12482L14.9733 10.6199L9.3584 14.115V7.12482Z" stroke="#F47C01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_360_537">
+                                                <rect width="22.4597" height="20.9705" fill="white" transform="translate(0 0.134644)"/>
+                                                </clipPath>
+                                                </defs>
+                                            </svg>
+                                            Как изменятся детские пособия в 2025 году: объясняем в одной картинке
+                                        </h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="feed__category feed-category">
+                            <div class="feed-category__source fs-sm secondary-light-text-color">
+                                <a href="#" class="underline">КУЛЬТУРА</a> / <span class="underline">сегодня</span>,<time>10:40</time>
+                            </div>
+                            <ul class="feed-category__list">
+                                <li class="feed-category__item">
+                                    <a href="#">
+                                        <h3 class="fw-bold">
+                                            Как изменятся детские пособия в 2025 году: объясняем в одной картинке
+                                        </h3>
+                                    </a>
+                                </li>
+                                <li class="feed-category__item">
+                                    <a href="#">
+                                        <h3 class="fw-bold">
+                                            Как изменятся детские пособия в 2025 году: объясняем в одной картинке
+                                        </h3>
+                                    </a>
+                                </li>
+                                <li class="feed-category__item">
+                                    <a href="#">
+                                        <h3 class="fw-bold">
+                                            Как изменятся детские пособия в 2025 году: объясняем в одной картинке
+                                        </h3>
+                                    </a>
+                                </li>
+                                <li class="feed-category__item">
+                                    <a href="#">
+                                        <h3 class="fw-bold">
+                                            Как изменятся детские пособия в 2025 году: объясняем в одной картинке
+                                        </h3>
+                                    </a>
+                                </li>
+                                <li class="feed-category__item">
+                                    <a href="#">
+                                        <h3 class="fw-bold">
+                                            Как изменятся детские пособия в 2025 году: объясняем в одной картинке
+                                        </h3>
+                                    </a>
+                                </li>
+                                <li class="feed-category__item">
+                                    <a href="#">
+                                        <h3 class="fw-bold">
+                                            Как изменятся детские пособия в 2025 году: объясняем в одной картинке
+                                        </h3>
+                                    </a>
+                                </li>
+                                <li class="feed-category__item">
+                                    <a href="#">
+                                        <h3 class="fw-bold">
+                                            Как изменятся детские пособия в 2025 году: объясняем в одной картинке
+                                        </h3>
+                                    </a>
+                                </li>
+                                <li class="feed-category__item">
+                                    <a href="#">
+                                        <h3 class="fw-bold">
+                                            Как изменятся детские пособия в 2025 году: объясняем в одной картинке
+                                        </h3>
+                                    </a>
+                                </li>
+                                <li class="feed-category__item">
+                                    <a href="#">
+                                        <h3 class="fw-bold">
+                                            Как изменятся детские пособия в 2025 году: объясняем в одной картинке
+                                        </h3>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="feed__loadmore d-lg-none d-flex align-items-center justify-content-center">
+                            <button class="fw-bold accent-text-color">
+                                Еще 5 новостей
+                            </button>
+                        </div>
+
+                        <div class="feed__final-button d-lg-none d-flex align-items-center justify-content-center">
+                            <button class="button button--fill">
+                                Итоговый выпуск новостей
+                            </button>
+                        </div>
+                    </section>
+                    <section class="most-read col-xxl-6 col-xl-8 col-lg-7 col-12">
+                        <header class="most-read__header">
+                            <h2 class="most-read__title fs-xl fw-bold">Самое читаемое</h2>
+                        </header>
+                        <ul class="most-read__list">
+                            <li class="most-read-sm d-sm-none">
+                                <div class="most-read-sm__image">
+                                    <img src="./assets/img/current-news/image-1.jpg" alt="Новость">
+                                </div>
+                                <h3 class="fs-lg secondary-text-color fw-bold">Это первая новость в само читаемом, она будет иметь другой вид с крупным фото</h3>
+                            </li>
+
+                            <li class="most-read__item most-read-item most-read-item--with-play-icon most-read-item--with-redaction">
+                                <a href="#" class="row">
+                                    <div class="col-4">
+                                        <div class="most-read-item__image">
+                                            <div class="current-news-item__play-icon">
+                                                <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.25 0.666687L10 7.00002L0.25 13.3334V0.666687Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <img src="./assets/img/most-read/image-1.jpg" alt="Новость">
+                                        </div>
+                                    </div>
+                                    <div class="most-read-item__content col-8">
+                                        <span class="most-read-item__redaction fs-sm fw-bold red-text-color uppercase">Выбор редакции</span>
+                                        <h3 class="most-read-item__title fs-md fw-bold hover">
+                                            В этой новости есть видео внутри «Ни лечь, ни встать»: жара вынудила красноярцев толпиться на единственном разрешенном
+                                        </h3>
+                                        <p class="most-read-item__subtitle secondary-light-text-color">
+                                            Обстановка в бассейнах под открытым небом не лучше
+                                        </p>
+                                        <span class="most-read-item__category fs-sm secondary-light-text-color">Культура</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="most-read__item most-read-item">
+                                <a href="#" class="row">
+                                    <div class="col-4">
+                                        <div class="most-read-item__image">
+                                            <div class="current-news-item__play-icon">
+                                                <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.25 0.666687L10 7.00002L0.25 13.3334V0.666687Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <img src="./assets/img/most-read/image-1.jpg" alt="Новость">
+                                        </div>
+                                    </div>
+                                    <div class="most-read-item__content col-8">
+                                        <span class="most-read-item__redaction fs-sm fw-bold red-text-color uppercase">Выбор редакции</span>
+                                        <h3 class="most-read-item__title fs-md fw-bold hover">
+                                            В этой новости есть видео внутри «Ни лечь, ни встать»: жара вынудила красноярцев толпиться на единственном разрешенном
+                                        </h3>
+                                        <p class="most-read-item__subtitle secondary-light-text-color">
+                                            Обстановка в бассейнах под открытым небом не лучше
+                                        </p>
+                                        <span class="most-read-item__category fs-sm secondary-light-text-color">Культура</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="most-read__item most-read-item">
+                                <a href="#" class="row">
+                                    <div class="col-4">
+                                        <div class="most-read-item__image">
+                                            <div class="current-news-item__play-icon">
+                                                <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.25 0.666687L10 7.00002L0.25 13.3334V0.666687Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <img src="./assets/img/most-read/image-1.jpg" alt="Новость">
+                                        </div>
+                                    </div>
+                                    <div class="most-read-item__content col-8">
+                                        <span class="most-read-item__redaction fs-sm fw-bold red-text-color uppercase">Выбор редакции</span>
+                                        <h3 class="most-read-item__title fs-md fw-bold hover">
+                                            В этой новости есть видео внутри «Ни лечь, ни встать»: жара вынудила красноярцев толпиться на единственном разрешенном
+                                        </h3>
+                                        <p class="most-read-item__subtitle secondary-light-text-color">
+                                            Обстановка в бассейнах под открытым небом не лучше
+                                        </p>
+                                        <span class="most-read-item__category fs-sm secondary-light-text-color">Культура</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="most-read__item most-read-item">
+                                <a href="#" class="row">
+                                    <div class="col-4">
+                                        <div class="most-read-item__image">
+                                            <div class="current-news-item__play-icon">
+                                                <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.25 0.666687L10 7.00002L0.25 13.3334V0.666687Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <img src="./assets/img/most-read/image-1.jpg" alt="Новость">
+                                        </div>
+                                    </div>
+                                    <div class="most-read-item__content col-8">
+                                        <span class="most-read-item__redaction fs-sm fw-bold red-text-color uppercase">Выбор редакции</span>
+                                        <h3 class="most-read-item__title fs-md fw-bold hover">
+                                            В этой новости есть видео внутри «Ни лечь, ни встать»: жара вынудила красноярцев толпиться на единственном разрешенном
+                                        </h3>
+                                        <p class="most-read-item__subtitle secondary-light-text-color">
+                                            Обстановка в бассейнах под открытым небом не лучше
+                                        </p>
+                                        <span class="most-read-item__category fs-sm secondary-light-text-color">Культура</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="most-read__item most-read-item">
+                                <a href="#" class="row">
+                                    <div class="col-4">
+                                        <div class="most-read-item__image">
+                                            <div class="current-news-item__play-icon">
+                                                <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.25 0.666687L10 7.00002L0.25 13.3334V0.666687Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <img src="./assets/img/most-read/image-1.jpg" alt="Новость">
+                                        </div>
+                                    </div>
+                                    <div class="most-read-item__content col-8">
+                                        <span class="most-read-item__redaction fs-sm fw-bold red-text-color uppercase">Выбор редакции</span>
+                                        <h3 class="most-read-item__title fs-md fw-bold hover">
+                                            В этой новости есть видео внутри «Ни лечь, ни встать»: жара вынудила красноярцев толпиться на единственном разрешенном
+                                        </h3>
+                                        <p class="most-read-item__subtitle secondary-light-text-color">
+                                            Обстановка в бассейнах под открытым небом не лучше
+                                        </p>
+                                        <span class="most-read-item__category fs-sm secondary-light-text-color">Культура</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="most-read__item most-read-item">
+                                <a href="#" class="row">
+                                    <div class="col-4">
+                                        <div class="most-read-item__image">
+                                            <div class="current-news-item__play-icon">
+                                                <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0.25 0.666687L10 7.00002L0.25 13.3334V0.666687Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <img src="./assets/img/most-read/image-1.jpg" alt="Новость">
+                                        </div>
+                                    </div>
+                                    <div class="most-read-item__content col-8">
+                                        <span class="most-read-item__redaction fs-sm fw-bold red-text-color uppercase">Выбор редакции</span>
+                                        <h3 class="most-read-item__title fs-md fw-bold hover">
+                                            В этой новости есть видео внутри «Ни лечь, ни встать»: жара вынудила красноярцев толпиться на единственном разрешенном
+                                        </h3>
+                                        <p class="most-read-item__subtitle secondary-light-text-color">
+                                            Обстановка в бассейнах под открытым небом не лучше
+                                        </p>
+                                        <span class="most-read-item__category fs-sm secondary-light-text-color">Культура</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="most-read__all-news-button">
+                            <a href="#">
+                                <div class="button button--fill hover">Читать все новости</div>
+                            </a>
+                        </div>
+                    </section>
+                    <section class="ads d-xxl-block col-3 d-none">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="ad"></div>
+                            </div>
+                            <div class="col-12">
+                                <div class="ad"></div>
+                            </div>
+                            <div class="col-12">
+                                <div class="ad"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <section class="ads-xl d-xxl-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="ad"></div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="ad"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="news-releases">
+            <div class="container">
+                <div class="row news-releases__list">
+                    <a href="#" class="col-xxl-3 col-lg-6 col-12">
+                        <div class="news-releases__item news-releases-item">
+                            <div class="news-releases-item__image">
+                                <img src="./assets/img/news-releases/image-1.jpg" alt="Выпуск новостей">
+                                <p class="fw-bold fs-sm secondary-text-color">Выпуск новостей</p>
+                                <span class="news-releases-item__duration fw-semibold accent-text-color">10:10</span>
+                            </div>
+                            <div class="news-releases-item__text">
+                                <span class="news-releases-item__date fs-md secondary-light-text-color">Сегодня, 10:10</span>
+                                <h3 class="news-releases-item__title fw-bold fs-md hover">
+                                    Пожар в казармах, петиция против подорожания проезда, слежка за бобрамирске, опасная дорога, пропажа пельменей
+                                </h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="col-xxl-3 col-lg-6 col-12">
+                        <div class="news-releases__item news-releases-item">
+                            <div class="news-releases-item__image">
+                                <img src="./assets/img/news-releases/image-1.jpg" alt="Выпуск новостей">
+                                <p class="fw-bold fs-sm secondary-text-color">Выпуск новостей</p>
+                                <span class="news-releases-item__duration fw-semibold accent-text-color">10:10</span>
+                            </div>
+                            <div class="news-releases-item__text">
+                                <span class="news-releases-item__date fs-md secondary-light-text-color">Сегодня, 10:10</span>
+                                <h3 class="news-releases-item__title fw-bold fs-md hover">
+                                    Пожар в казармах, петиция против подорожания проезда, слежка за бобрамирске, опасная дорога, пропажа пельменей
+                                </h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="col-xxl-3 col-lg-6 col-12">
+                        <div class="news-releases__item news-releases-item">
+                            <div class="news-releases-item__image">
+                                <img src="./assets/img/news-releases/image-1.jpg" alt="Выпуск новостей">
+                                <p class="fw-bold fs-sm secondary-text-color">Выпуск новостей</p>
+                                <span class="news-releases-item__duration fw-semibold accent-text-color">10:10</span>
+                            </div>
+                            <div class="news-releases-item__text">
+                                <span class="news-releases-item__date fs-md secondary-light-text-color">Сегодня, 10:10</span>
+                                <h3 class="news-releases-item__title fw-bold fs-md hover">
+                                    Пожар в казармах, петиция против подорожания проезда, слежка за бобрамирске, опасная дорога, пропажа пельменей
+                                </h3>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="col-xxl-3 col-lg-6 col-12">
+                        <div class="news-releases__item news-releases-item">
+                            <div class="news-releases-item__image">
+                                <img src="./assets/img/news-releases/image-1.jpg" alt="Выпуск новостей">
+                                <p class="fw-bold fs-sm secondary-text-color">Выпуск новостей</p>
+                                <span class="news-releases-item__duration fw-semibold accent-text-color">10:10</span>
+                            </div>
+                            <div class="news-releases-item__text">
+                                <span class="news-releases-item__date fs-md secondary-light-text-color">Сегодня, 10:10</span>
+                                <h3 class="news-releases-item__title fw-bold fs-md hover">
+                                    Пожар в казармах, петиция против подорожания проезда, слежка за бобрамирске, опасная дорога, пропажа пельменей
+                                </h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <a href="#" class="news-releases__show-more-button">
+                    <button class="button button--fill hover">
+                        Смотреть все выпуски новостей
+                    </button>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row secondary-text-color">
+                <div class="col-lg-4 col-12">
+                    <a href="#" class="d-block footer__logo">
+                        <img src="./assets/img/footer/logo.png" alt="logo">
+                    </a>
+                    <div class="footer__info">
+                        <p class="fw-bold">
+                            © «7 канал Красноярск», сетевое издание <br>
+                            <span class="fs-min">г. Красноярск, ул. Баумана, 22, тел.: <a href="#">8(391)258-11-30</a>, <a href="#">2-900-333</a></span>
+                        </p>
+                        <p class="fs-min">
+                            Учредитель: ООО «МЕДИА 7» <br> Главный редактор: Руденко Артем Николаевич <br> Адрес электронной почты и номер телефона редакции: <br> <a href="#">news@trk7.ru</a>, <a href="#">8(391)2-900-333</a>
+                        </p>
+                        <p class="fs-min">
+                            Сетевое издание зарегистрировано Роскомнадзором 01 октября 2019 г., <br> регистрационный номер ЭЛ № ФС 77-76857 <br> © 2024, Все права защищены.
+                        </p>
+                    </div>
+                    <div class="footer__error d-none d-xl-block">
+                        <p class="fw-medium">Нашли ошибку на странице? <br> Выделите её и нажмите Ctrl + Enter</p>
+                    </div>
+                </div>
+                <div class="offset-xll-1 col-lg-8 col-12">
+                    <div class="footer__buttons d-none d-xxl-block">
+                        <div class="row">
+                            <div class="col-4">
+                                <a href="#">
+                                    <button class="button button--white">Сообщить новость</button>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#">
+                                    <button class="button button--white">Подписаться</button>
+                                </a>
+                            </div>
+                            <div class="col-4">
+                                <a href="#">
+                                    <button class="button button--white">Разместить объявление</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__nav d-flex justify-content-between">
+                        <ul>
+                            <h4 class="fw-bold underline">Новости</h4>
+                            <li>
+                                <a href="#" class="fs-sm hover hover--underline">СВО на Украине</a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-sm hover hover--underline">Студия 7</a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-sm hover hover--underline">Виды на жительство</a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-sm hover hover--underline">Место силы</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <h4 class="fw-bold underline">Программы</h4>
+                            <li>
+                                <a href="#" class="fs-sm hover hover--underline">Ты – топ модель XL</a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-sm hover hover--underline">Популярная наука</a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-sm hover hover--underline">Своими глазами</a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-sm hover hover--underline">Хороший вариант</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <h4 class="fw-bold underline">О компании</h4>
+                            <li>
+                                <a href="#" class="fs-sm hover hover--underline">Телепрограмма</a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-sm hover hover--underline">Контакты</a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-sm hover hover--underline">Вакансии</a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-sm hover hover--underline">Реклама</a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-sm hover hover--underline">Наша команда</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <h4 class="fw-bold underline">Новости</h4>
+                            <li>
+                                <a href="#" class="fs-sm hover hover--underline">Бегущая строка</a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-sm hover hover--underline">Подать объявление</a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-sm hover hover--underline">Правила подачи</a>
+                            </li>
+                            <li>
+                                <a href="#" class="fs-sm hover hover--underline">Персональные данные</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__copy col-lg-6 col-12">
+                        <p class="fs-min">
+                            Копирование информации допускается только со ссылкой на «7 канал Красноярск». Для сайтов — только с активной гиперссылкой на страницу новости на сайте <a href="#">trk7.ru</a>.
+                        </p>
+                        <span class="fw-medium">16+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
