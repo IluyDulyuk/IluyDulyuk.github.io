@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     function toggleSearch() {
         search.classList.toggle('active');
+        document.body.classList.toggle('no-scroll');
     }
 
     searchOpenButtons.forEach(button => {
