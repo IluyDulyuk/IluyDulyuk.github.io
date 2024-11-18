@@ -35,4 +35,49 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     })
 
+    // scroll menu
+
+    const scrollMenu = document.querySelector('.scroll-menu');
+
+    if(scrollMenu) {
+
+        const header = document.querySelector('.header');
+        const menu = document.querySelector('.menu-dropdown');
+
+        function checkScroll() {
+            if(window.scrollY >= header.offsetHeight) {
+                return true;
+            }
+
+            return false;
+        }
+
+        function activeScrollMenu() {
+            if(!scrollMenu.classList.contains('active')) {
+                scrollMenu.classList.add('active');
+                menu.classList.add('single-page');
+            } else {
+                return;
+            }
+        }
+
+        function hideScrollMenu() {
+            if(scrollMenu.classList.contains('active')) {
+                scrollMenu.classList.remove('active');
+                menu.classList.remove('single-page');
+            } else {
+                return;
+            }
+        }
+
+        window.addEventListener('scroll', () => {
+            if(checkScroll()) {
+                activeScrollMenu();
+            } else {
+                hideScrollMenu();
+            }
+        })
+
+    }
+
 })
