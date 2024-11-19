@@ -399,8 +399,37 @@ body.no-scroll {
   display: none;
 }
 
+.menu__item--dropdown {
+  position: relative;
+}
+
 .menu__item--dropdown svg {
   display: block;
+}
+
+.header__dropdown {
+  position: absolute;
+  top: 100%;
+  left: -20px;
+  z-index: 3;
+  padding-top: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.header__dropdown ul {
+  padding: 21px 30px;
+  border-radius: 10px;
+  background: var(--accent-color);
+  white-space: nowrap;
+  min-width: fit-content;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+.menu__item--dropdown:hover .header__dropdown {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* search */
