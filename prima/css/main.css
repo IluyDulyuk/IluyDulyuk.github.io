@@ -1477,7 +1477,7 @@ input:placeholder {
 }
 @media screen and (max-width: 870px) {
   .post-gallary__source {
-    margin-top: 4px;
+    margin-top: 8px;
   }
 }
 .post-gallary__source p {
@@ -1522,7 +1522,7 @@ input:placeholder {
 }
 @media screen and (max-width: 870px) {
   .editors {
-    padding-top: 0px;
+    padding-top: 14px;
   }
 }
 .editors .editor {
