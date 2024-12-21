@@ -47,6 +47,12 @@ window.addEventListener('DOMContentLoaded', () => {
             contents[0].classList.add('active');
             initList();
             console.log(_LIST);
+            _FOUND = [];
+            _RESULT = [];
+            found = 0;
+            add = 0;
+            foundSpan.textContent = found;
+            addSpan.textContent = add;
         }
     }
     

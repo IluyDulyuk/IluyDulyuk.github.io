@@ -1,6 +1,10 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-    const _PASSWORD = '123';
+    let _PASSWORD = '';
+
+    fetch('password.txt')
+        .then(res => res.text())
+        .then(text => _PASSWORD = text)
 
     const loginForm = document.querySelector('.login form');
     if(loginForm) {
