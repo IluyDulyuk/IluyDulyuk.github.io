@@ -39,12 +39,14 @@ window.addEventListener('DOMContentLoaded', () => {
             const value = reader.result;
             _LIST = value.split('\n');
             _LIST = _LIST.filter(item => item !== '');
+            _LIST = _LIST.map(item => item.split('\r')[0]);
             textarea.value = _LIST.join('\n');
             removeAllActive(tabs);
             tabs[0].classList.add('active');
             removeAllActive(contents);
             contents[0].classList.add('active');
             initList();
+            console.log(_LIST);
         }
     }
     
@@ -67,6 +69,8 @@ window.addEventListener('DOMContentLoaded', () => {
         add = 0;
 
         leftSpan.textContent = left;
+        foundSpan.textContent = 0;
+        addSpan.textContent = 0;
     }
 
     function addFound() {
