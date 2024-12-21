@@ -49,6 +49,7 @@ window.addEventListener('DOMContentLoaded', () => {
             console.log(_LIST);
             _FOUND = [];
             _RESULT = [];
+            _ADD = [];
             found = 0;
             add = 0;
             foundSpan.textContent = found;
