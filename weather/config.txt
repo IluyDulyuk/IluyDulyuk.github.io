@@ -1,0 +1,23 @@
+Fonts: 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Roboto:wght@100..900&display=swap" rel="stylesheet">
+
+
+Fontawesome:
+
+    <script src="https://kit.fontawesome.com/772fc6245e.js" crossorigin="anonymous"></script>
+
+
+WeatherAPI:
+
+    https://api.openweathermap.org/data/2.5/weather?q={город}&appid={ключ}
+
+API Key: 
+
+    0a04b7bd8fb14a0acae2bf93453ebaca
+
+
+Text Icon: 
+    °C
