@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
 	</script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/css/lightgallery.min.css"
+		integrity="sha512-QMCloGTsG2vNSnHcsxYTapI6pFQNnUP6yNizuLL5Wh3ha6AraI6HrJ3ABBaw6SIUHqlSTPQDs/SydiR98oTeaQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.css" />
 
     <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
@@ -131,7 +134,7 @@
         </div>
     </header>
 
-    <section class="section mt-0 home-hero vh-100">
+    <section class="section mt-0 home-hero vh-100 bg-center-top">
         <div class="container h-100">
             <div class="home-hero__content h-100 d-flex flex-column justify-content-center align-items-center">
                 <div>
@@ -222,7 +225,7 @@
                 </div>
                 <div class="row mb-5">
                     <div class="col-lg-6 col-12 mb-lg-0 mb-5">
-                        <div class="slider">
+                        <div class="slider slider-with-one-slide">
                             <div class="swiper" data-slider-id="home-about">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
@@ -468,7 +471,7 @@
                 <h2 class="title">Как добраться</h2>
             </div>
             <div class="section-content mb-lg-5 mb-4">
-                <div id="map"></div>
+                <div id="map" class="map"></div>
             </div>
             <div class="text-center">
                 <a href="#" class="link-green-opacity transition text-decoration-none fs-4 text-uppercase pfdinpro">
@@ -480,7 +483,7 @@
 
     <section class="section">
         <div class="container">
-            <div class="d-flex">
+            <div class="d-flex align-items-center flex-wrap">
                 <a href="#" class="breadcrumbs-link transition text-decoration-none fs-4 text-uppercase pfdinpro">
                     главная
                 </a>
@@ -601,6 +604,10 @@
 		integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
 		crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/lightgallery.min.js"
+		integrity="sha512-n02TbYimj64qb98ed5WwkNiSw/i9Xlvv4Ehvhg0jLp3qMAMWCYUHbOMbppZ0vimtyiyw9NqNqxUZC4hq86f4aQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer">
+	</script>
     <script src="./js/index.bundle.js"></script>
 </body>
 

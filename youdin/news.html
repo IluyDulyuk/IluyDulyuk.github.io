@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>О&#160;клубе | Юдинская долина</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/css/lightgallery.min.css"
+        integrity="sha512-QMCloGTsG2vNSnHcsxYTapI6pFQNnUP6yNizuLL5Wh3ha6AraI6HrJ3ABBaw6SIUHqlSTPQDs/SydiR98oTeaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+</head>
+
+<body>
+    <header class="header bg-dark-green-opacity py-lg-4 py-1 fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg justify-content-between align-items-center">
+                <a href="#" class="navbar-brand">
+                    <img src="./img/logo.svg" alt="Логотип. Юдинская долина.">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="pfdinpro">меню</span>
+                    <svg width="31" height="16" viewBox="0 0 31 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M3 12.7925L3 12.8113M3 3L3 3.01887M15.5 12.9811L15.5 13M15.5 3L15.5 3.01887M28 12.7925L28 12.8113M28 3L28 3.01887"
+                            stroke="#CBD6D0" stroke-width="6" stroke-linecap="round" />
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li
+                            class="nav-item dropdown me-xxl-5 me-xl-4 me-3 pfdinpro fs-4 fw-medium text-uppercase link-white-opacity">
+                            <div class="d-lg-flex align-items-center gap-xxl-5 gap-xl-4 gap-3">
+                                <a href="#" class="nav-link dropdown-toggle link-white-opacity transition" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Гольф</a>
+                                <span class="d-none d-lg-inline">/</span>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="#" class="fs-5 link-white-opacity transition">о&#160;клубе</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fs-5 link-white-opacity transition">Членство Клуба</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fs-5 link-white-opacity transition">магазин</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fs-5 link-white-opacity transition">цены</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fs-5 link-white-opacity transition">правила</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="fs-5 link-white-opacity transition">контакты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li
+                            class="nav-item me-xxl-5 me-xl-4 me-3 pfdinpro fs-4 fw-medium text-uppercase link-white-opacity">
+                            <div class="d-lg-flex align-items-center gap-xxl-5 gap-xl-4 gap-3">
+                                <a href="#" class="nav-link link-white-opacity transition">Турниры</a>
+                                <span class="d-none d-lg-inline">/</span>
+                            </div>
+                        </li>
+                        <li
+                            class="nav-item me-xxl-5 me-xl-4 me-3 pfdinpro fs-4 fw-medium text-uppercase link-white-opacity">
+                            <div class="d-lg-flex align-items-center gap-xxl-5 gap-xl-4 gap-3">
+                                <a href="#" class="nav-link link-white-opacity transition">Услуги</a>
+                                <span class="d-none d-lg-inline">/</span>
+                            </div>
+                        </li>
+                        <li
+                            class="nav-item me-xxl-5 me-xl-4 me-3 pfdinpro fs-4 fw-medium text-uppercase link-white-opacity">
+                            <div class="d-lg-flex align-items-center gap-xxl-5 gap-xl-4 gap-3">
+                                <a href="#" class="nav-link link-white-opacity transition">Академия гольфа</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="navbar-footer d-lg-none d-flex">
+                        <div class="d-flex align-items-center gap-3">
+                            <a href="#" class="d-inline-block">
+                                <img src="./img/wa.svg" alt="WhatsApp">
+                            </a>
+                            <a href="#" class="d-inline-block">
+                                <img src="./img/tg.svg" alt="Teleram">
+                            </a>
+                            <button class="button button-sm">Записаться</button>
+                        </div>
+                        <div
+                            class="col-xxl-6 col-lg-5 col-12 d-lg-block d-flex align-items-start flex-column mb-lg-0 mb-4">
+                            <div class="d-flex align-items-center mb-3 fs-5 dinprocon">
+                                <img src="./img/placemark.svg" alt="Метка" class="d-block me-3">
+                                г.&#160;Красноярск, Октябрьский район, улица Азовская
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="./img/phone.svg" alt="Метка" class="d-block me-3">
+                                <a href="tel:+7 963 191 26 26" class="text-white text-decoration-none fs-5 dinprocon">
+                                    +7&#160;963&#160;191-26-26
+                                </a>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="./img/mail.svg" alt="Метка" class="d-block me-3">
+                                <a href="mailto:info@yudinvalley.ru"
+                                    class="text-white text-decoration-none fs-5 dinprocon">
+                                    info@yudinvalley.ru
+                                </a>
+                            </div>
+                            <div class="d-flex align-items-center fs-5 dinprocon">
+                                Работаем каждый день с&#160;10:00 до&#160;21:00
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-lg-flex d-none align-items-center gap-3">
+                    <a href="#" class="d-inline-block">
+                        <img src="./img/wa.svg" alt="WhatsApp">
+                    </a>
+                    <a href="#" class="d-inline-block">
+                        <img src="./img/tg.svg" alt="Teleram">
+                    </a>
+                    <button class="button button-sm">Записаться</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section page-hero hero bg-center-bottom" style="background: url('../img/page-hero-bg.jpg') center top / cover no-repeat;">
+        <span class="d-flex d-lg-none">ИЮНЬ, ИЮЛЬ, АВГУСТ</span>
+        <div class="container">
+            <div class="mb-5">
+                <h1>6&#160;сентября в&#160;гольф-клубе <br class="d-none d-lg-block"> &#171;Юдинская долина&#187;
+                    стартовал <br class="d-none d-lg-block"> открытый турнир &#171;YUDIN GOLF CUP&#187;</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="section d-lg-block d-none">
+        <div class="news-container pt-4">
+            <span class="news-page-tag">
+                ИЮНЬ, ИЮЛЬ, АВГУСТ
+            </span>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="news-container">
+            <h2 class="mb-3 text-light-black fw-bold text-uppercase fs-4 dinprocon">
+                В&#160;Красноярске на&#160;площадке нового гольф-клуба прошли первые Международные студенческие соревнования по&#160;гольфу &#171;Кубок
+                Юдинской долины&#187;. За&#160;победу поборолись гольфисты из&#160;девяти стран.
+            </h2>
+            <p class="pt-3 mb-3 text-black fs-5">
+                Кубок Юдинской долины собрал 63 спортсмена из&#160;9 стран. Новые гольф-поля протестировали студенты из&#160;России, Беларуси,
+                Китая, Вьетнама, Кубы, Чили, Ямайки, Эквадора и&#160;Колумбии.
+            </p>
+            <div class="pt-3 mb-3">
+                <div style="width: 100%; aspect-ratio: 1920 / 1080; position: relative;">
+                    <iframe src="https://kinescope.io/embed/3SXqdQRQPZyabQS1XJmtJq"
+                        allow="autoplay; fullscreen; picture-in-picture; encrypted-media; gyroscope; accelerometer; clipboard-write; screen-wake-lock;"
+                        frameborder="0" allowfullscreen style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;">
+                    </iframe>
+                </div>
+            </div>
+            <h2 class="pt-3 mb-3 text-light-black fw-bold text-uppercase fs-4 dinprocon">
+                Победителями и&#160;призерами в&#160;общекомандном зачете стали:
+            </h2>
+            <p class="pt-3 mb-3 text-black fs-5">
+                <strong>1 место</strong>&#160;&#8212; Российский университет спорта &#171;ГЦОЛИФК&#187; (Москва), <br>
+                <strong>2 место</strong>&#160;&#8212; Сибирский федеральный университет (Красноярский край), <br>
+                <strong>3 место</strong>&#160;&#8212; Уральский федеральный университет (Свердловская область).
+            </p>
+            <p class="pt-3 mb-3 text-black fs-5">
+                Всего за&#160;победу на&#160;протяжении трех дней поборолись представители 21 вуза: МГИМО, МГУ им.&#160;Ломоносова, Московский
+                государственный технический университет имени Н.&#160;Э.&#160;Баумана, Санкт-Петербургский госуниверситет, Сибирский федеральный
+                университет, Уральский федеральный университет, Иркутский государственный университет путей сообщения, Белорусский
+                университет права и&#160;социально-информационных технологий и&#160;другие вузы.
+            </p>
+            <p class="pt-3 mb-3 text-black fs-5">
+                Международные студенческие соревнования по&#160;гольфу прошли при поддержке Министерства спорта Российской Федерации,
+                Правительства Красноярского края, Российского студенческого спортивного союза, Ассоциации гольфа России, Ассоциации
+                &#171;Национальная студенческая спортивная лига гольфа&#187;.
+            </p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="slider slider-full-width mb-lg-5">
+            <div class="swiper" data-slider-id="about">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/slider-1.jpg" alt="Описание изображения.">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slider-1.jpg" alt="Описание изображения.">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slider-1.jpg" alt="Описание изображения.">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slider-1.jpg" alt="Описание изображения.">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slider-1.jpg" alt="Описание изображения.">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/slider-1.jpg" alt="Описание изображения.">
+                    </div>
+                </div>
+                <div class="slider-arrows">
+                    <div class="slider-arrow slider-arrow-prev about">
+                        <img src="./img/slider-arrow-prev.svg" alt="Назад">
+                    </div>
+                    <div class="slider-arrow slider-arrow-next about">
+                        <img src="./img/slider-arrow-next.svg" alt="Вперед">
+                    </div>
+                </div>
+            </div>
+            <div class="d-lg-flex d-none slider-pagination about pagination"></div>
+        </div>
+
+        <div class="container">
+            <div class="d-flex justify-content-center pt-5">
+                <button class="button button-lg">
+                    Оформить заявку
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="d-flex align-items-center flex-wrap">
+                <a href="#" class="breadcrumbs-link transition text-decoration-none fs-4 text-uppercase pfdinpro">
+                    главная
+                </a>
+                <span class="mx-3 breadcrumbs-link transition text-decoration-none fs-4 text-uppercase pfdinpro">
+                    /
+                </span>
+                <a href="#" class="breadcrumbs-link transition text-decoration-none fs-4 text-uppercase pfdinpro">
+                    гольф-клуб
+                </a>
+                <span class="mx-3 breadcrumbs-link transition text-decoration-none fs-4 text-uppercase pfdinpro">
+                    /
+                </span>
+                <a href="#" class="breadcrumbs-link transition text-decoration-none fs-4 text-uppercase pfdinpro">
+                    турниры
+                </a>
+                <span class="mx-3 breadcrumbs-link transition text-decoration-none fs-4 text-uppercase pfdinpro">
+                    /
+                </span>
+                <a href="#" class="breadcrumbs-link transition text-decoration-none fs-4 text-uppercase pfdinpro">
+                    YUDIN GOLF CUP
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer section-green">
+        <div class="container">
+            <div class="row mb-3">
+                <div class="col-lg-4 col-12 d-lg-block d-flex justify-content-center mb-4 mb-lg-0">
+                    <a href="#" class="logo">
+                        <img src="./img/logo.svg" alt="Юдинская долина. Логотип">
+                    </a>
+                </div>
+                <div class="col-lg-8 d-none d-lg-flex">
+                    <nav class="d-flex align-items-center">
+                        <div
+                            class="d-lg-flex align-items-center gap-xxl-5 gap-xl-4 gap-3 nav-item dropdown me-xxl-5 me-xl-4 me-3 pfdinpro fs-4 fw-medium text-uppercase link-white-opacity">
+                            <a href="#"
+                                class="transition text-decoration-none fs-4 text-uppercase pfdinpro link-white-opacity">
+                                Гольф-клуб
+                            </a>
+                            <span>/</span>
+                        </div>
+                        <div
+                            class="d-lg-flex align-items-center gap-xxl-5 gap-xl-4 gap-3 nav-item dropdown me-xxl-5 me-xl-4 me-3 pfdinpro fs-4 fw-medium text-uppercase link-white-opacity">
+                            <a href="#"
+                                class="transition text-decoration-none fs-4 text-uppercase pfdinpro link-white-opacity">
+                                турниры
+                            </a>
+                            <span>/</span>
+                        </div>
+                        <div
+                            class="d-lg-flex align-items-center gap-xxl-5 gap-xl-4 gap-3 nav-item dropdown me-xxl-5 me-xl-4 me-3 pfdinpro fs-4 fw-medium text-uppercase link-white-opacity">
+                            <a href="#"
+                                class="transition text-decoration-none fs-4 text-uppercase pfdinpro link-white-opacity">
+                                услуги
+                            </a>
+                            <span>/</span>
+                        </div>
+                        <div
+                            class="d-lg-flex align-items-center gap-xxl-5 gap-xl-4 gap-3 nav-item dropdown me-xxl-5 me-xl-4 me-3 pfdinpro fs-4 fw-medium text-uppercase link-white-opacity">
+                            <a href="#"
+                                class="transition text-decoration-none fs-4 text-uppercase pfdinpro link-white-opacity">
+                                академия гольфа
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-12 d-flex flex-column justify-content-lg-end mb-lg-0 mb-5">
+                    <div class="d-flex align-items-center gap-3 justify-content-lg-start justify-content-center">
+                        <a href="#" class="d-inline-block">
+                            <img src="./img/wa.svg" alt="WhatsApp">
+                        </a>
+                        <a href="#" class="d-inline-block">
+                            <img src="./img/tg.svg" alt="Teleram">
+                        </a>
+                        <button class="button button-sm">Записаться</button>
+                    </div>
+                </div>
+                <div
+                    class="col-lg-8 col-12 d-lg-none d-flex justify-content-sm-center justify-content-end mb-sm-5 mb-4">
+                    <nav class="d-flex align-items-sm-center align-items-end flex-column">
+                        <div
+                            class="d-lg-flex mb-3 align-items-center gap-xxl-5 gap-xl-4 gap-3 nav-item dropdown me-xxl-5 me-xl-4 me-3 pfdinpro fs-4 fw-medium text-uppercase link-white-opacity">
+                            <a href="#"
+                                class="transition text-decoration-none fs-4 text-uppercase pfdinpro link-white-opacity">
+                                Гольф-клуб
+                            </a>
+                        </div>
+                        <div
+                            class="d-lg-flex mb-3 align-items-center gap-xxl-5 gap-xl-4 gap-3 nav-item dropdown me-xxl-5 me-xl-4 me-3 pfdinpro fs-4 fw-medium text-uppercase link-white-opacity">
+                            <a href="#"
+                                class="transition text-decoration-none fs-4 text-uppercase pfdinpro link-white-opacity">
+                                турниры
+                            </a>
+                        </div>
+                        <div
+                            class="d-lg-flex mb-3 align-items-center gap-xxl-5 gap-xl-4 gap-3 nav-item dropdown me-xxl-5 me-xl-4 me-3 pfdinpro fs-4 fw-medium text-uppercase link-white-opacity">
+                            <a href="#"
+                                class="transition text-decoration-none fs-4 text-uppercase pfdinpro link-white-opacity">
+                                услуги
+                            </a>
+                        </div>
+                        <div
+                            class="d-lg-flex mb-3 align-items-center gap-xxl-5 gap-xl-4 gap-3 nav-item dropdown me-xxl-5 me-xl-4 me-3 pfdinpro fs-4 fw-medium text-uppercase link-white-opacity">
+                            <a href="#"
+                                class="transition text-decoration-none fs-4 text-uppercase pfdinpro link-white-opacity">
+                                академия гольфа
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+                <div
+                    class="col-xxl-6 col-lg-5 col-12 d-lg-block d-flex align-items-sm-center align-items-start flex-column mb-lg-0 mb-4">
+                    <div class="d-flex align-items-center mb-3 fs-5 dinprocon">
+                        <img src="./img/placemark.svg" alt="Метка" class="d-block me-3">
+                        г.&#160;Красноярск, Октябрьский район, улица Азовская
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="./img/phone.svg" alt="Метка" class="d-block me-3">
+                        <a href="tel:+7 963 191 26 26" class="text-white text-decoration-none fs-5 dinprocon">
+                            +7&#160;963&#160;191-26-26
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="./img/mail.svg" alt="Метка" class="d-block me-3">
+                        <a href="mailto:info@yudinvalley.ru" class="text-white text-decoration-none fs-5 dinprocon">
+                            info@yudinvalley.ru
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center fs-5 dinprocon">
+                        Работаем каждый день с&#160;10:00 до&#160;21:00
+                    </div>
+                </div>
+                <div
+                    class="col-xxl-2 col-lg-3 col-12 d-flex flex-lg-column justify-content-lg-end justify-content-sm-center justify-content-start">
+                    <a href="#"
+                        class="transition link-green-opacity-with-white-hover text-decoration-none fs-5 dinprocon fw-medium">
+                        Политика конфиденциальности и&#160;обработки персональных данных
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.3/lightgallery.min.js"
+        integrity="sha512-n02TbYimj64qb98ed5WwkNiSw/i9Xlvv4Ehvhg0jLp3qMAMWCYUHbOMbppZ0vimtyiyw9NqNqxUZC4hq86f4aQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script src="./js/index.bundle.js"></script>
+</body>
+
+</html>
