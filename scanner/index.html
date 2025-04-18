@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Сканер</title>
+</head>
+<body>
+    
+    <main class="main">
+        <div id="reader"></div>
+        
+        <div class="load">
+            <div class="load__tabs">
+                <div class="load__tab active" data-tab-id="1">
+                    Написать
+                </div>
+                <div class="load__tab" data-tab-id="2">
+                    Санировать
+                </div>
+            </div>
+
+            <div class="load__contents">
+                <div class="load__content active" data-tab-id="1">
+                    <div class="info">
+                        <p>Осталось: <span id="left">0</span></p>
+                        <p>Найдено: <span id="found">0</span></p>
+                        <p>Доп: <span id="add">0</span></p>
+                    </div>
+
+                    <form id="text-form">
+                        <textarea name="list" id="textarea" class="input textarea" required data-id="textarea-1"></textarea>
+                        <button type="submit" class="button">Добавить</button>
+                    </form>
+
+                    <button class="button copy" data-id="textarea-1">
+                        Скопировать
+                    </button>
+                    <button class="button reset" data-id="textarea-1">
+                        Сбросить
+                    </button>
+                </div>
+                <div class="load__content" data-tab-id="2">
+                    <form>
+                        <textarea name="list" id="textarea" class="input textarea" required data-id="textarea-2" readonly></textarea>
+                    </form>
+                    <button class="button copy" data-id="textarea-2">
+                        Скопировать
+                    </button>
+                    <button class="button reset" data-id="textarea-2">
+                        Сбросить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+    <script src="./assets/js/login.js"></script>
+    <script src="./assets/js/new-main.js"></script>
+    <script src="./assets/js/tabs.js"></script>
+</body>
+</html>
