@@ -2,6 +2,7 @@
 const infoLeftSpan = document.querySelector("#left");
 const infoFoundSpan = document.querySelector("#found");
 const infoAdditionSpan = document.querySelector("#add");
+const infoScanFoundSpan = document.querySelector("#scan-found");
 const textForm = document.querySelector("#text-form");
 const textFormInput = textForm.querySelector("textarea");
 const textInputs = document.querySelectorAll('textarea');
@@ -80,6 +81,8 @@ function fillInfo() {
   infoFoundSpan.textContent = foundedItems.length;
 
   infoAdditionSpan.textContent = RESULT.addition.length;
+
+  infoScanFoundSpan.textContent = SCANNED.length;
 }
 
 fillInfo();
@@ -179,6 +182,7 @@ function onSuccessScan(decodedText) {
       SCANNED.push(text);
       addToLocalStorage();
       fillScanned();
+      infoScanFoundSpan.textContent = SCANNED.length;
     }
   }
 }
@@ -189,8 +193,8 @@ function initScanner() {
   const config = {
     fps: 10,
     qrbox: {
-      width: 130,
-      height: 130,
+      width: 150,
+      height: 150,
     },
   };
 
