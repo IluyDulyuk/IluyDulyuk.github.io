@@ -1,0 +1,554 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Фотомаркет</title>
+  </head>
+  <body>
+    <section
+      class="hero"
+      style="background: url(./images/hero.jpg) center center / cover no-repeat"
+    >
+      <h1 class="hero-title">
+        2026-01-14_17 Чемпионат Красноярского края по художественной гимнастике
+      </h1>
+      <div class="hero-tag">
+        <img src="./images/hero-tag.png" />
+        <p>
+          Выпускные альбомы <br />
+          CLEVER BOOK
+        </p>
+      </div>
+      <div class="hero-arrow">
+        <svg
+          width="19"
+          height="11"
+          viewBox="0 0 19 11"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0.353576 0.353555L9.35358 9.35356L18.3537 0.353643"
+            stroke="white"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <section class="note">
+      <div class="container">
+        <div class="note-text">
+          Для заказа фотоальбома вам необходимо выбрать главное фото, нажмите на
+          значек сердечко, введите свое фио и сохраните. Внимание, видео
+          отображается фрагментами, при покупке фильма вы получите полный
+          видеоролик.
+        </div>
+      </div>
+    </section>
+
+    <header class="header">
+      <div class="container">
+        <div class="header-tabs">
+          <button class="header-tabs-prev header-tabs-button">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15 6L9 12L15 18"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <div class="header-tabs-scroll-container">
+            <ul>
+              <li class="active">Иванова</li>
+              <li>Петрова</li>
+              <li>Сидоров</li>
+              <li>Кривоногов</li>
+              <li>Иванова</li>
+              <li>Петрова</li>
+              <li>Сидоров</li>
+              <li>Кривоногов</li>
+            </ul>
+          </div>
+          <button class="header-tabs-next header-tabs-button">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M9 18L15 12L9 6"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <nav class="header-menu">
+          <ul>
+            <li>
+              <img src="./images/heart.svg" alt="Избранное" />
+              <a>Избранное</a>
+            </li>
+            <li>
+              <img src="./images/bag.svg" alt="Покупки" />
+              <a>Покупки</a>
+            </li>
+            <li>
+              <img src="./images/cart.svg" alt="Корзина" />
+              <a>Корзина</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="mobile-menu">
+      <div class="container">
+        <ul>
+          <li>
+            <a href="">
+              <img src="./images/heart.svg" alt="" />
+              <p>Избранное</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./images/bag.svg" alt="" />
+              <p>Покупки</p>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <img src="./images/cart.svg" alt="" />
+              <p>Корзина</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="gallery">
+      <div class="container">
+        <div class="gallery-wrapper">
+          <div
+            data-src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC4xODA3MzY3ODg2NTAwMTUwOCwiaWQiOjAsImF1dGgiOjE3NzAyNzMwNjk5ODUsInBhdGgiOiIyMDI2LzAvMjUvZDFlMjY4NWM4ZDFmYjY4ZWNjZGY2YWRjMjRhNWE1MTQuanBnXzIuanBnIiwiaWF0IjoxNzcwMjczMDY5fQ.DevvA6_KHsyxDvxdCLQJI_8Cfho4_yvAuhzygzByrZI/BN1A0003.jpg"
+            class="gallery-wrapper-item added-to-cart"
+          >
+            <img
+              loading="lazy"
+              src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC4xODA3MzY3ODg2NTAwMTUwOCwiaWQiOjAsImF1dGgiOjE3NzAyNzMwNjk5ODUsInBhdGgiOiIyMDI2LzAvMjUvZDFlMjY4NWM4ZDFmYjY4ZWNjZGY2YWRjMjRhNWE1MTQuanBnXzIuanBnIiwiaWF0IjoxNzcwMjczMDY5fQ.DevvA6_KHsyxDvxdCLQJI_8Cfho4_yvAuhzygzByrZI/BN1A0003.jpg"
+              alt="BN1A0003.jpg"
+            />
+            <button class="gallery-wrapper-item-heart">
+              <img src="./images/heart.svg" alt="" />
+            </button>
+            <button class="gallery-wrapper-item-cart">
+              <img src="./images/cart.svg" alt="" />
+              <img src="./images/cart-active.svg" alt="" />
+            </button>
+          </div>
+          <div
+            data-src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC45MzIwODg0NjIyMjYzNDI2LCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDAxMiwicGF0aCI6IjIwMjYvMC8yNS82YTNkYTIxMTljMTBkMzZmMzkyM2FmZDRhMDFlYzYwNi5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.UphNK5d2A-uo4W2C6ylzhbjoA3zESxTbFavIS82t2-4/BN1A0004.jpg"
+            class="gallery-wrapper-item"
+          >
+            <img
+              loading="lazy"
+              src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC45MzIwODg0NjIyMjYzNDI2LCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDAxMiwicGF0aCI6IjIwMjYvMC8yNS82YTNkYTIxMTljMTBkMzZmMzkyM2FmZDRhMDFlYzYwNi5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.UphNK5d2A-uo4W2C6ylzhbjoA3zESxTbFavIS82t2-4/BN1A0004.jpg"
+              alt="BN1A0004.jpg"
+            />
+            <button class="gallery-wrapper-item-heart">
+              <img src="./images/heart.svg" alt="" />
+            </button>
+            <button class="gallery-wrapper-item-cart">
+              <img src="./images/cart.svg" alt="" />
+              <img src="./images/cart-active.svg" alt="" />
+            </button>
+          </div>
+          <div
+            data-src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC4xNDU4MTkwMzI0NDY1MjQyOCwiaWQiOjAsImF1dGgiOjE3NzAyNzMwNzAwMjAsInBhdGgiOiIyMDI2LzAvMjUvYTg3ZTY4ODEwMGJkYjAyYjBlYjU1MjIwOGMxMWU2ZWUuanBnXzIuanBnIiwiaWF0IjoxNzcwMjczMDcwfQ.SVwMhgpIgykD84JgDRVvLsG5A0xKvbBjcO8iTOln8ik/BN1A0007.jpg"
+            class="gallery-wrapper-item"
+          >
+            <img
+              loading="lazy"
+              src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC4xNDU4MTkwMzI0NDY1MjQyOCwiaWQiOjAsImF1dGgiOjE3NzAyNzMwNzAwMjAsInBhdGgiOiIyMDI2LzAvMjUvYTg3ZTY4ODEwMGJkYjAyYjBlYjU1MjIwOGMxMWU2ZWUuanBnXzIuanBnIiwiaWF0IjoxNzcwMjczMDcwfQ.SVwMhgpIgykD84JgDRVvLsG5A0xKvbBjcO8iTOln8ik/BN1A0007.jpg"
+              alt="BN1A0007.jpg"
+            />
+            <button class="gallery-wrapper-item-heart">
+              <img src="./images/heart.svg" alt="" />
+            </button>
+            <button class="gallery-wrapper-item-cart">
+              <img src="./images/cart.svg" alt="" />
+              <img src="./images/cart-active.svg" alt="" />
+            </button>
+          </div>
+          <div
+            data-src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC4zNzY5NDE0ODIxNzI3OTY1NSwiaWQiOjAsImF1dGgiOjE3NzAyNzMwNzAwNDMsInBhdGgiOiIyMDI2LzAvMjUvMTg3ZjgzNWU4ZjRmNDdmMDhiMGZjMmU1NjZmMTY1NzQuanBnXzIuanBnIiwiaWF0IjoxNzcwMjczMDcwfQ.YMdmXyct4D1WY3hSciYiQdJWbuljrKFgka0hO99GSP4/BN1A0008.jpg"
+            class="gallery-wrapper-item"
+          >
+            <img
+              loading="lazy"
+              src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC4zNzY5NDE0ODIxNzI3OTY1NSwiaWQiOjAsImF1dGgiOjE3NzAyNzMwNzAwNDMsInBhdGgiOiIyMDI2LzAvMjUvMTg3ZjgzNWU4ZjRmNDdmMDhiMGZjMmU1NjZmMTY1NzQuanBnXzIuanBnIiwiaWF0IjoxNzcwMjczMDcwfQ.YMdmXyct4D1WY3hSciYiQdJWbuljrKFgka0hO99GSP4/BN1A0008.jpg"
+              alt="BN1A0008.jpg"
+            />
+            <button class="gallery-wrapper-item-heart">
+              <img src="./images/heart.svg" alt="" />
+            </button>
+            <button class="gallery-wrapper-item-cart">
+              <img src="./images/cart.svg" alt="" />
+              <img src="./images/cart-active.svg" alt="" />
+            </button>
+          </div>
+          <div
+            data-src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC4yMTU0MzY0MjAyOTIzOTMwNywiaWQiOjAsImF1dGgiOjE3NzAyNzMwNzAwNTEsInBhdGgiOiIyMDI2LzAvMjUvMzc0OWQxZDZjN2QzMmFlMWQyODIzNjExMTgxYjU1ZGQuanBnXzIuanBnIiwiaWF0IjoxNzcwMjczMDcwfQ.N0ultRuk4o7I41cVNV6rRce53_pIAgJhvwY-0Nh4Bco/BN1A0009.jpg"
+            class="gallery-wrapper-item"
+          >
+            <img
+              loading="lazy"
+              src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC4yMTU0MzY0MjAyOTIzOTMwNywiaWQiOjAsImF1dGgiOjE3NzAyNzMwNzAwNTEsInBhdGgiOiIyMDI2LzAvMjUvMzc0OWQxZDZjN2QzMmFlMWQyODIzNjExMTgxYjU1ZGQuanBnXzIuanBnIiwiaWF0IjoxNzcwMjczMDcwfQ.N0ultRuk4o7I41cVNV6rRce53_pIAgJhvwY-0Nh4Bco/BN1A0009.jpg"
+              alt="BN1A0009.jpg"
+            />
+            <button class="gallery-wrapper-item-heart">
+              <img src="./images/heart.svg" alt="" />
+            </button>
+            <button class="gallery-wrapper-item-cart">
+              <img src="./images/cart.svg" alt="" />
+              <img src="./images/cart-active.svg" alt="" />
+            </button>
+          </div>
+          <div
+            data-src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC45MDA1NzMwMDY2NzA5Njc2LCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDA1OSwicGF0aCI6IjIwMjYvMC8yNS8xNzQ3NWI3ZTYwNzBhZDQ4MTlhODNkZDc2Mzk0NGExNC5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.aP8juA8xj1PW5fJd9ZC7hdm6kIKNcwywveYsUuaP92o/BN1A0011.jpg"
+            class="gallery-wrapper-item"
+          >
+            <img
+              loading="lazy"
+              src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC45MDA1NzMwMDY2NzA5Njc2LCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDA1OSwicGF0aCI6IjIwMjYvMC8yNS8xNzQ3NWI3ZTYwNzBhZDQ4MTlhODNkZDc2Mzk0NGExNC5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.aP8juA8xj1PW5fJd9ZC7hdm6kIKNcwywveYsUuaP92o/BN1A0011.jpg"
+              alt="BN1A0011.jpg"
+            />
+            <button class="gallery-wrapper-item-heart">
+              <img src="./images/heart.svg" alt="" />
+            </button>
+            <button class="gallery-wrapper-item-cart">
+              <img src="./images/cart.svg" alt="" />
+              <img src="./images/cart-active.svg" alt="" />
+            </button>
+          </div>
+          <div
+            data-src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC44ODAxMDcyOTYzMDU3NjYxLCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDA2OCwicGF0aCI6IjIwMjYvMC8yNS84ZDc2OWVkOWE4MjJlM2NlMTI1YzY1NTdlYzMwMWQ5OC5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.IA14gCEKtzXk5FvFd9FkPXrosMl80sAJ1lsIDIzxpmk/BN1A0014.jpg"
+            class="gallery-wrapper-item"
+          >
+            <img
+              loading="lazy"
+              src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC44ODAxMDcyOTYzMDU3NjYxLCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDA2OCwicGF0aCI6IjIwMjYvMC8yNS84ZDc2OWVkOWE4MjJlM2NlMTI1YzY1NTdlYzMwMWQ5OC5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.IA14gCEKtzXk5FvFd9FkPXrosMl80sAJ1lsIDIzxpmk/BN1A0014.jpg"
+              alt="BN1A0014.jpg"
+            />
+            <button class="gallery-wrapper-item-heart">
+              <img src="./images/heart.svg" alt="" />
+            </button>
+            <button class="gallery-wrapper-item-cart">
+              <img src="./images/cart.svg" alt="" />
+              <img src="./images/cart-active.svg" alt="" />
+            </button>
+          </div>
+          <div
+            data-src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC4xMDYxMjQ0Mzc3MTY1NTc3NywiaWQiOjAsImF1dGgiOjE3NzAyNzMwNzAwODUsInBhdGgiOiIyMDI2LzAvMjUvMzdmMmYzMGM3ODhkNmE4ZDIzOWVlOGZlNjY0NDM1MDguanBnXzIuanBnIiwiaWF0IjoxNzcwMjczMDcwfQ.RYesF0PcEaAEXRlWRdWWGFkw9pDoQW3l3anEfIpYebQ/BN1A0018.jpg"
+            class="gallery-wrapper-item"
+          >
+            <img
+              loading="lazy"
+              src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC4xMDYxMjQ0Mzc3MTY1NTc3NywiaWQiOjAsImF1dGgiOjE3NzAyNzMwNzAwODUsInBhdGgiOiIyMDI2LzAvMjUvMzdmMmYzMGM3ODhkNmE4ZDIzOWVlOGZlNjY0NDM1MDguanBnXzIuanBnIiwiaWF0IjoxNzcwMjczMDcwfQ.RYesF0PcEaAEXRlWRdWWGFkw9pDoQW3l3anEfIpYebQ/BN1A0018.jpg"
+              alt="BN1A0018.jpg"
+            />
+            <button class="gallery-wrapper-item-heart">
+              <img src="./images/heart.svg" alt="" />
+            </button>
+            <button class="gallery-wrapper-item-cart">
+              <img src="./images/cart.svg" alt="" />
+              <img src="./images/cart-active.svg" alt="" />
+            </button>
+          </div>
+          <div
+            data-src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC44NDUzOTk5MDQ2NTQ4MjQ0LCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDA5MywicGF0aCI6IjIwMjYvMC8yNS9iOGVkYWIxZTlhMzhiYTk4ZTE0NGYyMGE3ZTlmZTEzNi5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.0mYpoyMseUX_xnLo2SogQlXjHd6npF-QU_5MxQ39G68/BN1A0019.jpg"
+            class="gallery-wrapper-item"
+          >
+            <img
+              loading="lazy"
+              src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC44NDUzOTk5MDQ2NTQ4MjQ0LCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDA5MywicGF0aCI6IjIwMjYvMC8yNS9iOGVkYWIxZTlhMzhiYTk4ZTE0NGYyMGE3ZTlmZTEzNi5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.0mYpoyMseUX_xnLo2SogQlXjHd6npF-QU_5MxQ39G68/BN1A0019.jpg"
+              alt="BN1A0019.jpg"
+            />
+            <button class="gallery-wrapper-item-heart">
+              <img src="./images/heart.svg" alt="" />
+            </button>
+            <button class="gallery-wrapper-item-cart">
+              <img src="./images/cart.svg" alt="" />
+              <img src="./images/cart-active.svg" alt="" />
+            </button>
+          </div>
+          <div
+            data-src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC45MTUwODcxODc5MzAzMTAyLCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDEwMSwicGF0aCI6IjIwMjYvMC8yNS80ZmU2OGRmMGE0ZDNkMDhkZWIxMTQ4NTE5ZWQ1MjcyNi5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.RFszCxy3tm6-jc4-H0UWdczOA9Bx6NuABmx8nTYG5UE/BN1A0021.jpg"
+            class="gallery-wrapper-item"
+          >
+            <img
+              loading="lazy"
+              src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC45MTUwODcxODc5MzAzMTAyLCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDEwMSwicGF0aCI6IjIwMjYvMC8yNS80ZmU2OGRmMGE0ZDNkMDhkZWIxMTQ4NTE5ZWQ1MjcyNi5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.RFszCxy3tm6-jc4-H0UWdczOA9Bx6NuABmx8nTYG5UE/BN1A0021.jpg"
+              alt="BN1A0021.jpg"
+            />
+            <button class="gallery-wrapper-item-heart">
+              <img src="./images/heart.svg" alt="" />
+            </button>
+            <button class="gallery-wrapper-item-cart">
+              <img src="./images/cart.svg" alt="" />
+              <img src="./images/cart-active.svg" alt="" />
+            </button>
+          </div>
+          <div
+            data-src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC4yODE3NjAxMzQ4NzE1MTQ2MywiaWQiOjAsImF1dGgiOjE3NzAyNzMwNzAxMDksInBhdGgiOiIyMDI2LzAvMjUvY2QyMWI2Y2NlMTg3ZmY2MWRiNWQ4YzNjOWJjNDAyZmMuanBnXzIuanBnIiwiaWF0IjoxNzcwMjczMDcwfQ.jSgM6cHEX9VrYQ2h_DfJR7gajpZoT_5_Qhd1S2koGDI/BN1A0025.jpg"
+            class="gallery-wrapper-item"
+          >
+            <img
+              loading="lazy"
+              src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC4yODE3NjAxMzQ4NzE1MTQ2MywiaWQiOjAsImF1dGgiOjE3NzAyNzMwNzAxMDksInBhdGgiOiIyMDI2LzAvMjUvY2QyMWI2Y2NlMTg3ZmY2MWRiNWQ4YzNjOWJjNDAyZmMuanBnXzIuanBnIiwiaWF0IjoxNzcwMjczMDcwfQ.jSgM6cHEX9VrYQ2h_DfJR7gajpZoT_5_Qhd1S2koGDI/BN1A0025.jpg"
+              alt="BN1A0025.jpg"
+            />
+            <button class="gallery-wrapper-item-heart">
+              <img src="./images/heart.svg" alt="" />
+            </button>
+            <button class="gallery-wrapper-item-cart">
+              <img src="./images/cart.svg" alt="" />
+              <img src="./images/cart-active.svg" alt="" />
+            </button>
+          </div>
+          <div
+            data-src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC40NjU2NjY3OTcwMDExMzI4LCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDEyNCwicGF0aCI6IjIwMjYvMC8yNS9mNzkyYjZiZjZlN2MyN2QwMTBlNzVjN2Y4ZDFmMDg1Mi5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.Q8Fks7swgvYeemQwIufW16r-17JF7J-dtqQ68CWkLf4/BN1A0026.jpg"
+            class="gallery-wrapper-item"
+          >
+            <img
+              loading="lazy"
+              src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC40NjU2NjY3OTcwMDExMzI4LCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDEyNCwicGF0aCI6IjIwMjYvMC8yNS9mNzkyYjZiZjZlN2MyN2QwMTBlNzVjN2Y4ZDFmMDg1Mi5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.Q8Fks7swgvYeemQwIufW16r-17JF7J-dtqQ68CWkLf4/BN1A0026.jpg"
+              alt="BN1A0026.jpg"
+            />
+            <button class="gallery-wrapper-item-heart">
+              <img src="./images/heart.svg" alt="" />
+            </button>
+            <button class="gallery-wrapper-item-cart">
+              <img src="./images/cart.svg" alt="" />
+              <img src="./images/cart-active.svg" alt="" />
+            </button>
+          </div>
+          <div
+            data-src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC42NzY5MDEyNTg4NzMxNjUzLCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDEzMiwicGF0aCI6IjIwMjYvMC8yNS83MzVjZTA3ZTY4Y2ZmYjgwNmY2NTdkNjg1ZTdkMDFjOS5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.nN7bbXNWpBRta2c8gGQM16YXQVj_tQhfIiETwArMnKk/BN1A0030.jpg"
+            class="gallery-wrapper-item"
+          >
+            <img
+              loading="lazy"
+              src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC42NzY5MDEyNTg4NzMxNjUzLCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDEzMiwicGF0aCI6IjIwMjYvMC8yNS83MzVjZTA3ZTY4Y2ZmYjgwNmY2NTdkNjg1ZTdkMDFjOS5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.nN7bbXNWpBRta2c8gGQM16YXQVj_tQhfIiETwArMnKk/BN1A0030.jpg"
+              alt="BN1A0030.jpg"
+            />
+            <button class="gallery-wrapper-item-heart">
+              <img src="./images/heart.svg" alt="" />
+            </button>
+            <button class="gallery-wrapper-item-cart">
+              <img src="./images/cart.svg" alt="" />
+              <img src="./images/cart-active.svg" alt="" />
+            </button>
+          </div>
+          <div
+            data-src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC4zNTQwMzE2ODI0ODMzOTE4LCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDE0MSwicGF0aCI6IjIwMjYvMC8yNS8xY2Y0NThlYTgxZjEwY2JhYzIwOGE0ODgzMTI2OTBlMC5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.8PkdCmP_sSBj7HPmXCVCa3tgOc9MIfvQmNE0H3VkABQ/BN1A0032.jpg"
+            class="gallery-wrapper-item"
+          >
+            <img
+              loading="lazy"
+              src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC4zNTQwMzE2ODI0ODMzOTE4LCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDE0MSwicGF0aCI6IjIwMjYvMC8yNS8xY2Y0NThlYTgxZjEwY2JhYzIwOGE0ODgzMTI2OTBlMC5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.8PkdCmP_sSBj7HPmXCVCa3tgOc9MIfvQmNE0H3VkABQ/BN1A0032.jpg"
+              alt="BN1A0032.jpg"
+            />
+            <button class="gallery-wrapper-item-heart">
+              <img src="./images/heart.svg" alt="" />
+            </button>
+            <button class="gallery-wrapper-item-cart">
+              <img src="./images/cart.svg" alt="" />
+              <img src="./images/cart-active.svg" alt="" />
+            </button>
+          </div>
+          <div
+            data-src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC44MjU0ODEyMDE4OTAxNTE4LCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDE0OSwicGF0aCI6IjIwMjYvMC8yNS9lNGExMjg1ODZiYTc0YTEzMWIyMGY3NDBiODZiMDgwYi5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.ftsSXlYlsCIQoWJyOQNyQoukM00T-EWBbxxvkNdklI0/BN1A0033.jpg"
+            class="gallery-wrapper-item"
+          >
+            <img
+              loading="lazy"
+              src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC44MjU0ODEyMDE4OTAxNTE4LCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDE0OSwicGF0aCI6IjIwMjYvMC8yNS9lNGExMjg1ODZiYTc0YTEzMWIyMGY3NDBiODZiMDgwYi5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.ftsSXlYlsCIQoWJyOQNyQoukM00T-EWBbxxvkNdklI0/BN1A0033.jpg"
+              alt="BN1A0033.jpg"
+            />
+            <button class="gallery-wrapper-item-heart">
+              <img src="./images/heart.svg" alt="" />
+            </button>
+            <button class="gallery-wrapper-item-cart">
+              <img src="./images/cart.svg" alt="" />
+              <img src="./images/cart-active.svg" alt="" />
+            </button>
+          </div>
+          <div
+            data-src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC4wNjU4ODQyNzA2Njg4MjY5NiwiaWQiOjAsImF1dGgiOjE3NzAyNzMwNzAxNTcsInBhdGgiOiIyMDI2LzAvMjUvNzY4NDYxZTgxOGVmNWRkYWU2ODg0MmM4ZWVjZjkwMTMuanBnXzIuanBnIiwiaWF0IjoxNzcwMjczMDcwfQ.0eGr8MHBf7hwS4o9wIMq6rF4S8ObCwyCovf1KwAvxOc/BN1A0035.jpg"
+            class="gallery-wrapper-item"
+          >
+            <img
+              loading="lazy"
+              src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC4wNjU4ODQyNzA2Njg4MjY5NiwiaWQiOjAsImF1dGgiOjE3NzAyNzMwNzAxNTcsInBhdGgiOiIyMDI2LzAvMjUvNzY4NDYxZTgxOGVmNWRkYWU2ODg0MmM4ZWVjZjkwMTMuanBnXzIuanBnIiwiaWF0IjoxNzcwMjczMDcwfQ.0eGr8MHBf7hwS4o9wIMq6rF4S8ObCwyCovf1KwAvxOc/BN1A0035.jpg"
+              alt="BN1A0035.jpg"
+            />
+            <button class="gallery-wrapper-item-heart">
+              <img src="./images/heart.svg" alt="" />
+            </button>
+            <button class="gallery-wrapper-item-cart">
+              <img src="./images/cart.svg" alt="" />
+              <img src="./images/cart-active.svg" alt="" />
+            </button>
+          </div>
+          <div
+            data-src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC4xNjc4MjExODc5ODEwNTgyNywiaWQiOjAsImF1dGgiOjE3NzAyNzMwNzAxNzMsInBhdGgiOiIyMDI2LzAvMjUvOGE1MjAyNjFmMjYwZjdmM2YzZWUwOThlNTkwY2EyNDkuanBnXzIuanBnIiwiaWF0IjoxNzcwMjczMDcwfQ.9F9Lw8Q8XzT-ZF-nA3ISeA9YflGvLt5gsmqCkrL7QYs/BN1A0039.jpg"
+            class="gallery-wrapper-item"
+          >
+            <img
+              loading="lazy"
+              src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC4xNjc4MjExODc5ODEwNTgyNywiaWQiOjAsImF1dGgiOjE3NzAyNzMwNzAxNzMsInBhdGgiOiIyMDI2LzAvMjUvOGE1MjAyNjFmMjYwZjdmM2YzZWUwOThlNTkwY2EyNDkuanBnXzIuanBnIiwiaWF0IjoxNzcwMjczMDcwfQ.9F9Lw8Q8XzT-ZF-nA3ISeA9YflGvLt5gsmqCkrL7QYs/BN1A0039.jpg"
+              alt="BN1A0039.jpg"
+            />
+            <button class="gallery-wrapper-item-heart">
+              <img src="./images/heart.svg" alt="" />
+            </button>
+            <button class="gallery-wrapper-item-cart">
+              <img src="./images/cart.svg" alt="" />
+              <img src="./images/cart-active.svg" alt="" />
+            </button>
+          </div>
+          <div
+            data-src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC42MTc1MTE2NTcwNDQzNzIyLCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDE5MCwicGF0aCI6IjIwMjYvMC8yNS8xMzdiNTgxYzQ5Nzc4NWJmMTliZjUwNDhjODRiZTA0Zi5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.k19sN4rOn9ir34h0BdrZBz5fkV-IJ6DW7_tkOxUMNns/BN1A0043.jpg"
+            class="gallery-wrapper-item"
+          >
+            <img
+              loading="lazy"
+              src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC42MTc1MTE2NTcwNDQzNzIyLCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDE5MCwicGF0aCI6IjIwMjYvMC8yNS8xMzdiNTgxYzQ5Nzc4NWJmMTliZjUwNDhjODRiZTA0Zi5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.k19sN4rOn9ir34h0BdrZBz5fkV-IJ6DW7_tkOxUMNns/BN1A0043.jpg"
+              alt="BN1A0043.jpg"
+            />
+          </div>
+          <div
+            data-src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC4yMDU3Njk4NzU0MjMzMzc3LCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDIwNiwicGF0aCI6IjIwMjYvMC8yNS9jNDc3MGUzYjc5NzhjODZmMTU5ZjJjZTFjMWNmZmEwZS5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.vrBmFETURyFEaeoCg6JXq__F5YOcbm9KealQpFzWRV0/BN1A0045.jpg"
+            class="gallery-wrapper-item"
+          >
+            <img
+              loading="lazy"
+              src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC4yMDU3Njk4NzU0MjMzMzc3LCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDIwNiwicGF0aCI6IjIwMjYvMC8yNS9jNDc3MGUzYjc5NzhjODZmMTU5ZjJjZTFjMWNmZmEwZS5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.vrBmFETURyFEaeoCg6JXq__F5YOcbm9KealQpFzWRV0/BN1A0045.jpg"
+              alt="BN1A0045.jpg"
+            />
+            <button class="gallery-wrapper-item-heart">
+              <img src="./images/heart.svg" alt="" />
+            </button>
+            <button class="gallery-wrapper-item-cart">
+              <img src="./images/cart.svg" alt="" />
+              <img src="./images/cart-active.svg" alt="" />
+            </button>
+          </div>
+          <div
+            data-src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC40OTE0MzgyMDYxMjg3Mjk0NiwiaWQiOjAsImF1dGgiOjE3NzAyNzMwNzAyMTYsInBhdGgiOiIyMDI2LzAvMjUvM2Q2YzcwNjc0YTI4MDJjMGI1OTBiYmJjOGNmZjdkZjIuanBnXzIuanBnIiwiaWF0IjoxNzcwMjczMDcwfQ.KFT45LIpOP1WG3y0TI_tCv67zUkHjmiZfGPeTG9hNK8/BN1A0047.jpg"
+            class="gallery-wrapper-item"
+          >
+            <img
+              loading="lazy"
+              src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC40OTE0MzgyMDYxMjg3Mjk0NiwiaWQiOjAsImF1dGgiOjE3NzAyNzMwNzAyMTYsInBhdGgiOiIyMDI2LzAvMjUvM2Q2YzcwNjc0YTI4MDJjMGI1OTBiYmJjOGNmZjdkZjIuanBnXzIuanBnIiwiaWF0IjoxNzcwMjczMDcwfQ.KFT45LIpOP1WG3y0TI_tCv67zUkHjmiZfGPeTG9hNK8/BN1A0047.jpg"
+              alt="BN1A0047.jpg"
+            />
+            <button class="gallery-wrapper-item-heart">
+              <img src="./images/heart.svg" alt="" />
+            </button>
+            <button class="gallery-wrapper-item-cart">
+              <img src="./images/cart.svg" alt="" />
+              <img src="./images/cart-active.svg" alt="" />
+            </button>
+          </div>
+          <div
+            data-src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC42NTE2MzkxNTc1NzY0MjI3LCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDIyNCwicGF0aCI6IjIwMjYvMC8yNS81MjFkYzQ5YjYxNzQzZjIzMjM5MzA4OGQyODA4NmQxMi5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.FuyDXfzYjEtaj2r9ftR_rHlqNM52RRTNSy8lUze5p_A/BN1A0053.jpg"
+            class="gallery-wrapper-item"
+          >
+            <img
+              loading="lazy"
+              src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC42NTE2MzkxNTc1NzY0MjI3LCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDIyNCwicGF0aCI6IjIwMjYvMC8yNS81MjFkYzQ5YjYxNzQzZjIzMjM5MzA4OGQyODA4NmQxMi5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.FuyDXfzYjEtaj2r9ftR_rHlqNM52RRTNSy8lUze5p_A/BN1A0053.jpg"
+              alt="BN1A0053.jpg"
+            />
+            <button class="gallery-wrapper-item-heart">
+              <img src="./images/heart.svg" alt="" />
+            </button>
+            <button class="gallery-wrapper-item-cart">
+              <img src="./images/cart.svg" alt="" />
+              <img src="./images/cart-active.svg" alt="" />
+            </button>
+          </div>
+          <div
+            data-src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC4xMDg0NjQ1NjQ2MjY4NDcxNywiaWQiOjAsImF1dGgiOjE3NzAyNzMwNzAyNDAsInBhdGgiOiIyMDI2LzAvMjUvZmMyMWY5MWRkMzg3ZDgyY2Q5ZDg1NDNjMDlmYjgyZmUuanBnXzIuanBnIiwiaWF0IjoxNzcwMjczMDcwfQ.jX7TfOyDXwyesbc7JSuoTje0y5eAq61mT0JS7stSzOQ/BN1A0060.jpg"
+            class="gallery-wrapper-item"
+          >
+            <img
+              loading="lazy"
+              src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC4xMDg0NjQ1NjQ2MjY4NDcxNywiaWQiOjAsImF1dGgiOjE3NzAyNzMwNzAyNDAsInBhdGgiOiIyMDI2LzAvMjUvZmMyMWY5MWRkMzg3ZDgyY2Q5ZDg1NDNjMDlmYjgyZmUuanBnXzIuanBnIiwiaWF0IjoxNzcwMjczMDcwfQ.jX7TfOyDXwyesbc7JSuoTje0y5eAq61mT0JS7stSzOQ/BN1A0060.jpg"
+              alt="BN1A0060.jpg"
+            />
+            <button class="gallery-wrapper-item-heart">
+              <img src="./images/heart.svg" alt="" />
+            </button>
+            <button class="gallery-wrapper-item-cart">
+              <img src="./images/cart.svg" alt="" />
+              <img src="./images/cart-active.svg" alt="" />
+            </button>
+          </div>
+          <div
+            data-src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC45Nzk2MTAxNDg4MTQxNjA2LCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDI0OCwicGF0aCI6IjIwMjYvMC8yNS9mZjBlMTg5ZjA5M2Q0YTg4MzM2NTU3MDgwMzI3YjgyMi5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.Nrdoh1qtmUwqoqz0fMoVQhAmAkW3s2kRGLygPLiL39w/BN1A0061.jpg"
+            class="gallery-wrapper-item"
+          >
+            <img
+              loading="lazy"
+              src="https://photomarket.pro/f/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhYSI6MC45Nzk2MTAxNDg4MTQxNjA2LCJpZCI6MCwiYXV0aCI6MTc3MDI3MzA3MDI0OCwicGF0aCI6IjIwMjYvMC8yNS9mZjBlMTg5ZjA5M2Q0YTg4MzM2NTU3MDgwMzI3YjgyMi5qcGdfMi5qcGciLCJpYXQiOjE3NzAyNzMwNzB9.Nrdoh1qtmUwqoqz0fMoVQhAmAkW3s2kRGLygPLiL39w/BN1A0061.jpg"
+              alt="BN1A0061.jpg"
+            />
+            <button class="gallery-wrapper-item-heart">
+              <img src="./images/heart.svg" alt="" />
+            </button>
+            <button class="gallery-wrapper-item-cart">
+              <img src="./images/cart.svg" alt="" />
+              <img src="./images/cart-active.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="gallery-modal">
+      <div class="container">
+        <img src="" alt="" />
+      </div>
+      <button class="gallery-modal-close">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
