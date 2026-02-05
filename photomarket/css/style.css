@@ -356,15 +356,16 @@ body {
   background: #e0e0e0;
 }
 
-.gallery-wrapper-item img {
+.gallery-wrapper-item > img {
   max-height: 100%;
   min-width: 100%;
   object-fit: cover;
   display: block;
   opacity: 0;
+  object-position: top;
 }
 
-.gallery-wrapper-item img.is-loaded {
+.gallery-wrapper-item > img.is-loaded {
   opacity: 1;
 }
 
@@ -374,6 +375,7 @@ body {
   right: 19px;
   cursor: pointer;
   transition: 0.3s;
+  z-index: 2;
 }
 
 .gallery-wrapper-item-heart img {
@@ -390,6 +392,7 @@ body {
   right: 19px;
   cursor: pointer;
   transition: 0.3s;
+  z-index: 2;
 }
 
 .gallery-wrapper-item-cart img {
@@ -422,7 +425,7 @@ body {
   }
 
   .gallery-wrapper-item {
-    height: 200px;
+    height: 300px;
   }
 }
 
